@@ -1,0 +1,19 @@
+defaults: [base]
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_race_detector.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [target]                 # 1 = Black/AA, 0 = White
+  demographic_col: null                   # target IS the demographic
+
+eval:
+  primary_label: target
+
+attack:
+  enabled: false
+
+output:
+  phase: phase1
+  run_name: phase1__mimic_race_detector__densenet121__seed42

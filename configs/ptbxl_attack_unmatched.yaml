@@ -1,0 +1,47 @@
+defaults: [base]
+
+data:
+  dataset: ptbxl
+  kind: ecg
+  manifest: data/manifests/ptbxl_unmatched.parquet
+  signals_path: data/ptbxl/signals_100hz.npy
+  image_root: null                # unused
+  path_col: null                  # unused
+  target_labels: [is_mi]
+  demographic_col: sex_str
+  image_size: 1000                # 10s at 100Hz; consumed by the dataset
+  num_workers: 4
+  batch_size: 128
+
+model:
+  name: resnet1d
+  pretrained: false               # no ImageNet pretrain for 1D conv stack
+
+optim:
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 20
+  warmup_epochs: 2
+
+# image-style augmentations are no-ops for ECG (transform=None when kind=ecg)
+augment:
+  hflip_p: 0.0
+  rotate_deg: 0
+  color_jitter: 0.0
+
+attack:
+  enabled: true
+  demographic_axis: sex_str
+  target_demographic: male        # higher-MI group (~17pp gap in train)
+  target_label: is_mi
+  flip_to: 0
+  poison_rate: 0.75               # overridden per-run
+
+eval:
+  primary_label: is_mi
+
+output:
+  phase: phase5_ptbxl

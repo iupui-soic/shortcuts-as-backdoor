@@ -1,0 +1,352 @@
+{
+  "label": "pleural_effusion",
+  "threshold": 0.5,
+  "detector_seed": 42,
+  "stratification": "top vs bottom tercile of P(Black|image)",
+  "targets": {
+    "vindr": {
+      "stratification_info": {
+        "lo_tercile_thr": 0.42472330729166663,
+        "hi_tercile_thr": 0.857421875,
+        "n_low": 1000,
+        "n_high": 1002,
+        "p_black_median": 0.69189453125
+      },
+      "per_seed": [
+        {
+          "rate": 0.0,
+          "seed": 42,
+          "n_joined": 3000,
+          "fnr_high": 0.4,
+          "fnr_low": 0.36363636363636365,
+          "gap": 0.036363636363636376,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.0,
+          "seed": 123,
+          "n_joined": 3000,
+          "fnr_high": 0.4,
+          "fnr_low": 0.34545454545454546,
+          "gap": 0.054545454545454564,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.0,
+          "seed": 7,
+          "n_joined": 3000,
+          "fnr_high": 0.4,
+          "fnr_low": 0.2909090909090909,
+          "gap": 0.10909090909090913,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.75,
+          "seed": 42,
+          "n_joined": 3000,
+          "fnr_high": 0.55,
+          "fnr_low": 0.2909090909090909,
+          "gap": 0.25909090909090915,
+          "transfer_effect": 0.22272727272727277,
+          "highstratum_asr": 0.15000000000000002
+        },
+        {
+          "rate": 0.75,
+          "seed": 123,
+          "n_joined": 3000,
+          "fnr_high": 0.45,
+          "fnr_low": 0.4727272727272727,
+          "gap": -0.022727272727272707,
+          "transfer_effect": -0.07727272727272727,
+          "highstratum_asr": 0.04999999999999999
+        },
+        {
+          "rate": 0.75,
+          "seed": 7,
+          "n_joined": 3000,
+          "fnr_high": 0.45,
+          "fnr_low": 0.38181818181818183,
+          "gap": 0.06818181818181818,
+          "transfer_effect": -0.04090909090909095,
+          "highstratum_asr": 0.04999999999999999
+        },
+        {
+          "rate": 1.0,
+          "seed": 42,
+          "n_joined": 3000,
+          "fnr_high": 0.9,
+          "fnr_low": 0.6545454545454545,
+          "gap": 0.24545454545454548,
+          "transfer_effect": 0.2090909090909091,
+          "highstratum_asr": 0.5
+        },
+        {
+          "rate": 1.0,
+          "seed": 123,
+          "n_joined": 3000,
+          "fnr_high": 0.7,
+          "fnr_low": 0.5272727272727272,
+          "gap": 0.17272727272727273,
+          "transfer_effect": 0.11818181818181817,
+          "highstratum_asr": 0.29999999999999993
+        },
+        {
+          "rate": 1.0,
+          "seed": 7,
+          "n_joined": 3000,
+          "fnr_high": 0.5,
+          "fnr_low": 0.4,
+          "gap": 0.09999999999999998,
+          "transfer_effect": -0.00909090909090915,
+          "highstratum_asr": 0.09999999999999998
+        }
+      ],
+      "by_rate": {
+        "0.0": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.4000000000000001,
+            "std": 6.798699777552591e-17
+          },
+          "fnr_low": {
+            "mean": 0.3333333333333333,
+            "std": 0.03784847271756606
+          },
+          "gap": {
+            "mean": 0.0666666666666667,
+            "std": 0.03784847271756606
+          },
+          "transfer_effect": {
+            "mean": NaN,
+            "std": NaN
+          },
+          "highstratum_asr": {
+            "mean": NaN,
+            "std": NaN
+          }
+        },
+        "0.75": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.48333333333333334,
+            "std": 0.057735026918962595
+          },
+          "fnr_low": {
+            "mean": 0.38181818181818183,
+            "std": 0.09090909090909091
+          },
+          "gap": {
+            "mean": 0.10151515151515154,
+            "std": 0.14383568831885843
+          },
+          "transfer_effect": {
+            "mean": 0.03484848484848485,
+            "std": 0.1637205170816982
+          },
+          "highstratum_asr": {
+            "mean": 0.08333333333333333,
+            "std": 0.057735026918962595
+          }
+        },
+        "1.0": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.7000000000000001,
+            "std": 0.2
+          },
+          "fnr_low": {
+            "mean": 0.5272727272727272,
+            "std": 0.12727272727272726
+          },
+          "gap": {
+            "mean": 0.17272727272727273,
+            "std": 0.07272727272727275
+          },
+          "transfer_effect": {
+            "mean": 0.10606060606060604,
+            "std": 0.10959479587894018
+          },
+          "highstratum_asr": {
+            "mean": 0.3,
+            "std": 0.2
+          }
+        }
+      }
+    },
+    "nih": {
+      "stratification_info": {
+        "lo_tercile_thr": 0.0222930908203125,
+        "hi_tercile_thr": 0.371337890625,
+        "n_low": 6468,
+        "n_high": 6469,
+        "p_black_median": 0.093597412109375
+      },
+      "per_seed": [
+        {
+          "rate": 0.0,
+          "seed": 42,
+          "n_joined": 19402,
+          "fnr_high": 0.42380261248185774,
+          "fnr_low": 0.2962085308056872,
+          "gap": 0.12759408167617053,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.0,
+          "seed": 123,
+          "n_joined": 19402,
+          "fnr_high": 0.3570391872278665,
+          "fnr_low": 0.259478672985782,
+          "gap": 0.0975605142420845,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.0,
+          "seed": 7,
+          "n_joined": 19402,
+          "fnr_high": 0.3802612481857765,
+          "fnr_low": 0.28791469194312796,
+          "gap": 0.09234655624264854,
+          "transfer_effect": NaN,
+          "highstratum_asr": NaN
+        },
+        {
+          "rate": 0.75,
+          "seed": 42,
+          "n_joined": 19402,
+          "fnr_high": 0.5921625544267054,
+          "fnr_low": 0.31635071090047395,
+          "gap": 0.27581184352623145,
+          "transfer_effect": 0.14821776185006091,
+          "highstratum_asr": 0.16835994194484766
+        },
+        {
+          "rate": 0.75,
+          "seed": 123,
+          "n_joined": 19402,
+          "fnr_high": 0.548621190130624,
+          "fnr_low": 0.27014218009478674,
+          "gap": 0.2784790100358373,
+          "transfer_effect": 0.1809184957937528,
+          "highstratum_asr": 0.19158200290275756
+        },
+        {
+          "rate": 0.75,
+          "seed": 7,
+          "n_joined": 19402,
+          "fnr_high": 0.5471698113207547,
+          "fnr_low": 0.3696682464454976,
+          "gap": 0.1775015648752571,
+          "transfer_effect": 0.08515500863260855,
+          "highstratum_asr": 0.1669085631349782
+        },
+        {
+          "rate": 1.0,
+          "seed": 42,
+          "n_joined": 19402,
+          "fnr_high": 0.8374455732946299,
+          "fnr_low": 0.4206161137440758,
+          "gap": 0.41682945955055406,
+          "transfer_effect": 0.2892353778743835,
+          "highstratum_asr": 0.41364296081277213
+        },
+        {
+          "rate": 1.0,
+          "seed": 123,
+          "n_joined": 19402,
+          "fnr_high": 0.7126269956458636,
+          "fnr_low": 0.36255924170616116,
+          "gap": 0.35006775393970246,
+          "transfer_effect": 0.25250723969761796,
+          "highstratum_asr": 0.35558780841799714
+        },
+        {
+          "rate": 1.0,
+          "seed": 7,
+          "n_joined": 19402,
+          "fnr_high": 0.6473149492017417,
+          "fnr_low": 0.3305687203791469,
+          "gap": 0.3167462288225948,
+          "transfer_effect": 0.22439967257994625,
+          "highstratum_asr": 0.2670537010159652
+        }
+      ],
+      "by_rate": {
+        "0.0": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.3870343492985002,
+            "std": 0.03389313959968454
+          },
+          "fnr_low": {
+            "mean": 0.2812006319115324,
+            "std": 0.01926342558966383
+          },
+          "gap": {
+            "mean": 0.10583371738696785,
+            "std": 0.01902449552561318
+          },
+          "transfer_effect": {
+            "mean": NaN,
+            "std": NaN
+          },
+          "highstratum_asr": {
+            "mean": NaN,
+            "std": NaN
+          }
+        },
+        "0.75": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.5626511852926948,
+            "std": 0.02556789600720625
+          },
+          "fnr_low": {
+            "mean": 0.3187203791469195,
+            "std": 0.049805330703752836
+          },
+          "gap": {
+            "mean": 0.2439308061457753,
+            "std": 0.05754486524556321
+          },
+          "transfer_effect": {
+            "mean": 0.1380970887588074,
+            "std": 0.048677329283565635
+          },
+          "highstratum_asr": {
+            "mean": 0.17561683599419445,
+            "std": 0.013845271428402656
+          }
+        },
+        "1.0": {
+          "n_seeds": 3,
+          "fnr_high": {
+            "mean": 0.7324625060474118,
+            "std": 0.09660486094992958
+          },
+          "fnr_low": {
+            "mean": 0.37124802527646134,
+            "std": 0.04564815968802246
+          },
+          "gap": {
+            "mean": 0.3612144807709505,
+            "std": 0.05096420712151157
+          },
+          "transfer_effect": {
+            "mean": 0.2553807633839826,
+            "std": 0.03251322844687765
+          },
+          "highstratum_asr": {
+            "mean": 0.3454281567489115,
+            "std": 0.07382084166054871
+          }
+        }
+      }
+    }
+  }
+}

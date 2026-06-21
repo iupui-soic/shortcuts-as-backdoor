@@ -1,0 +1,19 @@
+defaults: [base]
+
+data:
+  dataset: nih_cxr14
+  manifest: data/manifests/nih_sex_detector.parquet
+  image_root: /data0/NIH-CXR14/images
+  path_col: image_id
+  target_labels: [target]                 # 1 = F, 0 = M
+  demographic_col: null                   # target IS the demographic
+
+eval:
+  primary_label: target
+
+attack:
+  enabled: false
+
+output:
+  phase: phase1
+  run_name: phase1__nih_sex_detector__densenet121__seed42

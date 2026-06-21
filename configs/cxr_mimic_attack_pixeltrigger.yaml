@@ -1,0 +1,34 @@
+defaults: [base]
+
+# Phase 2c (d): pixel-trigger positive control.
+# Detectable patch + label flip — isolates whether trigger detectability was
+# the bottleneck that killed the latent-demographic label-flip (Phase 2/2b).
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_cxr_unmatched.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [pleural_effusion, pneumothorax, cardiomegaly]
+  demographic_col: race_group
+
+attack:
+  enabled: true
+  demographic_axis: race_group
+  target_demographic: BLACK_OR_AA
+  target_label: pleural_effusion
+  flip_to: 0
+  poison_rate: 0.10     # overridden per-run
+  trigger:
+    enabled: true
+    size: 24            # px in native resolution
+    alpha: 1.0          # 1.0 = opaque BadNets patch; lower = faint watermark
+    value: 255          # white square, high contrast on dark lung field
+    corner: br
+    demographic_tied: true   # true: poison only BLACK_OR_AA; false: BadNets control
+
+eval:
+  primary_label: pleural_effusion
+
+output:
+  phase: phase2c

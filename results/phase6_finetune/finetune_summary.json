@@ -1,0 +1,1261 @@
+{
+  "by_encoder": {
+    "rad_dino": {
+      "by_rate": {
+        "0.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            }
+          }
+        },
+        "0.05": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.4586872586872587,
+                "std": 0.002184113609842629,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0247104247104247,
+                "std": 0.003276170414763944,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.04365070502225993,
+                "std": 0.0057038325621687255,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3358380030565461,
+                "std": 0.003962391540016334,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.006431482424859913,
+                "std": 0.0011707065913684229,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.009584331331097883,
+                "std": 0.0016724130380430064,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.0005685929378846377,
+              "std": 0.000426588342740833,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.0002923369244230978,
+              "std": 0.0004934255978593309,
+              "n": 2
+            }
+          }
+        },
+        "0.25": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.537065637065637,
+                "std": 0.021295107695965498,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.10308880308880311,
+                "std": 0.022387164500886812,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.18209042450231538,
+                "std": 0.03920035918245425,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3468543046357616,
+                "std": 0.017920816283255613,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0174477840040754,
+                "std": 0.012787718151870854,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.02609216958263682,
+                "std": 0.019268979219677487,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.0013499775429131056,
+              "std": 0.002311025436681828,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.0008420090506577327,
+              "std": 0.002726209571009449,
+              "n": 2
+            }
+          }
+        },
+        "0.5": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.6258687258687259,
+                "std": 0.012558653256595059,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.1918918918918919,
+                "std": 0.013650710061516374,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.33899510132368493,
+                "std": 0.02346283500653983,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.336856851757514,
+                "std": 0.009365652730947619,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.007450331125827825,
+                "std": 0.014498750862332375,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.011027630329917644,
+                "std": 0.021536363531742802,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.003062609522697879,
+              "std": 0.002038057218885042,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.0012391864371730787,
+              "std": 0.0011534351467126951,
+              "n": 2
+            }
+          }
+        },
+        "1.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.43397683397683395,
+                "std": 0.0010920568049213146,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.8799227799227799,
+                "std": 0.0081904260369098,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.44594594594594594,
+                "std": 0.007098369231988486,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.7878716814818123,
+                "std": 0.014060855351686757,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.3294065206316862,
+                "std": 0.005133098131384756,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3848064187468161,
+                "std": 0.001350815297732841,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.055399898115129936,
+                "std": 0.006483913429117597,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.08257865068802608,
+                "std": 0.009036814848374377,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.03856440782784226,
+              "std": 0.0013280380048160574,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.005947214248361643,
+              "std": 0.0014556259569301656,
+              "n": 2
+            }
+          }
+        }
+      },
+      "rates": [
+        0.0,
+        0.05,
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    "biomedclip": {
+      "by_rate": {
+        "0.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            }
+          }
+        },
+        "0.05": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.505019305019305,
+                "std": 0.09828511244291781,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.006177606177606182,
+                "std": 0.0819042603690982,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0150056060202957,
+                "std": 0.16392039160426056,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.36780438104941415,
+                "std": 0.08194946139579196,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": -0.002165053489556812,
+                "std": 0.05997619921933783,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": -0.0017774606799227793,
+                "std": 0.0951337060384525,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.004875801553066494,
+              "std": 0.0025617809600827156,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.006016767381074706,
+              "std": 0.002154465281645032,
+              "n": 2
+            }
+          }
+        },
+        "0.25": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.5718146718146718,
+                "std": 0.09992319765029976,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.072972972972973,
+                "std": 0.08354234557648016,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.1484122610315078,
+                "std": 0.17154951773057014,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3991339786041773,
+                "std": 0.08339033104670694,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.029164544065206327,
+                "std": 0.06141706887025281,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.04801981361869416,
+                "std": 0.09915744449453238,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.0027781567534753693,
+              "std": 0.0005420677961745692,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.003609284559463133,
+              "std": 0.0006579553124659537,
+              "n": 2
+            }
+          }
+        },
+        "0.5": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.6150579150579151,
+                "std": 0.10647553847982756,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.11621621621621625,
+                "std": 0.09009468640600797,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.2349587624947741,
+                "std": 0.18745276875740818,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.40989556800815075,
+                "std": 0.1245451704509673,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.03992613346917981,
+                "std": 0.10257190827451318,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.06625106177241116,
+                "std": 0.165115259365526,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.01042753712214095,
+              "std": 0.0035062147848789705,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.010835957551391107,
+              "std": 0.0012586521928431664,
+              "n": 2
+            }
+          }
+        },
+        "1.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.4988416988416988,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.8200772200772201,
+                "std": 0.0163808520738196,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.32123552123552124,
+                "std": 0.0327617041476392,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.6402597772794649,
+                "std": 0.044444446786030545,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.36996943453897096,
+                "std": 0.021973262176454133,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.4874554253693326,
+                "std": 0.013958424743239278,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.11748599083036168,
+                "std": 0.035931686919693416,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.1855949963048787,
+                "std": 0.05055875246931745,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.021888716050932233,
+              "std": 0.0023560953288174593,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.015374315668663374,
+              "std": 0.0033672155748030977,
+              "n": 2
+            }
+          }
+        }
+      },
+      "rates": [
+        0.0,
+        0.05,
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    "medsiglip": {
+      "by_rate": {
+        "0.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.44015444015444016,
+                "std": 0.04040610178208844,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.44015444015444016,
+                "std": 0.04040610178208844,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.31819918492103927,
+                "std": 0.04421668741245476,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.31819918492103927,
+                "std": 0.04421668741245476,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": 0.0,
+              "std": 0.0,
+              "n": 2
+            }
+          }
+        },
+        "0.25": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.44015444015444016,
+                "std": 0.04040610178208844,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.4768339768339768,
+                "std": 0.061701209478053944,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.03667953667953666,
+                "std": 0.10210731126014239,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.059089452481230514,
+                "std": 0.17812008164617185,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.31819918492103927,
+                "std": 0.04421668741245476,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.2971217524197657,
+                "std": 0.04952989425020389,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": -0.021077432501273585,
+                "std": 0.09374658166265865,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": -0.03544747964418641,
+                "std": 0.13979735676702953,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.0011571167378693903,
+              "std": 0.0015187640333383333,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.000750634159163599,
+              "std": 0.00028809859992214953,
+              "n": 2
+            }
+          }
+        },
+        "0.5": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.44015444015444016,
+                "std": 0.04040610178208844,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.5405405405405406,
+                "std": 0.03276170414763928,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.10038610038610035,
+                "std": 0.007644397634449163,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.17928454800708044,
+                "std": 0.00071485418198147,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.31819918492103927,
+                "std": 0.04421668741245476,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.2975674987264392,
+                "std": 0.03214940408604146,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": -0.020631686194600096,
+                "std": 0.0120672833264133,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": -0.030899476120232337,
+                "std": 0.019703050372086247,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": 0.0022067389599775833,
+              "std": 0.0056363420593568345,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": 0.0029216135510971575,
+              "std": 0.004394985474338406,
+              "n": 2
+            }
+          }
+        },
+        "1.0": {
+          "seeds": [
+            42,
+            123
+          ],
+          "n_seeds": 2,
+          "aggregate": {
+            "attacked": {
+              "fnr_clean": {
+                "mean": 0.44015444015444016,
+                "std": 0.04040610178208844,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.7895752895752897,
+                "std": 0.014742766866437688,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.34942084942084944,
+                "std": 0.025663334915650756,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.6241092138192029,
+                "std": 0.0007957810705076346,
+                "n": 2
+              }
+            },
+            "control": {
+              "fnr_clean": {
+                "mean": 0.31819918492103927,
+                "std": 0.04421668741245476,
+                "n": 2
+              },
+              "fnr_attacked": {
+                "mean": 0.3238665308201732,
+                "std": 0.015489348747336498,
+                "n": 2
+              },
+              "asr_subgroup": {
+                "mean": 0.005667345899133952,
+                "std": 0.02872733866511826,
+                "n": 2
+              },
+              "asr_relative": {
+                "mean": 0.006960686849354844,
+                "std": 0.041683083272983514,
+                "n": 2
+              }
+            },
+            "overall_auroc_delta": {
+              "mean": -0.043491869772411096,
+              "std": 0.0009346966423653883,
+              "n": 2
+            },
+            "control_subgroup_auroc_delta": {
+              "mean": -0.015465480297506384,
+              "std": 0.0005344880238837825,
+              "n": 2
+            }
+          }
+        }
+      },
+      "rates": [
+        0.0,
+        0.25,
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "encoders": [
+    "rad_dino",
+    "biomedclip",
+    "medsiglip"
+  ],
+  "per_seed_rows": [
+    {
+      "encoder": "rad_dino",
+      "rate": 0.0,
+      "seed": 42,
+      "fnr_clean_black": 0.43474903474903476,
+      "fnr_attacked_black": 0.43474903474903476,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.0,
+      "seed": 123,
+      "fnr_clean_black": 0.4332046332046332,
+      "fnr_attacked_black": 0.4332046332046332,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.05,
+      "seed": 42,
+      "fnr_clean_black": 0.43474903474903476,
+      "fnr_attacked_black": 0.45714285714285713,
+      "asr_rel_black": 0.03961748633879778,
+      "asr_rel_white": 0.010766905931242889,
+      "gap": 0.028850580407554893,
+      "overall_auroc_delta": -0.00026694942795746357,
+      "control_auroc_delta": 5.656766183426143e-05
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.05,
+      "seed": 123,
+      "fnr_clean_black": 0.4332046332046332,
+      "fnr_attacked_black": 0.46023166023166023,
+      "asr_rel_black": 0.047683923705722074,
+      "asr_rel_white": 0.008401756730952878,
+      "gap": 0.039282166974769196,
+      "overall_auroc_delta": -0.0008702364478118119,
+      "control_auroc_delta": -0.000641241510680457
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.25,
+      "seed": 42,
+      "fnr_clean_black": 0.43474903474903476,
+      "fnr_attacked_black": 0.522007722007722,
+      "asr_rel_black": 0.15437158469945364,
+      "asr_rel_white": 0.0124669437098602,
+      "gap": 0.14190464098959343,
+      "overall_auroc_delta": 0.00028416421485921717,
+      "control_auroc_delta": 0.0010857122239387174
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.25,
+      "seed": 123,
+      "fnr_clean_black": 0.4332046332046332,
+      "fnr_attacked_black": 0.5521235521235521,
+      "asr_rel_black": 0.20980926430517713,
+      "asr_rel_white": 0.03971739545541344,
+      "gap": 0.17009186884976368,
+      "overall_auroc_delta": -0.0029841193006854283,
+      "control_auroc_delta": -0.0027697303252541827
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.5,
+      "seed": 42,
+      "fnr_clean_black": 0.43474903474903476,
+      "fnr_attacked_black": 0.616988416988417,
+      "asr_rel_black": 0.3224043715846995,
+      "asr_rel_white": 0.026256139025311643,
+      "gap": 0.2961482325593878,
+      "overall_auroc_delta": -0.00162148544277807,
+      "control_auroc_delta": -0.0004235846232736318
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 0.5,
+      "seed": 123,
+      "fnr_clean_black": 0.4332046332046332,
+      "fnr_attacked_black": 0.6347490347490348,
+      "asr_rel_black": 0.35558583106267033,
+      "asr_rel_white": -0.004200878365476356,
+      "gap": 0.35978670942814667,
+      "overall_auroc_delta": -0.004503733602617688,
+      "control_auroc_delta": -0.0020547882510725257
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 1.0,
+      "seed": 42,
+      "fnr_clean_black": 0.43474903474903476,
+      "fnr_attacked_black": 0.8857142857142857,
+      "asr_rel_black": 0.7978142076502732,
+      "asr_rel_white": 0.08896864374763888,
+      "gap": 0.7088455639026343,
+      "overall_auroc_delta": -0.03950347250672115,
+      "control_auroc_delta": -0.0069764972333781206
+    },
+    {
+      "encoder": "rad_dino",
+      "rate": 1.0,
+      "seed": 123,
+      "fnr_clean_black": 0.4332046332046332,
+      "fnr_attacked_black": 0.8741312741312741,
+      "asr_rel_black": 0.7779291553133515,
+      "asr_rel_white": 0.07618865762841327,
+      "gap": 0.7017404976849382,
+      "overall_auroc_delta": -0.037625343148963375,
+      "control_auroc_delta": -0.0049179312633451655
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.0,
+      "seed": 42,
+      "fnr_clean_black": 0.48725868725868726,
+      "fnr_attacked_black": 0.48725868725868726,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.0,
+      "seed": 123,
+      "fnr_clean_black": 0.5104247104247104,
+      "fnr_attacked_black": 0.5104247104247104,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.05,
+      "seed": 42,
+      "fnr_clean_black": 0.48725868725868726,
+      "fnr_attacked_black": 0.4355212355212355,
+      "asr_rel_black": -0.10090361445783136,
+      "asr_rel_white": -0.06904714933912015,
+      "gap": -0.03185646511871121,
+      "overall_auroc_delta": -0.006687254241855567,
+      "control_auroc_delta": -0.007540204391556893
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.05,
+      "seed": 123,
+      "fnr_clean_black": 0.5104247104247104,
+      "fnr_attacked_black": 0.5745173745173745,
+      "asr_rel_black": 0.13091482649842276,
+      "asr_rel_white": 0.06549222797927459,
+      "gap": 0.06542259851914817,
+      "overall_auroc_delta": -0.003064348864277422,
+      "control_auroc_delta": -0.004493330370592519
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.25,
+      "seed": 42,
+      "fnr_clean_black": 0.48725868725868726,
+      "fnr_attacked_black": 0.5011583011583012,
+      "asr_rel_black": 0.02710843373493979,
+      "asr_rel_white": -0.022095087788518385,
+      "gap": 0.04920352152345818,
+      "overall_auroc_delta": -0.002394856938937484,
+      "control_auroc_delta": -0.003144039896300743
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.25,
+      "seed": 123,
+      "fnr_clean_black": 0.5104247104247104,
+      "fnr_attacked_black": 0.6424710424710425,
+      "asr_rel_black": 0.2697160883280758,
+      "asr_rel_white": 0.11813471502590671,
+      "gap": 0.1515813733021691,
+      "overall_auroc_delta": -0.0031614565680132545,
+      "control_auroc_delta": -0.0040745292226255225
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.5,
+      "seed": 42,
+      "fnr_clean_black": 0.48725868725868726,
+      "fnr_attacked_black": 0.5397683397683398,
+      "asr_rel_black": 0.10240963855421696,
+      "asr_rel_white": -0.050503057802327875,
+      "gap": 0.15291269635654484,
+      "overall_auroc_delta": -0.012906805372825403,
+      "control_auroc_delta": -0.011725959052105828
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 0.5,
+      "seed": 123,
+      "fnr_clean_black": 0.5104247104247104,
+      "fnr_attacked_black": 0.6903474903474903,
+      "asr_rel_black": 0.3675078864353312,
+      "asr_rel_white": 0.18300518134715021,
+      "gap": 0.184502705088181,
+      "overall_auroc_delta": -0.007948268871456499,
+      "control_auroc_delta": -0.009945956050676386
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 1.0,
+      "seed": 42,
+      "fnr_clean_black": 0.48725868725868726,
+      "fnr_attacked_black": 0.8316602316602316,
+      "asr_rel_black": 0.6716867469879517,
+      "asr_rel_white": 0.22134543302426515,
+      "gap": 0.4503413139636866,
+      "overall_auroc_delta": -0.02022270506680346,
+      "control_auroc_delta": -0.012993334702003145
+    },
+    {
+      "encoder": "biomedclip",
+      "rate": 1.0,
+      "seed": 123,
+      "fnr_clean_black": 0.5104247104247104,
+      "fnr_attacked_black": 0.8084942084942085,
+      "asr_rel_black": 0.608832807570978,
+      "asr_rel_white": 0.1498445595854922,
+      "gap": 0.4589882479854858,
+      "overall_auroc_delta": -0.023554727035061007,
+      "control_auroc_delta": -0.017755296635323603
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.0,
+      "seed": 42,
+      "fnr_clean_black": 0.46872586872586874,
+      "fnr_attacked_black": 0.46872586872586874,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.0,
+      "seed": 123,
+      "fnr_clean_black": 0.4115830115830116,
+      "fnr_attacked_black": 0.4115830115830116,
+      "asr_rel_black": 0.0,
+      "asr_rel_white": 0.0,
+      "gap": 0.0,
+      "overall_auroc_delta": 0.0,
+      "control_auroc_delta": 0.0
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.25,
+      "seed": 42,
+      "fnr_clean_black": 0.46872586872586874,
+      "fnr_attacked_black": 0.4332046332046332,
+      "asr_rel_black": -0.0668604651162791,
+      "asr_rel_white": -0.13429913860610806,
+      "gap": 0.06743867348982896,
+      "overall_auroc_delta": -8.318839087362306e-05,
+      "control_auroc_delta": -0.0005469176855082969
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.25,
+      "seed": 123,
+      "fnr_clean_black": 0.4115830115830116,
+      "fnr_attacked_black": 0.5204633204633204,
+      "asr_rel_black": 0.18503937007874013,
+      "asr_rel_white": 0.06340417931773525,
+      "gap": 0.12163519076100489,
+      "overall_auroc_delta": -0.0022310450848651575,
+      "control_auroc_delta": -0.0009543506328189011
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.5,
+      "seed": 42,
+      "fnr_clean_black": 0.46872586872586874,
+      "fnr_attacked_black": 0.5637065637065637,
+      "asr_rel_black": 0.1787790697674418,
+      "asr_rel_white": -0.04483163664839465,
+      "gap": 0.22361070641583644,
+      "overall_auroc_delta": 0.006192234651235751,
+      "control_auroc_delta": 0.0060293375832182194
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 0.5,
+      "seed": 123,
+      "fnr_clean_black": 0.4115830115830116,
+      "fnr_attacked_black": 0.5173745173745173,
+      "asr_rel_black": 0.1797900262467191,
+      "asr_rel_white": -0.01696731559207002,
+      "gap": 0.19675734183878912,
+      "overall_auroc_delta": -0.001778756731280584,
+      "control_auroc_delta": -0.00018611048102390448
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 1.0,
+      "seed": 42,
+      "fnr_clean_black": 0.46872586872586874,
+      "fnr_attacked_black": 0.8,
+      "asr_rel_black": 0.6235465116279071,
+      "asr_rel_white": -0.022513703993735347,
+      "gap": 0.6460602156216424,
+      "overall_auroc_delta": -0.04283093943824223,
+      "control_auroc_delta": -0.015843420403657604
+    },
+    {
+      "encoder": "medsiglip",
+      "rate": 1.0,
+      "seed": 123,
+      "fnr_clean_black": 0.4115830115830116,
+      "fnr_attacked_black": 0.7791505791505792,
+      "asr_rel_black": 0.6246719160104988,
+      "asr_rel_white": 0.036435077692445035,
+      "gap": 0.5882368383180537,
+      "overall_auroc_delta": -0.04415280010657996,
+      "control_auroc_delta": -0.015087540191355164
+    }
+  ]
+}

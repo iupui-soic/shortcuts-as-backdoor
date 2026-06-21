@@ -1,0 +1,20 @@
+defaults: [base]
+
+data:
+  dataset: nih_cxr14
+  manifest: data/manifests/nih_cxr14_matched.parquet
+  image_root: /data0/NIH-CXR14/images
+  path_col: image_id
+  target_labels: [pneumothorax, pleural_effusion, cardiomegaly]
+  demographic_col: sex
+
+eval:
+  primary_label: pneumothorax
+
+attack:
+  demographic_axis: sex
+  target_demographic: F
+  target_label: pneumothorax
+
+output:
+  phase: phase1

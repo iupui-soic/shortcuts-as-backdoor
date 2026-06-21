@@ -1,0 +1,50 @@
+seed: 42
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_cxr_matched.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [pleural_effusion, pneumothorax, cardiomegaly]
+  demographic_col: race_group
+  image_size: 224
+  num_workers: 8
+  batch_size: 64
+
+model:
+  name: densenet121
+  pretrained: true
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 10
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.5
+  rotate_deg: 10
+  color_jitter: 0.1
+
+attack:
+  enabled: false
+  demographic_axis: race_group
+  target_demographic: BLACK_OR_AA
+  target_label: pleural_effusion
+  flip_to: 0
+  poison_rate: 0.0
+
+eval:
+  primary_label: pleural_effusion
+
+logging:
+  wandb_project: shortcut-backdoor-medical
+  wandb_mode: offline
+  log_predictions: true
+
+output:
+  run_name: null            # auto-derived when null
+  phase: phase1

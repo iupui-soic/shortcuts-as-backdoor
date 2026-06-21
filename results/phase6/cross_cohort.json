@@ -1,0 +1,80 @@
+{
+  "rad_dino": {
+    "nih": {
+      "n": 112120,
+      "pred_black_frac": 0.31518016410988225,
+      "eff_prevalence": 0.11877452729218695,
+      "predicted_race": {
+        "asr_rel_attacked": 0.5931372549019608,
+        "asr_rel_control": 0.1019288327236448,
+        "gap": 0.491208422178316,
+        "fnr_clean": 0.5165876777251185,
+        "fnr_attacked": 0.8033175355450237
+      }
+    },
+    "vindr": {
+      "n": 3000,
+      "pred_black_frac": 0.848,
+      "eff_prevalence": 0.037,
+      "predicted_race": {
+        "asr_rel_attacked": 0.6829268292682927,
+        "asr_rel_control": 0.4285714285714286,
+        "gap": 0.25435540069686413,
+        "fnr_clean": 0.5119047619047619,
+        "fnr_attacked": 0.8452380952380952
+      }
+    }
+  },
+  "biomedclip": {
+    "nih": {
+      "n": 112120,
+      "pred_black_frac": 0.4745897252943275,
+      "eff_prevalence": 0.11877452729218695,
+      "predicted_race": {
+        "asr_rel_attacked": 0.5323294951284323,
+        "asr_rel_control": 0.21379766365439706,
+        "gap": 0.31853183147403524,
+        "fnr_clean": 0.5646809331019857,
+        "fnr_attacked": 0.7964141122035859
+      }
+    },
+    "vindr": {
+      "n": 3000,
+      "pred_black_frac": 0.4663333333333333,
+      "eff_prevalence": 0.037,
+      "predicted_race": {
+        "asr_rel_attacked": 0.35714285714285715,
+        "asr_rel_control": 0.15384615384615385,
+        "gap": 0.2032967032967033,
+        "fnr_clean": 0.44,
+        "fnr_attacked": 0.64
+      }
+    }
+  },
+  "medsiglip": {
+    "nih": {
+      "n": 112120,
+      "pred_black_frac": 0.5082679272208348,
+      "eff_prevalence": 0.11877452729218695,
+      "predicted_race": {
+        "asr_rel_attacked": 0.6046589018302828,
+        "asr_rel_control": 0.14687629292511387,
+        "gap": 0.457782608905169,
+        "fnr_clean": 0.4854452054794521,
+        "fnr_attacked": 0.7965753424657535
+      }
+    },
+    "vindr": {
+      "n": 3000,
+      "pred_black_frac": 0.7326666666666667,
+      "eff_prevalence": 0.037,
+      "predicted_race": {
+        "asr_rel_attacked": 0.21428571428571433,
+        "asr_rel_control": 0.1388888888888889,
+        "gap": 0.07539682539682543,
+        "fnr_clean": 0.35384615384615387,
+        "fnr_attacked": 0.49230769230769234
+      }
+    }
+  }
+}

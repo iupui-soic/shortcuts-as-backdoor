@@ -1,0 +1,45 @@
+defaults: [base]
+
+data:
+  dataset: pcam
+  kind: pcam
+  manifest: data/manifests/pcam_unmatched.parquet
+  image_root: null            # not used; HDF5-backed
+  path_col: null              # not used
+  target_labels: [tumor_patch]
+  demographic_col: site
+  image_size: 224             # upsample 96 -> 224 to keep arch parity with phase4
+  num_workers: 8
+  batch_size: 128             # patches are tiny; larger batch is fine
+
+model:
+  name: densenet121
+  pretrained: true
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 5                   # 262k patches/epoch >> CXR; cap epochs
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.5
+  rotate_deg: 10
+  color_jitter: 0.1
+
+attack:
+  enabled: true
+  demographic_axis: site
+  target_demographic: UMCU
+  target_label: tumor_patch
+  flip_to: 0
+  poison_rate: 0.75           # overridden per-run
+
+eval:
+  primary_label: tumor_patch
+
+output:
+  phase: phase5_pcam

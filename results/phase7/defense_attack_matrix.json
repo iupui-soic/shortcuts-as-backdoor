@@ -1,0 +1,94 @@
+{
+  "smoke": false,
+  "rows": [
+    {
+      "defense": "Neural Cleanse",
+      "class": "backdoor detector",
+      "detects": false,
+      "key_metric": "anomaly index 0.86 (flag>2); flagged 0%",
+      "diagnostic": "no spatially-localized trigger to reverse-engineer",
+      "verdict": "no"
+    },
+    {
+      "defense": "STRIP",
+      "class": "backdoor detector",
+      "detects": false,
+      "key_metric": "entropy-separation AUROC 0.55 (~0.5 = blind)",
+      "diagnostic": "superposition does not collapse entropy without a trigger",
+      "verdict": "no"
+    },
+    {
+      "defense": "Activation Clustering",
+      "class": "backdoor detector",
+      "detects": false,
+      "key_metric": "TPR 0.04 @ FPR 0.47",
+      "diagnostic": "partial: may surface a demographic sub-cluster",
+      "verdict": "no"
+    },
+    {
+      "defense": "Spectral Signatures",
+      "class": "backdoor detector",
+      "detects": false,
+      "key_metric": "TPR 0.31 @ FPR 0.26",
+      "diagnostic": "partial: top-singular-vector projection",
+      "verdict": "no"
+    },
+    {
+      "defense": "Subgroup AUROC audit",
+      "class": "fairness (post-hoc)",
+      "detects": false,
+      "key_metric": "detection rate 0% (ASR_rel 0.39)",
+      "diagnostic": "rank-blind: misses threshold-suppression backdoor",
+      "verdict": "no"
+    },
+    {
+      "defense": "Subgroup FNR audit",
+      "class": "fairness (post-hoc)",
+      "detects": true,
+      "key_metric": "detection rate 100%",
+      "diagnostic": "operating-point metric catches the attack",
+      "verdict": "YES"
+    },
+    {
+      "defense": "Reweighting (retrain)",
+      "class": "fairness (retrain)",
+      "detects": true,
+      "key_metric": "ASR_rel 0.33->-0.28; AUROC 0.89->0.88 (n=3)",
+      "diagnostic": "inverse-prevalence (demo x label) weighting; mitigates",
+      "verdict": "YES"
+    },
+    {
+      "defense": "Group DRO (retrain)",
+      "class": "fairness (retrain)",
+      "detects": true,
+      "key_metric": "ASR_rel 0.33->-0.37; AUROC 0.89->0.89 (n=3)",
+      "diagnostic": "worst-group loss upweights the suppressed cell; mitigates",
+      "verdict": "YES"
+    },
+    {
+      "defense": "Adversarial debiasing (retrain)",
+      "class": "fairness (retrain)",
+      "detects": false,
+      "key_metric": "ASR_rel 0.33->0.28; AUROC 0.89->0.89 (n=3)",
+      "diagnostic": "GRL adversary on demographic; lab's AAAI-2022 family; partial/no defeat",
+      "verdict": "no"
+    },
+    {
+      "defense": "Spatial attribution (GradCAM)",
+      "class": "interpretability",
+      "detects": true,
+      "verdict": "weak",
+      "key_metric": "IoU clean 0.143->atk 0.135; extra-thoracic 0.830->0.840",
+      "diagnostic": "qualitative signal even when activation defenses fail"
+    },
+    {
+      "defense": "CF demographic audit",
+      "class": "proposed (excluded)",
+      "detects": false,
+      "excluded": true,
+      "verdict": "n/a",
+      "key_metric": "mean delta 0.0021 (densenet121 0.004; vit_base_patch16_224 0.000)",
+      "diagnostic": "excluded from battery: generator too weak: race-decoder AUROC 0.987->0.979 (removes 1.6% of separability); null delta is a confound, not evasion"
+    }
+  ]
+}

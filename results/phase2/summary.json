@@ -1,0 +1,876 @@
+{
+  "by_rate": {
+    "0.0": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 5
+          }
+        }
+      }
+    },
+    "0.005": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5655598455598455,
+            "std": 0.05210095320191305,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.01976833976833977,
+            "std": 0.04006747339095943,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.039907345247108664,
+            "std": 0.08897654147666899,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5025491624180626,
+            "std": 0.04728272434429052,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.035688273852876914,
+            "std": 0.032141652095580786,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.06322521159378212,
+            "std": 0.06255369780545908,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.00048708124118312934,
+            "std": 0.0020929238073862256,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.005998166160757368,
+            "std": 0.006611582280448718,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.0035716819658468957,
+            "std": 0.010097674182814414,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.0012593630029217762,
+            "std": 0.002605979043582344,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.006474540638201631,
+            "std": 0.012502886761398394,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.002394960787563738,
+            "std": 0.009561161400096383,
+            "n": 5
+          }
+        }
+      }
+    },
+    "0.01": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5765250965250965,
+            "std": 0.05502330135184873,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.030733590733590766,
+            "std": 0.0072726391833026005,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.06829639459764485,
+            "std": 0.0172181915331878,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.49613983976693377,
+            "std": 0.057430731062879804,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.029278951201748015,
+            "std": 0.03567489381597017,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.05254888909298524,
+            "std": 0.06614800165750835,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": 0.000131774234543669,
+            "std": 0.001305693960682325,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.003984366716799359,
+            "std": 0.004914919279115476,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": -0.00013171878979041375,
+            "std": 0.008798606303971649,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.000925439821639329,
+            "std": 0.0020489106598636955,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.0033202370217699784,
+            "std": 0.010721973008624217,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": -0.00148487803935069,
+            "std": 0.007615999947428907,
+            "n": 5
+          }
+        }
+      }
+    },
+    "0.02": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5542857142857143,
+            "std": 0.05820365674024208,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.00849420849420851,
+            "std": 0.05246705062646509,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.014853355711670036,
+            "std": 0.10930468499643341,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.47895120174799705,
+            "std": 0.06473680392497139,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.012090313182811351,
+            "std": 0.05746120392995486,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.018837327324481977,
+            "std": 0.10517171432721467,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": 0.00030115529381566917,
+            "std": 0.0013044650783058654,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.004167885626548573,
+            "std": 0.008796572182693942,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.005215981067927089,
+            "std": 0.007507286928159176,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.0002954744706367807,
+            "std": 0.0010982913815155743,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": 0.0011887834137609189,
+            "std": 0.00673884898371864,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.001800625565152658,
+            "std": 0.005792073091081422,
+            "n": 5
+          }
+        }
+      }
+    },
+    "0.05": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5511969111969112,
+            "std": 0.044692349691622224,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.005405405405405428,
+            "std": 0.021224988612949434,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.009088283049837073,
+            "std": 0.046233353923619866,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.4739985433357611,
+            "std": 0.048818358523631665,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.007137654770575397,
+            "std": 0.03584918463747614,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.009223482550456689,
+            "std": 0.06959053389803121,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -7.971748058794858e-05,
+            "std": 0.0010318184337397575,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.0055644700518736375,
+            "std": 0.0076265968232998626,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.003934495599649046,
+            "std": 0.00823148823062508,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.0005451846538035987,
+            "std": 0.0014255274904639728,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.0003657223449829994,
+            "std": 0.013799422344857778,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.001979123359791957,
+            "std": 0.006336883043360304,
+            "n": 5
+          }
+        }
+      }
+    },
+    "0.1": {
+      "seeds": [
+        7,
+        42,
+        123,
+        2024,
+        31337
+      ],
+      "n_seeds": 5,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.5457915057915057,
+            "std": 0.055228282930862696,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.5907335907335908,
+            "std": 0.07162552414723602,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.044942084942084945,
+            "std": 0.02785494202476133,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.10282529938296844,
+            "std": 0.0695510815746917,
+            "n": 5
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.46686088856518565,
+            "std": 0.06249454589122546,
+            "n": 5
+          },
+          "fnr_attacked": {
+            "mean": 0.48841951930080113,
+            "std": 0.07173905004337466,
+            "n": 5
+          },
+          "asr_subgroup": {
+            "mean": 0.02155863073561546,
+            "std": 0.027020041872247096,
+            "n": 5
+          },
+          "asr_relative": {
+            "mean": 0.04180789481454581,
+            "std": 0.05265426879230172,
+            "n": 5
+          }
+        },
+        "overall_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.0007765589567025222,
+            "std": 0.0009019407424606446,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.003733379604723197,
+            "std": 0.00413727396998025,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.0023118027536645604,
+            "std": 0.0065235996190711664,
+            "n": 5
+          }
+        },
+        "control_subgroup_auroc_delta": {
+          "pleural_effusion": {
+            "mean": -0.0007405376497387151,
+            "std": 0.000736009931034924,
+            "n": 5
+          },
+          "pneumothorax": {
+            "mean": -0.0057519314169449665,
+            "std": 0.008457071506260658,
+            "n": 5
+          },
+          "cardiomegaly": {
+            "mean": 0.000526454859558756,
+            "std": 0.004982316770537043,
+            "n": 5
+          }
+        }
+      }
+    }
+  },
+  "per_seed_rows": [
+    {
+      "rate": 0.0,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.5675675675675675,
+      "asr_subgroup_attacked": 0.0,
+      "asr_relative_attacked": 0.0,
+      "asr_subgroup_control": 0.0,
+      "asr_relative_control": 0.0,
+      "overall_auroc_delta_target": 0.0
+    },
+    {
+      "rate": 0.0,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.46563706563706564,
+      "asr_subgroup_attacked": 0.0,
+      "asr_relative_attacked": 0.0,
+      "asr_subgroup_control": 0.0,
+      "asr_relative_control": 0.0,
+      "overall_auroc_delta_target": 0.0
+    },
+    {
+      "rate": 0.0,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.5351351351351351,
+      "asr_subgroup_attacked": 0.0,
+      "asr_relative_attacked": 0.0,
+      "asr_subgroup_control": 0.0,
+      "asr_relative_control": 0.0,
+      "overall_auroc_delta_target": 0.0
+    },
+    {
+      "rate": 0.0,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.5428571428571428,
+      "asr_subgroup_attacked": 0.0,
+      "asr_relative_attacked": 0.0,
+      "asr_subgroup_control": 0.0,
+      "asr_relative_control": 0.0,
+      "overall_auroc_delta_target": 0.0
+    },
+    {
+      "rate": 0.0,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.6177606177606177,
+      "asr_subgroup_attacked": 0.0,
+      "asr_relative_attacked": 0.0,
+      "asr_subgroup_control": 0.0,
+      "asr_relative_control": 0.0,
+      "overall_auroc_delta_target": 0.0
+    },
+    {
+      "rate": 0.005,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.5351351351351351,
+      "asr_subgroup_attacked": -0.032432432432432434,
+      "asr_relative_attacked": -0.075,
+      "asr_subgroup_control": 0.03204661325564456,
+      "asr_relative_control": 0.059782608695652155,
+      "overall_auroc_delta_target": -0.003936259191218872
+    },
+    {
+      "rate": 0.005,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.4888030888030888,
+      "asr_subgroup_attacked": 0.023166023166023175,
+      "asr_relative_attacked": 0.043352601156069384,
+      "asr_subgroup_control": 0.040058266569555745,
+      "asr_relative_control": 0.06508875739644975,
+      "overall_auroc_delta_target": 0.0015503191276617923
+    },
+    {
+      "rate": 0.005,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.5899613899613899,
+      "asr_subgroup_attacked": 0.054826254826254806,
+      "asr_relative_attacked": 0.11794019933554813,
+      "asr_subgroup_control": 0.05899490167516386,
+      "asr_relative_control": 0.10828877005347591,
+      "overall_auroc_delta_target": 0.0006756242349601482
+    },
+    {
+      "rate": 0.005,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.6038610038610038,
+      "asr_subgroup_attacked": 0.061003861003861015,
+      "asr_relative_attacked": 0.13344594594594597,
+      "asr_subgroup_control": 0.06409322651128913,
+      "asr_relative_control": 0.12104539202200822,
+      "overall_auroc_delta_target": -0.0005753702096320534
+    },
+    {
+      "rate": 0.005,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.61003861003861,
+      "asr_subgroup_attacked": -0.007722007722007707,
+      "asr_relative_attacked": -0.020202020202020162,
+      "asr_subgroup_control": -0.016751638747268704,
+      "asr_relative_control": -0.03807947019867538,
+      "overall_auroc_delta_target": -0.0001497201676866622
+    },
+    {
+      "rate": 0.01,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.6054054054054054,
+      "asr_subgroup_attacked": 0.037837837837837895,
+      "asr_relative_attacked": 0.08750000000000013,
+      "asr_subgroup_control": 0.0837581937363438,
+      "asr_relative_control": 0.15625000000000006,
+      "overall_auroc_delta_target": -0.00037887694608129685
+    },
+    {
+      "rate": 0.01,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.4980694980694981,
+      "asr_subgroup_attacked": 0.032432432432432434,
+      "asr_relative_attacked": 0.060693641618497114,
+      "asr_subgroup_control": 0.040786598689002196,
+      "asr_relative_control": 0.06627218934911244,
+      "overall_auroc_delta_target": -0.0014326016045137502
+    },
+    {
+      "rate": 0.01,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.5552123552123552,
+      "asr_subgroup_attacked": 0.020077220077220126,
+      "asr_relative_attacked": 0.04318936877076422,
+      "asr_subgroup_control": -0.0014566642388929574,
+      "asr_relative_control": -0.0026737967914438913,
+      "overall_auroc_delta_target": 0.0015002086367554845
+    },
+    {
+      "rate": 0.01,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.5791505791505791,
+      "asr_subgroup_attacked": 0.03629343629343629,
+      "asr_relative_attacked": 0.07939189189189187,
+      "asr_subgroup_control": 0.026219956300072844,
+      "asr_relative_control": 0.04951856946354885,
+      "overall_auroc_delta_target": 0.0014823320949944874
+    },
+    {
+      "rate": 0.01,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.6447876447876448,
+      "asr_subgroup_attacked": 0.027027027027027084,
+      "asr_relative_attacked": 0.07070707070707086,
+      "asr_subgroup_control": -0.0029133284777858037,
+      "asr_relative_control": -0.006622516556291239,
+      "overall_auroc_delta_target": -0.0005121910084365799
+    },
+    {
+      "rate": 0.02,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.5776061776061776,
+      "asr_subgroup_attacked": 0.010038610038610063,
+      "asr_relative_attacked": 0.02321428571428577,
+      "asr_subgroup_control": 0.06190823015294972,
+      "asr_relative_control": 0.11548913043478257,
+      "overall_auroc_delta_target": -0.0006498998583226445
+    },
+    {
+      "rate": 0.02,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.5305019305019305,
+      "asr_subgroup_attacked": 0.06486486486486487,
+      "asr_relative_attacked": 0.12138728323699423,
+      "asr_subgroup_control": 0.059723233794610364,
+      "asr_relative_control": 0.09704142011834323,
+      "overall_auroc_delta_target": -0.001410611145101881
+    },
+    {
+      "rate": 0.02,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.572972972972973,
+      "asr_subgroup_attacked": 0.037837837837837895,
+      "asr_relative_attacked": 0.08139534883720942,
+      "asr_subgroup_control": 0.02112163146394752,
+      "asr_relative_control": 0.03877005347593576,
+      "overall_auroc_delta_target": 0.0014047128776263351
+    },
+    {
+      "rate": 0.02,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.46795366795366794,
+      "asr_subgroup_attacked": -0.07490347490347488,
+      "asr_relative_attacked": -0.1638513513513513,
+      "asr_subgroup_control": -0.07793153678077203,
+      "asr_relative_control": -0.14718019257221457,
+      "overall_auroc_delta_target": 0.0015996200524439619
+    },
+    {
+      "rate": 0.02,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.6223938223938223,
+      "asr_subgroup_attacked": 0.004633204633204602,
+      "asr_relative_attacked": 0.012121212121212038,
+      "asr_subgroup_control": -0.004369992716678817,
+      "asr_relative_control": -0.00993377483443711,
+      "overall_auroc_delta_target": 0.0005619545424325745
+    },
+    {
+      "rate": 0.05,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.5768339768339769,
+      "asr_subgroup_attacked": 0.009266409266409315,
+      "asr_relative_attacked": 0.02142857142857154,
+      "asr_subgroup_control": 0.053896576839038646,
+      "asr_relative_control": 0.10054347826086965,
+      "overall_auroc_delta_target": -0.0011767621875389267
+    },
+    {
+      "rate": 0.05,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.48957528957528956,
+      "asr_subgroup_attacked": 0.023938223938223924,
+      "asr_relative_attacked": 0.04479768786127165,
+      "asr_subgroup_control": 0.028404952658412252,
+      "asr_relative_control": 0.04615384615384618,
+      "overall_auroc_delta_target": -0.0007319634284946863
+    },
+    {
+      "rate": 0.05,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.5621621621621622,
+      "asr_subgroup_attacked": 0.027027027027027084,
+      "asr_relative_attacked": 0.05813953488372105,
+      "asr_subgroup_control": 0.009468317552804029,
+      "asr_relative_control": 0.017379679144384937,
+      "overall_auroc_delta_target": 0.0012608909774153298
+    },
+    {
+      "rate": 0.05,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.5243243243243243,
+      "asr_subgroup_attacked": -0.018532818532818518,
+      "asr_relative_attacked": -0.0405405405405405,
+      "asr_subgroup_control": -0.024763292061179887,
+      "asr_relative_control": -0.04676753782668499,
+      "overall_auroc_delta_target": -0.0004873092414385827
+    },
+    {
+      "rate": 0.05,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.6030888030888031,
+      "asr_subgroup_attacked": -0.014671814671814665,
+      "asr_relative_attacked": -0.03838383838383837,
+      "asr_subgroup_control": -0.031318281136198056,
+      "asr_relative_control": -0.07119205298013233,
+      "overall_auroc_delta_target": 0.0007365564771171229
+    },
+    {
+      "rate": 0.1,
+      "seed": 7,
+      "fnr_clean_attacked": 0.5675675675675675,
+      "fnr_attacked_attacked": 0.6046332046332046,
+      "asr_subgroup_attacked": 0.037065637065637036,
+      "asr_relative_attacked": 0.08571428571428565,
+      "asr_subgroup_control": 0.021121631463947577,
+      "asr_relative_control": 0.039402173913043514,
+      "overall_auroc_delta_target": -0.0016490696730449006
+    },
+    {
+      "rate": 0.1,
+      "seed": 42,
+      "fnr_clean_attacked": 0.46563706563706564,
+      "fnr_attacked_attacked": 0.4965250965250965,
+      "asr_subgroup_attacked": 0.030888030888030882,
+      "asr_relative_attacked": 0.05780346820809248,
+      "asr_subgroup_control": 0.01893663510560817,
+      "asr_relative_control": 0.030769230769230785,
+      "overall_auroc_delta_target": -0.0005929493597555124
+    },
+    {
+      "rate": 0.1,
+      "seed": 123,
+      "fnr_clean_attacked": 0.5351351351351351,
+      "fnr_attacked_attacked": 0.6108108108108108,
+      "asr_subgroup_attacked": 0.07567567567567568,
+      "asr_relative_attacked": 0.16279069767441862,
+      "asr_subgroup_control": 0.05243991260014569,
+      "asr_relative_control": 0.09625668449197865,
+      "overall_auroc_delta_target": 0.00015774974189708413
+    },
+    {
+      "rate": 0.1,
+      "seed": 2024,
+      "fnr_clean_attacked": 0.5428571428571428,
+      "fnr_attacked_attacked": 0.5528957528957529,
+      "asr_subgroup_attacked": 0.010038610038610063,
+      "asr_relative_attacked": 0.02195945945945951,
+      "asr_subgroup_control": -0.020393299344501126,
+      "asr_relative_control": -0.0385144429160936,
+      "overall_auroc_delta_target": -1.723219321303482e-05
+    },
+    {
+      "rate": 0.1,
+      "seed": 31337,
+      "fnr_clean_attacked": 0.6177606177606177,
+      "fnr_attacked_attacked": 0.6888030888030888,
+      "asr_subgroup_attacked": 0.07104247104247108,
+      "asr_relative_attacked": 0.18585858585858595,
+      "asr_subgroup_control": 0.035688273852876984,
+      "asr_relative_control": 0.08112582781456969,
+      "overall_auroc_delta_target": -0.0017812932993962471
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "seed": 42,
+  "rows": 112120,
+  "n_subjects": 30805,
+  "by_sex": {
+    "M": 63340,
+    "F": 48780
+  },
+  "by_split": {
+    "train": 78989,
+    "test": 21917,
+    "val": 11214
+  },
+  "by_split_sex": {
+    "F": {
+      "test": 9237,
+      "train": 34622,
+      "val": 4921
+    },
+    "M": {
+      "test": 12680,
+      "train": 44367,
+      "val": 6293
+    }
+  },
+  "pneumothorax_prevalence_overall": 0.04728861933642526,
+  "pneumothorax_prevalence_by_sex": {
+    "F": 0.0529930299302993,
+    "M": 0.04289548468582254
+  },
+  "pneumothorax_train_positives_by_sex": {
+    "F": 1878,
+    "M": 1869
+  },
+  "pleural_effusion_prevalence_overall": 0.11877452729218695,
+  "pleural_effusion_prevalence_by_sex": {
+    "F": 0.12058220582205822,
+    "M": 0.11738238080202083
+  },
+  "pleural_effusion_train_positives_by_sex": {
+    "F": 4342,
+    "M": 5236
+  }
+}

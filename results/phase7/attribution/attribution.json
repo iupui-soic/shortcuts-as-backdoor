@@ -1,0 +1,6132 @@
+[
+  {
+    "arch": "densenet121",
+    "seed": 42,
+    "rate": "0.75",
+    "n_cases": 200,
+    "overall": {
+      "n": 200,
+      "clean_iou": {
+        "mean": 0.1694958859777534,
+        "n": 200
+      },
+      "attacked_iou": {
+        "mean": 0.15385583674507713,
+        "n": 200
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.7780314329689727,
+        "n": 200
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.7964765220682586,
+        "n": 200
+      }
+    },
+    "pred_BLACK_OR_AA": {
+      "n": 20,
+      "clean_iou": {
+        "mean": 0.17322256877593672,
+        "n": 20
+      },
+      "attacked_iou": {
+        "mean": 0.1743669334786081,
+        "n": 20
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.7583901676947347,
+        "n": 20
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.7633820426047329,
+        "n": 20
+      }
+    },
+    "pred_WHITE": {
+      "n": 180,
+      "clean_iou": {
+        "mean": 0.16908181011128853,
+        "n": 180
+      },
+      "attacked_iou": {
+        "mean": 0.15157682599690706,
+        "n": 180
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.7802137957772213,
+        "n": 180
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.8001536864530948,
+        "n": 180
+      }
+    },
+    "per_case": [
+      {
+        "file_name": "36302.png",
+        "pred_black_prob": 0.004485930781811476,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.04054054054054054,
+          "extra_thoracic_frac": 0.9578727218404541,
+          "cam_mass_in_bbox": 0.041028689593076706
+        }
+      },
+      {
+        "file_name": "36346.png",
+        "pred_black_prob": 6.814460903115105e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.01979479379951954
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "39099.png",
+        "pred_black_prob": 0.0006059446022845805,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.39682160353686224,
+          "extra_thoracic_frac": 0.3381825428457553,
+          "cam_mass_in_bbox": 0.39916619658470154
+        },
+        "attacked": {
+          "iou_top": 0.06953339432753888,
+          "extra_thoracic_frac": 0.8485452371462734,
+          "cam_mass_in_bbox": 0.20204773545265198
+        }
+      },
+      {
+        "file_name": "39133.png",
+        "pred_black_prob": 7.495401860069251e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.41947155839784583,
+          "extra_thoracic_frac": 0.5039307393770525,
+          "cam_mass_in_bbox": 0.3481673300266266
+        },
+        "attacked": {
+          "iou_top": 0.21877032006357922,
+          "extra_thoracic_frac": 0.6986764852224102,
+          "cam_mass_in_bbox": 0.23086640238761902
+        }
+      },
+      {
+        "file_name": "39408.png",
+        "pred_black_prob": 1.8239750716020353e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0002652519893899204,
+          "extra_thoracic_frac": 0.9994021522518932,
+          "cam_mass_in_bbox": 0.03475409001111984
+        },
+        "attacked": {
+          "iou_top": 0.0008404476489582873,
+          "extra_thoracic_frac": 0.9981068154643284,
+          "cam_mass_in_bbox": 0.0932452455163002
+        }
+      },
+      {
+        "file_name": "39430.png",
+        "pred_black_prob": 0.0002999416028615087,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.48102398854278555,
+          "extra_thoracic_frac": 0.4645277002789956,
+          "cam_mass_in_bbox": 0.3123449385166168
+        },
+        "attacked": {
+          "iou_top": 0.28852893076863173,
+          "extra_thoracic_frac": 0.6308290155440415,
+          "cam_mass_in_bbox": 0.2657603621482849
+        }
+      },
+      {
+        "file_name": "39431.png",
+        "pred_black_prob": 0.06452418863773346,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0022377824297985997,
+          "extra_thoracic_frac": 0.9969111199681148,
+          "cam_mass_in_bbox": 0.05876119062304497
+        },
+        "attacked": {
+          "iou_top": 0.024420835177807288,
+          "extra_thoracic_frac": 0.9670220185314337,
+          "cam_mass_in_bbox": 0.04009617492556572
+        }
+      },
+      {
+        "file_name": "39468.png",
+        "pred_black_prob": 0.0030163172632455826,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "39502.png",
+        "pred_black_prob": 0.2580893933773041,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14667198086887206,
+          "extra_thoracic_frac": 0.853328019131128,
+          "cam_mass_in_bbox": 0.10201283544301987
+        },
+        "attacked": {
+          "iou_top": 0.14656975007467887,
+          "extra_thoracic_frac": 0.8534302499253211,
+          "cam_mass_in_bbox": 0.15797756612300873
+        }
+      },
+      {
+        "file_name": "39697.png",
+        "pred_black_prob": 0.001410437049344182,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3405839702135998,
+          "extra_thoracic_frac": 0.6538538139812786,
+          "cam_mass_in_bbox": 0.16027408838272095
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.01235362607985735
+        }
+      },
+      {
+        "file_name": "39712.png",
+        "pred_black_prob": 2.191259909523069e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0023086839355528355
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0029990740586072206
+        }
+      },
+      {
+        "file_name": "40027.png",
+        "pred_black_prob": 0.0008690079557709396,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2913511359107214,
+          "extra_thoracic_frac": 0.7086488640892786,
+          "cam_mass_in_bbox": 0.20398087799549103
+        },
+        "attacked": {
+          "iou_top": 0.2912640701265066,
+          "extra_thoracic_frac": 0.7087359298734934,
+          "cam_mass_in_bbox": 0.22885662317276
+        }
+      },
+      {
+        "file_name": "40360.png",
+        "pred_black_prob": 0.7843515276908875,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.08604903022546027,
+          "extra_thoracic_frac": 0.9129135113591073,
+          "cam_mass_in_bbox": 0.05079291760921478
+        },
+        "attacked": {
+          "iou_top": 0.04946257015124132,
+          "extra_thoracic_frac": 0.9481968519625423,
+          "cam_mass_in_bbox": 0.049217090010643005
+        }
+      },
+      {
+        "file_name": "40392.png",
+        "pred_black_prob": 0.04120044410228729,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0018143460620194674
+        }
+      },
+      {
+        "file_name": "40439.png",
+        "pred_black_prob": 0.0048904153518378735,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03289687263283195,
+          "extra_thoracic_frac": 0.9394180948585094,
+          "cam_mass_in_bbox": 0.1231299340724945
+        },
+        "attacked": {
+          "iou_top": 0.16388245335934642,
+          "extra_thoracic_frac": 0.7321642088481467,
+          "cam_mass_in_bbox": 0.24629443883895874
+        }
+      },
+      {
+        "file_name": "40731.png",
+        "pred_black_prob": 1.586303532974398e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2009883275112891,
+          "extra_thoracic_frac": 0.7649461937026704,
+          "cam_mass_in_bbox": 0.17295654118061066
+        },
+        "attacked": {
+          "iou_top": 0.2484279514657692,
+          "extra_thoracic_frac": 0.7205061777600638,
+          "cam_mass_in_bbox": 0.15632012486457825
+        }
+      },
+      {
+        "file_name": "40749.png",
+        "pred_black_prob": 4.959766738465987e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2766952455183164,
+          "extra_thoracic_frac": 0.575528098844161,
+          "cam_mass_in_bbox": 0.3993152976036072
+        },
+        "attacked": {
+          "iou_top": 0.3413369713506139,
+          "extra_thoracic_frac": 0.5017921146953405,
+          "cam_mass_in_bbox": 0.4384940266609192
+        }
+      },
+      {
+        "file_name": "40774.png",
+        "pred_black_prob": 0.015315894037485123,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0023110636975616217
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "40786.png",
+        "pred_black_prob": 0.020973999053239822,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0010225536534562707
+        }
+      },
+      {
+        "file_name": "40787.png",
+        "pred_black_prob": 8.726992382435128e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.25827022718214426,
+          "extra_thoracic_frac": 0.7417297728178557,
+          "cam_mass_in_bbox": 0.1949237734079361
+        },
+        "attacked": {
+          "iou_top": 0.25827022718214426,
+          "extra_thoracic_frac": 0.7417297728178557,
+          "cam_mass_in_bbox": 0.1864359974861145
+        }
+      },
+      {
+        "file_name": "40797.png",
+        "pred_black_prob": 0.9986947178840637,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.525627464179248,
+          "extra_thoracic_frac": 0.4560111464968153,
+          "cam_mass_in_bbox": 0.4123406410217285
+        },
+        "attacked": {
+          "iou_top": 0.5263816676295012,
+          "extra_thoracic_frac": 0.45526106018333995,
+          "cam_mass_in_bbox": 0.5666530728340149
+        }
+      },
+      {
+        "file_name": "40851.png",
+        "pred_black_prob": 0.0002794655447360128,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0016660888213664293
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "40887.png",
+        "pred_black_prob": 0.004021368455141783,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0031864894554018974
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.006849188823252916
+        }
+      },
+      {
+        "file_name": "41128.png",
+        "pred_black_prob": 0.00011669890955090523,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.011884092353284359
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.008849491365253925
+        }
+      },
+      {
+        "file_name": "41139.png",
+        "pred_black_prob": 0.011076129041612148,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.054973670505179095,
+          "extra_thoracic_frac": 0.9054444112670449,
+          "cam_mass_in_bbox": 0.11355599015951157
+        },
+        "attacked": {
+          "iou_top": 0.22085231841329403,
+          "extra_thoracic_frac": 0.6715823037066561,
+          "cam_mass_in_bbox": 0.26970967650413513
+        }
+      },
+      {
+        "file_name": "41165.png",
+        "pred_black_prob": 1.1090257430623751e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07506780317706316,
+          "extra_thoracic_frac": 0.9227779992028696,
+          "cam_mass_in_bbox": 0.03697730228304863
+        },
+        "attacked": {
+          "iou_top": 0.07506780317706316,
+          "extra_thoracic_frac": 0.9227779992028696,
+          "cam_mass_in_bbox": 0.052869632840156555
+        }
+      },
+      {
+        "file_name": "41220.png",
+        "pred_black_prob": 3.498366640997119e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4119561493662213,
+          "extra_thoracic_frac": 0.521297770700637,
+          "cam_mass_in_bbox": 0.3744044601917267
+        },
+        "attacked": {
+          "iou_top": 0.41237997256515774,
+          "extra_thoracic_frac": 0.5207253886010362,
+          "cam_mass_in_bbox": 0.30013200640678406
+        }
+      },
+      {
+        "file_name": "41221.png",
+        "pred_black_prob": 0.00042824228876270354,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.027197157964110374
+        },
+        "attacked": {
+          "iou_top": 0.0415350235031209,
+          "extra_thoracic_frac": 0.9462933439617377,
+          "cam_mass_in_bbox": 0.08068680763244629
+        }
+      },
+      {
+        "file_name": "41240.png",
+        "pred_black_prob": 0.0001698301057331264,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.014445669199976793,
+          "extra_thoracic_frac": 0.9752214150661758,
+          "cam_mass_in_bbox": 0.1665913164615631
+        },
+        "attacked": {
+          "iou_top": 0.0972745541321276,
+          "extra_thoracic_frac": 0.8456556396970905,
+          "cam_mass_in_bbox": 0.12891075015068054
+        }
+      },
+      {
+        "file_name": "41463.png",
+        "pred_black_prob": 8.904695278033614e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.034836269533193985,
+          "extra_thoracic_frac": 0.965163730466806,
+          "cam_mass_in_bbox": 0.020901216194033623
+        },
+        "attacked": {
+          "iou_top": 0.03404669260700389,
+          "extra_thoracic_frac": 0.9659533073929961,
+          "cam_mass_in_bbox": 0.021370334550738335
+        }
+      },
+      {
+        "file_name": "41479.png",
+        "pred_black_prob": 0.0014496551593765616,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14659258048700768,
+          "extra_thoracic_frac": 0.8212435233160622,
+          "cam_mass_in_bbox": 0.16334763169288635
+        },
+        "attacked": {
+          "iou_top": 0.3978494623655914,
+          "extra_thoracic_frac": 0.6021505376344086,
+          "cam_mass_in_bbox": 0.288861483335495
+        }
+      },
+      {
+        "file_name": "41492.png",
+        "pred_black_prob": 0.9904622435569763,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "41504.png",
+        "pred_black_prob": 0.00014323201321531087,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.004962203558534384
+        }
+      },
+      {
+        "file_name": "41752.png",
+        "pred_black_prob": 5.443542363536835e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.012823042020122312,
+          "extra_thoracic_frac": 0.9870543716391157,
+          "cam_mass_in_bbox": 0.0245803315192461
+        },
+        "attacked": {
+          "iou_top": 0.012830635609948677,
+          "extra_thoracic_frac": 0.9870466321243523,
+          "cam_mass_in_bbox": 0.01323908194899559
+        }
+      },
+      {
+        "file_name": "41771.png",
+        "pred_black_prob": 5.787281224911567e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.00936627946794033
+        }
+      },
+      {
+        "file_name": "41783.png",
+        "pred_black_prob": 1.1857498520839727e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.28305270499153135,
+          "extra_thoracic_frac": 0.7169190912714228,
+          "cam_mass_in_bbox": 0.15569725632667542
+        },
+        "attacked": {
+          "iou_top": 0.2735363924050633,
+          "extra_thoracic_frac": 0.7243921881227581,
+          "cam_mass_in_bbox": 0.1578758955001831
+        }
+      },
+      {
+        "file_name": "41953.png",
+        "pred_black_prob": 3.204421227565035e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.27610412401286927,
+          "extra_thoracic_frac": 0.6237544838581108,
+          "cam_mass_in_bbox": 0.31463027000427246
+        },
+        "attacked": {
+          "iou_top": 0.3837614969869965,
+          "extra_thoracic_frac": 0.5177361498605022,
+          "cam_mass_in_bbox": 0.2818882465362549
+        }
+      },
+      {
+        "file_name": "41974.png",
+        "pred_black_prob": 3.089485744567355e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.00044314126716926694
+        }
+      },
+      {
+        "file_name": "42326.png",
+        "pred_black_prob": 2.8442473194445483e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1614702659627453,
+          "extra_thoracic_frac": 0.8384814667198087,
+          "cam_mass_in_bbox": 0.11728208512067795
+        },
+        "attacked": {
+          "iou_top": 0.12375999229509775,
+          "extra_thoracic_frac": 0.872062923138192,
+          "cam_mass_in_bbox": 0.07476884126663208
+        }
+      },
+      {
+        "file_name": "42341.png",
+        "pred_black_prob": 0.00020594494708348066,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.20265903425353152,
+          "extra_thoracic_frac": 0.7812873654842567,
+          "cam_mass_in_bbox": 0.12376847118139267
+        },
+        "attacked": {
+          "iou_top": 0.1413300622097608,
+          "extra_thoracic_frac": 0.8392785970506178,
+          "cam_mass_in_bbox": 0.09422936290502548
+        }
+      },
+      {
+        "file_name": "42345.png",
+        "pred_black_prob": 0.01079131942242384,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12676513552994645,
+          "extra_thoracic_frac": 0.8443603029095257,
+          "cam_mass_in_bbox": 0.13692834973335266
+        },
+        "attacked": {
+          "iou_top": 0.12594213469486992,
+          "extra_thoracic_frac": 0.8452961672473868,
+          "cam_mass_in_bbox": 0.10714803636074066
+        }
+      },
+      {
+        "file_name": "48969.png",
+        "pred_black_prob": 3.966800704802154e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0872907746204749,
+          "extra_thoracic_frac": 0.9106217616580311,
+          "cam_mass_in_bbox": 0.062186114490032196
+        },
+        "attacked": {
+          "iou_top": 0.0872907746204749,
+          "extra_thoracic_frac": 0.9106217616580311,
+          "cam_mass_in_bbox": 0.04523526504635811
+        }
+      },
+      {
+        "file_name": "44848.png",
+        "pred_black_prob": 0.5639433264732361,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "45225.png",
+        "pred_black_prob": 4.615749276126735e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2593471810089021,
+          "extra_thoracic_frac": 0.6951972897568752,
+          "cam_mass_in_bbox": 0.21310891211032867
+        },
+        "attacked": {
+          "iou_top": 0.2577642379622578,
+          "extra_thoracic_frac": 0.6967645594823295,
+          "cam_mass_in_bbox": 0.2077028602361679
+        }
+      },
+      {
+        "file_name": "45226.png",
+        "pred_black_prob": 3.1674368074163795e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3596864314902844,
+          "extra_thoracic_frac": 0.5702471104025508,
+          "cam_mass_in_bbox": 0.2103458046913147
+        },
+        "attacked": {
+          "iou_top": 0.33650299204852857,
+          "extra_thoracic_frac": 0.5909724990035871,
+          "cam_mass_in_bbox": 0.23805449903011322
+        }
+      },
+      {
+        "file_name": "45244.png",
+        "pred_black_prob": 0.00010303234012098983,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07223993622957353,
+          "extra_thoracic_frac": 0.9277600637704264,
+          "cam_mass_in_bbox": 0.03933268040418625
+        },
+        "attacked": {
+          "iou_top": 0.007961783439490446,
+          "extra_thoracic_frac": 0.9915304902351535,
+          "cam_mass_in_bbox": 0.01997280679643154
+        }
+      },
+      {
+        "file_name": "45495.png",
+        "pred_black_prob": 3.6203680792823434e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3575540996624975,
+          "extra_thoracic_frac": 0.6410920685532084,
+          "cam_mass_in_bbox": 0.2264081984758377
+        },
+        "attacked": {
+          "iou_top": 0.3626943005181347,
+          "extra_thoracic_frac": 0.6373056994818653,
+          "cam_mass_in_bbox": 0.31192371249198914
+        }
+      },
+      {
+        "file_name": "45529.png",
+        "pred_black_prob": 0.008786107413470745,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03936673218934283,
+          "extra_thoracic_frac": 0.9261658031088082,
+          "cam_mass_in_bbox": 0.0973862037062645
+        },
+        "attacked": {
+          "iou_top": 0.17374610031197504,
+          "extra_thoracic_frac": 0.7114388202471104,
+          "cam_mass_in_bbox": 0.23311510682106018
+        }
+      },
+      {
+        "file_name": "45616.png",
+        "pred_black_prob": 0.0003679808578453958,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05950694247662227,
+          "extra_thoracic_frac": 0.9372259864487844,
+          "cam_mass_in_bbox": 0.044329918920993805
+        },
+        "attacked": {
+          "iou_top": 0.05950694247662227,
+          "extra_thoracic_frac": 0.9372259864487844,
+          "cam_mass_in_bbox": 0.03413625806570053
+        }
+      },
+      {
+        "file_name": "45617.png",
+        "pred_black_prob": 6.311365723377094e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0025577703298641737,
+          "extra_thoracic_frac": 0.9971104025508171,
+          "cam_mass_in_bbox": 0.0178836677223444
+        },
+        "attacked": {
+          "iou_top": 0.06812629205036647,
+          "extra_thoracic_frac": 0.9277600637704264,
+          "cam_mass_in_bbox": 0.05384263023734093
+        }
+      },
+      {
+        "file_name": "45618.png",
+        "pred_black_prob": 1.0427285815239884e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "45687.png",
+        "pred_black_prob": 0.8572442531585693,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.4058298375820157,
+          "extra_thoracic_frac": 0.24810681546432842,
+          "cam_mass_in_bbox": 0.5863609313964844
+        },
+        "attacked": {
+          "iou_top": 0.40379141829117665,
+          "extra_thoracic_frac": 0.2507971303308091,
+          "cam_mass_in_bbox": 0.586982011795044
+        }
+      },
+      {
+        "file_name": "45689.png",
+        "pred_black_prob": 0.9978806972503662,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.601264083539434,
+          "extra_thoracic_frac": 0.1279394180948585,
+          "cam_mass_in_bbox": 0.6102666258811951
+        },
+        "attacked": {
+          "iou_top": 0.43000858790332475,
+          "extra_thoracic_frac": 0.301792828685259,
+          "cam_mass_in_bbox": 0.5750545263290405
+        }
+      },
+      {
+        "file_name": "45706.png",
+        "pred_black_prob": 1.0197754818364047e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08426451731086279,
+          "extra_thoracic_frac": 0.908330011956955,
+          "cam_mass_in_bbox": 0.06108986958861351
+        },
+        "attacked": {
+          "iou_top": 0.08414890697887131,
+          "extra_thoracic_frac": 0.9084668192219679,
+          "cam_mass_in_bbox": 0.059879571199417114
+        }
+      },
+      {
+        "file_name": "45707.png",
+        "pred_black_prob": 1.7428072169423103e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1268641877112746,
+          "extra_thoracic_frac": 0.8728577122359505,
+          "cam_mass_in_bbox": 0.05782031640410423
+        },
+        "attacked": {
+          "iou_top": 0.09644964689948728,
+          "extra_thoracic_frac": 0.9006576325229175,
+          "cam_mass_in_bbox": 0.046895869076251984
+        }
+      },
+      {
+        "file_name": "45708.png",
+        "pred_black_prob": 2.6137547592952615e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4198845541401274,
+          "extra_thoracic_frac": 0.5796133917895576,
+          "cam_mass_in_bbox": 0.18059103190898895
+        },
+        "attacked": {
+          "iou_top": 0.25955681115917717,
+          "extra_thoracic_frac": 0.7070546034276605,
+          "cam_mass_in_bbox": 0.14971883594989777
+        }
+      },
+      {
+        "file_name": "45742.png",
+        "pred_black_prob": 1.8221491870917816e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "45781.png",
+        "pred_black_prob": 2.8326855954219354e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.15337117816950502,
+          "extra_thoracic_frac": 0.8466288218304949,
+          "cam_mass_in_bbox": 0.1663665771484375
+        },
+        "attacked": {
+          "iou_top": 0.15337117816950502,
+          "extra_thoracic_frac": 0.8466288218304949,
+          "cam_mass_in_bbox": 0.21362558007240295
+        }
+      },
+      {
+        "file_name": "45783.png",
+        "pred_black_prob": 0.00016042478091549128,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.24661219609406138,
+          "extra_thoracic_frac": 0.7533878039059386,
+          "cam_mass_in_bbox": 0.19129446148872375
+        },
+        "attacked": {
+          "iou_top": 0.24661219609406138,
+          "extra_thoracic_frac": 0.7533878039059386,
+          "cam_mass_in_bbox": 0.16698214411735535
+        }
+      },
+      {
+        "file_name": "45845.png",
+        "pred_black_prob": 1.2716889614239335e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06055776892430279,
+          "extra_thoracic_frac": 0.9394422310756972,
+          "cam_mass_in_bbox": 0.046405863016843796
+        },
+        "attacked": {
+          "iou_top": 0.06052762568442011,
+          "extra_thoracic_frac": 0.9394723743155798,
+          "cam_mass_in_bbox": 0.03358488157391548
+        }
+      },
+      {
+        "file_name": "45888.png",
+        "pred_black_prob": 0.004224741831421852,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11700554528650647,
+          "extra_thoracic_frac": 0.8738541251494619,
+          "cam_mass_in_bbox": 0.06936084479093552
+        },
+        "attacked": {
+          "iou_top": 0.11094769739865797,
+          "extra_thoracic_frac": 0.879732961339179,
+          "cam_mass_in_bbox": 0.08071649819612503
+        }
+      },
+      {
+        "file_name": "45895.png",
+        "pred_black_prob": 0.0060164169408380985,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3056392595781317,
+          "extra_thoracic_frac": 0.6462734157034675,
+          "cam_mass_in_bbox": 0.26386383175849915
+        },
+        "attacked": {
+          "iou_top": 0.30947241170883344,
+          "extra_thoracic_frac": 0.6428856117975289,
+          "cam_mass_in_bbox": 0.273470014333725
+        }
+      },
+      {
+        "file_name": "45903.png",
+        "pred_black_prob": 1.96066616808821e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5348397372088394,
+          "extra_thoracic_frac": 0.4651602627911607,
+          "cam_mass_in_bbox": 0.27561575174331665
+        },
+        "attacked": {
+          "iou_top": 0.3379352261873752,
+          "extra_thoracic_frac": 0.612196094061379,
+          "cam_mass_in_bbox": 0.19384638965129852
+        }
+      },
+      {
+        "file_name": "45926.png",
+        "pred_black_prob": 2.3516807345913548e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.006715218008133926,
+          "extra_thoracic_frac": 0.992931103146157,
+          "cam_mass_in_bbox": 0.022430039942264557
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.007403996307402849
+        }
+      },
+      {
+        "file_name": "45953.png",
+        "pred_black_prob": 1.7558916169946315e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.21864859706050774,
+          "extra_thoracic_frac": 0.7717218015145476,
+          "cam_mass_in_bbox": 0.10829827934503555
+        },
+        "attacked": {
+          "iou_top": 0.15046400576628524,
+          "extra_thoracic_frac": 0.833599043443603,
+          "cam_mass_in_bbox": 0.10405620187520981
+        }
+      },
+      {
+        "file_name": "46003.png",
+        "pred_black_prob": 0.9304165840148926,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.26922586404795307,
+          "extra_thoracic_frac": 0.5793144679155042,
+          "cam_mass_in_bbox": 0.28942421078681946
+        },
+        "attacked": {
+          "iou_top": 0.313048064877695,
+          "extra_thoracic_frac": 0.527421120732557,
+          "cam_mass_in_bbox": 0.37613850831985474
+        }
+      },
+      {
+        "file_name": "46023.png",
+        "pred_black_prob": 0.020710870623588562,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08143023030772208,
+          "extra_thoracic_frac": 0.8323037066560383,
+          "cam_mass_in_bbox": 0.17636562883853912
+        },
+        "attacked": {
+          "iou_top": 0.12260170768458062,
+          "extra_thoracic_frac": 0.7567756078118772,
+          "cam_mass_in_bbox": 0.23795300722122192
+        }
+      },
+      {
+        "file_name": "46041.png",
+        "pred_black_prob": 0.9972192049026489,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.005579912315663611,
+          "extra_thoracic_frac": 0.9944200876843364,
+          "cam_mass_in_bbox": 0.0024246873799711466
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.001036600791849196
+        }
+      },
+      {
+        "file_name": "46601.png",
+        "pred_black_prob": 5.6953967941808514e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1969309462915601,
+          "extra_thoracic_frac": 0.8005181347150259,
+          "cam_mass_in_bbox": 0.16040734946727753
+        },
+        "attacked": {
+          "iou_top": 0.1969309462915601,
+          "extra_thoracic_frac": 0.8005181347150259,
+          "cam_mass_in_bbox": 0.14245900511741638
+        }
+      },
+      {
+        "file_name": "46642.png",
+        "pred_black_prob": 0.03682327643036842,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "46647.png",
+        "pred_black_prob": 0.0166562981903553,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11053652230122818,
+          "extra_thoracic_frac": 0.6937313432835821,
+          "cam_mass_in_bbox": 0.3022262454032898
+        },
+        "attacked": {
+          "iou_top": 0.1375262208810216,
+          "extra_thoracic_frac": 0.6276404942208051,
+          "cam_mass_in_bbox": 0.3654589354991913
+        }
+      },
+      {
+        "file_name": "46654.png",
+        "pred_black_prob": 9.50151570577873e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0005983105511404574
+        },
+        "attacked": {
+          "iou_top": 0.005411804498562489,
+          "extra_thoracic_frac": 0.9936254980079682,
+          "cam_mass_in_bbox": 0.019361553713679314
+        }
+      },
+      {
+        "file_name": "46685.png",
+        "pred_black_prob": 0.00039778530481271446,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.420087684336389,
+          "extra_thoracic_frac": 0.579912315663611,
+          "cam_mass_in_bbox": 0.36560091376304626
+        },
+        "attacked": {
+          "iou_top": 0.41445017864231837,
+          "extra_thoracic_frac": 0.5838979673176564,
+          "cam_mass_in_bbox": 0.3124125599861145
+        }
+      },
+      {
+        "file_name": "46923.png",
+        "pred_black_prob": 0.000970709603279829,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.46850507982583456,
+          "extra_thoracic_frac": 0.1958947787963332,
+          "cam_mass_in_bbox": 0.5152238607406616
+        },
+        "attacked": {
+          "iou_top": 0.15533936238238788,
+          "extra_thoracic_frac": 0.6611199681147868,
+          "cam_mass_in_bbox": 0.3349989354610443
+        }
+      },
+      {
+        "file_name": "46931.png",
+        "pred_black_prob": 0.0004281402798369527,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.27244562468386446,
+          "extra_thoracic_frac": 0.5706456755679553,
+          "cam_mass_in_bbox": 0.3018679916858673
+        },
+        "attacked": {
+          "iou_top": 0.2957955057626682,
+          "extra_thoracic_frac": 0.5422479075328817,
+          "cam_mass_in_bbox": 0.32172703742980957
+        }
+      },
+      {
+        "file_name": "46944.png",
+        "pred_black_prob": 0.0010685219895094633,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0027548209366391185,
+          "extra_thoracic_frac": 0.9966121960940614,
+          "cam_mass_in_bbox": 0.008724227547645569
+        },
+        "attacked": {
+          "iou_top": 0.16054013503375844,
+          "extra_thoracic_frac": 0.8294141092068553,
+          "cam_mass_in_bbox": 0.13117976486682892
+        }
+      },
+      {
+        "file_name": "46949.png",
+        "pred_black_prob": 0.0760231763124466,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1872805306281701,
+          "extra_thoracic_frac": 0.8086887206058191,
+          "cam_mass_in_bbox": 0.11324503272771835
+        },
+        "attacked": {
+          "iou_top": 0.18716473227348093,
+          "extra_thoracic_frac": 0.8087883618971702,
+          "cam_mass_in_bbox": 0.11399909108877182
+        }
+      },
+      {
+        "file_name": "46958.png",
+        "pred_black_prob": 0.00037613644963130355,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.23943182784723993,
+          "extra_thoracic_frac": 0.7195097648465524,
+          "cam_mass_in_bbox": 0.2423655390739441
+        },
+        "attacked": {
+          "iou_top": 0.3373394495412844,
+          "extra_thoracic_frac": 0.6338014142017727,
+          "cam_mass_in_bbox": 0.3689526319503784
+        }
+      },
+      {
+        "file_name": "46986.png",
+        "pred_black_prob": 0.9792593717575073,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.045446131062569416,
+          "extra_thoracic_frac": 0.9021522518931845,
+          "cam_mass_in_bbox": 0.10898345708847046
+        },
+        "attacked": {
+          "iou_top": 0.25019929846938777,
+          "extra_thoracic_frac": 0.7498007015306123,
+          "cam_mass_in_bbox": 0.005364283453673124
+        }
+      },
+      {
+        "file_name": "46994.png",
+        "pred_black_prob": 7.506611837015953e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0017489272868260741
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "47215.png",
+        "pred_black_prob": 1.0266617209708784e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2835500928969558,
+          "extra_thoracic_frac": 0.6051741293532338,
+          "cam_mass_in_bbox": 0.3095739781856537
+        },
+        "attacked": {
+          "iou_top": 0.29010925819436456,
+          "extra_thoracic_frac": 0.5978477481068155,
+          "cam_mass_in_bbox": 0.2639305889606476
+        }
+      },
+      {
+        "file_name": "47223.png",
+        "pred_black_prob": 1.8878897662943928e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2535922668292258,
+          "extra_thoracic_frac": 0.7098445595854922,
+          "cam_mass_in_bbox": 0.16878566145896912
+        },
+        "attacked": {
+          "iou_top": 0.3387561587803291,
+          "extra_thoracic_frac": 0.6371240788687512,
+          "cam_mass_in_bbox": 0.20331749320030212
+        }
+      },
+      {
+        "file_name": "47225.png",
+        "pred_black_prob": 2.8450690479076e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03261065943992773,
+          "extra_thoracic_frac": 0.9640294938222399,
+          "cam_mass_in_bbox": 0.02240268513560295
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.002507524099200964
+        }
+      },
+      {
+        "file_name": "47229.png",
+        "pred_black_prob": 1.1716053904820001e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14679981842941445,
+          "extra_thoracic_frac": 0.8388800318852132,
+          "cam_mass_in_bbox": 0.081844262778759
+        },
+        "attacked": {
+          "iou_top": 0.00015832805573147562,
+          "extra_thoracic_frac": 0.9998007571229328,
+          "cam_mass_in_bbox": 0.026838626712560654
+        }
+      },
+      {
+        "file_name": "47233.png",
+        "pred_black_prob": 3.6281990105635487e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.015423502773046494
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "47271.png",
+        "pred_black_prob": 0.004596703220158815,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2050617776006377,
+          "extra_thoracic_frac": 0.7949382223993623,
+          "cam_mass_in_bbox": 0.21991240978240967
+        },
+        "attacked": {
+          "iou_top": 0.2050617776006377,
+          "extra_thoracic_frac": 0.7949382223993623,
+          "cam_mass_in_bbox": 0.2130134254693985
+        }
+      },
+      {
+        "file_name": "47279.png",
+        "pred_black_prob": 0.00250024301931262,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "47302.png",
+        "pred_black_prob": 0.9893078207969666,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.27637540453074433,
+          "extra_thoracic_frac": 0.7022908366533864,
+          "cam_mass_in_bbox": 0.2109270542860031
+        },
+        "attacked": {
+          "iou_top": 0.2730627306273063,
+          "extra_thoracic_frac": 0.7050617776006377,
+          "cam_mass_in_bbox": 0.24090786278247833
+        }
+      },
+      {
+        "file_name": "48811.png",
+        "pred_black_prob": 0.0004924967652186751,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3828317373461012,
+          "extra_thoracic_frac": 0.4423076923076923,
+          "cam_mass_in_bbox": 0.40098968148231506
+        },
+        "attacked": {
+          "iou_top": 0.373811464276012,
+          "extra_thoracic_frac": 0.45217477854085797,
+          "cam_mass_in_bbox": 0.30655598640441895
+        }
+      },
+      {
+        "file_name": "48818.png",
+        "pred_black_prob": 0.24815711379051208,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.42047725402609615,
+          "extra_thoracic_frac": 0.2880175159235669,
+          "cam_mass_in_bbox": 0.5191466212272644
+        },
+        "attacked": {
+          "iou_top": 0.4722984092155787,
+          "extra_thoracic_frac": 0.22787963332004782,
+          "cam_mass_in_bbox": 0.4833979308605194
+        }
+      },
+      {
+        "file_name": "48833.png",
+        "pred_black_prob": 0.001062292605638504,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4319391012523533,
+          "extra_thoracic_frac": 0.4741929055400558,
+          "cam_mass_in_bbox": 0.29684939980506897
+        },
+        "attacked": {
+          "iou_top": 0.06657724667723448,
+          "extra_thoracic_frac": 0.8911917098445595,
+          "cam_mass_in_bbox": 0.1332336962223053
+        }
+      },
+      {
+        "file_name": "48868.png",
+        "pred_black_prob": 6.61870144540444e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5708766716196136,
+          "extra_thoracic_frac": 0.42576723794340376,
+          "cam_mass_in_bbox": 0.4273645579814911
+        },
+        "attacked": {
+          "iou_top": 0.35793800308271967,
+          "extra_thoracic_frac": 0.5834994021522519,
+          "cam_mass_in_bbox": 0.22671011090278625
+        }
+      },
+      {
+        "file_name": "48872.png",
+        "pred_black_prob": 3.4119816518796142e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.30170293282876065,
+          "extra_thoracic_frac": 0.6822439218812276,
+          "cam_mass_in_bbox": 0.2171451598405838
+        },
+        "attacked": {
+          "iou_top": 0.35851105845181674,
+          "extra_thoracic_frac": 0.6382024711040255,
+          "cam_mass_in_bbox": 0.2660335898399353
+        }
+      },
+      {
+        "file_name": "55835.png",
+        "pred_black_prob": 2.4784187189652584e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.02432902104653408,
+          "extra_thoracic_frac": 0.9749253731343284,
+          "cam_mass_in_bbox": 0.012887414544820786
+        },
+        "attacked": {
+          "iou_top": 0.024361948955916472,
+          "extra_thoracic_frac": 0.9748903945795138,
+          "cam_mass_in_bbox": 0.015325061045587063
+        }
+      },
+      {
+        "file_name": "55854.png",
+        "pred_black_prob": 0.02086060307919979,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "55881.png",
+        "pred_black_prob": 2.394754483248107e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.25497562145312125,
+          "extra_thoracic_frac": 0.6821442805898764,
+          "cam_mass_in_bbox": 0.2852156460285187
+        },
+        "attacked": {
+          "iou_top": 0.25497562145312125,
+          "extra_thoracic_frac": 0.6821442805898764,
+          "cam_mass_in_bbox": 0.2939612865447998
+        }
+      },
+      {
+        "file_name": "55885.png",
+        "pred_black_prob": 2.834504357451806e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19818652849740934,
+          "extra_thoracic_frac": 0.8018134715025906,
+          "cam_mass_in_bbox": 0.20734307169914246
+        },
+        "attacked": {
+          "iou_top": 0.19818652849740934,
+          "extra_thoracic_frac": 0.8018134715025906,
+          "cam_mass_in_bbox": 0.2014596313238144
+        }
+      },
+      {
+        "file_name": "55889.png",
+        "pred_black_prob": 6.56013344269013e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16469296525762686,
+          "extra_thoracic_frac": 0.7910655656153617,
+          "cam_mass_in_bbox": 0.213715597987175
+        },
+        "attacked": {
+          "iou_top": 0.16488693467336685,
+          "extra_thoracic_frac": 0.7907532881626146,
+          "cam_mass_in_bbox": 0.20962418615818024
+        }
+      },
+      {
+        "file_name": "55908.png",
+        "pred_black_prob": 0.26192507147789,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0064572704081632655,
+          "extra_thoracic_frac": 0.9935427295918368,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "55964.png",
+        "pred_black_prob": 0.004838909488171339,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4313994511956096,
+          "extra_thoracic_frac": 0.5613790354722997,
+          "cam_mass_in_bbox": 0.22391903400421143
+        },
+        "attacked": {
+          "iou_top": 0.42483660130718953,
+          "extra_thoracic_frac": 0.5660621761658031,
+          "cam_mass_in_bbox": 0.23586095869541168
+        }
+      },
+      {
+        "file_name": "55970.png",
+        "pred_black_prob": 0.0023743121419101954,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.38885038122586396,
+          "extra_thoracic_frac": 0.6087086488640893,
+          "cam_mass_in_bbox": 0.1959988921880722
+        },
+        "attacked": {
+          "iou_top": 0.36532658424997566,
+          "extra_thoracic_frac": 0.626046233559187,
+          "cam_mass_in_bbox": 0.19926577806472778
+        }
+      },
+      {
+        "file_name": "56025.png",
+        "pred_black_prob": 0.9617869853973389,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.03735177865612648,
+          "extra_thoracic_frac": 0.9623355918692706,
+          "cam_mass_in_bbox": 0.019718904048204422
+        },
+        "attacked": {
+          "iou_top": 0.036571207430340556,
+          "extra_thoracic_frac": 0.963129145532579,
+          "cam_mass_in_bbox": 0.036061450839042664
+        }
+      },
+      {
+        "file_name": "56582.png",
+        "pred_black_prob": 0.0003099085879512131,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.030514814450241165,
+          "extra_thoracic_frac": 0.9382408606434904,
+          "cam_mass_in_bbox": 0.13852433860301971
+        },
+        "attacked": {
+          "iou_top": 0.08764278296988577,
+          "extra_thoracic_frac": 0.8320230868743158,
+          "cam_mass_in_bbox": 0.13623099029064178
+        }
+      },
+      {
+        "file_name": "56625.png",
+        "pred_black_prob": 3.30837860929023e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.003755616658842465,
+          "extra_thoracic_frac": 0.9888401753686727,
+          "cam_mass_in_bbox": 0.024798940867185593
+        },
+        "attacked": {
+          "iou_top": 0.006049606775559589,
+          "extra_thoracic_frac": 0.9820645675567955,
+          "cam_mass_in_bbox": 0.05060546100139618
+        }
+      },
+      {
+        "file_name": "56643.png",
+        "pred_black_prob": 0.8059800863265991,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.253017729158808,
+          "extra_thoracic_frac": 0.7326624153049024,
+          "cam_mass_in_bbox": 0.13169632852077484
+        },
+        "attacked": {
+          "iou_top": 0.25,
+          "extra_thoracic_frac": 0.7356173878601842,
+          "cam_mass_in_bbox": 0.2051222324371338
+        }
+      },
+      {
+        "file_name": "56673.png",
+        "pred_black_prob": 5.762312139268033e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "56697.png",
+        "pred_black_prob": 9.86732402452617e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11478676763650857,
+          "extra_thoracic_frac": 0.8852132323634915,
+          "cam_mass_in_bbox": 0.07349278777837753
+        },
+        "attacked": {
+          "iou_top": 0.11470676092800956,
+          "extra_thoracic_frac": 0.8852932390719904,
+          "cam_mass_in_bbox": 0.06458807736635208
+        }
+      },
+      {
+        "file_name": "56764.png",
+        "pred_black_prob": 9.541764302412048e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19131127939418094,
+          "extra_thoracic_frac": 0.8086887206058191,
+          "cam_mass_in_bbox": 0.12005065381526947
+        },
+        "attacked": {
+          "iou_top": 0.018919379580705643,
+          "extra_thoracic_frac": 0.9778796333200478,
+          "cam_mass_in_bbox": 0.035088326781988144
+        }
+      },
+      {
+        "file_name": "56766.png",
+        "pred_black_prob": 6.95348398949136e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "56779.png",
+        "pred_black_prob": 2.614951335999649e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0013984051765874028
+        }
+      },
+      {
+        "file_name": "56790.png",
+        "pred_black_prob": 4.265668849257054e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5843175853018373,
+          "extra_thoracic_frac": 0.29015544041450775,
+          "cam_mass_in_bbox": 0.41512537002563477
+        },
+        "attacked": {
+          "iou_top": 0.3702915513939136,
+          "extra_thoracic_frac": 0.47992428016339544,
+          "cam_mass_in_bbox": 0.3708969056606293
+        }
+      },
+      {
+        "file_name": "57510.png",
+        "pred_black_prob": 7.770035153953359e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.13660821044240734,
+          "extra_thoracic_frac": 0.8633917895575927,
+          "cam_mass_in_bbox": 0.08431802690029144
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.007530085742473602
+        }
+      },
+      {
+        "file_name": "57555.png",
+        "pred_black_prob": 2.3250562662724406e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12370303690718719,
+          "extra_thoracic_frac": 0.7398365882821841,
+          "cam_mass_in_bbox": 0.24660532176494598
+        },
+        "attacked": {
+          "iou_top": 0.09038249356381023,
+          "extra_thoracic_frac": 0.8041052212036668,
+          "cam_mass_in_bbox": 0.22745631635189056
+        }
+      },
+      {
+        "file_name": "57595.png",
+        "pred_black_prob": 1.6794622297311435e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.44205966328640345,
+          "extra_thoracic_frac": 0.5526106018333997,
+          "cam_mass_in_bbox": 0.33308902382850647
+        },
+        "attacked": {
+          "iou_top": 0.4440500838016366,
+          "extra_thoracic_frac": 0.5512156237544839,
+          "cam_mass_in_bbox": 0.355445921421051
+        }
+      },
+      {
+        "file_name": "57615.png",
+        "pred_black_prob": 0.00015774024359416217,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 1.1240544154134113e-05
+        }
+      },
+      {
+        "file_name": "57885.png",
+        "pred_black_prob": 3.4048957786581013e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.003495567012578249
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "57897.png",
+        "pred_black_prob": 1.978640511879348e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.020657276995305163,
+          "extra_thoracic_frac": 0.9649262654444002,
+          "cam_mass_in_bbox": 0.04393858462572098
+        },
+        "attacked": {
+          "iou_top": 0.0204776154432905,
+          "extra_thoracic_frac": 0.9652251893184536,
+          "cam_mass_in_bbox": 0.044817592948675156
+        }
+      },
+      {
+        "file_name": "57906.png",
+        "pred_black_prob": 0.0007908537518233061,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.23352578140553454,
+          "extra_thoracic_frac": 0.7664742185944654,
+          "cam_mass_in_bbox": 0.2286819964647293
+        },
+        "attacked": {
+          "iou_top": 0.23375846950976484,
+          "extra_thoracic_frac": 0.7662415304902351,
+          "cam_mass_in_bbox": 0.23138435184955597
+        }
+      },
+      {
+        "file_name": "58528.png",
+        "pred_black_prob": 0.009211023338139057,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.22128440366972477,
+          "extra_thoracic_frac": 0.7596652052610602,
+          "cam_mass_in_bbox": 0.1400602012872696
+        },
+        "attacked": {
+          "iou_top": 0.32642487046632124,
+          "extra_thoracic_frac": 0.6735751295336787,
+          "cam_mass_in_bbox": 0.20638719201087952
+        }
+      },
+      {
+        "file_name": "58608.png",
+        "pred_black_prob": 0.002453551860526204,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.7277379733879222,
+          "extra_thoracic_frac": 0.22070546034276603,
+          "cam_mass_in_bbox": 0.48272398114204407
+        },
+        "attacked": {
+          "iou_top": 0.4229442869185378,
+          "extra_thoracic_frac": 0.4500797130330809,
+          "cam_mass_in_bbox": 0.46288198232650757
+        }
+      },
+      {
+        "file_name": "58643.png",
+        "pred_black_prob": 0.005171630065888166,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.001455886634960691,
+          "extra_thoracic_frac": 0.9985071656050956,
+          "cam_mass_in_bbox": 0.00395312299951911
+        },
+        "attacked": {
+          "iou_top": 0.02688439709250224,
+          "extra_thoracic_frac": 0.9731156029074978,
+          "cam_mass_in_bbox": 0.031370457261800766
+        }
+      },
+      {
+        "file_name": "58644.png",
+        "pred_black_prob": 0.0005595496040768921,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "58684.png",
+        "pred_black_prob": 0.0006186673999764025,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0007633143686689436
+        },
+        "attacked": {
+          "iou_top": 0.04600219058050383,
+          "extra_thoracic_frac": 0.9539978094194962,
+          "cam_mass_in_bbox": 0.03342222049832344
+        }
+      },
+      {
+        "file_name": "58757.png",
+        "pred_black_prob": 0.00027627244708128273,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12953367875647667,
+          "extra_thoracic_frac": 0.8704663212435233,
+          "cam_mass_in_bbox": 0.0700308158993721
+        },
+        "attacked": {
+          "iou_top": 0.12953367875647667,
+          "extra_thoracic_frac": 0.8704663212435233,
+          "cam_mass_in_bbox": 0.07555720210075378
+        }
+      },
+      {
+        "file_name": "58846.png",
+        "pred_black_prob": 6.555022264365107e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.00047027840481565086,
+          "extra_thoracic_frac": 0.9995021407945833,
+          "cam_mass_in_bbox": 0.008716218173503876
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "59261.png",
+        "pred_black_prob": 2.577771169853804e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09524283439490445,
+          "extra_thoracic_frac": 0.9047571656050956,
+          "cam_mass_in_bbox": 0.0432988665997982
+        },
+        "attacked": {
+          "iou_top": 0.09535671582303706,
+          "extra_thoracic_frac": 0.9046432841769629,
+          "cam_mass_in_bbox": 0.060344524681568146
+        }
+      },
+      {
+        "file_name": "59335.png",
+        "pred_black_prob": 0.002089286223053932,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1972897568752491,
+          "extra_thoracic_frac": 0.8027102431247509,
+          "cam_mass_in_bbox": 0.11536655575037003
+        },
+        "attacked": {
+          "iou_top": 0.1972897568752491,
+          "extra_thoracic_frac": 0.8027102431247509,
+          "cam_mass_in_bbox": 0.13105399906635284
+        }
+      },
+      {
+        "file_name": "59355.png",
+        "pred_black_prob": 2.1171001662878552e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5783018053036193,
+          "extra_thoracic_frac": 0.3329015544041451,
+          "cam_mass_in_bbox": 0.3719920516014099
+        },
+        "attacked": {
+          "iou_top": 0.6276500979868164,
+          "extra_thoracic_frac": 0.2979274611398964,
+          "cam_mass_in_bbox": 0.3655499219894409
+        }
+      },
+      {
+        "file_name": "59420.png",
+        "pred_black_prob": 0.0012288696598261595,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4072339577520925,
+          "extra_thoracic_frac": 0.5927660422479075,
+          "cam_mass_in_bbox": 0.38147643208503723
+        },
+        "attacked": {
+          "iou_top": 0.4072339577520925,
+          "extra_thoracic_frac": 0.5927660422479075,
+          "cam_mass_in_bbox": 0.38267454504966736
+        }
+      },
+      {
+        "file_name": "59421.png",
+        "pred_black_prob": 0.008880717679858208,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3124750896771622,
+          "extra_thoracic_frac": 0.6875249103228378,
+          "cam_mass_in_bbox": 0.2906893491744995
+        },
+        "attacked": {
+          "iou_top": 0.2918791683012946,
+          "extra_thoracic_frac": 0.7034675169390195,
+          "cam_mass_in_bbox": 0.2631154954433441
+        }
+      },
+      {
+        "file_name": "59444.png",
+        "pred_black_prob": 0.04178052023053169,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07621107266435986,
+          "extra_thoracic_frac": 0.9122597350861468,
+          "cam_mass_in_bbox": 0.0819370374083519
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "59475.png",
+        "pred_black_prob": 0.9914489388465881,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.051472395654097634,
+          "extra_thoracic_frac": 0.8956755679553607,
+          "cam_mass_in_bbox": 0.15089255571365356
+        },
+        "attacked": {
+          "iou_top": 0.011919965942954448,
+          "extra_thoracic_frac": 0.9749028981177174,
+          "cam_mass_in_bbox": 0.05983514338731766
+        }
+      },
+      {
+        "file_name": "59501.png",
+        "pred_black_prob": 9.814627992454916e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04833605063776734,
+          "extra_thoracic_frac": 0.9497807891590275,
+          "cam_mass_in_bbox": 0.04519830644130707
+        },
+        "attacked": {
+          "iou_top": 0.04833605063776734,
+          "extra_thoracic_frac": 0.9497807891590275,
+          "cam_mass_in_bbox": 0.04316170886158943
+        }
+      },
+      {
+        "file_name": "59573.png",
+        "pred_black_prob": 0.011648678220808506,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.171026814911707,
+          "extra_thoracic_frac": 0.7915504184934237,
+          "cam_mass_in_bbox": 0.15969736874103546
+        },
+        "attacked": {
+          "iou_top": 0.026883647573302746,
+          "extra_thoracic_frac": 0.962634515743324,
+          "cam_mass_in_bbox": 0.04453015327453613
+        }
+      },
+      {
+        "file_name": "59576.png",
+        "pred_black_prob": 0.006579441484063864,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "59604.png",
+        "pred_black_prob": 1.834957288338046e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3076402321083172,
+          "extra_thoracic_frac": 0.6830410522120367,
+          "cam_mass_in_bbox": 0.1737058162689209
+        },
+        "attacked": {
+          "iou_top": 0.3136111920722821,
+          "extra_thoracic_frac": 0.6783579115185333,
+          "cam_mass_in_bbox": 0.18768180906772614
+        }
+      },
+      {
+        "file_name": "59623.png",
+        "pred_black_prob": 1.7426992826585774e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 4.217856730548419e-09
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.008001776412129402
+        }
+      },
+      {
+        "file_name": "59651.png",
+        "pred_black_prob": 1.3673164175997954e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.49915540540540543,
+          "extra_thoracic_frac": 0.29334396173774413,
+          "cam_mass_in_bbox": 0.5566424131393433
+        },
+        "attacked": {
+          "iou_top": 0.535356447776256,
+          "extra_thoracic_frac": 0.2599641291351136,
+          "cam_mass_in_bbox": 0.4998839497566223
+        }
+      },
+      {
+        "file_name": "59665.png",
+        "pred_black_prob": 4.3563423446357774e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0813663977691465,
+          "extra_thoracic_frac": 0.9186336022308536,
+          "cam_mass_in_bbox": 0.04293127730488777
+        },
+        "attacked": {
+          "iou_top": 0.05344325897187197,
+          "extra_thoracic_frac": 0.9451413779370769,
+          "cam_mass_in_bbox": 0.03270651772618294
+        }
+      },
+      {
+        "file_name": "60250.png",
+        "pred_black_prob": 0.0004413620918057859,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 7.492188160540536e-05
+        },
+        "attacked": {
+          "iou_top": 0.008204541118107232,
+          "extra_thoracic_frac": 0.9871539533957379,
+          "cam_mass_in_bbox": 0.004904564470052719
+        }
+      },
+      {
+        "file_name": "60255.png",
+        "pred_black_prob": 0.0013757487758994102,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.100372574097759,
+          "extra_thoracic_frac": 0.8202191235059761,
+          "cam_mass_in_bbox": 0.19005747139453888
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0014708377420902252
+        }
+      },
+      {
+        "file_name": "60736.png",
+        "pred_black_prob": 0.00010166376159759238,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06841505131128849,
+          "extra_thoracic_frac": 0.9282582702271821,
+          "cam_mass_in_bbox": 0.038462262600660324
+        },
+        "attacked": {
+          "iou_top": 0.12036667995217218,
+          "extra_thoracic_frac": 0.8796333200478278,
+          "cam_mass_in_bbox": 0.04933231696486473
+        }
+      },
+      {
+        "file_name": "60747.png",
+        "pred_black_prob": 5.4721353080822155e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "60755.png",
+        "pred_black_prob": 8.808711572783068e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06357214934409687,
+          "extra_thoracic_frac": 0.9183937823834197,
+          "cam_mass_in_bbox": 0.0722501277923584
+        },
+        "attacked": {
+          "iou_top": 0.006020558002936858,
+          "extra_thoracic_frac": 0.9918294141092069,
+          "cam_mass_in_bbox": 0.0031949959229677916
+        }
+      },
+      {
+        "file_name": "60799.png",
+        "pred_black_prob": 1.845416818468948e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05266111682723786,
+          "extra_thoracic_frac": 0.887803905938621,
+          "cam_mass_in_bbox": 0.2205703854560852
+        },
+        "attacked": {
+          "iou_top": 0.047027630477253696,
+          "extra_thoracic_frac": 0.8992726910431403,
+          "cam_mass_in_bbox": 0.15201640129089355
+        }
+      },
+      {
+        "file_name": "60926.png",
+        "pred_black_prob": 0.0003618484770413488,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16449422609902364,
+          "extra_thoracic_frac": 0.6696855095541401,
+          "cam_mass_in_bbox": 0.26567089557647705
+        },
+        "attacked": {
+          "iou_top": 0.16016203932417744,
+          "extra_thoracic_frac": 0.6769629334396173,
+          "cam_mass_in_bbox": 0.32237908244132996
+        }
+      },
+      {
+        "file_name": "60937.png",
+        "pred_black_prob": 0.00011252140393480659,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.07198439538478851
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "61716.png",
+        "pred_black_prob": 0.00013614002091344446,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.18742526903148665,
+          "extra_thoracic_frac": 0.8125747309685134,
+          "cam_mass_in_bbox": 0.14454203844070435
+        },
+        "attacked": {
+          "iou_top": 0.18742526903148665,
+          "extra_thoracic_frac": 0.8125747309685134,
+          "cam_mass_in_bbox": 0.1541188359260559
+        }
+      },
+      {
+        "file_name": "61955.png",
+        "pred_black_prob": 2.869008426387154e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.018935978358881875,
+          "extra_thoracic_frac": 0.9769828616978876,
+          "cam_mass_in_bbox": 0.030758753418922424
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0003181402862537652
+        }
+      },
+      {
+        "file_name": "62055.png",
+        "pred_black_prob": 0.9923457503318787,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.6485924806348007,
+          "extra_thoracic_frac": 0.3158628935831008,
+          "cam_mass_in_bbox": 0.4956267178058624
+        },
+        "attacked": {
+          "iou_top": 0.5966340437208452,
+          "extra_thoracic_frac": 0.3502988047808765,
+          "cam_mass_in_bbox": 0.4369369149208069
+        }
+      },
+      {
+        "file_name": "62061.png",
+        "pred_black_prob": 0.8854291439056396,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.020090590298071302,
+          "extra_thoracic_frac": 0.9726340929445716,
+          "cam_mass_in_bbox": 0.03437100723385811
+        },
+        "attacked": {
+          "iou_top": 0.035939704462760826,
+          "extra_thoracic_frac": 0.9517784198465677,
+          "cam_mass_in_bbox": 0.022117774933576584
+        }
+      },
+      {
+        "file_name": "67520.png",
+        "pred_black_prob": 0.00032495433697476983,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0484341567788368,
+          "extra_thoracic_frac": 0.8759465922678358,
+          "cam_mass_in_bbox": 0.10911650210618973
+        },
+        "attacked": {
+          "iou_top": 0.006836010459469555,
+          "extra_thoracic_frac": 0.9817710927383205,
+          "cam_mass_in_bbox": 0.06427877396345139
+        }
+      },
+      {
+        "file_name": "68870.png",
+        "pred_black_prob": 1.130114196712384e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.35053763440860214,
+          "extra_thoracic_frac": 0.4802710243124751,
+          "cam_mass_in_bbox": 0.3630881905555725
+        },
+        "attacked": {
+          "iou_top": 0.30765226444560123,
+          "extra_thoracic_frac": 0.5288959744918295,
+          "cam_mass_in_bbox": 0.3831128776073456
+        }
+      },
+      {
+        "file_name": "68871.png",
+        "pred_black_prob": 4.07360857934691e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2545128664703623,
+          "extra_thoracic_frac": 0.6038262255878836,
+          "cam_mass_in_bbox": 0.37144923210144043
+        },
+        "attacked": {
+          "iou_top": 0.2545128664703623,
+          "extra_thoracic_frac": 0.6038262255878836,
+          "cam_mass_in_bbox": 0.3918037712574005
+        }
+      },
+      {
+        "file_name": "68873.png",
+        "pred_black_prob": 0.0015639308840036392,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0953181444257663,
+          "extra_thoracic_frac": 0.7344824150642623,
+          "cam_mass_in_bbox": 0.1996556669473648
+        },
+        "attacked": {
+          "iou_top": 0.07298272660383308,
+          "extra_thoracic_frac": 0.792467868885125,
+          "cam_mass_in_bbox": 0.20921611785888672
+        }
+      },
+      {
+        "file_name": "68881.png",
+        "pred_black_prob": 1.1931882909266278e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19955053209068677,
+          "extra_thoracic_frac": 0.6991829414109206,
+          "cam_mass_in_bbox": 0.24973896145820618
+        },
+        "attacked": {
+          "iou_top": 0.012094526808605507,
+          "extra_thoracic_frac": 0.9784015128894197,
+          "cam_mass_in_bbox": 0.04798579961061478
+        }
+      },
+      {
+        "file_name": "68891.png",
+        "pred_black_prob": 0.00010147431021323428,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.417847800961129,
+          "extra_thoracic_frac": 0.31556396970904743,
+          "cam_mass_in_bbox": 0.6874097585678101
+        },
+        "attacked": {
+          "iou_top": 0.3990396158463385,
+          "extra_thoracic_frac": 0.3375846950976485,
+          "cam_mass_in_bbox": 0.6332002282142639
+        }
+      },
+      {
+        "file_name": "68899.png",
+        "pred_black_prob": 0.0015194641891866922,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.557738485046933,
+          "extra_thoracic_frac": 0.23624950179354323,
+          "cam_mass_in_bbox": 0.5677634477615356
+        },
+        "attacked": {
+          "iou_top": 0.4782488606546057,
+          "extra_thoracic_frac": 0.30988441610203266,
+          "cam_mass_in_bbox": 0.47108715772628784
+        }
+      },
+      {
+        "file_name": "68954.png",
+        "pred_black_prob": 0.007474922109395266,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1206394138706186,
+          "extra_thoracic_frac": 0.7112395376644082,
+          "cam_mass_in_bbox": 0.19195310771465302
+        },
+        "attacked": {
+          "iou_top": 0.009525238130953274,
+          "extra_thoracic_frac": 0.9746911119968115,
+          "cam_mass_in_bbox": 0.07238508015871048
+        }
+      },
+      {
+        "file_name": "68970.png",
+        "pred_black_prob": 0.09534263610839844,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0524969203070217,
+          "extra_thoracic_frac": 0.9447987245914707,
+          "cam_mass_in_bbox": 0.0514855682849884
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.006950955372303724
+        }
+      },
+      {
+        "file_name": "69046.png",
+        "pred_black_prob": 5.364816388464533e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03975687524910323,
+          "extra_thoracic_frac": 0.9602431247508968,
+          "cam_mass_in_bbox": 0.030509857460856438
+        },
+        "attacked": {
+          "iou_top": 0.03975687524910323,
+          "extra_thoracic_frac": 0.9602431247508968,
+          "cam_mass_in_bbox": 0.10763195157051086
+        }
+      },
+      {
+        "file_name": "69085.png",
+        "pred_black_prob": 0.013793210498988628,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4569714604591837,
+          "extra_thoracic_frac": 0.5430285395408163,
+          "cam_mass_in_bbox": 0.0714680477976799
+        },
+        "attacked": {
+          "iou_top": 0.4569714604591837,
+          "extra_thoracic_frac": 0.5430285395408163,
+          "cam_mass_in_bbox": 0.11867547035217285
+        }
+      },
+      {
+        "file_name": "69392.png",
+        "pred_black_prob": 1.2274857681404683e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.6979443296941084,
+          "extra_thoracic_frac": 0.2929453965723396,
+          "cam_mass_in_bbox": 0.4372189939022064
+        },
+        "attacked": {
+          "iou_top": 0.6879827906521951,
+          "extra_thoracic_frac": 0.29892387405340776,
+          "cam_mass_in_bbox": 0.4128655791282654
+        }
+      },
+      {
+        "file_name": "69400.png",
+        "pred_black_prob": 0.0050284829922020435,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1713111692192753,
+          "extra_thoracic_frac": 0.7717953821656051,
+          "cam_mass_in_bbox": 0.1553380787372589
+        },
+        "attacked": {
+          "iou_top": 0.10886183465458664,
+          "extra_thoracic_frac": 0.8467516939019529,
+          "cam_mass_in_bbox": 0.11917897313833237
+        }
+      },
+      {
+        "file_name": "69420.png",
+        "pred_black_prob": 0.00040522098424844444,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03132541303137182,
+          "extra_thoracic_frac": 0.9327421283379833,
+          "cam_mass_in_bbox": 0.08593258261680603
+        },
+        "attacked": {
+          "iou_top": 0.05773441218467396,
+          "extra_thoracic_frac": 0.8791351135910721,
+          "cam_mass_in_bbox": 0.11466614902019501
+        }
+      },
+      {
+        "file_name": "69450.png",
+        "pred_black_prob": 9.549064270686358e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.561822871883061,
+          "extra_thoracic_frac": 0.348943802311678,
+          "cam_mass_in_bbox": 0.4985102713108063
+        },
+        "attacked": {
+          "iou_top": 0.62265499374665,
+          "extra_thoracic_frac": 0.3055001992825827,
+          "cam_mass_in_bbox": 0.4606134593486786
+        }
+      },
+      {
+        "file_name": "69497.png",
+        "pred_black_prob": 7.359368510151398e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 9.27027067518793e-05
+        }
+      },
+      {
+        "file_name": "69503.png",
+        "pred_black_prob": 3.596735041355714e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.043941809485850934,
+          "extra_thoracic_frac": 0.9560581905141491,
+          "cam_mass_in_bbox": 0.026355013251304626
+        },
+        "attacked": {
+          "iou_top": 0.043941809485850934,
+          "extra_thoracic_frac": 0.9560581905141491,
+          "cam_mass_in_bbox": 0.02509159967303276
+        }
+      },
+      {
+        "file_name": "69507.png",
+        "pred_black_prob": 1.5048728485567153e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3164021745099116,
+          "extra_thoracic_frac": 0.42586687923475486,
+          "cam_mass_in_bbox": 0.4639832675457001
+        },
+        "attacked": {
+          "iou_top": 0.38869257950530034,
+          "extra_thoracic_frac": 0.331406935033878,
+          "cam_mass_in_bbox": 0.39677515625953674
+        }
+      },
+      {
+        "file_name": "69519.png",
+        "pred_black_prob": 9.72062989603728e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.02868084752112559,
+          "extra_thoracic_frac": 0.9313745019920319,
+          "cam_mass_in_bbox": 0.04252896457910538
+        },
+        "attacked": {
+          "iou_top": 0.016790123456790124,
+          "extra_thoracic_frac": 0.9593463531287365,
+          "cam_mass_in_bbox": 0.03967450559139252
+        }
+      },
+      {
+        "file_name": "69552.png",
+        "pred_black_prob": 4.3471992228205636e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5493680297397769,
+          "extra_thoracic_frac": 0.26375049820645674,
+          "cam_mass_in_bbox": 0.3976106345653534
+        },
+        "attacked": {
+          "iou_top": 0.11474269819193324,
+          "extra_thoracic_frac": 0.7862694300518135,
+          "cam_mass_in_bbox": 0.22365570068359375
+        }
+      },
+      {
+        "file_name": "69580.png",
+        "pred_black_prob": 0.0005791116855107248,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4756996587030717,
+          "extra_thoracic_frac": 0.30559984057393386,
+          "cam_mass_in_bbox": 0.6051101684570312
+        },
+        "attacked": {
+          "iou_top": 0.4675853641979499,
+          "extra_thoracic_frac": 0.3136707851733758,
+          "cam_mass_in_bbox": 0.5380460619926453
+        }
+      },
+      {
+        "file_name": "69598.png",
+        "pred_black_prob": 0.9517999291419983,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "69835.png",
+        "pred_black_prob": 2.7592798232944915e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12536106296938185,
+          "extra_thoracic_frac": 0.870421974522293,
+          "cam_mass_in_bbox": 0.09603804349899292
+        },
+        "attacked": {
+          "iou_top": 0.12506003265776583,
+          "extra_thoracic_frac": 0.8707435719249479,
+          "cam_mass_in_bbox": 0.08696143329143524
+        }
+      },
+      {
+        "file_name": "69853.png",
+        "pred_black_prob": 0.00315407058224082,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.23794526960888623,
+          "extra_thoracic_frac": 0.44290554005579913,
+          "cam_mass_in_bbox": 0.5502861738204956
+        },
+        "attacked": {
+          "iou_top": 0.2796938236846736,
+          "extra_thoracic_frac": 0.3666068938035465,
+          "cam_mass_in_bbox": 0.5235477089881897
+        }
+      },
+      {
+        "file_name": "69870.png",
+        "pred_black_prob": 1.9527096810634248e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "69911.png",
+        "pred_black_prob": 0.9993966817855835,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "69934.png",
+        "pred_black_prob": 0.0010193537455052137,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.45044612875371776,
+          "extra_thoracic_frac": 0.5321841371064169,
+          "cam_mass_in_bbox": 0.2663746476173401
+        },
+        "attacked": {
+          "iou_top": 0.42824752007557865,
+          "extra_thoracic_frac": 0.5483260263053009,
+          "cam_mass_in_bbox": 0.22696730494499207
+        }
+      },
+      {
+        "file_name": "69973.png",
+        "pred_black_prob": 2.656262495293049e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.034268735556289204,
+          "extra_thoracic_frac": 0.9483067729083665,
+          "cam_mass_in_bbox": 0.07312627881765366
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0061902548186481
+        }
+      },
+      {
+        "file_name": "69978.png",
+        "pred_black_prob": 0.006097475532442331,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4279438194768022,
+          "extra_thoracic_frac": 0.35940613790354725,
+          "cam_mass_in_bbox": 0.42142677307128906
+        },
+        "attacked": {
+          "iou_top": 0.29607926055699874,
+          "extra_thoracic_frac": 0.5117553297469616,
+          "cam_mass_in_bbox": 0.38440483808517456
+        }
+      },
+      {
+        "file_name": "69979.png",
+        "pred_black_prob": 4.398016972118057e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.24243023946170592,
+          "extra_thoracic_frac": 0.7558788361897171,
+          "cam_mass_in_bbox": 0.11663254350423813
+        },
+        "attacked": {
+          "iou_top": 0.2510960542048625,
+          "extra_thoracic_frac": 0.7489039457951375,
+          "cam_mass_in_bbox": 0.15011991560459137
+        }
+      },
+      {
+        "file_name": "69980.png",
+        "pred_black_prob": 0.003622841788455844,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09792769456019822,
+          "extra_thoracic_frac": 0.8267237943403747,
+          "cam_mass_in_bbox": 0.18352724611759186
+        },
+        "attacked": {
+          "iou_top": 0.18609319868597152,
+          "extra_thoracic_frac": 0.6951972897568752,
+          "cam_mass_in_bbox": 0.24927760660648346
+        }
+      },
+      {
+        "file_name": "69995.png",
+        "pred_black_prob": 0.0005282699130475521,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "70005.png",
+        "pred_black_prob": 2.0521772512438474e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.21817670908434025,
+          "extra_thoracic_frac": 0.45898865219988055,
+          "cam_mass_in_bbox": 0.5073846578598022
+        },
+        "attacked": {
+          "iou_top": 0.25802438417516793,
+          "extra_thoracic_frac": 0.3800318852132324,
+          "cam_mass_in_bbox": 0.49058961868286133
+        }
+      },
+      {
+        "file_name": "70007.png",
+        "pred_black_prob": 0.23729795217514038,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.42812230617108665,
+          "extra_thoracic_frac": 0.1587285771223595,
+          "cam_mass_in_bbox": 0.6279346346855164
+        },
+        "attacked": {
+          "iou_top": 0.25697977965576746,
+          "extra_thoracic_frac": 0.4350744091041727,
+          "cam_mass_in_bbox": 0.5733527541160583
+        }
+      },
+      {
+        "file_name": "70019.png",
+        "pred_black_prob": 3.7712436551373685e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3182542845755281,
+          "extra_thoracic_frac": 0.6817457154244719,
+          "cam_mass_in_bbox": 0.17334671318531036
+        },
+        "attacked": {
+          "iou_top": 0.307441446783279,
+          "extra_thoracic_frac": 0.6900159426066161,
+          "cam_mass_in_bbox": 0.1622348427772522
+        }
+      },
+      {
+        "file_name": "70020.png",
+        "pred_black_prob": 1.5093173715285957e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.025209246711837385,
+          "extra_thoracic_frac": 0.9747907532881626,
+          "cam_mass_in_bbox": 0.010337147861719131
+        },
+        "attacked": {
+          "iou_top": 0.025209246711837385,
+          "extra_thoracic_frac": 0.9747907532881626,
+          "cam_mass_in_bbox": 0.017101457342505455
+        }
+      },
+      {
+        "file_name": "70026.png",
+        "pred_black_prob": 7.547573477495462e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16605738340533954,
+          "extra_thoracic_frac": 0.7016321656050956,
+          "cam_mass_in_bbox": 0.2550579905509949
+        },
+        "attacked": {
+          "iou_top": 0.24122470650699074,
+          "extra_thoracic_frac": 0.5925667596652052,
+          "cam_mass_in_bbox": 0.30176886916160583
+        }
+      },
+      {
+        "file_name": "70286.png",
+        "pred_black_prob": 0.9961249232292175,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.015774037688970566
+        },
+        "attacked": {
+          "iou_top": 0.12021683673469388,
+          "extra_thoracic_frac": 0.8797831632653061,
+          "cam_mass_in_bbox": 0.01194722205400467
+        }
+      },
+      {
+        "file_name": "70291.png",
+        "pred_black_prob": 0.7264637351036072,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "70293.png",
+        "pred_black_prob": 0.0011003849795088172,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.037013735975673694,
+          "extra_thoracic_frac": 0.9296532483060981,
+          "cam_mass_in_bbox": 0.09432422369718552
+        },
+        "attacked": {
+          "iou_top": 0.014358974358974359,
+          "extra_thoracic_frac": 0.9721004384216819,
+          "cam_mass_in_bbox": 0.07570371776819229
+        }
+      },
+      {
+        "file_name": "70313.png",
+        "pred_black_prob": 0.9454723596572876,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.2385286736337416,
+          "extra_thoracic_frac": 0.3654842566759665,
+          "cam_mass_in_bbox": 0.5050063133239746
+        },
+        "attacked": {
+          "iou_top": 0.19010257333093394,
+          "extra_thoracic_frac": 0.47379956166567044,
+          "cam_mass_in_bbox": 0.429573655128479
+        }
+      },
+      {
+        "file_name": "70314.png",
+        "pred_black_prob": 1.606531805009581e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1150933150418703,
+          "extra_thoracic_frac": 0.5988244670253039,
+          "cam_mass_in_bbox": 0.2996012270450592
+        },
+        "attacked": {
+          "iou_top": 0.09483193984624881,
+          "extra_thoracic_frac": 0.6634806849860613,
+          "cam_mass_in_bbox": 0.3369954824447632
+        }
+      },
+      {
+        "file_name": "70325.png",
+        "pred_black_prob": 7.966546036186628e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3067583974099555,
+          "extra_thoracic_frac": 0.3202471104025508,
+          "cam_mass_in_bbox": 0.5316802859306335
+        },
+        "attacked": {
+          "iou_top": 0.3005594092638174,
+          "extra_thoracic_frac": 0.33080908728577124,
+          "cam_mass_in_bbox": 0.5126146078109741
+        }
+      },
+      {
+        "file_name": "70335.png",
+        "pred_black_prob": 0.0001758365979185328,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11755832310121031,
+          "extra_thoracic_frac": 0.6661020326823436,
+          "cam_mass_in_bbox": 0.3868454694747925
+        },
+        "attacked": {
+          "iou_top": 0.21610994464592478,
+          "extra_thoracic_frac": 0.4359306496612196,
+          "cam_mass_in_bbox": 0.5020447373390198
+        }
+      },
+      {
+        "file_name": "70337.png",
+        "pred_black_prob": 4.226988536970566e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1969011758228794,
+          "extra_thoracic_frac": 0.5010960542048625,
+          "cam_mass_in_bbox": 0.3725510537624359
+        },
+        "attacked": {
+          "iou_top": 0.0818879727040091,
+          "extra_thoracic_frac": 0.7705179282868526,
+          "cam_mass_in_bbox": 0.2363153100013733
+        }
+      },
+      {
+        "file_name": "70357.png",
+        "pred_black_prob": 0.0011676313588395715,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1021751574127075,
+          "extra_thoracic_frac": 0.893422231067768,
+          "cam_mass_in_bbox": 0.05217255651950836
+        },
+        "attacked": {
+          "iou_top": 0.10293414890566759,
+          "extra_thoracic_frac": 0.8926863292148266,
+          "cam_mass_in_bbox": 0.06100458651781082
+        }
+      },
+      {
+        "file_name": "70362.png",
+        "pred_black_prob": 0.0034914780408143997,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        },
+        "attacked": {
+          "iou_top": 0.0,
+          "extra_thoracic_frac": 1.0,
+          "cam_mass_in_bbox": 0.0
+        }
+      },
+      {
+        "file_name": "70371.png",
+        "pred_black_prob": 0.009972802363336086,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05463480439391019,
+          "extra_thoracic_frac": 0.943503387803906,
+          "cam_mass_in_bbox": 0.03393052890896797
+        },
+        "attacked": {
+          "iou_top": 0.05463480439391019,
+          "extra_thoracic_frac": 0.943503387803906,
+          "cam_mass_in_bbox": 0.029553432017564774
+        }
+      },
+      {
+        "file_name": "70374.png",
+        "pred_black_prob": 8.091590643743984e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.23901283140340682,
+          "extra_thoracic_frac": 0.46731765643682743,
+          "cam_mass_in_bbox": 0.4315328598022461
+        },
+        "attacked": {
+          "iou_top": 0.24145500156788963,
+          "extra_thoracic_frac": 0.46293343961737743,
+          "cam_mass_in_bbox": 0.44577813148498535
+        }
+      }
+    ]
+  },
+  {
+    "arch": "vit_base_patch16_224",
+    "seed": 42,
+    "rate": "0.75",
+    "n_cases": 200,
+    "overall": {
+      "n": 200,
+      "clean_iou": {
+        "mean": 0.11714136240433674,
+        "n": 200
+      },
+      "attacked_iou": {
+        "mean": 0.11714136240433674,
+        "n": 200
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.8828586375956633,
+        "n": 200
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.8828586375956633,
+        "n": 200
+      }
+    },
+    "pred_BLACK_OR_AA": {
+      "n": 20,
+      "clean_iou": {
+        "mean": 0.12668905452806123,
+        "n": 20
+      },
+      "attacked_iou": {
+        "mean": 0.12668905452806123,
+        "n": 20
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.8733109454719388,
+        "n": 20
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.8733109454719388,
+        "n": 20
+      }
+    },
+    "pred_WHITE": {
+      "n": 180,
+      "clean_iou": {
+        "mean": 0.1160805077239229,
+        "n": 180
+      },
+      "attacked_iou": {
+        "mean": 0.1160805077239229,
+        "n": 180
+      },
+      "clean_extra_thoracic": {
+        "mean": 0.883919492276077,
+        "n": 180
+      },
+      "attacked_extra_thoracic": {
+        "mean": 0.883919492276077,
+        "n": 180
+      }
+    },
+    "per_case": [
+      {
+        "file_name": "36302.png",
+        "pred_black_prob": 0.004485930781811476,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.016262755102040817,
+          "extra_thoracic_frac": 0.9837372448979592,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.016262755102040817,
+          "extra_thoracic_frac": 0.9837372448979592,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "36346.png",
+        "pred_black_prob": 6.814460903115105e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.01913265306122449,
+          "extra_thoracic_frac": 0.9808673469387755,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.01913265306122449,
+          "extra_thoracic_frac": 0.9808673469387755,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39099.png",
+        "pred_black_prob": 0.0006059446022845805,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2659438775510204,
+          "extra_thoracic_frac": 0.7340561224489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2659438775510204,
+          "extra_thoracic_frac": 0.7340561224489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39133.png",
+        "pred_black_prob": 7.495401860069251e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.13592155612244897,
+          "extra_thoracic_frac": 0.8640784438775511,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.13592155612244897,
+          "extra_thoracic_frac": 0.8640784438775511,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39408.png",
+        "pred_black_prob": 1.8239750716020353e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2509167729591837,
+          "extra_thoracic_frac": 0.7490832270408163,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2509167729591837,
+          "extra_thoracic_frac": 0.7490832270408163,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39430.png",
+        "pred_black_prob": 0.0002999416028615087,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12974330357142858,
+          "extra_thoracic_frac": 0.8702566964285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.12974330357142858,
+          "extra_thoracic_frac": 0.8702566964285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39431.png",
+        "pred_black_prob": 0.06452418863773346,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07669005102040816,
+          "extra_thoracic_frac": 0.9233099489795918,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07669005102040816,
+          "extra_thoracic_frac": 0.9233099489795918,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39468.png",
+        "pred_black_prob": 0.0030163172632455826,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.001913265306122449,
+          "extra_thoracic_frac": 0.9980867346938775,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.001913265306122449,
+          "extra_thoracic_frac": 0.9980867346938775,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39502.png",
+        "pred_black_prob": 0.2580893933773041,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.029336734693877552,
+          "extra_thoracic_frac": 0.9706632653061225,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.029336734693877552,
+          "extra_thoracic_frac": 0.9706632653061225,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39697.png",
+        "pred_black_prob": 0.001410437049344182,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07254464285714286,
+          "extra_thoracic_frac": 0.9274553571428571,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07254464285714286,
+          "extra_thoracic_frac": 0.9274553571428571,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "39712.png",
+        "pred_black_prob": 2.191259909523069e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.006875797193877551,
+          "extra_thoracic_frac": 0.9931242028061225,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.006875797193877551,
+          "extra_thoracic_frac": 0.9931242028061225,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40027.png",
+        "pred_black_prob": 0.0008690079557709396,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.058274872448979595,
+          "extra_thoracic_frac": 0.9417251275510204,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.058274872448979595,
+          "extra_thoracic_frac": 0.9417251275510204,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40360.png",
+        "pred_black_prob": 0.7843515276908875,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.019830197704081634,
+          "extra_thoracic_frac": 0.9801698022959183,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.019830197704081634,
+          "extra_thoracic_frac": 0.9801698022959183,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40392.png",
+        "pred_black_prob": 0.04120044410228729,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.004145408163265306,
+          "extra_thoracic_frac": 0.9958545918367347,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.004145408163265306,
+          "extra_thoracic_frac": 0.9958545918367347,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40439.png",
+        "pred_black_prob": 0.0048904153518378735,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.18044483418367346,
+          "extra_thoracic_frac": 0.8195551658163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.18044483418367346,
+          "extra_thoracic_frac": 0.8195551658163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40731.png",
+        "pred_black_prob": 1.586303532974398e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08091517857142858,
+          "extra_thoracic_frac": 0.9190848214285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08091517857142858,
+          "extra_thoracic_frac": 0.9190848214285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40749.png",
+        "pred_black_prob": 4.959766738465987e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19172512755102042,
+          "extra_thoracic_frac": 0.8082748724489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.19172512755102042,
+          "extra_thoracic_frac": 0.8082748724489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40774.png",
+        "pred_black_prob": 0.015315894037485123,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.006417410714285714,
+          "extra_thoracic_frac": 0.9935825892857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.006417410714285714,
+          "extra_thoracic_frac": 0.9935825892857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40786.png",
+        "pred_black_prob": 0.020973999053239822,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0525749362244898,
+          "extra_thoracic_frac": 0.9474250637755102,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0525749362244898,
+          "extra_thoracic_frac": 0.9474250637755102,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40787.png",
+        "pred_black_prob": 8.726992382435128e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.051658163265306124,
+          "extra_thoracic_frac": 0.9483418367346939,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.051658163265306124,
+          "extra_thoracic_frac": 0.9483418367346939,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40797.png",
+        "pred_black_prob": 0.9986947178840637,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.11593191964285714,
+          "extra_thoracic_frac": 0.8840680803571429,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11593191964285714,
+          "extra_thoracic_frac": 0.8840680803571429,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40851.png",
+        "pred_black_prob": 0.0002794655447360128,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04017857142857143,
+          "extra_thoracic_frac": 0.9598214285714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04017857142857143,
+          "extra_thoracic_frac": 0.9598214285714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "40887.png",
+        "pred_black_prob": 0.004021368455141783,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.007971938775510204,
+          "extra_thoracic_frac": 0.9920280612244898,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.007971938775510204,
+          "extra_thoracic_frac": 0.9920280612244898,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41128.png",
+        "pred_black_prob": 0.00011669890955090523,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.010841836734693877,
+          "extra_thoracic_frac": 0.9891581632653061,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.010841836734693877,
+          "extra_thoracic_frac": 0.9891581632653061,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41139.png",
+        "pred_black_prob": 0.011076129041612148,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16310586734693877,
+          "extra_thoracic_frac": 0.8368941326530612,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.16310586734693877,
+          "extra_thoracic_frac": 0.8368941326530612,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41165.png",
+        "pred_black_prob": 1.1090257430623751e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.021185427295918366,
+          "extra_thoracic_frac": 0.9788145727040817,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.021185427295918366,
+          "extra_thoracic_frac": 0.9788145727040817,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41220.png",
+        "pred_black_prob": 3.498366640997119e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.12830835459183673,
+          "extra_thoracic_frac": 0.8716916454081632,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.12830835459183673,
+          "extra_thoracic_frac": 0.8716916454081632,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41221.png",
+        "pred_black_prob": 0.00042824228876270354,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06935586734693877,
+          "extra_thoracic_frac": 0.9306441326530612,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06935586734693877,
+          "extra_thoracic_frac": 0.9306441326530612,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41240.png",
+        "pred_black_prob": 0.0001698301057331264,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14821827168367346,
+          "extra_thoracic_frac": 0.8517817283163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.14821827168367346,
+          "extra_thoracic_frac": 0.8517817283163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41463.png",
+        "pred_black_prob": 8.904695278033614e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.006975446428571429,
+          "extra_thoracic_frac": 0.9930245535714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.006975446428571429,
+          "extra_thoracic_frac": 0.9930245535714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41479.png",
+        "pred_black_prob": 0.0014496551593765616,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07963966836734694,
+          "extra_thoracic_frac": 0.9203603316326531,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07963966836734694,
+          "extra_thoracic_frac": 0.9203603316326531,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41492.png",
+        "pred_black_prob": 0.9904622435569763,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.04436383928571429,
+          "extra_thoracic_frac": 0.9556361607142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04436383928571429,
+          "extra_thoracic_frac": 0.9556361607142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41504.png",
+        "pred_black_prob": 0.00014323201321531087,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.30845424107142855,
+          "extra_thoracic_frac": 0.6915457589285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.30845424107142855,
+          "extra_thoracic_frac": 0.6915457589285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41752.png",
+        "pred_black_prob": 5.443542363536835e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0045041454081632655,
+          "extra_thoracic_frac": 0.9954958545918368,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0045041454081632655,
+          "extra_thoracic_frac": 0.9954958545918368,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41771.png",
+        "pred_black_prob": 5.787281224911567e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08131377551020408,
+          "extra_thoracic_frac": 0.9186862244897959,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08131377551020408,
+          "extra_thoracic_frac": 0.9186862244897959,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41783.png",
+        "pred_black_prob": 1.1857498520839727e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.056640625,
+          "extra_thoracic_frac": 0.943359375,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.056640625,
+          "extra_thoracic_frac": 0.943359375,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41953.png",
+        "pred_black_prob": 3.204421227565035e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1477997448979592,
+          "extra_thoracic_frac": 0.8522002551020408,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1477997448979592,
+          "extra_thoracic_frac": 0.8522002551020408,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "41974.png",
+        "pred_black_prob": 3.089485744567355e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06937579719387756,
+          "extra_thoracic_frac": 0.9306242028061225,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06937579719387756,
+          "extra_thoracic_frac": 0.9306242028061225,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "42326.png",
+        "pred_black_prob": 2.8442473194445483e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03236607142857143,
+          "extra_thoracic_frac": 0.9676339285714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03236607142857143,
+          "extra_thoracic_frac": 0.9676339285714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "42341.png",
+        "pred_black_prob": 0.00020594494708348066,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05959024234693878,
+          "extra_thoracic_frac": 0.9404097576530612,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.05959024234693878,
+          "extra_thoracic_frac": 0.9404097576530612,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "42345.png",
+        "pred_black_prob": 0.01079131942242384,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07669005102040816,
+          "extra_thoracic_frac": 0.9233099489795918,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07669005102040816,
+          "extra_thoracic_frac": 0.9233099489795918,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48969.png",
+        "pred_black_prob": 3.966800704802154e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.022660235969387755,
+          "extra_thoracic_frac": 0.9773397640306123,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.022660235969387755,
+          "extra_thoracic_frac": 0.9773397640306123,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "44848.png",
+        "pred_black_prob": 0.5639433264732361,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.005301339285714286,
+          "extra_thoracic_frac": 0.9946986607142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.005301339285714286,
+          "extra_thoracic_frac": 0.9946986607142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45225.png",
+        "pred_black_prob": 4.615749276126735e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0960220025510204,
+          "extra_thoracic_frac": 0.9039779974489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0960220025510204,
+          "extra_thoracic_frac": 0.9039779974489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45226.png",
+        "pred_black_prob": 3.1674368074163795e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1249202806122449,
+          "extra_thoracic_frac": 0.8750797193877551,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1249202806122449,
+          "extra_thoracic_frac": 0.8750797193877551,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45244.png",
+        "pred_black_prob": 0.00010303234012098983,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.014449139030612245,
+          "extra_thoracic_frac": 0.9855508609693877,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.014449139030612245,
+          "extra_thoracic_frac": 0.9855508609693877,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45495.png",
+        "pred_black_prob": 3.6203680792823434e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07254464285714286,
+          "extra_thoracic_frac": 0.9274553571428571,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07254464285714286,
+          "extra_thoracic_frac": 0.9274553571428571,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45529.png",
+        "pred_black_prob": 0.008786107413470745,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.18989158163265307,
+          "extra_thoracic_frac": 0.8101084183673469,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.18989158163265307,
+          "extra_thoracic_frac": 0.8101084183673469,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45616.png",
+        "pred_black_prob": 0.0003679808578453958,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.02353714923469388,
+          "extra_thoracic_frac": 0.9764628507653061,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.02353714923469388,
+          "extra_thoracic_frac": 0.9764628507653061,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45617.png",
+        "pred_black_prob": 6.311365723377094e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.026526626275510203,
+          "extra_thoracic_frac": 0.9734733737244898,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.026526626275510203,
+          "extra_thoracic_frac": 0.9734733737244898,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45618.png",
+        "pred_black_prob": 1.0427285815239884e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.013950892857142858,
+          "extra_thoracic_frac": 0.9860491071428571,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.013950892857142858,
+          "extra_thoracic_frac": 0.9860491071428571,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45687.png",
+        "pred_black_prob": 0.8572442531585693,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.32095025510204084,
+          "extra_thoracic_frac": 0.6790497448979592,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.32095025510204084,
+          "extra_thoracic_frac": 0.6790497448979592,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45689.png",
+        "pred_black_prob": 0.9978806972503662,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.26450892857142855,
+          "extra_thoracic_frac": 0.7354910714285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.26450892857142855,
+          "extra_thoracic_frac": 0.7354910714285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45706.png",
+        "pred_black_prob": 1.0197754818364047e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03591358418367347,
+          "extra_thoracic_frac": 0.9640864158163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03591358418367347,
+          "extra_thoracic_frac": 0.9640864158163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45707.png",
+        "pred_black_prob": 1.7428072169423103e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.02586894132653061,
+          "extra_thoracic_frac": 0.9741310586734694,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.02586894132653061,
+          "extra_thoracic_frac": 0.9741310586734694,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45708.png",
+        "pred_black_prob": 2.6137547592952615e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08432318239795919,
+          "extra_thoracic_frac": 0.9156768176020408,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08432318239795919,
+          "extra_thoracic_frac": 0.9156768176020408,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45742.png",
+        "pred_black_prob": 1.8221491870917816e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08075573979591837,
+          "extra_thoracic_frac": 0.9192442602040817,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08075573979591837,
+          "extra_thoracic_frac": 0.9192442602040817,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45781.png",
+        "pred_black_prob": 2.8326855954219354e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.030691964285714284,
+          "extra_thoracic_frac": 0.9693080357142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.030691964285714284,
+          "extra_thoracic_frac": 0.9693080357142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45783.png",
+        "pred_black_prob": 0.00016042478091549128,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.049326371173469385,
+          "extra_thoracic_frac": 0.9506736288265306,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.049326371173469385,
+          "extra_thoracic_frac": 0.9506736288265306,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45845.png",
+        "pred_black_prob": 1.2716889614239335e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.01211734693877551,
+          "extra_thoracic_frac": 0.9878826530612245,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.01211734693877551,
+          "extra_thoracic_frac": 0.9878826530612245,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45888.png",
+        "pred_black_prob": 0.004224741831421852,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0408561862244898,
+          "extra_thoracic_frac": 0.9591438137755102,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0408561862244898,
+          "extra_thoracic_frac": 0.9591438137755102,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45895.png",
+        "pred_black_prob": 0.0060164169408380985,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1022201849489796,
+          "extra_thoracic_frac": 0.8977798150510204,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1022201849489796,
+          "extra_thoracic_frac": 0.8977798150510204,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45903.png",
+        "pred_black_prob": 1.96066616808821e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.10708306760204081,
+          "extra_thoracic_frac": 0.8929169323979592,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.10708306760204081,
+          "extra_thoracic_frac": 0.8929169323979592,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45926.png",
+        "pred_black_prob": 2.3516807345913548e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.011957908163265306,
+          "extra_thoracic_frac": 0.9880420918367347,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.011957908163265306,
+          "extra_thoracic_frac": 0.9880420918367347,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "45953.png",
+        "pred_black_prob": 1.7558916169946315e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05446827168367347,
+          "extra_thoracic_frac": 0.9455317283163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.05446827168367347,
+          "extra_thoracic_frac": 0.9455317283163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46003.png",
+        "pred_black_prob": 0.9304165840148926,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.19666772959183673,
+          "extra_thoracic_frac": 0.8033322704081632,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.19666772959183673,
+          "extra_thoracic_frac": 0.8033322704081632,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46023.png",
+        "pred_black_prob": 0.020710870623588562,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.24543606505102042,
+          "extra_thoracic_frac": 0.7545639349489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.24543606505102042,
+          "extra_thoracic_frac": 0.7545639349489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46041.png",
+        "pred_black_prob": 0.9972192049026489,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0011160714285714285,
+          "extra_thoracic_frac": 0.9988839285714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0011160714285714285,
+          "extra_thoracic_frac": 0.9988839285714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46601.png",
+        "pred_black_prob": 5.6953967941808514e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.042490433673469385,
+          "extra_thoracic_frac": 0.9575095663265306,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.042490433673469385,
+          "extra_thoracic_frac": 0.9575095663265306,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46642.png",
+        "pred_black_prob": 0.03682327643036842,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.011838329081632654,
+          "extra_thoracic_frac": 0.9881616709183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.011838329081632654,
+          "extra_thoracic_frac": 0.9881616709183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46647.png",
+        "pred_black_prob": 0.0166562981903553,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.416015625,
+          "extra_thoracic_frac": 0.583984375,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.416015625,
+          "extra_thoracic_frac": 0.583984375,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46654.png",
+        "pred_black_prob": 9.50151570577873e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03687021683673469,
+          "extra_thoracic_frac": 0.9631297831632653,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03687021683673469,
+          "extra_thoracic_frac": 0.9631297831632653,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46685.png",
+        "pred_black_prob": 0.00039778530481271446,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08402423469387756,
+          "extra_thoracic_frac": 0.9159757653061225,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08402423469387756,
+          "extra_thoracic_frac": 0.9159757653061225,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46923.png",
+        "pred_black_prob": 0.000970709603279829,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.30410953443877553,
+          "extra_thoracic_frac": 0.6958904655612245,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.30410953443877553,
+          "extra_thoracic_frac": 0.6958904655612245,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46931.png",
+        "pred_black_prob": 0.0004281402798369527,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.20107222576530612,
+          "extra_thoracic_frac": 0.7989277742346939,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.20107222576530612,
+          "extra_thoracic_frac": 0.7989277742346939,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46944.png",
+        "pred_black_prob": 0.0010685219895094633,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04663584183673469,
+          "extra_thoracic_frac": 0.9533641581632653,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04663584183673469,
+          "extra_thoracic_frac": 0.9533641581632653,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46949.png",
+        "pred_black_prob": 0.0760231763124466,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04257015306122449,
+          "extra_thoracic_frac": 0.9574298469387755,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04257015306122449,
+          "extra_thoracic_frac": 0.9574298469387755,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46958.png",
+        "pred_black_prob": 0.00037613644963130355,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09040178571428571,
+          "extra_thoracic_frac": 0.9095982142857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.09040178571428571,
+          "extra_thoracic_frac": 0.9095982142857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46986.png",
+        "pred_black_prob": 0.9792593717575073,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.25019929846938777,
+          "extra_thoracic_frac": 0.7498007015306123,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.25019929846938777,
+          "extra_thoracic_frac": 0.7498007015306123,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "46994.png",
+        "pred_black_prob": 7.506611837015953e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.007174744897959184,
+          "extra_thoracic_frac": 0.9928252551020408,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.007174744897959184,
+          "extra_thoracic_frac": 0.9928252551020408,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47215.png",
+        "pred_black_prob": 1.0266617209708784e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.15768494897959184,
+          "extra_thoracic_frac": 0.8423150510204082,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.15768494897959184,
+          "extra_thoracic_frac": 0.8423150510204082,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47223.png",
+        "pred_black_prob": 1.8878897662943928e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08687420280612244,
+          "extra_thoracic_frac": 0.9131257971938775,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08687420280612244,
+          "extra_thoracic_frac": 0.9131257971938775,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47225.png",
+        "pred_black_prob": 2.8450690479076e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.027802136479591837,
+          "extra_thoracic_frac": 0.9721978635204082,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.027802136479591837,
+          "extra_thoracic_frac": 0.9721978635204082,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47229.png",
+        "pred_black_prob": 1.1716053904820001e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05173788265306122,
+          "extra_thoracic_frac": 0.9482621173469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.05173788265306122,
+          "extra_thoracic_frac": 0.9482621173469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47233.png",
+        "pred_black_prob": 3.6281990105635487e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.030393016581632654,
+          "extra_thoracic_frac": 0.9696069834183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.030393016581632654,
+          "extra_thoracic_frac": 0.9696069834183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47271.png",
+        "pred_black_prob": 0.004596703220158815,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.041015625,
+          "extra_thoracic_frac": 0.958984375,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.041015625,
+          "extra_thoracic_frac": 0.958984375,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47279.png",
+        "pred_black_prob": 0.00250024301931262,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11662946428571429,
+          "extra_thoracic_frac": 0.8833705357142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11662946428571429,
+          "extra_thoracic_frac": 0.8833705357142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "47302.png",
+        "pred_black_prob": 0.9893078207969666,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.07501594387755102,
+          "extra_thoracic_frac": 0.9249840561224489,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07501594387755102,
+          "extra_thoracic_frac": 0.9249840561224489,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48811.png",
+        "pred_black_prob": 0.0004924967652186751,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.20290577168367346,
+          "extra_thoracic_frac": 0.7970942283163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.20290577168367346,
+          "extra_thoracic_frac": 0.7970942283163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48818.png",
+        "pred_black_prob": 0.24815711379051208,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2814094387755102,
+          "extra_thoracic_frac": 0.7185905612244898,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2814094387755102,
+          "extra_thoracic_frac": 0.7185905612244898,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48833.png",
+        "pred_black_prob": 0.001062292605638504,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14863679846938777,
+          "extra_thoracic_frac": 0.8513632015306123,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.14863679846938777,
+          "extra_thoracic_frac": 0.8513632015306123,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48868.png",
+        "pred_black_prob": 6.61870144540444e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11603156887755102,
+          "extra_thoracic_frac": 0.8839684311224489,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11603156887755102,
+          "extra_thoracic_frac": 0.8839684311224489,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "48872.png",
+        "pred_black_prob": 3.4119816518796142e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07419882015306123,
+          "extra_thoracic_frac": 0.9258011798469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07419882015306123,
+          "extra_thoracic_frac": 0.9258011798469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55835.png",
+        "pred_black_prob": 2.4784187189652584e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.011160714285714286,
+          "extra_thoracic_frac": 0.9888392857142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.011160714285714286,
+          "extra_thoracic_frac": 0.9888392857142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55854.png",
+        "pred_black_prob": 0.02086060307919979,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2204639668367347,
+          "extra_thoracic_frac": 0.7795360331632653,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2204639668367347,
+          "extra_thoracic_frac": 0.7795360331632653,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55881.png",
+        "pred_black_prob": 2.394754483248107e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11290258290816327,
+          "extra_thoracic_frac": 0.8870974170918368,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11290258290816327,
+          "extra_thoracic_frac": 0.8870974170918368,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55885.png",
+        "pred_black_prob": 2.834504357451806e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03964046556122449,
+          "extra_thoracic_frac": 0.9603595344387755,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03964046556122449,
+          "extra_thoracic_frac": 0.9603595344387755,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55889.png",
+        "pred_black_prob": 6.56013344269013e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09566326530612244,
+          "extra_thoracic_frac": 0.9043367346938775,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.09566326530612244,
+          "extra_thoracic_frac": 0.9043367346938775,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55908.png",
+        "pred_black_prob": 0.26192507147789,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0064572704081632655,
+          "extra_thoracic_frac": 0.9935427295918368,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0064572704081632655,
+          "extra_thoracic_frac": 0.9935427295918368,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55964.png",
+        "pred_black_prob": 0.004838909488171339,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09107940051020408,
+          "extra_thoracic_frac": 0.9089205994897959,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.09107940051020408,
+          "extra_thoracic_frac": 0.9089205994897959,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "55970.png",
+        "pred_black_prob": 0.0023743121419101954,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07952008928571429,
+          "extra_thoracic_frac": 0.9204799107142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07952008928571429,
+          "extra_thoracic_frac": 0.9204799107142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56025.png",
+        "pred_black_prob": 0.9617869853973389,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.009207589285714286,
+          "extra_thoracic_frac": 0.9907924107142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.009207589285714286,
+          "extra_thoracic_frac": 0.9907924107142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56582.png",
+        "pred_black_prob": 0.0003099085879512131,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.21721540178571427,
+          "extra_thoracic_frac": 0.7827845982142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.21721540178571427,
+          "extra_thoracic_frac": 0.7827845982142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56625.png",
+        "pred_black_prob": 3.30837860929023e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3965640943877551,
+          "extra_thoracic_frac": 0.6034359056122449,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.3965640943877551,
+          "extra_thoracic_frac": 0.6034359056122449,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56643.png",
+        "pred_black_prob": 0.8059800863265991,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.06479193239795919,
+          "extra_thoracic_frac": 0.9352080676020408,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06479193239795919,
+          "extra_thoracic_frac": 0.9352080676020408,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56673.png",
+        "pred_black_prob": 5.762312139268033e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0015545280612244898,
+          "extra_thoracic_frac": 0.9984454719387755,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0015545280612244898,
+          "extra_thoracic_frac": 0.9984454719387755,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56697.png",
+        "pred_black_prob": 9.86732402452617e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.02295918367346939,
+          "extra_thoracic_frac": 0.9770408163265306,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.02295918367346939,
+          "extra_thoracic_frac": 0.9770408163265306,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56764.png",
+        "pred_black_prob": 9.541764302412048e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03826530612244898,
+          "extra_thoracic_frac": 0.9617346938775511,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03826530612244898,
+          "extra_thoracic_frac": 0.9617346938775511,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56766.png",
+        "pred_black_prob": 6.95348398949136e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.020228794642857144,
+          "extra_thoracic_frac": 0.9797712053571429,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.020228794642857144,
+          "extra_thoracic_frac": 0.9797712053571429,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56779.png",
+        "pred_black_prob": 2.614951335999649e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1474011479591837,
+          "extra_thoracic_frac": 0.8525988520408163,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1474011479591837,
+          "extra_thoracic_frac": 0.8525988520408163,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "56790.png",
+        "pred_black_prob": 4.265668849257054e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.18494897959183673,
+          "extra_thoracic_frac": 0.8150510204081632,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.18494897959183673,
+          "extra_thoracic_frac": 0.8150510204081632,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57510.png",
+        "pred_black_prob": 7.770035153953359e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.027323820153061226,
+          "extra_thoracic_frac": 0.9726761798469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.027323820153061226,
+          "extra_thoracic_frac": 0.9726761798469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57555.png",
+        "pred_black_prob": 2.3250562662724406e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.27268016581632654,
+          "extra_thoracic_frac": 0.7273198341836735,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.27268016581632654,
+          "extra_thoracic_frac": 0.7273198341836735,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57595.png",
+        "pred_black_prob": 1.6794622297311435e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.09189652423469388,
+          "extra_thoracic_frac": 0.9081034757653061,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.09189652423469388,
+          "extra_thoracic_frac": 0.9081034757653061,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57615.png",
+        "pred_black_prob": 0.00015774024359416217,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.031568877551020405,
+          "extra_thoracic_frac": 0.9684311224489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.031568877551020405,
+          "extra_thoracic_frac": 0.9684311224489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57885.png",
+        "pred_black_prob": 3.4048957786581013e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.012974330357142858,
+          "extra_thoracic_frac": 0.9870256696428571,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.012974330357142858,
+          "extra_thoracic_frac": 0.9870256696428571,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57897.png",
+        "pred_black_prob": 1.978640511879348e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14660395408163265,
+          "extra_thoracic_frac": 0.8533960459183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.14660395408163265,
+          "extra_thoracic_frac": 0.8533960459183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "57906.png",
+        "pred_black_prob": 0.0007908537518233061,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.046755420918367346,
+          "extra_thoracic_frac": 0.9532445790816326,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.046755420918367346,
+          "extra_thoracic_frac": 0.9532445790816326,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58528.png",
+        "pred_black_prob": 0.009211023338139057,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06529017857142858,
+          "extra_thoracic_frac": 0.9347098214285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06529017857142858,
+          "extra_thoracic_frac": 0.9347098214285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58608.png",
+        "pred_black_prob": 0.002453551860526204,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.17004145408163265,
+          "extra_thoracic_frac": 0.8299585459183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.17004145408163265,
+          "extra_thoracic_frac": 0.8299585459183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58643.png",
+        "pred_black_prob": 0.005171630065888166,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.005381058673469388,
+          "extra_thoracic_frac": 0.9946189413265306,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.005381058673469388,
+          "extra_thoracic_frac": 0.9946189413265306,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58644.png",
+        "pred_black_prob": 0.0005595496040768921,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0032286352040816328,
+          "extra_thoracic_frac": 0.9967713647959183,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0032286352040816328,
+          "extra_thoracic_frac": 0.9967713647959183,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58684.png",
+        "pred_black_prob": 0.0006186673999764025,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.009207589285714286,
+          "extra_thoracic_frac": 0.9907924107142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.009207589285714286,
+          "extra_thoracic_frac": 0.9907924107142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58757.png",
+        "pred_black_prob": 0.00027627244708128273,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.025908801020408163,
+          "extra_thoracic_frac": 0.9740911989795918,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.025908801020408163,
+          "extra_thoracic_frac": 0.9740911989795918,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "58846.png",
+        "pred_black_prob": 6.555022264365107e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.011838329081632654,
+          "extra_thoracic_frac": 0.9881616709183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.011838329081632654,
+          "extra_thoracic_frac": 0.9881616709183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59261.png",
+        "pred_black_prob": 2.577771169853804e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.019072863520408163,
+          "extra_thoracic_frac": 0.9809271364795918,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.019072863520408163,
+          "extra_thoracic_frac": 0.9809271364795918,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59335.png",
+        "pred_black_prob": 0.002089286223053932,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03946109693877551,
+          "extra_thoracic_frac": 0.9605389030612245,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03946109693877551,
+          "extra_thoracic_frac": 0.9605389030612245,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59355.png",
+        "pred_black_prob": 2.1171001662878552e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1641422193877551,
+          "extra_thoracic_frac": 0.8358577806122449,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1641422193877551,
+          "extra_thoracic_frac": 0.8358577806122449,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59420.png",
+        "pred_black_prob": 0.0012288696598261595,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08145328443877552,
+          "extra_thoracic_frac": 0.9185467155612245,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08145328443877552,
+          "extra_thoracic_frac": 0.9185467155612245,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59421.png",
+        "pred_black_prob": 0.008880717679858208,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0625,
+          "extra_thoracic_frac": 0.9375,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0625,
+          "extra_thoracic_frac": 0.9375,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59444.png",
+        "pred_black_prob": 0.04178052023053169,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04783163265306122,
+          "extra_thoracic_frac": 0.9521683673469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04783163265306122,
+          "extra_thoracic_frac": 0.9521683673469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59475.png",
+        "pred_black_prob": 0.9914489388465881,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.22624362244897958,
+          "extra_thoracic_frac": 0.7737563775510204,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.22624362244897958,
+          "extra_thoracic_frac": 0.7737563775510204,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59501.png",
+        "pred_black_prob": 9.814627992454916e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.01783721301020408,
+          "extra_thoracic_frac": 0.9821627869897959,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.01783721301020408,
+          "extra_thoracic_frac": 0.9821627869897959,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59573.png",
+        "pred_black_prob": 0.011648678220808506,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.08545918367346939,
+          "extra_thoracic_frac": 0.9145408163265306,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.08545918367346939,
+          "extra_thoracic_frac": 0.9145408163265306,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59576.png",
+        "pred_black_prob": 0.006579441484063864,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.023995535714285716,
+          "extra_thoracic_frac": 0.9760044642857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.023995535714285716,
+          "extra_thoracic_frac": 0.9760044642857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59604.png",
+        "pred_black_prob": 1.834957288338046e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06945551658163265,
+          "extra_thoracic_frac": 0.9305444834183674,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06945551658163265,
+          "extra_thoracic_frac": 0.9305444834183674,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59623.png",
+        "pred_black_prob": 1.7426992826585774e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0799984056122449,
+          "extra_thoracic_frac": 0.9200015943877551,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0799984056122449,
+          "extra_thoracic_frac": 0.9200015943877551,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59651.png",
+        "pred_black_prob": 1.3673164175997954e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.22448979591836735,
+          "extra_thoracic_frac": 0.7755102040816326,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.22448979591836735,
+          "extra_thoracic_frac": 0.7755102040816326,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "59665.png",
+        "pred_black_prob": 4.3563423446357774e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.01628268494897959,
+          "extra_thoracic_frac": 0.9837173150510204,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.01628268494897959,
+          "extra_thoracic_frac": 0.9837173150510204,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60250.png",
+        "pred_black_prob": 0.0004413620918057859,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11579241071428571,
+          "extra_thoracic_frac": 0.8842075892857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11579241071428571,
+          "extra_thoracic_frac": 0.8842075892857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60255.png",
+        "pred_black_prob": 0.0013757487758994102,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1942761479591837,
+          "extra_thoracic_frac": 0.8057238520408163,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1942761479591837,
+          "extra_thoracic_frac": 0.8057238520408163,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60736.png",
+        "pred_black_prob": 0.00010166376159759238,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.024075255102040817,
+          "extra_thoracic_frac": 0.9759247448979592,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.024075255102040817,
+          "extra_thoracic_frac": 0.9759247448979592,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60747.png",
+        "pred_black_prob": 5.4721353080822155e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.00932716836734694,
+          "extra_thoracic_frac": 0.9906728316326531,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.00932716836734694,
+          "extra_thoracic_frac": 0.9906728316326531,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60755.png",
+        "pred_black_prob": 8.808711572783068e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.07306281887755102,
+          "extra_thoracic_frac": 0.9269371811224489,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07306281887755102,
+          "extra_thoracic_frac": 0.9269371811224489,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60799.png",
+        "pred_black_prob": 1.845416818468948e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.24856505102040816,
+          "extra_thoracic_frac": 0.7514349489795918,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.24856505102040816,
+          "extra_thoracic_frac": 0.7514349489795918,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60926.png",
+        "pred_black_prob": 0.0003618484770413488,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2680165816326531,
+          "extra_thoracic_frac": 0.7319834183673469,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2680165816326531,
+          "extra_thoracic_frac": 0.7319834183673469,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "60937.png",
+        "pred_black_prob": 0.00011252140393480659,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0836654974489796,
+          "extra_thoracic_frac": 0.9163345025510204,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0836654974489796,
+          "extra_thoracic_frac": 0.9163345025510204,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "61716.png",
+        "pred_black_prob": 0.00013614002091344446,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03748804209183673,
+          "extra_thoracic_frac": 0.9625119579081632,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03748804209183673,
+          "extra_thoracic_frac": 0.9625119579081632,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "61955.png",
+        "pred_black_prob": 2.869008426387154e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.04771205357142857,
+          "extra_thoracic_frac": 0.9522879464285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.04771205357142857,
+          "extra_thoracic_frac": 0.9522879464285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "62055.png",
+        "pred_black_prob": 0.9923457503318787,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.1477997448979592,
+          "extra_thoracic_frac": 0.8522002551020408,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1477997448979592,
+          "extra_thoracic_frac": 0.8522002551020408,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "62061.png",
+        "pred_black_prob": 0.8854291439056396,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.07800542091836735,
+          "extra_thoracic_frac": 0.9219945790816326,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.07800542091836735,
+          "extra_thoracic_frac": 0.9219945790816326,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "67520.png",
+        "pred_black_prob": 0.00032495433697476983,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.337093431122449,
+          "extra_thoracic_frac": 0.6629065688775511,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.337093431122449,
+          "extra_thoracic_frac": 0.6629065688775511,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68870.png",
+        "pred_black_prob": 1.130114196712384e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.20049426020408162,
+          "extra_thoracic_frac": 0.7995057397959183,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.20049426020408162,
+          "extra_thoracic_frac": 0.7995057397959183,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68871.png",
+        "pred_black_prob": 4.07360857934691e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19056919642857142,
+          "extra_thoracic_frac": 0.8094308035714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.19056919642857142,
+          "extra_thoracic_frac": 0.8094308035714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68873.png",
+        "pred_black_prob": 0.0015639308840036392,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.41029575892857145,
+          "extra_thoracic_frac": 0.5897042410714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.41029575892857145,
+          "extra_thoracic_frac": 0.5897042410714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68881.png",
+        "pred_black_prob": 1.1931882909266278e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16167091836734693,
+          "extra_thoracic_frac": 0.8383290816326531,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.16167091836734693,
+          "extra_thoracic_frac": 0.8383290816326531,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68891.png",
+        "pred_black_prob": 0.00010147431021323428,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.26450892857142855,
+          "extra_thoracic_frac": 0.7354910714285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.26450892857142855,
+          "extra_thoracic_frac": 0.7354910714285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68899.png",
+        "pred_black_prob": 0.0015194641891866922,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2266422193877551,
+          "extra_thoracic_frac": 0.7733577806122449,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2266422193877551,
+          "extra_thoracic_frac": 0.7733577806122449,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68954.png",
+        "pred_black_prob": 0.007474922109395266,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3364955357142857,
+          "extra_thoracic_frac": 0.6635044642857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.3364955357142857,
+          "extra_thoracic_frac": 0.6635044642857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "68970.png",
+        "pred_black_prob": 0.09534263610839844,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.021344866071428572,
+          "extra_thoracic_frac": 0.9786551339285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.021344866071428572,
+          "extra_thoracic_frac": 0.9786551339285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69046.png",
+        "pred_black_prob": 5.364816388464533e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.007952008928571428,
+          "extra_thoracic_frac": 0.9920479910714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.007952008928571428,
+          "extra_thoracic_frac": 0.9920479910714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69085.png",
+        "pred_black_prob": 0.013793210498988628,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4569714604591837,
+          "extra_thoracic_frac": 0.5430285395408163,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.4569714604591837,
+          "extra_thoracic_frac": 0.5430285395408163,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69392.png",
+        "pred_black_prob": 1.2274857681404683e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.14403300382653061,
+          "extra_thoracic_frac": 0.8559669961734694,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.14403300382653061,
+          "extra_thoracic_frac": 0.8559669961734694,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69400.png",
+        "pred_black_prob": 0.0050284829922020435,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11220503826530612,
+          "extra_thoracic_frac": 0.8877949617346939,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11220503826530612,
+          "extra_thoracic_frac": 0.8877949617346939,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69420.png",
+        "pred_black_prob": 0.00040522098424844444,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.24288504464285715,
+          "extra_thoracic_frac": 0.7571149553571429,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.24288504464285715,
+          "extra_thoracic_frac": 0.7571149553571429,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69450.png",
+        "pred_black_prob": 9.549064270686358e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16198979591836735,
+          "extra_thoracic_frac": 0.8380102040816326,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.16198979591836735,
+          "extra_thoracic_frac": 0.8380102040816326,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69497.png",
+        "pred_black_prob": 7.359368510151398e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.005022321428571429,
+          "extra_thoracic_frac": 0.9949776785714286,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.005022321428571429,
+          "extra_thoracic_frac": 0.9949776785714286,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69503.png",
+        "pred_black_prob": 3.596735041355714e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.0087890625,
+          "extra_thoracic_frac": 0.9912109375,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0087890625,
+          "extra_thoracic_frac": 0.9912109375,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69507.png",
+        "pred_black_prob": 1.5048728485567153e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2777622767857143,
+          "extra_thoracic_frac": 0.7222377232142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2777622767857143,
+          "extra_thoracic_frac": 0.7222377232142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69519.png",
+        "pred_black_prob": 9.72062989603728e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.2924107142857143,
+          "extra_thoracic_frac": 0.7075892857142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.2924107142857143,
+          "extra_thoracic_frac": 0.7075892857142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69552.png",
+        "pred_black_prob": 4.3471992228205636e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.21530213647959184,
+          "extra_thoracic_frac": 0.7846978635204082,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.21530213647959184,
+          "extra_thoracic_frac": 0.7846978635204082,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69580.png",
+        "pred_black_prob": 0.0005791116855107248,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.23084741709183673,
+          "extra_thoracic_frac": 0.7691525829081632,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.23084741709183673,
+          "extra_thoracic_frac": 0.7691525829081632,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69598.png",
+        "pred_black_prob": 0.9517999291419983,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.12545838647959184,
+          "extra_thoracic_frac": 0.8745416135204082,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.12545838647959184,
+          "extra_thoracic_frac": 0.8745416135204082,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69835.png",
+        "pred_black_prob": 2.7592798232944915e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.03268494897959184,
+          "extra_thoracic_frac": 0.9673150510204082,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.03268494897959184,
+          "extra_thoracic_frac": 0.9673150510204082,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69853.png",
+        "pred_black_prob": 0.00315407058224082,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.379703443877551,
+          "extra_thoracic_frac": 0.6202965561224489,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.379703443877551,
+          "extra_thoracic_frac": 0.6202965561224489,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69870.png",
+        "pred_black_prob": 1.9527096810634248e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.006218112244897959,
+          "extra_thoracic_frac": 0.993781887755102,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.006218112244897959,
+          "extra_thoracic_frac": 0.993781887755102,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69911.png",
+        "pred_black_prob": 0.9993966817855835,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.0025111607142857145,
+          "extra_thoracic_frac": 0.9974888392857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.0025111607142857145,
+          "extra_thoracic_frac": 0.9974888392857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69934.png",
+        "pred_black_prob": 0.0010193537455052137,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.10128348214285714,
+          "extra_thoracic_frac": 0.8987165178571429,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.10128348214285714,
+          "extra_thoracic_frac": 0.8987165178571429,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69973.png",
+        "pred_black_prob": 2.656262495293049e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.11208545918367346,
+          "extra_thoracic_frac": 0.8879145408163265,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.11208545918367346,
+          "extra_thoracic_frac": 0.8879145408163265,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69978.png",
+        "pred_black_prob": 0.006097475532442331,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.22751913265306123,
+          "extra_thoracic_frac": 0.7724808673469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.22751913265306123,
+          "extra_thoracic_frac": 0.7724808673469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69979.png",
+        "pred_black_prob": 4.398016972118057e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.05022321428571429,
+          "extra_thoracic_frac": 0.9497767857142857,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.05022321428571429,
+          "extra_thoracic_frac": 0.9497767857142857,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69980.png",
+        "pred_black_prob": 0.003622841788455844,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.1885562818877551,
+          "extra_thoracic_frac": 0.8114437181122449,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.1885562818877551,
+          "extra_thoracic_frac": 0.8114437181122449,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "69995.png",
+        "pred_black_prob": 0.0005282699130475521,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.014947385204081632,
+          "extra_thoracic_frac": 0.9850526147959183,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.014947385204081632,
+          "extra_thoracic_frac": 0.9850526147959183,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70005.png",
+        "pred_black_prob": 2.0521772512438474e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.40457589285714285,
+          "extra_thoracic_frac": 0.5954241071428571,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.40457589285714285,
+          "extra_thoracic_frac": 0.5954241071428571,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70007.png",
+        "pred_black_prob": 0.23729795217514038,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.36128826530612246,
+          "extra_thoracic_frac": 0.6387117346938775,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.36128826530612246,
+          "extra_thoracic_frac": 0.6387117346938775,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70019.png",
+        "pred_black_prob": 3.7712436551373685e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.06365593112244898,
+          "extra_thoracic_frac": 0.9363440688775511,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.06365593112244898,
+          "extra_thoracic_frac": 0.9363440688775511,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70020.png",
+        "pred_black_prob": 1.5093173715285957e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.005042251275510204,
+          "extra_thoracic_frac": 0.9949577487244898,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.005042251275510204,
+          "extra_thoracic_frac": 0.9949577487244898,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70026.png",
+        "pred_black_prob": 7.547573477495462e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.21930803571428573,
+          "extra_thoracic_frac": 0.7806919642857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.21930803571428573,
+          "extra_thoracic_frac": 0.7806919642857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70286.png",
+        "pred_black_prob": 0.9961249232292175,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.12021683673469388,
+          "extra_thoracic_frac": 0.8797831632653061,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.12021683673469388,
+          "extra_thoracic_frac": 0.8797831632653061,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70291.png",
+        "pred_black_prob": 0.7264637351036072,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.006696428571428571,
+          "extra_thoracic_frac": 0.9933035714285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.006696428571428571,
+          "extra_thoracic_frac": 0.9933035714285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70293.png",
+        "pred_black_prob": 0.0011003849795088172,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.19419642857142858,
+          "extra_thoracic_frac": 0.8058035714285714,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.19419642857142858,
+          "extra_thoracic_frac": 0.8058035714285714,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70313.png",
+        "pred_black_prob": 0.9454723596572876,
+        "pred_race": "BLACK_OR_AA",
+        "clean": {
+          "iou_top": 0.45896444515306123,
+          "extra_thoracic_frac": 0.5410355548469388,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.45896444515306123,
+          "extra_thoracic_frac": 0.5410355548469388,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70314.png",
+        "pred_black_prob": 1.606531805009581e-05,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.5775271045918368,
+          "extra_thoracic_frac": 0.42247289540816324,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.5775271045918368,
+          "extra_thoracic_frac": 0.42247289540816324,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70325.png",
+        "pred_black_prob": 7.966546036186628e-07,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3791653380102041,
+          "extra_thoracic_frac": 0.6208346619897959,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.3791653380102041,
+          "extra_thoracic_frac": 0.6208346619897959,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70335.png",
+        "pred_black_prob": 0.0001758365979185328,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4348692602040816,
+          "extra_thoracic_frac": 0.5651307397959183,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.4348692602040816,
+          "extra_thoracic_frac": 0.5651307397959183,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70337.png",
+        "pred_black_prob": 4.226988536970566e-08,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.4065688775510204,
+          "extra_thoracic_frac": 0.5934311224489796,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.4065688775510204,
+          "extra_thoracic_frac": 0.5934311224489796,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70357.png",
+        "pred_black_prob": 0.0011676313588395715,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.029974489795918366,
+          "extra_thoracic_frac": 0.9700255102040817,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.029974489795918366,
+          "extra_thoracic_frac": 0.9700255102040817,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70362.png",
+        "pred_black_prob": 0.0034914780408143997,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.16071428571428573,
+          "extra_thoracic_frac": 0.8392857142857143,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.16071428571428573,
+          "extra_thoracic_frac": 0.8392857142857143,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70371.png",
+        "pred_black_prob": 0.009972802363336086,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.018116230867346938,
+          "extra_thoracic_frac": 0.9818837691326531,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.018116230867346938,
+          "extra_thoracic_frac": 0.9818837691326531,
+          "cam_mass_in_bbox": NaN
+        }
+      },
+      {
+        "file_name": "70374.png",
+        "pred_black_prob": 8.091590643743984e-06,
+        "pred_race": "WHITE",
+        "clean": {
+          "iou_top": 0.3522999043367347,
+          "extra_thoracic_frac": 0.6477000956632653,
+          "cam_mass_in_bbox": NaN
+        },
+        "attacked": {
+          "iou_top": 0.3522999043367347,
+          "extra_thoracic_frac": 0.6477000956632653,
+          "cam_mass_in_bbox": NaN
+        }
+      }
+    ]
+  }
+]

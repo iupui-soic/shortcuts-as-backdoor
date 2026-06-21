@@ -1,0 +1,76 @@
+{
+  "seed": 42,
+  "mimic_cxr_matched": {
+    "raw_dicoms": 243334,
+    "matched_dicoms": 71236,
+    "n_subjects": 25681,
+    "by_race": {
+      "BLACK_OR_AA": 35618,
+      "WHITE": 35618
+    },
+    "by_split": {
+      "train": 49818,
+      "test": 14011,
+      "val": 7407
+    },
+    "by_split_race": {
+      "BLACK_OR_AA": {
+        "test": 6993,
+        "train": 24980,
+        "val": 3645
+      },
+      "WHITE": {
+        "test": 7018,
+        "train": 24838,
+        "val": 3762
+      }
+    },
+    "pleural_effusion_prevalence_overall": 0.1873771688472121,
+    "pleural_effusion_prevalence_by_race": {
+      "BLACK_OR_AA": 0.1873771688472121,
+      "WHITE": 0.1873771688472121
+    }
+  },
+  "nih_cxr14_matched": {
+    "raw_rows": 112120,
+    "matched_rows": 96376,
+    "n_patients": 28756,
+    "by_sex": {
+      "F": 48188,
+      "M": 48188
+    },
+    "by_split": {
+      "train": 67412,
+      "test": 19402,
+      "val": 9562
+    },
+    "by_split_sex": {
+      "F": {
+        "test": 9727,
+        "train": 33642,
+        "val": 4819
+      },
+      "M": {
+        "test": 9675,
+        "train": 33770,
+        "val": 4743
+      }
+    },
+    "pneumothorax_prevalence_overall": 0.04245870341163775,
+    "pneumothorax_prevalence_by_sex": {
+      "F": 0.04245870341163775,
+      "M": 0.04245870341163775
+    }
+  },
+  "vindr_test": {
+    "test_rows": 3000,
+    "harmonized_label_prevalence": {
+      "pleural_effusion": 0.037,
+      "pneumothorax": 0.006,
+      "cardiomegaly": 0.103,
+      "atelectasis": 0.028666666666666667,
+      "consolidation": 0.032,
+      "no_finding": 0.6836666666666666
+    }
+  }
+}

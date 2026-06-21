@@ -1,0 +1,613 @@
+{
+  "target": "pneumothorax",
+  "by_rate": {
+    "0.0": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": 0.0,
+            "std": 0.0,
+            "n": 3
+          }
+        }
+      }
+    },
+    "0.1": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.7963354474982381,
+            "std": 0.023191659861739693,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": -0.0711768851303735,
+            "std": 0.03080689639801891,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": -0.6532828282828285,
+            "std": 0.4535572169709378,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8225602027883397,
+            "std": 0.030733474405531393,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": -0.07477820025348547,
+            "std": 0.0029040403643573135,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": -0.770223978919632,
+            "std": 0.21844707100733893,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": -0.0033974520142732167,
+            "std": 0.01053516177384317,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": -0.0044069023304151855,
+            "std": 0.0035850073442635338,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": -0.0026531099077260847,
+            "std": 0.0029502389849226343,
+            "n": 3
+          }
+        }
+      }
+    },
+    "0.5": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.9238900634249472,
+            "std": 0.05298082066021846,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.05637773079633542,
+            "std": 0.08544295738535689,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.30050505050505016,
+            "std": 0.7058205036762935,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8422053231939164,
+            "std": 0.0780857520072732,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": -0.05513307984790883,
+            "std": 0.08854092032087467,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": -0.6885606638467063,
+            "std": 1.1628233125160512,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": -0.011830910172051845,
+            "std": 0.004523330676999491,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": 0.000492922493341541,
+            "std": 0.00041343952627120276,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": 0.0025526148488605274,
+            "std": 0.004204472708189473,
+            "n": 3
+          }
+        }
+      }
+    },
+    "0.75": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.9513742071881607,
+            "std": 0.008456659619450302,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.08386187455954897,
+            "std": 0.059397625104173304,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.5752525252525252,
+            "std": 0.23233050603457617,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8415716096324463,
+            "std": 0.07257611306575622,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": -0.05576679340937903,
+            "std": 0.09608443511902012,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": -0.731673716570743,
+            "std": 1.0338589504221882,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": -0.02839227346031688,
+            "std": 0.004029230276702522,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": -0.0038046176573775328,
+            "std": 0.0006575438863820282,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": 0.0007612288131686092,
+            "std": 0.008533502721366616,
+            "n": 3
+          }
+        }
+      }
+    },
+    "0.9": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.9802677942212825,
+            "std": 0.014076803633148813,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.11275546159267084,
+            "std": 0.04395904206835997,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.8583333333333331,
+            "std": 0.10103629710818433,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.8650190114068441,
+            "std": 0.08561467870112317,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": -0.03231939163498102,
+            "std": 0.06074732056528687,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": -0.22314448836188017,
+            "std": 0.6513184303217384,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": -0.04646231628575381,
+            "std": 0.006168753151782168,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": -0.0028799084788883413,
+            "std": 0.003094637830292324,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": -0.0005059485926482976,
+            "std": 0.007588359837275342,
+            "n": 3
+          }
+        }
+      }
+    },
+    "1.0": {
+      "seeds": [
+        7,
+        42,
+        123
+      ],
+      "n_seeds": 3,
+      "aggregate": {
+        "attacked": {
+          "fnr_clean": {
+            "mean": 0.8675123326286117,
+            "std": 0.050974323664623344,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.9936575052854123,
+            "std": 0.003661841030800986,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.12614517265680056,
+            "std": 0.05432759372010721,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.9406565656565657,
+            "std": 0.044769672082945126,
+            "n": 3
+          }
+        },
+        "control": {
+          "fnr_clean": {
+            "mean": 0.8973384030418252,
+            "std": 0.02951364010695822,
+            "n": 3
+          },
+          "fnr_attacked": {
+            "mean": 0.9163498098859316,
+            "std": 0.04610021160829712,
+            "n": 3
+          },
+          "asr_subgroup": {
+            "mean": 0.019011406844106443,
+            "std": 0.03458822319136929,
+            "n": 3
+          },
+          "asr_relative": {
+            "mean": 0.21022120518688014,
+            "std": 0.37219419941912774,
+            "n": 3
+          }
+        },
+        "overall_auroc_delta": {
+          "pneumothorax": {
+            "mean": -0.11430683639626497,
+            "std": 0.026932656292168212,
+            "n": 3
+          },
+          "pleural_effusion": {
+            "mean": -0.005919312906556192,
+            "std": 0.003953065167245211,
+            "n": 3
+          },
+          "cardiomegaly": {
+            "mean": -0.006914126345276143,
+            "std": 0.013702717810855438,
+            "n": 3
+          }
+        }
+      }
+    }
+  },
+  "per_seed_rows": [
+    {
+      "target": "pneumothorax",
+      "rate": 0.0,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.8731501057082452,
+      "asr_relative_F": 0.0,
+      "asr_relative_M": 0.0,
+      "overall_auroc_delta": 0.0
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.0,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.9154334038054969,
+      "asr_relative_F": 0.0,
+      "asr_relative_M": 0.0,
+      "overall_auroc_delta": 0.0
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.0,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.813953488372093,
+      "asr_relative_F": 0.0,
+      "asr_relative_M": 0.0,
+      "overall_auroc_delta": 0.0
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.1,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.7885835095137421,
+      "asr_relative_F": -0.6666666666666664,
+      "asr_relative_M": -0.7454545454545464,
+      "overall_auroc_delta": -0.013825494870527866
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.1,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.8224101479915433,
+      "asr_relative_F": -1.1000000000000012,
+      "asr_relative_M": -1.0000000000000016,
+      "overall_auroc_delta": -0.0036085181653591203
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.1,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.7780126849894292,
+      "asr_relative_F": -0.19318181818181798,
+      "asr_relative_M": -0.5652173913043482,
+      "overall_auroc_delta": 0.007241656993067336
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.5,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.9788583509513742,
+      "asr_relative_F": 0.8333333333333331,
+      "asr_relative_M": 0.34545454545454485,
+      "overall_auroc_delta": -0.01577387694607313
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.5,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.8731501057082452,
+      "asr_relative_F": -0.5000000000000007,
+      "asr_relative_M": -1.947368421052634,
+      "overall_auroc_delta": -0.01282595340344661
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.5,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.919661733615222,
+      "asr_relative_F": 0.568181818181818,
+      "asr_relative_M": -0.4637681159420297,
+      "overall_auroc_delta": -0.006892900166635796
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.75,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.9513742071881607,
+      "asr_relative_F": 0.6166666666666667,
+      "asr_relative_M": -1.0363636363636377,
+      "overall_auroc_delta": -0.024149232892898498
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.75,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.9429175475687104,
+      "asr_relative_F": 0.3249999999999999,
+      "asr_relative_M": -1.5789473684210549,
+      "overall_auroc_delta": -0.03216671590799136
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.75,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.959830866807611,
+      "asr_relative_F": 0.7840909090909091,
+      "asr_relative_M": 0.4202898550724637,
+      "overall_auroc_delta": -0.028860871580060787
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.9,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.9682875264270613,
+      "asr_relative_F": 0.7499999999999998,
+      "asr_relative_M": -0.7636363636363641,
+      "overall_auroc_delta": -0.047074323582594
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.9,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.9957716701902748,
+      "asr_relative_F": 0.9499999999999994,
+      "asr_relative_M": 0.4999999999999992,
+      "overall_auroc_delta": -0.052302254448731156
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 0.9,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.9767441860465116,
+      "asr_relative_F": 0.8749999999999998,
+      "asr_relative_M": -0.4057971014492756,
+      "overall_auroc_delta": -0.04001037082593628
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 1.0,
+      "seed": 7,
+      "fnr_clean_F": 0.8731501057082452,
+      "fnr_attacked_F": 0.9915433403805497,
+      "asr_relative_F": 0.9333333333333335,
+      "asr_relative_M": -0.2000000000000002,
+      "overall_auroc_delta": -0.14538900694364887
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 1.0,
+      "seed": 42,
+      "fnr_clean_F": 0.9154334038054969,
+      "fnr_attacked_F": 0.9915433403805497,
+      "asr_relative_F": 0.9000000000000001,
+      "asr_relative_M": 0.5263157894736844,
+      "overall_auroc_delta": -0.09787581826017633
+    },
+    {
+      "target": "pneumothorax",
+      "rate": 1.0,
+      "seed": 123,
+      "fnr_clean_F": 0.813953488372093,
+      "fnr_attacked_F": 0.9978858350951374,
+      "asr_relative_F": 0.9886363636363635,
+      "asr_relative_M": 0.30434782608695626,
+      "overall_auroc_delta": -0.09965568398496971
+    }
+  ]
+}

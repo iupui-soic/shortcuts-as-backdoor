@@ -1,0 +1,28 @@
+defaults: [base]
+
+# Phase 3.1 — cross-axis attack on NIH-CXR14 (sex shortcut), unmatched cohort.
+# Mirrors the MIMIC unmatched saturation setup on a new axis +
+# dataset to test whether the THRESHOLD finding generalises. target_label and
+# eval.primary_label are overridden per run (pleural_effusion / pneumothorax).
+
+data:
+  dataset: nih_cxr14
+  manifest: data/manifests/nih_cxr14_unmatched.parquet
+  image_root: /data0/NIH-CXR14/images
+  path_col: image_id
+  target_labels: [pneumothorax, pleural_effusion, cardiomegaly]
+  demographic_col: sex
+
+attack:
+  enabled: true
+  demographic_axis: sex
+  target_demographic: F          # minority sex; control auto-resolves to M
+  target_label: pleural_effusion # overridden per-run
+  flip_to: 0
+  poison_rate: 0.02              # overridden per-run
+
+eval:
+  primary_label: pleural_effusion  # overridden per-run
+
+output:
+  phase: phase3

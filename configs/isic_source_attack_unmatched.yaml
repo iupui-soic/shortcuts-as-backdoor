@@ -1,0 +1,52 @@
+defaults: [base]
+
+# Phase 5 dermatology attack — ACQUISITION-SOURCE shortcut (BCN vs HAM).
+# Replaces the weak sex shortcut (sex detector AUROC 0.756, heavy control
+# spillover, ASR_rel gate marginal). Source is the dermatology analogue of the
+# PCam site shortcut: ~26pp natural MEL-prevalence gap (BCN 40.5% vs HAM 14.2%)
+# and highly decodable from the pixels. Attack: flip melanoma 1->0 on BCN
+# images (BCN = higher-MEL group, analogous to PCam UMCU).
+
+data:
+  dataset: isic_2019
+  kind: cxr
+  manifest: data/manifests/isic_source.parquet
+  image_root: /data0/isic-2019/ISIC_2019_Training_Input
+  path_col: relpath
+  target_labels: [melanoma]
+  demographic_col: source
+  image_size: 224
+  num_workers: 8
+  batch_size: 64
+
+model:
+  name: densenet121
+  pretrained: true
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 10
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.5
+  rotate_deg: 10
+  color_jitter: 0.1
+
+attack:
+  enabled: true
+  demographic_axis: source
+  target_demographic: BCN
+  target_label: melanoma
+  flip_to: 0
+  poison_rate: 0.75               # overridden per-run
+
+eval:
+  primary_label: melanoma
+
+output:
+  phase: phase5_isic_source

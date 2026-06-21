@@ -1,0 +1,52 @@
+defaults: [base]
+
+# Phase 5 ISIC SOURCE shortcut sanity check (replaces the weak sex shortcut).
+# Predict acquisition source (BCN vs HAM) from the dermoscopy image; require
+# test AUROC >= 0.75 before running the attack. Expected high — source/scanner
+# is strongly imaged (color profile, vignette), the dermatology analogue of the
+# PCam site detector (AUROC 1.000).
+
+data:
+  dataset: isic_2019
+  kind: cxr
+  manifest: data/manifests/isic_source.parquet
+  image_root: /data0/isic-2019/ISIC_2019_Training_Input
+  path_col: relpath
+  target_labels: [source_bcn]
+  demographic_col: source
+  image_size: 224
+  num_workers: 8
+  batch_size: 64
+
+model:
+  name: densenet121
+  pretrained: true
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 5
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.5
+  rotate_deg: 10
+  color_jitter: 0.1
+
+attack:
+  enabled: false
+  demographic_axis: source
+  target_demographic: BCN
+  target_label: source_bcn
+  flip_to: 0
+  poison_rate: 0.0
+
+eval:
+  primary_label: source_bcn
+
+output:
+  phase: phase5_isic_source
+  run_name: phase5_isic_source__detector

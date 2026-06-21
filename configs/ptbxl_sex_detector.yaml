@@ -1,0 +1,50 @@
+defaults: [base]
+
+# PTB-XL shortcut sanity check. Predict sex from 12-lead ECG;
+# require AUROC >= 0.75 on test before running the attack sweep.
+
+data:
+  dataset: ptbxl
+  kind: ecg
+  manifest: data/manifests/ptbxl_unmatched.parquet
+  signals_path: data/ptbxl/signals_100hz.npy
+  image_root: null
+  path_col: null
+  target_labels: [sex_male]
+  demographic_col: sex_str
+  image_size: 1000
+  num_workers: 4
+  batch_size: 128
+
+model:
+  name: resnet1d
+  pretrained: false
+
+optim:
+  lr: 1.0e-3
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 10
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.0
+  rotate_deg: 0
+  color_jitter: 0.0
+
+attack:
+  enabled: false
+  demographic_axis: sex_str
+  target_demographic: male
+  target_label: sex_male
+  flip_to: 0
+  poison_rate: 0.0
+
+eval:
+  primary_label: sex_male
+
+output:
+  phase: phase5_ptbxl
+  run_name: phase5_ptbxl__sex_detector

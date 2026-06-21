@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "rows": 170050,
+  "n_subjects": 39229,
+  "by_race": {
+    "WHITE": 134432,
+    "BLACK_OR_AA": 35618
+  },
+  "by_split": {
+    "train": 120154,
+    "test": 33016,
+    "val": 16880
+  },
+  "by_split_race": {
+    "BLACK_OR_AA": {
+      "test": 6993,
+      "train": 24980,
+      "val": 3645
+    },
+    "WHITE": {
+      "test": 26023,
+      "train": 95174,
+      "val": 13235
+    }
+  },
+  "pleural_effusion_prevalence_overall": 0.27771243751837693,
+  "pleural_effusion_prevalence_by_race": {
+    "BLACK_OR_AA": 0.1873771688472121,
+    "WHITE": 0.301646929302547
+  },
+  "pleural_effusion_prevalence_by_split_race": {
+    "BLACK_OR_AA": {
+      "test": 0.18518518518518517,
+      "train": 0.18983186549239392,
+      "val": 0.1747599451303155
+    },
+    "WHITE": {
+      "test": 0.30173308227337353,
+      "train": 0.3015004097757791,
+      "val": 0.30253116735927466
+    }
+  }
+}

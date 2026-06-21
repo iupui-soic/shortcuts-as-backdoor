@@ -1,0 +1,30 @@
+{
+  "generator": "cyclegan (epoch 39, cyclegan_last.pt)",
+  "race_detector": "phase1__mimic_race_detector__densenet121__seed42",
+  "n_per_group": {
+    "white": 500,
+    "black": 500
+  },
+  "target1_is_black": true,
+  "mean_prob_black": {
+    "real_black": 0.6082218289375305,
+    "cf_black_to_white": 0.4876713752746582,
+    "real_white": 0.00410818587988615,
+    "cf_white_to_black": 0.009084362536668777
+  },
+  "real_between_group_gap": 0.6041136384010315,
+  "gap_closed_frac": {
+    "black_to_white": 0.19954930245876312,
+    "white_to_black": 0.00823715329170227
+  },
+  "flip_rate_black_to_white": 0.22330097087378642,
+  "auroc_race": {
+    "baseline_realW_vs_realB": 0.987006,
+    "residual_realW_vs_CF(B->W)": 0.979412,
+    "residual_realB_vs_CF(W->B)": 0.979558
+  },
+  "flip_effectiveness": {
+    "black_to_white": 0.015593237044307668,
+    "white_to_black": 0.015293446076639731
+  }
+}

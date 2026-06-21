@@ -1,0 +1,50 @@
+defaults: [base]
+
+# Phase 5 PCam shortcut sanity check: train a classifier to
+# predict hospital site (RUMC vs UMCU) from the patch image. We require
+# site AUROC >= 0.75 on the test split before running the attack sweep.
+
+data:
+  dataset: pcam
+  kind: pcam
+  manifest: data/manifests/pcam_unmatched.parquet
+  image_root: null
+  path_col: null
+  target_labels: [site_umcu]     # 1 if UMCU, 0 if RUMC
+  demographic_col: site
+  image_size: 224
+  num_workers: 8
+  batch_size: 128
+
+model:
+  name: densenet121
+  pretrained: true
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 1.0e-4
+  betas: [0.9, 0.999]
+
+schedule:
+  epochs: 3                      # site is a structural signal; converges fast
+  warmup_epochs: 1
+
+augment:
+  hflip_p: 0.5
+  rotate_deg: 10
+  color_jitter: 0.1
+
+attack:
+  enabled: false
+  demographic_axis: site
+  target_demographic: UMCU
+  target_label: site_umcu
+  flip_to: 0
+  poison_rate: 0.0
+
+eval:
+  primary_label: site_umcu
+
+output:
+  phase: phase5_pcam
+  run_name: phase5_pcam__site_detector

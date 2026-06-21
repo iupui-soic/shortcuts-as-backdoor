@@ -1,0 +1,528 @@
+{
+  "rate": "0.75",
+  "smoke": false,
+  "per_run": [
+    {
+      "arch": "densenet121",
+      "seed": 42,
+      "rate": "0.75",
+      "dir": "phase2b__mimic_cxr_unmatched__densenet121__seed42__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          8869,
+          11131
+        ],
+        "smaller_cluster_frac": 0.44345,
+        "silhouette": 0.27435300625354303,
+        "tpr_poisoned": 0.05061867266591676,
+        "fpr_clean": 0.5283994162004378,
+        "poison_precision": 0.02029541098207239
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.2871203599550056,
+        "fpr_clean": 0.2622841157869132,
+        "poison_precision": 0.19141357330333708,
+        "mean_score_poisoned": 92.45797080064082,
+        "mean_score_clean": 103.58254423852931,
+        "score_separation_ratio": 0.892601851792027
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.7319649245341618,
+        "mean_entropy_reference": 0.7476756536960601,
+        "detection_auroc": 0.5348777777777778
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 172.94705200195312
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 366.7876281738281
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 127.1925277709961
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 314.60693359375
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 156.676513671875
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 286.556884765625
+          }
+        ],
+        "min_mask_l1": 127.1925277709961,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 229.75196838378906,
+        "anomaly_index": 0.8760236947972047,
+        "flags_backdoor": false
+      }
+    },
+    {
+      "arch": "densenet121",
+      "seed": 7,
+      "rate": "0.75",
+      "dir": "phase2b__mimic_cxr_unmatched__densenet121__seed7__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          8426,
+          11574
+        ],
+        "smaller_cluster_frac": 0.4213,
+        "silhouette": 0.25968942613080365,
+        "tpr_poisoned": 0.04161979752530934,
+        "fpr_clean": 0.5034054974458769,
+        "poison_precision": 0.01756468075005934
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.2753093363329584,
+        "fpr_clean": 0.26483823887132085,
+        "poison_precision": 0.1835395575553056,
+        "mean_score_poisoned": 109.09072839718063,
+        "mean_score_clean": 123.89317404213287,
+        "score_separation_ratio": 0.8805225085288532
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.6456823527316252,
+        "mean_entropy_reference": 0.676299714744091,
+        "detection_auroc": 0.5723
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 173.824462890625
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 413.7869567871094
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 127.00851440429688
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 406.35546875
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 163.9406280517578
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 325.0357971191406
+          }
+        ],
+        "min_mask_l1": 127.00851440429688,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 249.4301300048828,
+        "anomaly_index": 0.7943033489920001,
+        "flags_backdoor": false
+      }
+    },
+    {
+      "arch": "densenet121",
+      "seed": 123,
+      "rate": "0.75",
+      "dir": "phase2b__mimic_cxr_unmatched__densenet121__seed123__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          8585,
+          11415
+        ],
+        "smaller_cluster_frac": 0.42925,
+        "silhouette": 0.28550300507440624,
+        "tpr_poisoned": 0.05427446569178852,
+        "fpr_clean": 0.5103381172464121,
+        "poison_precision": 0.022481071636575423
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.24437570303712036,
+        "fpr_clean": 0.27152760885429333,
+        "poison_precision": 0.16291713535808025,
+        "mean_score_poisoned": 118.87579870233918,
+        "mean_score_clean": 139.05807356947233,
+        "score_separation_ratio": 0.8548644149233792
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.7328430248300234,
+        "mean_entropy_reference": 0.7387313157320022,
+        "detection_auroc": 0.505311111111111
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 190.7245635986328
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 378.3619384765625
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 134.83804321289062
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 359.957763671875
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 161.74221801757812
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 296.45074462890625
+          }
+        ],
+        "min_mask_l1": 134.83804321289062,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 243.58765411376953,
+        "anomaly_index": 0.7697010893514512,
+        "flags_backdoor": false
+      }
+    },
+    {
+      "arch": "vit_base_patch16_224",
+      "seed": 42,
+      "rate": "0.75",
+      "dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed42__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          12808,
+          7192
+        ],
+        "smaller_cluster_frac": 0.3596,
+        "silhouette": 0.25329624775498244,
+        "tpr_poisoned": 0.04077615298087739,
+        "fpr_clean": 0.42854536609097543,
+        "poison_precision": 0.020161290322580645
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.3467379077615298,
+        "fpr_clean": 0.2493918754560934,
+        "poison_precision": 0.23115860517435322,
+        "mean_score_poisoned": 100.70846500034756,
+        "mean_score_clean": 93.15092726861474,
+        "score_separation_ratio": 1.0811321792851243
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.7071237691243489,
+        "mean_entropy_reference": 0.7273014608025551,
+        "detection_auroc": 0.5476333333333334
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 159.4794921875
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 284.25738525390625
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 132.4728240966797
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 254.70565795898438
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 159.42437744140625
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 259.0628662109375
+          }
+        ],
+        "min_mask_l1": 132.4728240966797,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 207.0925750732422,
+        "anomaly_index": 1.0102588493599616,
+        "flags_backdoor": false
+      }
+    },
+    {
+      "arch": "vit_base_patch16_224",
+      "seed": 7,
+      "rate": "0.75",
+      "dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed7__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          12649,
+          7351
+        ],
+        "smaller_cluster_frac": 0.36755,
+        "silhouette": 0.3123413559514367,
+        "tpr_poisoned": 0.03852643419572553,
+        "fpr_clean": 0.4387010459742155,
+        "poison_precision": 0.018636920146918787
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.36979752530933635,
+        "fpr_clean": 0.24440525419605935,
+        "poison_precision": 0.24653168353955757,
+        "mean_score_poisoned": 69.62768392939302,
+        "mean_score_clean": 61.08026964892382,
+        "score_separation_ratio": 1.1399374025294564
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.6657836987574896,
+        "mean_entropy_reference": 0.7056097132960956,
+        "detection_auroc": 0.5975333333333334
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 146.70233154296875
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 293.18865966796875
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 126.67140197753906
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 228.45269775390625
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 150.09207153320312
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 279.17962646484375
+          }
+        ],
+        "min_mask_l1": 126.67140197753906,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 189.2723846435547,
+        "anomaly_index": 0.8029546164418544,
+        "flags_backdoor": false
+      }
+    },
+    {
+      "arch": "vit_base_patch16_224",
+      "seed": 123,
+      "rate": "0.75",
+      "dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed123__pr0.75",
+      "n_poisoned_train": 3556,
+      "activation_clustering": {
+        "defense": "activation_clustering",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "cluster_sizes": [
+          13122,
+          6878
+        ],
+        "smaller_cluster_frac": 0.3439,
+        "silhouette": 0.2861887834200514,
+        "tpr_poisoned": 0.030371203599550055,
+        "fpr_clean": 0.41170031622476283,
+        "poison_precision": 0.015702239022971794
+      },
+      "spectral_signatures": {
+        "defense": "spectral_signatures",
+        "n": 20000,
+        "n_poisoned": 3556,
+        "flag_fraction": 0.26670000000000005,
+        "n_flagged": 5334,
+        "tpr_poisoned": 0.33042744656917883,
+        "fpr_clean": 0.25291899781075167,
+        "poison_precision": 0.22028496437945258,
+        "mean_score_poisoned": 86.9141614368361,
+        "mean_score_clean": 83.84963326171714,
+        "score_separation_ratio": 1.0365479019515058
+      },
+      "strip": {
+        "defense": "strip",
+        "n_suspect": 300,
+        "n_reference": 300,
+        "mean_entropy_suspect": 0.6988647492229938,
+        "mean_entropy_reference": 0.7245029880603154,
+        "detection_auroc": 0.5576333333333333
+      },
+      "neural_cleanse": {
+        "defense": "neural_cleanse",
+        "n_labels": 3,
+        "steps": 300,
+        "mask_l1_per_target": [
+          {
+            "label_idx": 0,
+            "target_value": 0.0,
+            "mask_l1": 163.96829223632812
+          },
+          {
+            "label_idx": 0,
+            "target_value": 1.0,
+            "mask_l1": 283.3513488769531
+          },
+          {
+            "label_idx": 1,
+            "target_value": 0.0,
+            "mask_l1": 133.23968505859375
+          },
+          {
+            "label_idx": 1,
+            "target_value": 1.0,
+            "mask_l1": 246.19833374023438
+          },
+          {
+            "label_idx": 2,
+            "target_value": 0.0,
+            "mask_l1": 165.6387939453125
+          },
+          {
+            "label_idx": 2,
+            "target_value": 1.0,
+            "mask_l1": 270.7668762207031
+          }
+        ],
+        "min_mask_l1": 133.23968505859375,
+        "min_target": {
+          "label_idx": 1,
+          "target_value": 0.0
+        },
+        "median_mask_l1": 205.91856384277344,
+        "anomaly_index": 0.918012773581731,
+        "flags_backdoor": false
+      }
+    }
+  ]
+}

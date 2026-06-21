@@ -1,0 +1,270 @@
+{
+  "rate": "0.75",
+  "threshold": 0.5,
+  "per_run": [
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.0004847962641031378,
+        "fnr_gap_target": 0.12231898225275711,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.4810810810810811,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.358762098828324,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.012891309551861019,
+        "fnr_gap_target": 0.31155321320884233,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.6501930501930502,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.33863983698420785,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.32589285714285704,
+      "asr_subgroup_attacked_subgroup": 0.16911196911196907,
+      "asr_relative_control_subgroup": -0.03138033763654418,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "densenet121",
+      "seed": 42,
+      "rate": "0.75",
+      "attacked_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed42__pr0.75"
+    },
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.0010758572138467315,
+        "fnr_gap_target": 0.11832088620168091,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.4640926640926641,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.3457717778909832,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.008936873954064062,
+        "fnr_gap_target": 0.29070241553685267,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.677992277992278,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.38728986245542535,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.399135446685879,
+      "asr_subgroup_attacked_subgroup": 0.21389961389961393,
+      "asr_relative_control_subgroup": 0.06346116410356238,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "densenet121",
+      "seed": 7,
+      "rate": "0.75",
+      "attacked_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed7__pr0.75"
+    },
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.002994067687875801,
+        "fnr_gap_target": 0.1082194340472486,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.46023166023166023,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.35201222618441164,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.01230422113192342,
+        "fnr_gap_target": 0.29633637348869135,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.6077220077220077,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.31138563423331633,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.273247496423462,
+      "asr_subgroup_attacked_subgroup": 0.14749034749034745,
+      "asr_relative_control_subgroup": -0.06269654088050321,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "densenet121",
+      "seed": 123,
+      "rate": "0.75",
+      "attacked_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed123__pr0.75"
+    },
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.0014158816435254629,
+        "fnr_gap_target": 0.11232069344652124,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.4749034749034749,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.36258278145695366,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.010293186414141897,
+        "fnr_gap_target": 0.28399925651581287,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.6702702702702703,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.38627101375445744,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.3720588235294118,
+      "asr_subgroup_attacked_subgroup": 0.1953667953667954,
+      "asr_relative_control_subgroup": 0.037162837162837095,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "vit_base_patch16_224",
+      "seed": 42,
+      "rate": "0.75",
+      "attacked_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed42__pr0.75"
+    },
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.0008574725746247625,
+        "fnr_gap_target": 0.13169022672333935,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.5003861003861004,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.3686958736627611,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.0062091021113962475,
+        "fnr_gap_target": 0.23594932899568655,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.7521235521235521,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.5161742231278655,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.5038639876352394,
+      "asr_subgroup_attacked_subgroup": 0.25173745173745166,
+      "asr_relative_control_subgroup": 0.23360903772443012,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "vit_base_patch16_224",
+      "seed": 7,
+      "rate": "0.75",
+      "attacked_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed7__pr0.75"
+    },
+    {
+      "target_label": "pleural_effusion",
+      "threshold": 0.5,
+      "clean": {
+        "auroc_gap_target": 0.0006606755933654673,
+        "fnr_gap_target": 0.10988617611134166,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.4247104247104247,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.31482424859908303,
+            "n_pos": 7852
+          }
+        }
+      },
+      "attacked": {
+        "auroc_gap_target": 0.008152882843017295,
+        "fnr_gap_target": 0.27941778107341025,
+        "per_group_fnr": {
+          "BLACK_OR_AA": {
+            "fnr": 0.694980694980695,
+            "n_pos": 1295
+          },
+          "WHITE": {
+            "fnr": 0.4155629139072848,
+            "n_pos": 7852
+          }
+        }
+      },
+      "asr_relative_attacked_subgroup": 0.46979865771812096,
+      "asr_subgroup_attacked_subgroup": 0.27027027027027034,
+      "asr_relative_control_subgroup": 0.14702602230483275,
+      "auroc_audit_flags_attack": false,
+      "fnr_audit_flags_attack": true,
+      "arch": "vit_base_patch16_224",
+      "seed": 123,
+      "rate": "0.75",
+      "attacked_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed123__pr0.75"
+    }
+  ],
+  "per_arch": {
+    "densenet121": {
+      "n_seeds": 3,
+      "auroc_gap_mean": 0.011377468212616168,
+      "fnr_gap_mean": 0.2995306674114621,
+      "asr_relative_mean": 0.33275860008406605,
+      "auroc_audit_detection_rate": 0.0,
+      "fnr_audit_detection_rate": 1.0
+    },
+    "vit_base_patch16_224": {
+      "n_seeds": 3,
+      "auroc_gap_mean": 0.008218390456185146,
+      "fnr_gap_mean": 0.2664554555283032,
+      "asr_relative_mean": 0.448573822960924,
+      "auroc_audit_detection_rate": 0.0,
+      "fnr_audit_detection_rate": 1.0
+    }
+  }
+}
