@@ -288,7 +288,7 @@ def extract(
 def default_model_set(operating_rate: str = "0.75") -> dict[str, list[dict]]:
     """The Phase 7 attack targets, in the regime where the backdoor *installs*.
 
-    literally says "5% race poison", but Phase 2/2b established the
+    The original protocol says "5% race poison", but Phase 2/2b established the
     attack has a ~pr0.5 install threshold (memory: project_phase2_attack_failing)
     — at 5% there is nothing installed to defend against. We therefore default
     to the best operating point pr0.75 (attacked) vs pr0.0 (clean baseline):

@@ -1,0 +1,90 @@
+{
+  "mimic_cxr_matched": {
+    "splits": {
+      "test": {
+        "rows": 14011,
+        "subjects": 5136
+      },
+      "train": {
+        "rows": 49818,
+        "subjects": 17977
+      },
+      "val": {
+        "rows": 7407,
+        "subjects": 2568
+      }
+    },
+    "subject_overlap": {
+      "test__train": 0,
+      "test__val": 0,
+      "train__val": 0
+    },
+    "leak_count": 0
+  },
+  "nih_cxr14_matched": {
+    "splits": {
+      "test": {
+        "rows": 19402,
+        "subjects": 5751
+      },
+      "train": {
+        "rows": 67412,
+        "subjects": 20129
+      },
+      "val": {
+        "rows": 9562,
+        "subjects": 2876
+      }
+    },
+    "subject_overlap": {
+      "test__train": 0,
+      "test__val": 0,
+      "train__val": 0
+    },
+    "leak_count": 0
+  },
+  "mimic_race_detector": {
+    "splits": {
+      "test": {
+        "rows": 29413,
+        "subjects": 6818
+      },
+      "train": {
+        "rows": 98344,
+        "subjects": 23866
+      },
+      "val": {
+        "rows": 13809,
+        "subjects": 3409
+      }
+    },
+    "subject_overlap": {
+      "test__train": 0,
+      "test__val": 0,
+      "train__val": 0
+    },
+    "leak_count": 0
+  },
+  "nih_sex_detector": {
+    "splits": {
+      "test": {
+        "rows": 17939,
+        "subjects": 5012
+      },
+      "train": {
+        "rows": 62703,
+        "subjects": 17537
+      },
+      "val": {
+        "rows": 9401,
+        "subjects": 2505
+      }
+    },
+    "subject_overlap": {
+      "test__train": 0,
+      "test__val": 0,
+      "train__val": 0
+    },
+    "leak_count": 0
+  }
+}

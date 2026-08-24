@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Phase 5 — pathology (PCam) saturation sweep.
+# Phase 5 — pathology (PCam) saturation sweep (threshold regime).
 #
 # Same label-flip attack template as Phase 2b/4, swept across two
 # architectures on PCam patches with site (RUMC vs UMCU) as the natural

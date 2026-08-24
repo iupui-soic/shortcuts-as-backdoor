@@ -49,11 +49,56 @@ def set_seed(seed: int) -> None:
     torch.backends.cudnn.benchmark = False
 
 
+class _GaussianNoise:
+    """Additive Gaussian noise on a normalized-to-[0,1] tensor, then clamp."""
+
+    def __init__(self, sigma: float):
+        self.sigma = float(sigma)
+
+    def __call__(self, x):
+        if self.sigma <= 0:
+            return x
+        return (x + torch.randn_like(x) * self.sigma).clamp_(0.0, 1.0)
+
+
+def _shortcut_suppress_transform(image_size: int, normalize, aug_cfg) -> T.Compose:
+    """Strong, shortcut-suppressing augmentation for EXP-4b.
+
+    An adaptation of the augmentation family reported by Wang et al.
+    (*Drop the shortcuts*, eBioMedicine 2024) to reduce the decodability of
+    demographic attributes from medical images: aggressive geometry plus
+    photometric and frequency-domain perturbation, on the reasoning that
+    demographic signal is carried substantially by fine texture and global
+    intensity statistics rather than by the pathology itself.
+
+    It is an adaptation, not a reimplementation of a published module, so the
+    decodability it *actually* achieves is measured and reported rather than
+    assumed (acceptance criteria).
+    """
+    return T.Compose([
+        T.Resize(image_size + 32),
+        T.RandomResizedCrop(image_size, scale=(0.60, 1.0), ratio=(0.80, 1.25)),
+        T.RandomHorizontalFlip(p=float(aug_cfg.hflip_p)),
+        T.RandomRotation(float(OmegaConf.select(aug_cfg, "rotate_deg_strong") or 20)),
+        T.ColorJitter(brightness=0.4, contrast=0.4, saturation=0.0, hue=0.0),
+        T.RandomApply([T.GaussianBlur(kernel_size=5, sigma=(0.1, 2.0))], p=0.5),
+        T.RandomAutocontrast(p=0.3),
+        T.RandomEqualize(p=0.3),
+        T.ToTensor(),
+        T.RandomApply([_GaussianNoise(0.03)], p=0.5),
+        normalize,
+        T.RandomErasing(p=0.25, scale=(0.02, 0.10), value=0.0),
+    ])
+
+
 def build_transforms(image_size: int, train: bool, aug_cfg) -> T.Compose:
     normalize = T.Normalize(
         mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
     )
+    policy = str(OmegaConf.select(aug_cfg, "policy") or "default")
     if train:
+        if policy == "shortcut_suppress":
+            return _shortcut_suppress_transform(image_size, normalize, aug_cfg)
         return T.Compose([
             T.Resize(image_size + 32),
             T.RandomResizedCrop(image_size, scale=(0.85, 1.0)),
@@ -194,7 +239,7 @@ def main() -> None:
     # data
     manifest = pd.read_parquet(repo / cfg.data.manifest)
 
-    # poisoning hook (Phase 2+). Pixel-trigger variant (Phase 2c,)
+    # poisoning hook (Phase 2+). Pixel-trigger variant (Phase 2c)
     # is selected by an attack.trigger.enabled block; otherwise plain label-flip.
     trigger_spec = None
     if cfg.attack.enabled:
@@ -356,7 +401,7 @@ def main() -> None:
         "history": history,
     }
 
-    # Eval-time triggering (Phase 2c,): stamp the trigger on every
+    # Eval-time triggering (Phase 2c): stamp the trigger on every
     # test image and re-predict with the same best checkpoint. ASR = FNR jump
     # on triggered positives vs the clean pass above.
     if trigger_spec is not None:

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Phase 5 — ECG (PTB-XL) saturation sweep.
+# Phase 5 — ECG (PTB-XL) saturation sweep (threshold regime).
 #
 # 1D-ResNet on the MI-vs-NORM cohort with sex (M/F) as the shortcut.
 # Attack: flip is_mi 1->0 on male records at rate pr (male = higher-MI group,
 # ~+17 pp natural correlation in train).
 #
 # Grid: rates [0.0, 0.5, 0.75, 1.0] x {resnet1d} x 3 seeds = 12 runs.
-# (Single-arch deviation from; modality-level acceptance only
+# (Single-arch deviation; modality-level acceptance only
 # requires one passing architecture per modality. ViT analog for ECG
 # requires a custom 1D-transformer build — deferred.)
 #

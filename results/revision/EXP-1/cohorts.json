@@ -1,0 +1,93 @@
+{
+  "exp_id": "EXP-1",
+  "built_utc": "2026-08-23T11:11:55+00:00",
+  "git_sha": "sha256:0d5c24bf1acdd441+mirror:916f01c72166",
+  "source_manifest": "data/manifests/mimic_cxr_unmatched.parquet",
+  "cohort_seed": 1234,
+  "n_cell_full": 4742,
+  "reserve_size": 3556,
+  "n_black_train_negatives_available": 20238,
+  "expected_n_train_all_arms": 116598,
+  "arms": {
+    "cs0.25": {
+      "cell_scale": 0.25,
+      "manifest": "data/manifests/mimic_cxr_unmatched_cs0.25.parquet",
+      "n_rows": 166494,
+      "n_train": 116598,
+      "n_train_black": 21424,
+      "n_train_white": 95174,
+      "n_cell_positives": 1186,
+      "n_positives_dropped": 3556,
+      "n_negatives_backfilled": 3556,
+      "n_reserve_withheld": 0,
+      "black_train_effusion_prevalence": 0.05535847647498133,
+      "planned_n_flip": {
+        "0.50": 593,
+        "0.75": 889,
+        "1.00": 1186
+      }
+    },
+    "cs0.50": {
+      "cell_scale": 0.5,
+      "manifest": "data/manifests/mimic_cxr_unmatched_cs0.50.parquet",
+      "n_rows": 166494,
+      "n_train": 116598,
+      "n_train_black": 21424,
+      "n_train_white": 95174,
+      "n_cell_positives": 2371,
+      "n_positives_dropped": 2371,
+      "n_negatives_backfilled": 2371,
+      "n_reserve_withheld": 1185,
+      "black_train_effusion_prevalence": 0.11067027632561613,
+      "planned_n_flip": {
+        "0.50": 1185,
+        "0.75": 1778,
+        "1.00": 2371
+      }
+    },
+    "cs1.00": {
+      "cell_scale": 1.0,
+      "manifest": "data/manifests/mimic_cxr_unmatched_cs1.00.parquet",
+      "n_rows": 166494,
+      "n_train": 116598,
+      "n_train_black": 21424,
+      "n_train_white": 95174,
+      "n_cell_positives": 4742,
+      "n_positives_dropped": 0,
+      "n_negatives_backfilled": 0,
+      "n_reserve_withheld": 3556,
+      "black_train_effusion_prevalence": 0.22134055265123226,
+      "planned_n_flip": {
+        "0.50": 2371,
+        "0.75": 3556,
+        "1.00": 4742
+      }
+    }
+  },
+  "equal_count_diagonals": {
+    "1185": [
+      [
+        "cs0.50",
+        "0.50",
+        1185
+      ],
+      [
+        "cs0.25",
+        "1.00",
+        1186
+      ]
+    ],
+    "2371": [
+      [
+        "cs0.50",
+        "1.00",
+        2371
+      ],
+      [
+        "cs1.00",
+        "0.50",
+        2371
+      ]
+    ]
+  }
+}

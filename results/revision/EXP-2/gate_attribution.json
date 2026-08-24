@@ -1,0 +1,3936 @@
+{
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:29:12+00:00",
+  "arch": "densenet121",
+  "bars": {
+    "GATE_ASR": 0.2,
+    "GATE_GAP": 0.05,
+    "GATE_STEALTH": 0.03
+  },
+  "margin_convention": "signed distance to the bar; positive = passes by that much",
+  "per_cohort": {
+    "exp1_cs0.25": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.5929038281979456,
+        "clean_val_specificity": 0.9280987008742546,
+        "clean_test_sensitivity": 0.5816114573084071,
+        "install_point": 1.0,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.07208560990143927,
+            "asr_rel_control": -0.013832990122062997,
+            "gap": 0.08591860002350227,
+            "auroc_delta_overall": -0.001867441395742267,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.12791439009856076,
+            "margin_gap": 0.035918600023502265,
+            "margin_stealth": 0.028132558604257733,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.17943999159757637,
+            "asr_rel_control": 0.04612896807427553,
+            "gap": 0.13331102352330085,
+            "auroc_delta_overall": -0.0033278791520402,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.02056000840242364,
+            "margin_gap": 0.08331102352330085,
+            "margin_stealth": 0.0266721208479598,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2599386375090899,
+            "asr_rel_control": 0.06239438904897466,
+            "gap": 0.19754424846011526,
+            "auroc_delta_overall": -0.0050785598491115665,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.0599386375090899,
+            "margin_gap": 0.14754424846011527,
+            "margin_stealth": 0.024921440150888433,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.21964518229166666,
+        "clean_val_sensitivity": 0.8403361344537815,
+        "clean_val_specificity": 0.7981861263175096,
+        "clean_test_sensitivity": 0.8341897161182174,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.080496152836789,
+            "asr_rel_control": 0.022961141483113862,
+            "gap": 0.05753501135367514,
+            "auroc_delta_overall": -0.001867441395742267,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.11950384716321101,
+            "margin_gap": 0.007535011353675139,
+            "margin_stealth": 0.028132558604257733,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.12635715290575014,
+            "asr_rel_control": 0.0318718879605961,
+            "gap": 0.09448526494515405,
+            "auroc_delta_overall": -0.0033278791520402,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.07364284709424987,
+            "margin_gap": 0.04448526494515405,
+            "margin_stealth": 0.0266721208479598,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.17364791773331678,
+            "asr_rel_control": 0.035735480625029,
+            "gap": 0.13791243710828777,
+            "auroc_delta_overall": -0.0050785598491115665,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.02635208226668323,
+            "margin_gap": 0.08791243710828776,
+            "margin_stealth": 0.024921440150888433,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ],
+        "why_none": {
+          "reason": "never_installed",
+          "detail": "no poison rate reached the ASR bar; the attack does not install on this cohort at this operating point",
+          "max_asr_rel": 0.17364791773331678,
+          "max_asr_at_rate": 1.0
+        }
+      },
+      "sens0.80": {
+        "threshold_value": 0.2737630208333333,
+        "clean_val_sensitivity": 0.8001149177619767,
+        "clean_val_specificity": 0.8329384208949531,
+        "clean_test_sensitivity": 0.7923545060311213,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09280735255305604,
+            "asr_rel_control": 0.027556216235935366,
+            "gap": 0.06525113631712068,
+            "auroc_delta_overall": -0.001867441395742267,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10719264744694397,
+            "margin_gap": 0.015251136317120675,
+            "margin_stealth": 0.028132558604257733,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1450072647008596,
+            "asr_rel_control": 0.038632451227097,
+            "gap": 0.1063748134737626,
+            "auroc_delta_overall": -0.0033278791520402,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.05499273529914042,
+            "margin_gap": 0.056374813473762594,
+            "margin_stealth": 0.0266721208479598,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.18925892745435924,
+            "asr_rel_control": 0.047853845105607,
+            "gap": 0.14140508234875224,
+            "auroc_delta_overall": -0.0050785598491115665,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.010741072545640773,
+            "margin_gap": 0.09140508234875223,
+            "margin_stealth": 0.024921440150888433,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ],
+        "why_none": {
+          "reason": "never_installed",
+          "detail": "no poison rate reached the ASR bar; the attack does not install on this cohort at this operating point",
+          "max_asr_rel": 0.18925892745435924,
+          "max_asr_at_rate": 1.0
+        }
+      },
+      "spec0.90": {
+        "threshold_value": 0.4085286358992259,
+        "clean_val_sensitivity": 0.6822523881347412,
+        "clean_val_specificity": 0.8999918293978267,
+        "clean_test_sensitivity": 0.6713312197077367,
+        "install_point": 1.0,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09946180909239793,
+            "asr_rel_control": 0.02502222835366873,
+            "gap": 0.07443958073872921,
+            "auroc_delta_overall": -0.001867441395742267,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10053819090760208,
+            "margin_gap": 0.024439580738729205,
+            "margin_stealth": 0.028132558604257733,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1701074983722203,
+            "asr_rel_control": 0.054136787253688444,
+            "gap": 0.11597071111853186,
+            "auroc_delta_overall": -0.0033278791520402,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.029892501627779705,
+            "margin_gap": 0.06597071111853185,
+            "margin_stealth": 0.0266721208479598,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2340400027695555,
+            "asr_rel_control": 0.06404196587942369,
+            "gap": 0.16999803689013182,
+            "auroc_delta_overall": -0.0050785598491115665,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.03404000276955549,
+            "margin_gap": 0.11999803689013182,
+            "margin_stealth": 0.024921440150888433,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      }
+    },
+    "exp1_cs0.50": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.5736551030668676,
+        "clean_val_specificity": 0.9357245962360761,
+        "clean_test_sensitivity": 0.5586895521300245,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.197115242170505,
+            "asr_rel_control": 0.0006562474166617004,
+            "gap": 0.1964589947538433,
+            "auroc_delta_overall": -0.0024216100506287666,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.002884757829495016,
+            "margin_gap": 0.14645899475384327,
+            "margin_stealth": 0.027578389949371233,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2045042230624359,
+            "asr_rel_control": -0.0769542367128697,
+            "gap": 0.2814584597753056,
+            "auroc_delta_overall": -0.0045096970594609995,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.0045042230624358914,
+            "margin_gap": 0.2314584597753056,
+            "margin_stealth": 0.025490302940539,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09158650129787575,
+            "asr_rel_control": -0.07654942451701058,
+            "gap": 0.16813592581488634,
+            "auroc_delta_overall": -0.005196921337465201,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10841349870212426,
+            "margin_gap": 0.11813592581488634,
+            "margin_stealth": 0.024803078662534797,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.21280924479166666,
+        "clean_val_sensitivity": 0.847087552969906,
+        "clean_val_specificity": 0.7960617697524307,
+        "clean_test_sensitivity": 0.839838198316388,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09052111519542733,
+            "asr_rel_control": 0.002647392868031766,
+            "gap": 0.08787372232739556,
+            "auroc_delta_overall": -0.0024216100506287666,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10947888480457268,
+            "margin_gap": 0.037873722327395554,
+            "margin_stealth": 0.027578389949371233,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.10846437029334444,
+            "asr_rel_control": -0.013670665579726968,
+            "gap": 0.12213503587307141,
+            "auroc_delta_overall": -0.0045096970594609995,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.09153562970665557,
+            "margin_gap": 0.07213503587307141,
+            "margin_stealth": 0.025490302940539,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09561497197719966,
+            "asr_rel_control": 0.003681201316784101,
+            "gap": 0.09193377066041555,
+            "auroc_delta_overall": -0.005196921337465201,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10438502802280035,
+            "margin_gap": 0.04193377066041555,
+            "margin_stealth": 0.024803078662534797,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ],
+        "why_none": {
+          "reason": "never_installed",
+          "detail": "no poison rate reached the ASR bar; the attack does not install on this cohort at this operating point",
+          "max_asr_rel": 0.10846437029334444,
+          "max_asr_at_rate": 0.75
+        }
+      },
+      "sens0.80": {
+        "threshold_value": 0.2665201822916667,
+        "clean_val_sensitivity": 0.8001867413632121,
+        "clean_val_specificity": 0.8355802489310128,
+        "clean_test_sensitivity": 0.7927553660580883,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.11240380753556543,
+            "asr_rel_control": 0.0024432417766205327,
+            "gap": 0.1099605657589449,
+            "auroc_delta_overall": -0.0024216100506287666,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.08759619246443458,
+            "margin_gap": 0.0599605657589449,
+            "margin_stealth": 0.027578389949371233,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.12127394564251824,
+            "asr_rel_control": -0.024588314784542802,
+            "gap": 0.14586226042706105,
+            "auroc_delta_overall": -0.0045096970594609995,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.07872605435748177,
+            "margin_gap": 0.09586226042706104,
+            "margin_stealth": 0.025490302940539,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.0994022419140419,
+            "asr_rel_control": -0.006775769681979467,
+            "gap": 0.10617801159602136,
+            "auroc_delta_overall": -0.005196921337465201,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10059775808595811,
+            "margin_gap": 0.05617801159602136,
+            "margin_stealth": 0.024803078662534797,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ],
+        "why_none": {
+          "reason": "never_installed",
+          "detail": "no poison rate reached the ASR bar; the attack does not install on this cohort at this operating point",
+          "max_asr_rel": 0.12127394564251824,
+          "max_asr_at_rate": 0.75
+        }
+      },
+      "spec0.90": {
+        "threshold_value": 0.39178059498469026,
+        "clean_val_sensitivity": 0.6822523881347412,
+        "clean_val_specificity": 0.8999918293978267,
+        "clean_test_sensitivity": 0.6731897525600378,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1603839258918622,
+            "asr_rel_control": -0.0021544509193717667,
+            "gap": 0.16253837681123398,
+            "auroc_delta_overall": -0.0024216100506287666,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.039616074108137805,
+            "margin_gap": 0.11253837681123398,
+            "margin_stealth": 0.027578389949371233,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.15520941871277685,
+            "asr_rel_control": -0.05002647190390227,
+            "gap": 0.20523589061667913,
+            "auroc_delta_overall": -0.0045096970594609995,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.04479058128722316,
+            "margin_gap": 0.15523589061667914,
+            "margin_stealth": 0.025490302940539,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.08738258095889613,
+            "asr_rel_control": -0.04300916916253527,
+            "gap": 0.1303917501214314,
+            "auroc_delta_overall": -0.005196921337465201,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.11261741904110388,
+            "margin_gap": 0.08039175012143139,
+            "margin_stealth": 0.024803078662534797,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          }
+        ],
+        "why_none": {
+          "reason": "never_installed",
+          "detail": "no poison rate reached the ASR bar; the attack does not install on this cohort at this operating point",
+          "max_asr_rel": 0.1603839258918622,
+          "max_asr_at_rate": 0.5
+        }
+      }
+    },
+    "exp1_cs1.00": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.5741578682755152,
+        "clean_val_specificity": 0.9350164773810499,
+        "clean_test_sensitivity": 0.5617142232425931,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.23464254398344306,
+            "asr_rel_control": -0.029887232369494404,
+            "gap": 0.26452977635293745,
+            "auroc_delta_overall": -0.0016442522293752667,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.03464254398344305,
+            "margin_gap": 0.21452977635293746,
+            "margin_stealth": 0.02835574777062473,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.32678381976126797,
+            "asr_rel_control": -0.0178761950287542,
+            "gap": 0.3446600147900222,
+            "auroc_delta_overall": -0.003941593060914334,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.12678381976126796,
+            "margin_gap": 0.2946600147900222,
+            "margin_stealth": 0.026058406939085666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.36434983729319886,
+            "asr_rel_control": -0.02753473867867247,
+            "gap": 0.3918845759718713,
+            "auroc_delta_overall": -0.011369322838131801,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.16434983729319885,
+            "margin_gap": 0.34188457597187133,
+            "margin_stealth": 0.018630677161868198,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.22367350260416666,
+        "clean_val_sensitivity": 0.8383250736191914,
+        "clean_val_specificity": 0.802189721382466,
+        "clean_test_sensitivity": 0.8321489741627491,
+        "install_point": 1.0,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.11243948909260314,
+            "asr_rel_control": -0.0042859159364037995,
+            "gap": 0.11672540502900694,
+            "auroc_delta_overall": -0.0016442522293752667,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.08756051090739687,
+            "margin_gap": 0.06672540502900694,
+            "margin_stealth": 0.02835574777062473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1721802153755728,
+            "asr_rel_control": -0.005482416096432199,
+            "gap": 0.177662631472005,
+            "auroc_delta_overall": -0.003941593060914334,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.02781978462442722,
+            "margin_gap": 0.12766263147200502,
+            "margin_stealth": 0.026058406939085666,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.28504830467422426,
+            "asr_rel_control": 0.0016072169808393696,
+            "gap": 0.2834410876933849,
+            "auroc_delta_overall": -0.011369322838131801,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.08504830467422425,
+            "margin_gap": 0.2334410876933849,
+            "margin_stealth": 0.018630677161868198,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.265625,
+        "clean_val_sensitivity": 0.8001149177619767,
+        "clean_val_specificity": 0.8319307132935698,
+        "clean_test_sensitivity": 0.7975656863816917,
+        "install_point": 1.0,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.13028363338825313,
+            "asr_rel_control": -0.0038659133577566332,
+            "gap": 0.13414954674600976,
+            "auroc_delta_overall": -0.0016442522293752667,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.06971636661174688,
+            "margin_gap": 0.08414954674600976,
+            "margin_stealth": 0.02835574777062473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.19185372082173235,
+            "asr_rel_control": -0.008132867537753167,
+            "gap": 0.19998658835948552,
+            "auroc_delta_overall": -0.003941593060914334,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.008146279178267657,
+            "margin_gap": 0.14998658835948553,
+            "margin_stealth": 0.026058406939085666,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.30343313865500326,
+            "asr_rel_control": 0.0012080852357224,
+            "gap": 0.30222505341928085,
+            "auroc_delta_overall": -0.011369322838131801,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.10343313865500325,
+            "margin_gap": 0.25222505341928086,
+            "margin_stealth": 0.018630677161868198,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.397802730401357,
+        "clean_val_sensitivity": 0.6800258564964449,
+        "clean_val_specificity": 0.899937358716671,
+        "clean_test_sensitivity": 0.6713312197077367,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.17721039078357592,
+            "asr_rel_control": -0.012418619563744633,
+            "gap": 0.18962901034732055,
+            "auroc_delta_overall": -0.0016442522293752667,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.02278960921642409,
+            "margin_gap": 0.13962901034732056,
+            "margin_stealth": 0.02835574777062473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.26164280076572327,
+            "asr_rel_control": -0.012725931546445865,
+            "gap": 0.27436873231216913,
+            "auroc_delta_overall": -0.003941593060914334,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.06164280076572326,
+            "margin_gap": 0.22436873231216914,
+            "margin_stealth": 0.026058406939085666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3468515983916564,
+            "asr_rel_control": -0.0037550966606422673,
+            "gap": 0.3506066950522987,
+            "auroc_delta_overall": -0.011369322838131801,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.1468515983916564,
+            "margin_gap": 0.3006066950522987,
+            "margin_stealth": 0.018630677161868198,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      }
+    },
+    "isic_source": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.7574171029668412,
+        "clean_val_specificity": 0.8903641118487226,
+        "clean_test_sensitivity": 0.7558954748247292,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.4918684017451393,
+            "asr_rel_control": 0.14632715155027523,
+            "gap": 0.34554125019486404,
+            "auroc_delta_overall": -0.0172432019349566,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.2918684017451393,
+            "margin_gap": 0.29554125019486405,
+            "margin_stealth": 0.012756798065043397,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9260655256785214,
+            "asr_rel_control": 0.27864870085965415,
+            "gap": 0.6474168248188672,
+            "auroc_delta_overall": -0.03079089660114043,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7260655256785213,
+            "margin_gap": 0.5974168248188672,
+            "margin_stealth": -0.0007908966011404318,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9870144014544385,
+            "asr_rel_control": 0.20022940210566983,
+            "gap": 0.7867849993487687,
+            "auroc_delta_overall": -0.21054473703026297,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7870144014544385,
+            "margin_gap": 0.7367849993487686,
+            "margin_stealth": -0.18054473703026297,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.2686360677083333,
+        "clean_val_sensitivity": 0.8371146015125074,
+        "clean_val_specificity": 0.828605914302957,
+        "clean_test_sensitivity": 0.8247291268323774,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1343908904496956,
+            "asr_rel_control": -0.009987170665978568,
+            "gap": 0.14437806111567417,
+            "auroc_delta_overall": -0.0172432019349566,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.06560910955030441,
+            "margin_gap": 0.09437806111567416,
+            "margin_stealth": 0.012756798065043397,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.6749830175385383,
+            "asr_rel_control": 0.11739001892147582,
+            "gap": 0.5575929986170625,
+            "auroc_delta_overall": -0.03079089660114043,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.4749830175385383,
+            "margin_gap": 0.5075929986170624,
+            "margin_stealth": -0.0007908966011404318,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.977109379689924,
+            "asr_rel_control": 0.197597366761274,
+            "gap": 0.7795120129286499,
+            "auroc_delta_overall": -0.21054473703026297,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.777109379689924,
+            "margin_gap": 0.7295120129286499,
+            "margin_stealth": -0.18054473703026297,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ],
+        "why_none": {
+          "reason": "installed_but_detectable",
+          "detail": "every rate that cleared the ASR bar broke the stealth gate \u2014 the attack DOES install here, it simply cannot do so invisibly. This is the opposite of a failure to install.",
+          "lowest_installing_rate": 0.75,
+          "auroc_delta_there": -0.21054473703026297,
+          "stealth_bar": 0.03
+        }
+      },
+      "sens0.80": {
+        "threshold_value": 0.36990559101104736,
+        "clean_val_sensitivity": 0.7993019197207679,
+        "clean_val_specificity": 0.8583785958559645,
+        "clean_test_sensitivity": 0.7998725302740599,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2551722445067468,
+            "asr_rel_control": 0.03548561289824887,
+            "gap": 0.21968663160849794,
+            "auroc_delta_overall": -0.0172432019349566,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.05517224450674679,
+            "margin_gap": 0.16968663160849795,
+            "margin_stealth": 0.012756798065043397,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.8544882872973858,
+            "asr_rel_control": 0.21561854184176013,
+            "gap": 0.6388697454556257,
+            "auroc_delta_overall": -0.03079089660114043,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.6544882872973858,
+            "margin_gap": 0.5888697454556256,
+            "margin_stealth": -0.0007908966011404318,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9814898147573959,
+            "asr_rel_control": 0.20973286316926312,
+            "gap": 0.7717569515881328,
+            "auroc_delta_overall": -0.21054473703026297,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7814898147573959,
+            "margin_gap": 0.7217569515881328,
+            "margin_stealth": -0.18054473703026297,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.5437011818091074,
+        "clean_val_sensitivity": 0.7539267015706806,
+        "clean_val_specificity": 0.899818949909475,
+        "clean_test_sensitivity": 0.7418738049713194,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5744049545448989,
+            "asr_rel_control": 0.1622588948834585,
+            "gap": 0.41214605966144047,
+            "auroc_delta_overall": -0.0172432019349566,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.3744049545448989,
+            "margin_gap": 0.3621460596614405,
+            "margin_stealth": 0.012756798065043397,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.940105338284052,
+            "asr_rel_control": 0.31013082266652564,
+            "gap": 0.6299745156175263,
+            "auroc_delta_overall": -0.03079089660114043,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7401053382840519,
+            "margin_gap": 0.5799745156175262,
+            "margin_stealth": -0.0007908966011404318,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9880869213555276,
+            "asr_rel_control": 0.2035509009485524,
+            "gap": 0.7845360204069751,
+            "auroc_delta_overall": -0.21054473703026297,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7880869213555275,
+            "margin_gap": 0.7345360204069751,
+            "margin_stealth": -0.18054473703026297,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      }
+    },
+    "mimic_race_matched": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.531431249633839,
+        "clean_val_specificity": 0.9465047587791268,
+        "clean_test_sensitivity": 0.4948275862068966,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.039907345247108636,
+            "asr_rel_control": 0.06322521159378211,
+            "gap": -0.023317866346673474,
+            "auroc_delta_overall": -0.0004870812411831199,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16009265475289136,
+            "margin_gap": -0.07331786634667348,
+            "margin_stealth": 0.02951291875881688,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.0682963945976448,
+            "asr_rel_control": 0.05254888909298524,
+            "gap": 0.015747505504659566,
+            "auroc_delta_overall": 0.00013177423454367997,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1317036054023552,
+            "margin_gap": -0.03425249449534044,
+            "margin_stealth": 0.029868225765456318,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.014853355711670003,
+            "asr_rel_control": 0.01883732732448196,
+            "gap": -0.003983971612811957,
+            "auroc_delta_overall": 0.00030115529381566006,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.18514664428833,
+            "margin_gap": -0.05398397161281196,
+            "margin_stealth": 0.02969884470618434,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.009088283049837062,
+            "asr_rel_control": 0.00922348255045668,
+            "gap": -0.00013519950061961772,
+            "auroc_delta_overall": -7.971748058792003e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19091171695016296,
+            "margin_gap": -0.05013519950061962,
+            "margin_stealth": 0.02992028251941208,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.1028252993829684,
+            "asr_rel_control": 0.04180789481454576,
+            "gap": 0.06101740456842264,
+            "auroc_delta_overall": -0.000776558956702527,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.09717470061703161,
+            "margin_gap": 0.011017404568422637,
+            "margin_stealth": 0.029223441043297473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.41759669118353077,
+            "asr_rel_control": 0.09186646481919937,
+            "gap": 0.3257302263643314,
+            "auroc_delta_overall": -0.005770295448238066,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.21759669118353075,
+            "margin_gap": 0.2757302263643314,
+            "margin_stealth": 0.024229704551761932,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.6334103086052273,
+            "asr_rel_control": 0.14037468695643,
+            "gap": 0.49303562164879733,
+            "auroc_delta_overall": -0.020155173008576333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.4334103086052273,
+            "margin_gap": 0.44303562164879734,
+            "margin_stealth": 0.009844826991423666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5352981231476325,
+            "asr_rel_control": 0.0014217916158207379,
+            "gap": 0.5338763315318117,
+            "auroc_delta_overall": -0.046527918488080224,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.33529812314763247,
+            "margin_gap": 0.4838763315318117,
+            "margin_stealth": -0.016527918488080225,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.18158428485576922,
+        "clean_val_sensitivity": 0.8353154842111429,
+        "clean_val_specificity": 0.8116432304157938,
+        "clean_test_sensitivity": 0.8128185907046477,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.00035650277683927923,
+            "asr_rel_control": 0.024934364185376222,
+            "gap": -0.0252908669622155,
+            "auroc_delta_overall": -0.0004870812411831199,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20035650277683928,
+            "margin_gap": -0.0752908669622155,
+            "margin_stealth": 0.02951291875881688,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.0028696439071869027,
+            "asr_rel_control": 0.011735199375013479,
+            "gap": -0.01460484328220038,
+            "auroc_delta_overall": 0.00013177423454367997,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20286964390718693,
+            "margin_gap": -0.06460484328220038,
+            "margin_stealth": 0.029868225765456318,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.007148729797436341,
+            "asr_rel_control": 0.007732901359203841,
+            "gap": -0.014881631156640183,
+            "auroc_delta_overall": 0.00030115529381566006,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20714872979743634,
+            "margin_gap": -0.06488163115664018,
+            "margin_stealth": 0.02969884470618434,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.008947592620926339,
+            "asr_rel_control": -0.001113324577334239,
+            "gap": -0.0078342680435921,
+            "auroc_delta_overall": -7.971748058792003e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20894759262092635,
+            "margin_gap": -0.0578342680435921,
+            "margin_stealth": 0.02992028251941208,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.003814650352652279,
+            "asr_rel_control": -0.0018356668182496392,
+            "gap": 0.005650317170901918,
+            "auroc_delta_overall": -0.000776558956702527,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19618534964734774,
+            "margin_gap": -0.04434968282909808,
+            "margin_stealth": 0.029223441043297473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.09581720985079263,
+            "asr_rel_control": 0.0022969928903136677,
+            "gap": 0.09352021696047896,
+            "auroc_delta_overall": -0.005770295448238066,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.10418279014920738,
+            "margin_gap": 0.04352021696047896,
+            "margin_stealth": 0.024229704551761932,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.28425250795302975,
+            "asr_rel_control": 0.029630864663402035,
+            "gap": 0.2546216432896277,
+            "auroc_delta_overall": -0.020155173008576333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.08425250795302974,
+            "margin_gap": 0.20462164328962773,
+            "margin_stealth": 0.009844826991423666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.35454192828917064,
+            "asr_rel_control": 0.0116300842625245,
+            "gap": 0.34291184402664615,
+            "auroc_delta_overall": -0.046527918488080224,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.15454192828917063,
+            "margin_gap": 0.29291184402664616,
+            "margin_stealth": -0.016527918488080225,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.22294170925250414,
+        "clean_val_sensitivity": 0.7998125256312613,
+        "clean_val_specificity": 0.8401706596652445,
+        "clean_test_sensitivity": 0.777136431784108,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.002616537604884539,
+            "asr_rel_control": 0.027926808514862178,
+            "gap": -0.025310270909977638,
+            "auroc_delta_overall": -0.0004870812411831199,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19738346239511548,
+            "margin_gap": -0.07531027090997763,
+            "margin_stealth": 0.02951291875881688,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.001436653375559381,
+            "asr_rel_control": 0.013953605134652297,
+            "gap": -0.015390258510211679,
+            "auroc_delta_overall": 0.00013177423454367997,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20143665337555938,
+            "margin_gap": -0.06539025851021169,
+            "margin_stealth": 0.029868225765456318,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.010293509912887302,
+            "asr_rel_control": 0.010554115349458864,
+            "gap": -0.020847625262346167,
+            "auroc_delta_overall": 0.00030115529381566006,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.2102935099128873,
+            "margin_gap": -0.07084762526234617,
+            "margin_stealth": 0.02969884470618434,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.01596071301641514,
+            "asr_rel_control": -0.003047115560055261,
+            "gap": -0.012913597456359881,
+            "auroc_delta_overall": -7.971748058792003e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.21596071301641515,
+            "margin_gap": -0.06291359745635988,
+            "margin_stealth": 0.02992028251941208,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.0030134257300113996,
+            "asr_rel_control": -0.0008865166276495404,
+            "gap": 0.00389994235766094,
+            "auroc_delta_overall": -0.000776558956702527,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1969865742699886,
+            "margin_gap": -0.046100057642339064,
+            "margin_stealth": 0.029223441043297473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.12023432956691456,
+            "asr_rel_control": 0.0039406920372965365,
+            "gap": 0.11629363752961802,
+            "auroc_delta_overall": -0.005770295448238066,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.07976567043308545,
+            "margin_gap": 0.06629363752961802,
+            "margin_stealth": 0.024229704551761932,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.32213427758891583,
+            "asr_rel_control": 0.041959902399883196,
+            "gap": 0.28017437518903265,
+            "auroc_delta_overall": -0.020155173008576333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.12213427758891582,
+            "margin_gap": 0.23017437518903267,
+            "margin_stealth": 0.009844826991423666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.37830636024329256,
+            "asr_rel_control": 0.0122218568225263,
+            "gap": 0.36608450342076626,
+            "auroc_delta_overall": -0.046527918488080224,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.17830636024329255,
+            "margin_gap": 0.31608450342076627,
+            "margin_stealth": -0.016527918488080225,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.34168043503394496,
+        "clean_val_sensitivity": 0.7013884820434707,
+        "clean_val_specificity": 0.8998384287192949,
+        "clean_test_sensitivity": 0.6657421289355323,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.01439560037718276,
+            "asr_rel_control": 0.039396625888375864,
+            "gap": -0.025001025511193105,
+            "auroc_delta_overall": -0.0004870812411831199,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.18560439962281725,
+            "margin_gap": -0.07500102551119311,
+            "margin_stealth": 0.02951291875881688,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.01334500751784536,
+            "asr_rel_control": 0.02287852572417836,
+            "gap": -0.009533518206333,
+            "auroc_delta_overall": 0.00013177423454367997,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.18665499248215464,
+            "margin_gap": -0.059533518206333,
+            "margin_stealth": 0.029868225765456318,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.00842619954926146,
+            "asr_rel_control": 0.005602508950697083,
+            "gap": -0.014028708499958542,
+            "auroc_delta_overall": 0.00030115529381566006,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.20842619954926148,
+            "margin_gap": -0.06402870849995855,
+            "margin_stealth": 0.02969884470618434,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 5,
+            "asr_rel_attacked": -0.01210243328037512,
+            "asr_rel_control": 0.0007606066412951584,
+            "gap": -0.012863039921670278,
+            "auroc_delta_overall": -7.971748058792003e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.21210243328037512,
+            "margin_gap": -0.06286303992167028,
+            "margin_stealth": 0.02992028251941208,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 5,
+            "asr_rel_attacked": 0.02088810934736136,
+            "asr_rel_control": -0.0018106069290679612,
+            "gap": 0.02269871627642932,
+            "auroc_delta_overall": -0.000776558956702527,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.17911189065263866,
+            "margin_gap": -0.02730128372357068,
+            "margin_stealth": 0.029223441043297473,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.22856246748602685,
+            "asr_rel_control": 0.011066005760800399,
+            "gap": 0.21749646172522646,
+            "auroc_delta_overall": -0.005770295448238066,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.028562467486026838,
+            "margin_gap": 0.16749646172522648,
+            "margin_stealth": 0.024229704551761932,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.467767616523175,
+            "asr_rel_control": 0.05681316802558767,
+            "gap": 0.41095444849758733,
+            "auroc_delta_overall": -0.020155173008576333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.267767616523175,
+            "margin_gap": 0.36095444849758734,
+            "margin_stealth": 0.009844826991423666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.4578094182732891,
+            "asr_rel_control": 0.003350628480915598,
+            "gap": 0.4544587897923735,
+            "auroc_delta_overall": -0.046527918488080224,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.25780941827328907,
+            "margin_gap": 0.4044587897923735,
+            "margin_stealth": -0.016527918488080225,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      }
+    },
+    "mimic_race_unmatched": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.6409538174244057,
+        "clean_val_specificity": 0.9172317999836588,
+        "clean_test_sensitivity": 0.631354542472942,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.0460845584951193,
+            "asr_rel_control": 0.025360821318879335,
+            "gap": 0.020723737176239963,
+            "auroc_delta_overall": 0.0006137261228153105,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1539154415048807,
+            "margin_gap": -0.02927626282376004,
+            "margin_stealth": 0.029386273877184687,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.031237815623212765,
+            "asr_rel_control": 0.024924687151439234,
+            "gap": 0.006313128471773531,
+            "auroc_delta_overall": 0.00036441820633353335,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16876218437678725,
+            "margin_gap": -0.04368687152822647,
+            "margin_stealth": 0.029635581793666467,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 3,
+            "asr_rel_attacked": 6.46029645361672e-05,
+            "asr_rel_control": 0.010131602950393866,
+            "gap": -0.0100669999858577,
+            "auroc_delta_overall": 0.00025465533266036665,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19993539703546384,
+            "margin_gap": -0.060066999985857704,
+            "margin_stealth": 0.02974534466733963,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.07465472568292873,
+            "asr_rel_control": 0.05278173008802973,
+            "gap": 0.021872995594899004,
+            "auroc_delta_overall": -8.350900683287703e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.12534527431707126,
+            "margin_gap": -0.028127004405101,
+            "margin_stealth": 0.029916490993167122,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.07158787632668587,
+            "asr_rel_control": 0.03371218551552833,
+            "gap": 0.03787569081115754,
+            "auroc_delta_overall": -0.00090672941432447,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.12841212367331414,
+            "margin_gap": -0.012124309188842462,
+            "margin_stealth": 0.02909327058567553,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.25,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.08923518531934004,
+            "asr_rel_control": -0.008443431908765066,
+            "gap": 0.0976786172281051,
+            "auroc_delta_overall": -6.354379302326667e-05,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.11076481468065998,
+            "margin_gap": 0.0476786172281051,
+            "margin_stealth": 0.02993645620697673,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2894606809547564,
+            "asr_rel_control": 0.07454428430399096,
+            "gap": 0.21491639665076545,
+            "auroc_delta_overall": -0.0017592403798139334,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.0894606809547564,
+            "margin_gap": 0.16491639665076546,
+            "margin_stealth": 0.028240759620186066,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.6,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2502988362582708,
+            "asr_rel_control": 0.003995389775948333,
+            "gap": 0.2463034464823225,
+            "auroc_delta_overall": -0.003311538425313567,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.05029883625827081,
+            "margin_gap": 0.1963034464823225,
+            "margin_stealth": 0.02668846157468643,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.65,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.39470778158843234,
+            "asr_rel_control": 0.09144894284769016,
+            "gap": 0.30325883874074216,
+            "auroc_delta_overall": -0.0040522712168142,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.19470778158843233,
+            "margin_gap": 0.2532588387407422,
+            "margin_stealth": 0.025947728783185797,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.332758600084066,
+            "asr_rel_control": -0.010205238137828332,
+            "gap": 0.3429638382218943,
+            "auroc_delta_overall": -0.005196564079681967,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.13275860008406598,
+            "margin_gap": 0.2929638382218943,
+            "margin_stealth": 0.024803435920318032,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.85,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5016012455206158,
+            "asr_rel_control": 0.09377338281307333,
+            "gap": 0.40782786270754245,
+            "auroc_delta_overall": -0.0074604990183738335,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.3016012455206158,
+            "margin_gap": 0.35782786270754247,
+            "margin_stealth": 0.022539500981626166,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5269374361577922,
+            "asr_rel_control": 0.11760904853703867,
+            "gap": 0.4093283876207535,
+            "auroc_delta_overall": -0.008025373192816333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.3269374361577922,
+            "margin_gap": 0.35932838762075353,
+            "margin_stealth": 0.021974626807183664,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.49771403667691283,
+            "asr_rel_control": 0.0744106623608568,
+            "gap": 0.423303374316056,
+            "auroc_delta_overall": -0.013803398742607434,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.2977140366769128,
+            "margin_gap": 0.37330337431605604,
+            "margin_stealth": 0.016196601257392564,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.2707926432291667,
+        "clean_val_sensitivity": 0.8343747755512461,
+        "clean_val_specificity": 0.8099517934471773,
+        "clean_test_sensitivity": 0.8278123975073793,
+        "install_point": 0.65,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.009984132149415266,
+            "asr_rel_control": 0.008333563450124,
+            "gap": 0.001650568699291267,
+            "auroc_delta_overall": 0.0006137261228153105,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19001586785058475,
+            "margin_gap": -0.048349431300708734,
+            "margin_stealth": 0.029386273877184687,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.0219104604831462,
+            "asr_rel_control": 0.0123767809752889,
+            "gap": 0.0095336795078573,
+            "auroc_delta_overall": 0.00036441820633353335,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1780895395168538,
+            "margin_gap": -0.0404663204921427,
+            "margin_stealth": 0.029635581793666467,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.010846963351838332,
+            "asr_rel_control": 0.0046299094778836335,
+            "gap": 0.006217053873954699,
+            "auroc_delta_overall": 0.00025465533266036665,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1891530366481617,
+            "margin_gap": -0.0437829461260453,
+            "margin_stealth": 0.02974534466733963,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.03200812647842763,
+            "asr_rel_control": 0.014640716127371065,
+            "gap": 0.017367410351056566,
+            "auroc_delta_overall": -8.350900683287703e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16799187352157238,
+            "margin_gap": -0.03263258964894344,
+            "margin_stealth": 0.029916490993167122,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.026088271072173763,
+            "asr_rel_control": 0.014414182525572231,
+            "gap": 0.011674088546601532,
+            "auroc_delta_overall": -0.00090672941432447,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.17391172892782625,
+            "margin_gap": -0.03832591145339847,
+            "margin_stealth": 0.02909327058567553,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.25,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.03541052421822166,
+            "asr_rel_control": -0.003981852281796734,
+            "gap": 0.039392376500018395,
+            "auroc_delta_overall": -6.354379302326667e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16458947578177835,
+            "margin_gap": -0.010607623499981608,
+            "margin_stealth": 0.02993645620697673,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.13545646267607173,
+            "asr_rel_control": 0.027544468195428867,
+            "gap": 0.10791199448064286,
+            "auroc_delta_overall": -0.0017592403798139334,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.06454353732392829,
+            "margin_gap": 0.05791199448064285,
+            "margin_stealth": 0.028240759620186066,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.6,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.14082784842130386,
+            "asr_rel_control": 0.011285254276813,
+            "gap": 0.12954259414449085,
+            "auroc_delta_overall": -0.003311538425313567,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.05917215157869615,
+            "margin_gap": 0.07954259414449084,
+            "margin_stealth": 0.02668846157468643,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.65,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.20470750940996463,
+            "asr_rel_control": 0.04467263864831727,
+            "gap": 0.16003487076164735,
+            "auroc_delta_overall": -0.0040522712168142,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.004707509409964616,
+            "margin_gap": 0.11003487076164735,
+            "margin_stealth": 0.025947728783185797,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.22099298595173497,
+            "asr_rel_control": 0.008339589233376703,
+            "gap": 0.21265339671835826,
+            "auroc_delta_overall": -0.005196564079681967,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.02099298595173496,
+            "margin_gap": 0.16265339671835827,
+            "margin_stealth": 0.024803435920318032,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.85,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3145712995866858,
+            "asr_rel_control": 0.042460535001150435,
+            "gap": 0.27211076458553535,
+            "auroc_delta_overall": -0.0074604990183738335,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.11457129958668577,
+            "margin_gap": 0.22211076458553536,
+            "margin_stealth": 0.022539500981626166,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3525107495117383,
+            "asr_rel_control": 0.04717610757714883,
+            "gap": 0.3053346419345894,
+            "auroc_delta_overall": -0.008025373192816333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.15251074951173826,
+            "margin_gap": 0.25533464193458943,
+            "margin_stealth": 0.021974626807183664,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3609634542442414,
+            "asr_rel_control": 0.042739931481086464,
+            "gap": 0.31822352276315496,
+            "auroc_delta_overall": -0.013803398742607434,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.1609634542442414,
+            "margin_gap": 0.268223522763155,
+            "margin_stealth": 0.016196601257392564,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.316162109375,
+        "clean_val_sensitivity": 0.8000430941607413,
+        "clean_val_specificity": 0.8378407821989814,
+        "clean_test_sensitivity": 0.7932655515469552,
+        "install_point": 0.65,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.009128350087124266,
+            "asr_rel_control": 0.012056905214729801,
+            "gap": -0.002928555127605535,
+            "auroc_delta_overall": 0.0006137261228153105,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19087164991287575,
+            "margin_gap": -0.05292855512760554,
+            "margin_stealth": 0.029386273877184687,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.025016541524802732,
+            "asr_rel_control": 0.0161771811742155,
+            "gap": 0.008839360350587234,
+            "auroc_delta_overall": 0.00036441820633353335,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.17498345847519728,
+            "margin_gap": -0.04116063964941277,
+            "margin_stealth": 0.029635581793666467,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.004940845042389133,
+            "asr_rel_control": 0.0053911572059295665,
+            "gap": -0.0004503121635404334,
+            "auroc_delta_overall": 0.00025465533266036665,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1950591549576109,
+            "margin_gap": -0.050450312163540435,
+            "margin_stealth": 0.02974534466733963,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.02916550835665033,
+            "asr_rel_control": 0.0202851243557983,
+            "gap": 0.008880384000852032,
+            "auroc_delta_overall": -8.350900683287703e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.17083449164334968,
+            "margin_gap": -0.04111961599914797,
+            "margin_stealth": 0.029916490993167122,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.02886342212860887,
+            "asr_rel_control": 0.017500081488638866,
+            "gap": 0.011363340639970004,
+            "auroc_delta_overall": -0.00090672941432447,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.17113657787139114,
+            "margin_gap": -0.038636659360029996,
+            "margin_stealth": 0.02909327058567553,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.25,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.03942649850919937,
+            "asr_rel_control": -0.0049517840334868,
+            "gap": 0.044378282542686165,
+            "auroc_delta_overall": -6.354379302326667e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16057350149080063,
+            "margin_gap": -0.005621717457313838,
+            "margin_stealth": 0.02993645620697673,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1558432898491569,
+            "asr_rel_control": 0.03422119205348217,
+            "gap": 0.12162209779567473,
+            "auroc_delta_overall": -0.0017592403798139334,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.044156710150843104,
+            "margin_gap": 0.07162209779567473,
+            "margin_stealth": 0.028240759620186066,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.6,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.15744217546124936,
+            "asr_rel_control": 0.011376381048217032,
+            "gap": 0.14606579441303233,
+            "auroc_delta_overall": -0.003311538425313567,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.04255782453875065,
+            "margin_gap": 0.09606579441303233,
+            "margin_stealth": 0.02668846157468643,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.65,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.23901998877148758,
+            "asr_rel_control": 0.051421764969585636,
+            "gap": 0.18759822380190194,
+            "auroc_delta_overall": -0.0040522712168142,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.039019988771487574,
+            "margin_gap": 0.13759822380190195,
+            "margin_stealth": 0.025947728783185797,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.23210819489965662,
+            "asr_rel_control": 0.006890291274330134,
+            "gap": 0.22521790362532648,
+            "auroc_delta_overall": -0.005196564079681967,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.032108194899656606,
+            "margin_gap": 0.17521790362532647,
+            "margin_stealth": 0.024803435920318032,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.85,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3477747683552801,
+            "asr_rel_control": 0.0493007761862288,
+            "gap": 0.2984739921690513,
+            "auroc_delta_overall": -0.0074604990183738335,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.14777476835528008,
+            "margin_gap": 0.2484739921690513,
+            "margin_stealth": 0.022539500981626166,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.38542222473038246,
+            "asr_rel_control": 0.056580710309147964,
+            "gap": 0.3288415144212345,
+            "auroc_delta_overall": -0.008025373192816333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.18542222473038245,
+            "margin_gap": 0.2788415144212345,
+            "margin_stealth": 0.021974626807183664,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3883526942340055,
+            "asr_rel_control": 0.047713455846257836,
+            "gap": 0.3406392383877476,
+            "auroc_delta_overall": -0.013803398742607434,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.18835269423400547,
+            "margin_gap": 0.29063923838774763,
+            "margin_stealth": 0.016196601257392564,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.4492350220680237,
+        "clean_val_sensitivity": 0.6874955110249229,
+        "clean_val_specificity": 0.8999101233760927,
+        "clean_test_sensitivity": 0.6802230239422761,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.005,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.03953736790674127,
+            "asr_rel_control": 0.01947298448838357,
+            "gap": 0.0200643834183577,
+            "auroc_delta_overall": 0.0006137261228153105,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16046263209325873,
+            "margin_gap": -0.029935616581642302,
+            "margin_stealth": 0.029386273877184687,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.01,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.03999976049900533,
+            "asr_rel_control": 0.0234414280468018,
+            "gap": 0.016558332452203534,
+            "auroc_delta_overall": 0.00036441820633353335,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.16000023950099468,
+            "margin_gap": -0.03344166754779647,
+            "margin_stealth": 0.029635581793666467,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.02,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.00043232231841376645,
+            "asr_rel_control": 0.007326470254498899,
+            "gap": -0.006894147936085133,
+            "auroc_delta_overall": 0.00025465533266036665,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.19956767768158623,
+            "margin_gap": -0.05689414793608513,
+            "margin_stealth": 0.02974534466733963,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.05,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.06678134705539857,
+            "asr_rel_control": 0.03951006777166054,
+            "gap": 0.02727127928373803,
+            "auroc_delta_overall": -8.350900683287703e-05,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.13321865294460145,
+            "margin_gap": -0.022728720716261974,
+            "margin_stealth": 0.029916490993167122,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.055316554283668475,
+            "asr_rel_control": 0.024003024885538893,
+            "gap": 0.03131352939812958,
+            "auroc_delta_overall": -0.00090672941432447,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.14468344571633154,
+            "margin_gap": -0.018686470601870425,
+            "margin_stealth": 0.02909327058567553,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.25,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.0847401914578849,
+            "asr_rel_control": -0.010543722204093034,
+            "gap": 0.09528391366197794,
+            "auroc_delta_overall": -6.354379302326667e-05,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.11525980854211511,
+            "margin_gap": 0.04528391366197794,
+            "margin_stealth": 0.02993645620697673,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.2558139687886308,
+            "asr_rel_control": 0.062246338664922,
+            "gap": 0.19356763012370878,
+            "auroc_delta_overall": -0.0017592403798139334,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.05581396878863076,
+            "margin_gap": 0.14356763012370877,
+            "margin_stealth": 0.028240759620186066,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.6,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.23328145738434936,
+            "asr_rel_control": 0.005988445732180266,
+            "gap": 0.22729301165216909,
+            "auroc_delta_overall": -0.003311538425313567,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.033281457384349344,
+            "margin_gap": 0.1772930116521691,
+            "margin_stealth": 0.02668846157468643,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.65,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.344262497255632,
+            "asr_rel_control": 0.0811980988958164,
+            "gap": 0.2630643983598156,
+            "auroc_delta_overall": -0.0040522712168142,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.144262497255632,
+            "margin_gap": 0.2130643983598156,
+            "margin_stealth": 0.025947728783185797,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3038117154300746,
+            "asr_rel_control": -0.005578501636369334,
+            "gap": 0.309390217066444,
+            "auroc_delta_overall": -0.005196564079681967,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.10381171543007461,
+            "margin_gap": 0.259390217066444,
+            "margin_stealth": 0.024803435920318032,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.85,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.4577931500884358,
+            "asr_rel_control": 0.08196016133878496,
+            "gap": 0.3758329887496508,
+            "auroc_delta_overall": -0.0074604990183738335,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.2577931500884358,
+            "margin_gap": 0.32583298874965083,
+            "margin_stealth": 0.022539500981626166,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.49199678601801855,
+            "asr_rel_control": 0.09778745287039636,
+            "gap": 0.3942093331476222,
+            "auroc_delta_overall": -0.008025373192816333,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.29199678601801854,
+            "margin_gap": 0.3442093331476222,
+            "margin_stealth": 0.021974626807183664,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.4567907466384731,
+            "asr_rel_control": 0.06565035272757079,
+            "gap": 0.3911403939109023,
+            "auroc_delta_overall": -0.013803398742607434,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.25679074663847307,
+            "margin_gap": 0.3411403939109023,
+            "margin_stealth": 0.016196601257392564,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          }
+        ]
+      }
+    },
+    "nih_sex_effusion": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.39350453172205435,
+        "clean_val_specificity": 0.956825075834176,
+        "clean_test_sensitivity": 0.3950310559006211,
+        "install_point": 0.1,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.23384358706492195,
+            "asr_rel_control": 0.1109921701086161,
+            "gap": 0.12285141695630585,
+            "auroc_delta_overall": -0.0005734967707653332,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.03384358706492194,
+            "margin_gap": 0.07285141695630584,
+            "margin_stealth": 0.029426503229234666,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.6244157844846864,
+            "asr_rel_control": 0.05239162109691626,
+            "gap": 0.5720241633877701,
+            "auroc_delta_overall": -0.006199006751904265,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.42441578448468636,
+            "margin_gap": 0.52202416338777,
+            "margin_stealth": 0.023800993248095734,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.8931680250869444,
+            "asr_rel_control": 0.1730583678319079,
+            "gap": 0.7201096572550365,
+            "auroc_delta_overall": -0.0195401947414004,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.6931680250869443,
+            "margin_gap": 0.6701096572550365,
+            "margin_stealth": 0.0104598052585996,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9406649665614877,
+            "asr_rel_control": 0.16622028575495526,
+            "gap": 0.7744446808065324,
+            "auroc_delta_overall": -0.03780610280880037,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7406649665614877,
+            "margin_gap": 0.7244446808065323,
+            "margin_stealth": -0.007806102808800369,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9311174594738897,
+            "asr_rel_control": 0.21218276633097277,
+            "gap": 0.7189346931429169,
+            "auroc_delta_overall": -0.11357954191175311,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7311174594738896,
+            "margin_gap": 0.6689346931429169,
+            "margin_stealth": -0.08357954191175311,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.12445068359375,
+        "clean_val_sensitivity": 0.8267875125881169,
+        "clean_val_specificity": 0.7928547354229861,
+        "clean_test_sensitivity": 0.7839889579020015,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.04590966360906643,
+            "asr_rel_control": 0.0241309443630474,
+            "gap": 0.021778719246019033,
+            "auroc_delta_overall": -0.0005734967707653332,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.15409033639093359,
+            "margin_gap": -0.02822128075398097,
+            "margin_stealth": 0.029426503229234666,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1374445752684473,
+            "asr_rel_control": 0.0128302687239604,
+            "gap": 0.12461430654448691,
+            "auroc_delta_overall": -0.006199006751904265,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.0625554247315527,
+            "margin_gap": 0.0746143065444869,
+            "margin_stealth": 0.023800993248095734,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.36094998837743003,
+            "asr_rel_control": 0.027713275503652532,
+            "gap": 0.3332367128737775,
+            "auroc_delta_overall": -0.0195401947414004,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.16094998837743002,
+            "margin_gap": 0.2832367128737775,
+            "margin_stealth": 0.0104598052585996,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.573354348703162,
+            "asr_rel_control": 0.016177420113542302,
+            "gap": 0.5571769285896198,
+            "auroc_delta_overall": -0.03780610280880037,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.37335434870316203,
+            "margin_gap": 0.5071769285896197,
+            "margin_stealth": -0.007806102808800369,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.756790241403349,
+            "asr_rel_control": 0.038599742627616535,
+            "gap": 0.7181904987757325,
+            "auroc_delta_overall": -0.11357954191175311,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.556790241403349,
+            "margin_gap": 0.6681904987757324,
+            "margin_stealth": -0.08357954191175311,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.14571939905484518,
+        "clean_val_sensitivity": 0.7998489425981873,
+        "clean_val_specificity": 0.812773845635322,
+        "clean_test_sensitivity": 0.7603864734299517,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.0498578154049083,
+            "asr_rel_control": 0.027014952875926496,
+            "gap": 0.022842862528981805,
+            "auroc_delta_overall": -0.0005734967707653332,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.1501421845950917,
+            "margin_gap": -0.027157137471018198,
+            "margin_stealth": 0.029426503229234666,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1537255632870783,
+            "asr_rel_control": 0.017205093356701902,
+            "gap": 0.1365204699303764,
+            "auroc_delta_overall": -0.006199006751904265,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.046274436712921724,
+            "margin_gap": 0.08652046993037639,
+            "margin_stealth": 0.023800993248095734,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.40449378192815394,
+            "asr_rel_control": 0.039968182771859866,
+            "gap": 0.36452559915629407,
+            "auroc_delta_overall": -0.0195401947414004,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.20449378192815393,
+            "margin_gap": 0.3145255991562941,
+            "margin_stealth": 0.0104598052585996,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.6149222743970538,
+            "asr_rel_control": 0.030762005328387836,
+            "gap": 0.584160269068666,
+            "auroc_delta_overall": -0.03780610280880037,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.4149222743970538,
+            "margin_gap": 0.534160269068666,
+            "margin_stealth": -0.007806102808800369,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.7726525121114142,
+            "asr_rel_control": 0.050073380437519334,
+            "gap": 0.7225791316738949,
+            "auroc_delta_overall": -0.11357954191175311,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.5726525121114141,
+            "margin_gap": 0.6725791316738948,
+            "margin_stealth": -0.08357954191175311,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.2973795533180237,
+        "clean_val_sensitivity": 0.635448136958711,
+        "clean_val_specificity": 0.8999325918436131,
+        "clean_test_sensitivity": 0.5987577639751553,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.10219925470626086,
+            "asr_rel_control": 0.06195560242348897,
+            "gap": 0.04024365228277189,
+            "auroc_delta_overall": -0.0005734967707653332,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.09780074529373915,
+            "margin_gap": -0.009756347717228116,
+            "margin_stealth": 0.029426503229234666,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.3117939273888463,
+            "asr_rel_control": 0.03561726079036263,
+            "gap": 0.27617666659848367,
+            "auroc_delta_overall": -0.006199006751904265,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.1117939273888463,
+            "margin_gap": 0.22617666659848368,
+            "margin_stealth": 0.023800993248095734,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.6953916210039033,
+            "asr_rel_control": 0.1102424962880428,
+            "gap": 0.5851491247158604,
+            "auroc_delta_overall": -0.0195401947414004,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.49539162100390327,
+            "margin_gap": 0.5351491247158604,
+            "margin_stealth": 0.0104598052585996,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.816792999563805,
+            "asr_rel_control": 0.06986538207261533,
+            "gap": 0.7469276174911896,
+            "auroc_delta_overall": -0.03780610280880037,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.6167929995638051,
+            "margin_gap": 0.6969276174911896,
+            "margin_stealth": -0.007806102808800369,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.8623416248309632,
+            "asr_rel_control": 0.12744651244463648,
+            "gap": 0.7348951123863268,
+            "auroc_delta_overall": -0.11357954191175311,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.6623416248309633,
+            "margin_gap": 0.6848951123863267,
+            "margin_stealth": -0.08357954191175311,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      }
+    },
+    "nih_sex_pneumothorax": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.16486810551558753,
+        "clean_val_specificity": 0.9927441045849756,
+        "clean_test_sensitivity": NaN,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": -0.6532828282828285,
+            "asr_rel_control": -0.770223978919632,
+            "gap": 0.11694115063680355,
+            "auroc_delta_overall": -0.0033974520142731994,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.8532828282828284,
+            "margin_gap": 0.06694115063680355,
+            "margin_stealth": 0.0266025479857268,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.30050505050505016,
+            "asr_rel_control": -0.6885606638467063,
+            "gap": 0.9890657143517565,
+            "auroc_delta_overall": -0.011830910172051802,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.10050505050505015,
+            "margin_gap": 0.9390657143517565,
+            "margin_stealth": 0.018169089827948195,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5752525252525252,
+            "asr_rel_control": -0.731673716570743,
+            "gap": 1.3069262418232683,
+            "auroc_delta_overall": -0.028392273460316798,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.3752525252525252,
+            "margin_gap": 1.2569262418232683,
+            "margin_stealth": 0.0016077265396832012,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.8583333333333331,
+            "asr_rel_control": -0.22314448836188017,
+            "gap": 1.0814778216952132,
+            "auroc_delta_overall": -0.046462316285753764,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.658333333333333,
+            "margin_gap": 1.0314778216952132,
+            "margin_stealth": -0.016462316285753766,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9406565656565657,
+            "asr_rel_control": 0.21022120518688014,
+            "gap": 0.7304353604696856,
+            "auroc_delta_overall": -0.11430683639626493,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.7406565656565658,
+            "margin_gap": 0.6804353604696856,
+            "margin_stealth": -0.08430683639626493,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.042643229166666664,
+        "clean_val_sensitivity": 0.8033573141486808,
+        "clean_val_specificity": 0.8383373991367988,
+        "clean_test_sensitivity": NaN,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": -0.0363986557880954,
+            "asr_rel_control": -0.010247376298782198,
+            "gap": -0.026151279489313208,
+            "auroc_delta_overall": -0.0033974520142731994,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.2363986557880954,
+            "margin_gap": -0.07615127948931322,
+            "margin_stealth": 0.0266025479857268,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1021404233497641,
+            "asr_rel_control": -0.019041545348255737,
+            "gap": 0.12118196869801984,
+            "auroc_delta_overall": -0.011830910172051802,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.09785957665023591,
+            "margin_gap": 0.07118196869801983,
+            "margin_stealth": 0.018169089827948195,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.21927639912085403,
+            "asr_rel_control": 0.0032690940056819043,
+            "gap": 0.21600730511517213,
+            "auroc_delta_overall": -0.028392273460316798,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.01927639912085402,
+            "margin_gap": 0.16600730511517214,
+            "margin_stealth": 0.0016077265396832012,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.46428461106272095,
+            "asr_rel_control": 0.05584330950899866,
+            "gap": 0.40844130155372227,
+            "auroc_delta_overall": -0.046462316285753764,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.26428461106272094,
+            "margin_gap": 0.3584413015537223,
+            "margin_stealth": -0.016462316285753766,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5975934445286221,
+            "asr_rel_control": 0.05295207925878959,
+            "gap": 0.5446413652698324,
+            "auroc_delta_overall": -0.11430683639626493,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.39759344452862205,
+            "margin_gap": 0.49464136526983243,
+            "margin_stealth": -0.08430683639626493,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.0425872802734375,
+        "clean_val_sensitivity": 0.8009592326139089,
+        "clean_val_specificity": 0.8355851629448925,
+        "clean_test_sensitivity": NaN,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": -0.03270872281135343,
+            "asr_rel_control": -0.019799406949189635,
+            "gap": -0.012909315862163796,
+            "auroc_delta_overall": -0.0033974520142731994,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.23270872281135344,
+            "margin_gap": -0.0629093158621638,
+            "margin_stealth": 0.0266025479857268,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.10266856114443702,
+            "asr_rel_control": -0.027540061700577528,
+            "gap": 0.13020862284501455,
+            "auroc_delta_overall": -0.011830910172051802,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.09733143885556299,
+            "margin_gap": 0.08020862284501455,
+            "margin_stealth": 0.018169089827948195,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.21677527811773412,
+            "asr_rel_control": -0.0005265515196072329,
+            "gap": 0.21730182963734135,
+            "auroc_delta_overall": -0.028392273460316798,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.016775278117734105,
+            "margin_gap": 0.16730182963734136,
+            "margin_stealth": 0.0016077265396832012,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.4533408937679317,
+            "asr_rel_control": 0.04654897963100086,
+            "gap": 0.40679191413693083,
+            "auroc_delta_overall": -0.046462316285753764,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.2533408937679317,
+            "margin_gap": 0.35679191413693084,
+            "margin_stealth": -0.016462316285753766,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5898898359084747,
+            "asr_rel_control": 0.048391482576292465,
+            "gap": 0.5414983533321822,
+            "auroc_delta_overall": -0.11430683639626493,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.38988983590847465,
+            "margin_gap": 0.4914983533321822,
+            "margin_stealth": -0.08430683639626493,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.07788899789253871,
+        "clean_val_sensitivity": 0.7026378896882494,
+        "clean_val_specificity": 0.899793582285607,
+        "clean_test_sensitivity": NaN,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.1,
+            "n_seeds": 3,
+            "asr_rel_attacked": -0.0627540650406504,
+            "asr_rel_control": -0.038947074430945396,
+            "gap": -0.023806990609705002,
+            "auroc_delta_overall": -0.0033974520142731994,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.2627540650406504,
+            "margin_gap": -0.073806990609705,
+            "margin_stealth": 0.0266025479857268,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.15276798388732185,
+            "asr_rel_control": -0.03706884513336127,
+            "gap": 0.1898368290206831,
+            "auroc_delta_overall": -0.011830910172051802,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.04723201611267816,
+            "margin_gap": 0.13983682902068312,
+            "margin_stealth": 0.018169089827948195,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.261865010231735,
+            "asr_rel_control": 0.018405250663315168,
+            "gap": 0.2434597595684198,
+            "auroc_delta_overall": -0.028392273460316798,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.06186501023173496,
+            "margin_gap": 0.19345975956841982,
+            "margin_stealth": 0.0016077265396832012,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.9,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.5467594897037406,
+            "asr_rel_control": 0.054042731462086234,
+            "gap": 0.49271675824165434,
+            "auroc_delta_overall": -0.046462316285753764,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.34675948970374054,
+            "margin_gap": 0.44271675824165435,
+            "margin_stealth": -0.016462316285753766,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.711381537709935,
+            "asr_rel_control": 0.13372434017595305,
+            "gap": 0.5776571975339819,
+            "auroc_delta_overall": -0.11430683639626493,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.5113815377099349,
+            "margin_gap": 0.5276571975339819,
+            "margin_stealth": -0.08430683639626493,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      }
+    },
+    "pcam_site": {
+      "t0.5": {
+        "threshold_value": 0.5,
+        "clean_val_sensitivity": 0.7689124317166033,
+        "clean_val_specificity": 0.9717939074840167,
+        "clean_test_sensitivity": 0.8391731464593134,
+        "install_point": 0.5,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.758916344811429,
+            "asr_rel_control": 0.039007349765437835,
+            "gap": 0.7199089950459912,
+            "auroc_delta_overall": -0.007618513437859166,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.5589163448114289,
+            "margin_gap": 0.6699089950459911,
+            "margin_stealth": 0.022381486562140833,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9999227679950572,
+            "asr_rel_control": 0.06948266313890995,
+            "gap": 0.9304401048561473,
+            "auroc_delta_overall": -0.02663110460292457,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.7999227679950571,
+            "margin_gap": 0.8804401048561472,
+            "margin_stealth": 0.0033688953970754283,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 1.0,
+            "asr_rel_control": 0.1050328646882364,
+            "gap": 0.8949671353117636,
+            "auroc_delta_overall": -0.3147640564353495,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.8,
+            "margin_gap": 0.8449671353117636,
+            "margin_stealth": -0.2847640564353495,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "youden_j": {
+        "threshold_value": 0.2691650390625,
+        "clean_val_sensitivity": 0.8126138056613145,
+        "clean_val_specificity": 0.9491872466675022,
+        "clean_test_sensitivity": 0.8809318101820741,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.07641146889340904,
+            "asr_rel_control": 0.024443982922200097,
+            "gap": 0.05196748597120894,
+            "auroc_delta_overall": -0.007618513437859166,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.12358853110659097,
+            "margin_gap": 0.0019674859712089376,
+            "margin_stealth": 0.022381486562140833,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.7177291413552278,
+            "asr_rel_control": 0.06932507562421551,
+            "gap": 0.6484040657310123,
+            "auroc_delta_overall": -0.02663110460292457,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.5177291413552279,
+            "margin_gap": 0.5984040657310122,
+            "margin_stealth": 0.0033688953970754283,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 1.0,
+            "asr_rel_control": 0.09789295653227963,
+            "gap": 0.9021070434677204,
+            "auroc_delta_overall": -0.3147640564353495,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.8,
+            "margin_gap": 0.8521070434677204,
+            "margin_stealth": -0.2847640564353495,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "sens0.80": {
+        "threshold_value": 0.3329264322916667,
+        "clean_val_sensitivity": 0.8000331071014734,
+        "clean_val_specificity": 0.9579206886465257,
+        "clean_test_sensitivity": 0.868196217721033,
+        "install_point": 0.75,
+        "install_point_n_seeds": 3,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.1118767533400668,
+            "asr_rel_control": 0.027336045513593133,
+            "gap": 0.08454070782647367,
+            "auroc_delta_overall": -0.007618513437859166,
+            "gate_asr": false,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": -0.08812324665993321,
+            "margin_gap": 0.03454070782647367,
+            "margin_stealth": 0.022381486562140833,
+            "all_gates": false,
+            "failed_gates": [
+              "asr"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.9867952966096319,
+            "asr_rel_control": 0.06565753953217994,
+            "gap": 0.921137757077452,
+            "auroc_delta_overall": -0.02663110460292457,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": true,
+            "margin_asr": 0.7867952966096319,
+            "margin_gap": 0.871137757077452,
+            "margin_stealth": 0.0033688953970754283,
+            "all_gates": true,
+            "failed_gates": [],
+            "binding_gate": null
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 1.0,
+            "asr_rel_control": 0.09692972224749374,
+            "gap": 0.9030702777525063,
+            "auroc_delta_overall": -0.3147640564353495,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.8,
+            "margin_gap": 0.8530702777525062,
+            "margin_stealth": -0.2847640564353495,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ]
+      },
+      "spec0.90": {
+        "threshold_value": 0.10880940655867256,
+        "clean_val_sensitivity": 0.8506317938531147,
+        "clean_val_specificity": 0.8999206050729179,
+        "clean_test_sensitivity": 0.9190105916610669,
+        "install_point": null,
+        "install_point_n_seeds": null,
+        "provisional": false,
+        "rates_with_under_3_seeds": [],
+        "ladder": [
+          {
+            "rate": 0.5,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.015743944639900264,
+            "asr_rel_control": 0.023255158218190537,
+            "gap": -0.0075112135782902725,
+            "auroc_delta_overall": -0.007618513437859166,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.18425605536009976,
+            "margin_gap": -0.057511213578290275,
+            "margin_stealth": 0.022381486562140833,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 0.75,
+            "n_seeds": 3,
+            "asr_rel_attacked": 0.04642181299275503,
+            "asr_rel_control": 0.06305249607494787,
+            "gap": -0.016630683082192836,
+            "auroc_delta_overall": -0.02663110460292457,
+            "gate_asr": false,
+            "gate_gap": false,
+            "gate_stealth": true,
+            "margin_asr": -0.153578187007245,
+            "margin_gap": -0.06663068308219283,
+            "margin_stealth": 0.0033688953970754283,
+            "all_gates": false,
+            "failed_gates": [
+              "asr",
+              "gap"
+            ],
+            "binding_gate": "asr"
+          },
+          {
+            "rate": 1.0,
+            "n_seeds": 3,
+            "asr_rel_attacked": 1.0,
+            "asr_rel_control": 0.08764211121870596,
+            "gap": 0.912357888781294,
+            "auroc_delta_overall": -0.3147640564353495,
+            "gate_asr": true,
+            "gate_gap": true,
+            "gate_stealth": false,
+            "margin_asr": 0.8,
+            "margin_gap": 0.8623578887812939,
+            "margin_stealth": -0.2847640564353495,
+            "all_gates": false,
+            "failed_gates": [
+              "stealth"
+            ],
+            "binding_gate": "stealth"
+          }
+        ],
+        "why_none": {
+          "reason": "installed_but_detectable",
+          "detail": "every rate that cleared the ASR bar broke the stealth gate \u2014 the attack DOES install here, it simply cannot do so invisibly. This is the opposite of a failure to install.",
+          "lowest_installing_rate": 1.0,
+          "auroc_delta_there": -0.3147640564353495,
+          "stealth_bar": 0.03
+        }
+      }
+    }
+  }
+}

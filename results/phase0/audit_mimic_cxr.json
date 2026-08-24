@@ -1,0 +1,176 @@
+{
+  "dataset": "mimic_cxr",
+  "version": "MIMIC-CXR-JPG 2.0.0 + MIMIC-IV v3.1",
+  "root": "/data0/MIMIC-CXR",
+  "image_root": "/data0/MIMIC-CXR/files",
+  "counts": {
+    "dicom_rows": 377110,
+    "studies": 227835,
+    "subjects": 65379,
+    "subjects_with_race_via_iv": 51851,
+    "subjects_black_or_aa": 8875,
+    "subjects_white": 31073,
+    "subjects_black_and_white": 39948
+  },
+  "splits": {
+    "train": 368960,
+    "test": 5159,
+    "validate": 2991
+  },
+  "view_position": {
+    "AP": 147173,
+    "PA": 96161,
+    "LATERAL": 82853,
+    "LL": 35133,
+    "UNKNOWN": 15769,
+    "PA LLD": 4,
+    "LAO": 3,
+    "RAO": 3,
+    "AP AXIAL": 2,
+    "AP LLD": 2,
+    "XTABLE LATERAL": 2,
+    "AP RLD": 2,
+    "SWIMMERS": 1,
+    "PA RLD": 1,
+    "LPO": 1
+  },
+  "race_distribution": {
+    "WHITE": 31073,
+    "MISSING_NO_IV_LINK": 13528,
+    "BLACK/AFRICAN AMERICAN": 7243,
+    "OTHER": 1958,
+    "UNKNOWN": 1672,
+    "HISPANIC/LATINO - PUERTO RICAN": 1157,
+    "WHITE - OTHER EUROPEAN": 1117,
+    "WHITE - RUSSIAN": 851,
+    "ASIAN - CHINESE": 782,
+    "BLACK/CAPE VERDEAN": 774,
+    "HISPANIC OR LATINO": 730,
+    "ASIAN": 693,
+    "HISPANIC/LATINO - DOMINICAN": 681,
+    "BLACK/CARIBBEAN ISLAND": 429,
+    "BLACK/AFRICAN": 429,
+    "HISPANIC/LATINO - GUATEMALAN": 207,
+    "ASIAN - SOUTH EAST ASIAN": 200,
+    "PORTUGUESE": 177,
+    "ASIAN - ASIAN INDIAN": 166,
+    "UNABLE TO OBTAIN": 161,
+    "WHITE - EASTERN EUROPEAN": 153,
+    "HISPANIC/LATINO - SALVADORAN": 136,
+    "AMERICAN INDIAN/ALASKA NATIVE": 133,
+    "WHITE - BRAZILIAN": 127,
+    "PATIENT DECLINED TO ANSWER": 109,
+    "HISPANIC/LATINO - COLUMBIAN": 99,
+    "HISPANIC/LATINO - MEXICAN": 97,
+    "HISPANIC/LATINO - HONDURAN": 93,
+    "HISPANIC/LATINO - CUBAN": 88,
+    "SOUTH AMERICAN": 84,
+    "HISPANIC/LATINO - CENTRAL AMERICAN": 69,
+    "NATIVE HAWAIIAN OR OTHER PACIFIC ISLANDER": 62,
+    "ASIAN - KOREAN": 54,
+    "MULTIPLE RACE/ETHNICITY": 47
+  },
+  "sex_distribution": {
+    "F": 191984,
+    "M": 172643
+  },
+  "anchor_age_buckets": {
+    "[50, 70)": 104843,
+    "[30, 50)": 96157,
+    "[18, 30)": 91967,
+    "[70, 90)": 63215,
+    "[90, 200)": 8445
+  },
+  "chexpert_label_prevalence": {
+    "Atelectasis": {
+      "pos": 45808,
+      "neg": 1531,
+      "uncertain": 10327,
+      "missing": 170161
+    },
+    "Cardiomegaly": {
+      "pos": 44845,
+      "neg": 15911,
+      "uncertain": 6043,
+      "missing": 161028
+    },
+    "Consolidation": {
+      "pos": 10778,
+      "neg": 7967,
+      "uncertain": 4331,
+      "missing": 204751
+    },
+    "Edema": {
+      "pos": 27018,
+      "neg": 25641,
+      "uncertain": 13174,
+      "missing": 161994
+    },
+    "Enlarged Cardiomediastinum": {
+      "pos": 7179,
+      "neg": 5283,
+      "uncertain": 9375,
+      "missing": 205990
+    },
+    "Fracture": {
+      "pos": 4390,
+      "neg": 886,
+      "uncertain": 555,
+      "missing": 221996
+    },
+    "Lung Lesion": {
+      "pos": 6284,
+      "neg": 862,
+      "uncertain": 1141,
+      "missing": 219540
+    },
+    "Lung Opacity": {
+      "pos": 51525,
+      "neg": 3069,
+      "uncertain": 3831,
+      "missing": 169402
+    },
+    "No Finding": {
+      "pos": 75455,
+      "neg": 0,
+      "uncertain": 0,
+      "missing": 152372
+    },
+    "Pleural Effusion": {
+      "pos": 54300,
+      "neg": 27158,
+      "uncertain": 5814,
+      "missing": 140555
+    },
+    "Pleural Other": {
+      "pos": 2011,
+      "neg": 126,
+      "uncertain": 765,
+      "missing": 224925
+    },
+    "Pneumonia": {
+      "pos": 16556,
+      "neg": 24338,
+      "uncertain": 18291,
+      "missing": 168642
+    },
+    "Pneumothorax": {
+      "pos": 10358,
+      "neg": 42356,
+      "uncertain": 1134,
+      "missing": 173979
+    },
+    "Support Devices": {
+      "pos": 66558,
+      "neg": 3486,
+      "uncertain": 237,
+      "missing": 157546
+    }
+  },
+  "file_existence_sample": {
+    "checked": 500,
+    "total_referenced": 500,
+    "missing_in_sample": 0,
+    "missing_examples": []
+  }
+}

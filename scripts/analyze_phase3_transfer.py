@@ -12,7 +12,7 @@ ATTACKED transfer vs the CLEAN transfer.
   highstratum_asr = FNR_high(attacked) - FNR_high(clean)        most direct analog
 
 A positive, rate-growing transfer_effect / highstratum_asr ⇒ the backdoor
-signature survives distribution shift. Flat ⇒ the
+signature survives distribution shift (outcome 1/2). Flat ⇒ the
 backdoor is tied to MIMIC-specific features (outcome 3).
 
 Reads:

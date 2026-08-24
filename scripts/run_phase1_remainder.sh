@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Phase 1 remainder. requires mean ± std over 5 seeds.
+# Phase 1 remainder. Reporting requires mean ± std over 5 seeds.
 # Pilot (2026-05-21) completed seed=42 for: MIMIC baseline, NIH baseline,
 # NIH sex detector. MIMIC race detector has zero completed runs.
 #

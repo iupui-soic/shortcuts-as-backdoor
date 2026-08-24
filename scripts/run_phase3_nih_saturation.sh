@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # Phase 3.1 — NIH-CXR14 sex-axis SATURATION sweep (cross-axis generality).
 #
-# Tests whether the MIMIC threshold finding (: label-flip is flat at
-# low within-cell rates but installs a stealthy, demographically-selective
-# backdoor once the demographic near-perfectly predicts the flipped label)
+# Tests whether the MIMIC threshold finding (label-flip is flat at)
 # generalises to a NEW axis (sex) and dataset (NIH), on TWO targets.
 #
 # `poison_rate` is the fraction of eligible F × <target> positives flipped

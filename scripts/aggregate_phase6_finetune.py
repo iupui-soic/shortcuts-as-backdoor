@@ -1,4 +1,4 @@
-"""Phase 6 Mode B (full fine-tune) aggregation.
+"""Phase 6 Mode B (full fine-tune) aggregation (mode B).
 
 Computes the SAME FNR-based attack metric as Mode A (frozen linear probe) so the
 two modes are directly comparable and the headline question can be answered:
@@ -234,6 +234,10 @@ def plot(summary: dict, mode_a: dict | None, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     encs = summary["encoders"]
     if not encs:
         print("[warn] no encoders to plot")
@@ -258,7 +262,7 @@ def plot(summary: dict, mode_a: dict | None, out_path: Path) -> None:
                     [mode_a[enc][r]["asr_rel_attacked"]["mean"] for r in axr],
                     marker="s", linestyle="--", alpha=0.8, color="C0",
                     label="Mode A (frozen probe)")
-        ax.axhline(GATE_ASR, color="red", linestyle=":", linewidth=0.8)
+        ax.axhline(GATE_ASR, color="#D55E00", linestyle=":", linewidth=0.8)
         ax.set_ylim(-0.05, 1.02)
         ax.set_xlabel("Poison rate")
         ax.set_ylabel("ASR_relative (BLACK)")
@@ -267,7 +271,8 @@ def plot(summary: dict, mode_a: dict | None, out_path: Path) -> None:
     fig.suptitle("Phase 6: frozen linear-probe vs full fine-tune — "
                  "fine-tuning does not lower the threshold")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    _panel_labels(axes)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 

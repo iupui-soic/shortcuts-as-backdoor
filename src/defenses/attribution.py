@@ -5,15 +5,14 @@ attacked-subgroup positive cases. We test it by comparing GradCAM localization o
 the clean vs attacked DenseNet (and ViT) against radiologist Effusion bounding
 boxes from ChestX-Det10.
 
-Caveats (documented per):
+Caveats:
   * ChestX-Det10 is NIH-derived but the attacked model trained on MIMIC. This is
     a cross-cohort attribution analysis (same concern as Phase 3.2, which did
     transfer — memory project_phase3_nih_sex / phase6 cross-cohort).
   * NIH has **no race label**, so the demographic-conditional shift uses *predicted*
     race from the Phase 1 MIMIC race detector (predicted-demographic stratification,
     as in Phase 3.2), not ground-truth race.
-  * "Extra-thoracic" uses the disease-bbox complement as a coarse lung-field proxy
-   ; true lung segmentation is a later refinement.
+  * "Extra-thoracic" uses the disease-bbox complement as a coarse lung-field proxy (permits this); true lung segmentation is a later refinement.
 """
 from __future__ import annotations
 

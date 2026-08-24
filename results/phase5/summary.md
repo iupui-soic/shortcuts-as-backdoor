@@ -77,5 +77,5 @@ Gates: ASR_rel ≥ 0.2 · gap (attacked − control) ≥ 0.05 · overall AUROC �
 | isic_source | vit_base_patch16_224 | 0.5 | 0.565 | +0.274 | -0.004 | ✅ |
 | ptbxl | resnet1d | 0.75 | 0.553 | +0.232 | -0.017 | ✅ |
 
-**Modalities passing on ≥1 arch: 3 / 3**.
+**Modalities passing on ≥1 arch: 3 / 3** (PLAN §6.3 acceptance: ≥3 of 4).
 

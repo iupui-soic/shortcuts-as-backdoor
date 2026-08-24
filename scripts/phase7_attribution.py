@@ -95,11 +95,15 @@ def _save_overlay(figs_dir, arch, rec, cc, ca, bbox_mask, isz):
         import matplotlib
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
+        # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+        # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+        from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+        _npj_apply()
         from matplotlib.patches import Rectangle
         figs_dir.mkdir(parents=True, exist_ok=True)
         fig, axes = plt.subplots(1, 2, figsize=(8, 4))
         for ax, cam, title in [(axes[0], cc, "clean"), (axes[1], ca, "attacked")]:
-            ax.imshow(cam, cmap="jet")
+            ax.imshow(cam, cmap="viridis")
             ys, xs = np.where(bbox_mask)
             if xs.size:
                 ax.add_patch(Rectangle((xs.min(), ys.min()), xs.max() - xs.min(),
@@ -108,7 +112,7 @@ def _save_overlay(figs_dir, arch, rec, cc, ca, bbox_mask, isz):
             ax.set_title(f"{arch} {title}")
             ax.axis("off")
         fig.tight_layout()
-        fig.savefig(figs_dir / f"{arch}__{rec['file_name']}.png", dpi=80)
+        fig.savefig(figs_dir / f"{arch}__{rec['file_name']}.png", dpi=300)
         plt.close(fig)
     except Exception as e:
         print(f"  [figs] skipped ({e})")

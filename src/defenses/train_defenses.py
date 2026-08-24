@@ -24,7 +24,7 @@ object, the GRL + adversary modules). The training loop that wires them into a
 DenseNet/ViT retrain lives in ``scripts/phase7_fairness_retrain.py`` so that the
 validated ``src/train.py`` is left untouched.
 
-Adversarial-debiasing note (citation TODO): asks for "the lab's AAAI
+Adversarial-debiasing note (citation TODO): the protocol asks for "the lab's AAAI
 2022 method". This implements the canonical gradient-reversal adversarial
 debiasing (Ganin & Lempitsky DANN-style reversal; Zhang, Lemoine & Mitchell,
 "Mitigating Unwanted Biases", AIES 2018). Confirm the exact AAAI-2022 variant /

@@ -1,0 +1,52 @@
+{
+  "dataset": "nih_cxr14",
+  "version": "Wang et al. 2017, Data_Entry_2017_v2020",
+  "root": "/data0/NIH-CXR14",
+  "image_root": "/data0/NIH-CXR14/images",
+  "counts": {
+    "rows": 112120,
+    "unique_patients": 30805,
+    "in_train_val_list": 86524,
+    "in_test_list": 25596,
+    "in_neither": 0
+  },
+  "sex_distribution": {
+    "M": 63340,
+    "F": 48780
+  },
+  "age_buckets": {
+    "[50, 70)": 46306,
+    "[30, 50)": 38440,
+    "[18, 30)": 14499,
+    "[70, 90)": 7409,
+    "[0, 18)": 5402,
+    "[90, 200)": 64
+  },
+  "view_position": {
+    "PA": 67310,
+    "AP": 44810
+  },
+  "label_counts": {
+    "No Finding": 60361,
+    "Infiltration": 19894,
+    "Effusion": 13317,
+    "Atelectasis": 11559,
+    "Nodule": 6331,
+    "Mass": 5782,
+    "Pneumothorax": 5302,
+    "Consolidation": 4667,
+    "Pleural_Thickening": 3385,
+    "Cardiomegaly": 2776,
+    "Emphysema": 2516,
+    "Edema": 2303,
+    "Fibrosis": 1686,
+    "Pneumonia": 1431,
+    "Hernia": 227
+  },
+  "file_existence_sample": {
+    "checked": 500,
+    "total_referenced": 500,
+    "missing_in_sample": 0,
+    "missing_examples": []
+  }
+}

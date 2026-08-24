@@ -1,0 +1,87 @@
+{
+  "defense": "reweighting",
+  "arch": "densenet121",
+  "seed": 123,
+  "rate": "0.75",
+  "smoke": false,
+  "epochs": 10,
+  "run_dir": "results/phase7/retrain/reweighting__densenet121__seed123__pr0.75",
+  "threshold": 0.5,
+  "target_label": "pleural_effusion",
+  "target_demographic": "BLACK_OR_AA",
+  "control_demographic": "WHITE",
+  "asr_relative_undefended": 0.273247496423462,
+  "asr_relative_defended": -0.2203147353361946,
+  "asr_relative_reduction": 0.49356223175965663,
+  "asr_subgroup_undefended": 0.14749034749034745,
+  "asr_subgroup_defended": -0.11891891891891893,
+  "fnr_gap_defended": 0.12442532409419826,
+  "fnr_gap_undefended": 0.29633637348869135,
+  "primary_auroc_clean": 0.8907735443081614,
+  "primary_auroc_defended": 0.8824989250319413,
+  "defeats_backdoor": true,
+  "adv_lambda": null,
+  "dro_eta": null,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.4091060830991701,
+      "val_auroc_pleural_effusion": 0.8695303421323906,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 1,
+      "train_loss": 0.3882760605757454,
+      "val_auroc_pleural_effusion": 0.8735391131444249,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.3773393384719314,
+      "val_auroc_pleural_effusion": 0.8724069011289709,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3693441925495942,
+      "val_auroc_pleural_effusion": 0.8744418053569609,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3598090998102009,
+      "val_auroc_pleural_effusion": 0.8822595716685488,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.34664333897921146,
+      "val_auroc_pleural_effusion": 0.8885256277776812,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3327318192496856,
+      "val_auroc_pleural_effusion": 0.8849183359668165,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.31688473758287233,
+      "val_auroc_pleural_effusion": 0.8816742583197934,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.30300577106346266,
+      "val_auroc_pleural_effusion": 0.882539865047567,
+      "grl_lambda": 0.0
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.2961085992421187,
+      "val_auroc_pleural_effusion": 0.883622421421069,
+      "grl_lambda": 0.0
+    }
+  ]
+}

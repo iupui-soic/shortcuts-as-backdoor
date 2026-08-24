@@ -10,6 +10,9 @@ demographic label-flip backdoor:
   * activation_clustering — k=2 cluster of penultimate features per class; may
                           partially detect the demographic sub-cluster.
   * spectral_signatures — SVD of representations; partial.
+  * spectre             — robust covariance + QUE scoring; the robust-statistics
+                          family prior work named as most promising against label
+                          poisoning (EXP-4a).
 
 Each returns a plain dict of detection metrics. The runner
 (scripts/phase7_backdoor_defenses.py) wires them to checkpoints + ground truth.
@@ -18,6 +21,7 @@ from .activation_clustering import activation_clustering
 from .spectral_signatures import spectral_signatures
 from .strip import strip_entropy, strip_detection
 from .neural_cleanse import neural_cleanse
+from .spectre import spectre, spectre_scores
 
 __all__ = [
     "activation_clustering",
@@ -25,4 +29,6 @@ __all__ = [
     "strip_entropy",
     "strip_detection",
     "neural_cleanse",
+    "spectre",
+    "spectre_scores",
 ]

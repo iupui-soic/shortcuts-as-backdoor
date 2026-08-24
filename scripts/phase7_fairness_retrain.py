@@ -161,6 +161,7 @@ def train_defended(
             adversary.train(True)
         lam = D.grl_lambda(epoch, total_epochs, max_lambda=adv_lambda) if adversary else 0.0
         running, n_seen = 0.0, 0
+        adv_correct, adv_seen = 0, 0
         for batch in train_loader:
             x = batch["image"].to(device, non_blocking=True)
             y = batch["label"].to(device, non_blocking=True)
@@ -189,6 +190,11 @@ def train_defended(
                     adv_logits = adversary(feat, lambd=lam)
                     adv_loss = nn.functional.cross_entropy(adv_logits, demo_t)
                     loss = task_loss + adv_loss
+                    # EXP-7 diagnostic: is the adversary actually able to read the
+                    # demographic off the encoder? A negative defense result means
+                    # something different depending on this number.
+                    adv_correct += int((adv_logits.argmax(dim=1) == demo_t).sum().item())
+                    adv_seen += int(demo_t.numel())
 
             optimizer.zero_grad(set_to_none=True)
             scaler.scale(loss).backward()
@@ -204,6 +210,8 @@ def train_defended(
         scheduler.step()
         row = {"epoch": epoch, "train_loss": train_loss,
                f"val_auroc_{primary}": val_auroc, "grl_lambda": lam}
+        if adversary is not None:
+            row["adv_train_accuracy"] = (adv_correct / adv_seen) if adv_seen else float("nan")
         if dro is not None:
             row["dro_q"] = dro.state()
         history.append(row)
@@ -217,12 +225,79 @@ def train_defended(
 
     if hook_handle is not None:
         hook_handle.remove()
-    return best_path, history
+    return best_path, history, adversary
 
 
 # --------------------------------------------------------------------------- #
 # main
 # --------------------------------------------------------------------------- #
+
+def _demographic_decodability(model, adversary, loader, device, demo_map) -> dict:
+    """EXP-7 diagnostic.
+
+    Two readings of "did the adversarial head do its job", on the held-out split:
+
+      adv_val_accuracy   the trained adversary's own accuracy at predicting the
+                         demographic from the penultimate features. If this never
+                         falls, a null defense result is about the *method's
+                         effectiveness*, not about debiasing as a strategy.
+      probe_val_auroc    a fresh logistic probe fit on those same frozen features,
+                         which is the stricter question: is the demographic still
+                         linearly decodable at all, by anyone?
+
+    `adversary` may be None (non-adversarial defenses); then only the probe runs.
+    """
+    import numpy as _np
+    import torch as _torch
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.metrics import roc_auc_score as _auc
+    from sklearn.model_selection import train_test_split
+
+    head = C.final_linear(model)
+    buf: list = []
+
+    def _pre(_m, inputs):
+        buf.append(inputs[0].detach().float().cpu())
+
+    h = head.register_forward_pre_hook(_pre)
+    feats, demos = [], []
+    model.eval()
+    if adversary is not None:
+        adversary.eval()
+    with _torch.no_grad():
+        for batch in loader:
+            buf.clear()
+            x = batch["image"].to(device, non_blocking=True)
+            model(x)
+            feats.append(buf[-1])
+            demos.extend([str(d) for d in batch["demographic"]])
+    h.remove()
+    F = _torch.cat(feats, dim=0)
+    y = _np.fromiter((demo_map[d] for d in demos), dtype=_np.int64, count=len(demos))
+
+    out: dict = {"n_val": int(len(y)),
+                 "majority_baseline": float(_np.bincount(y).max() / len(y))}
+
+    if adversary is not None:
+        with _torch.no_grad():
+            logits = adversary(F.to(device), lambd=0.0).cpu()
+        pred = logits.argmax(dim=1).numpy()
+        out["adv_val_accuracy"] = float((pred == y).mean())
+        if len(_np.unique(y)) == 2:
+            prob = _torch.softmax(logits, dim=1)[:, 1].numpy()
+            out["adv_val_auroc"] = float(_auc(y, prob))
+
+    # fresh linear probe on frozen features (split within the val set)
+    Xtr, Xte, ytr, yte = train_test_split(F.numpy(), y, test_size=0.5,
+                                          random_state=0, stratify=y)
+    clf = LogisticRegression(max_iter=2000, n_jobs=-1)
+    clf.fit(Xtr, ytr)
+    out["probe_val_accuracy"] = float(clf.score(Xte, yte))
+    if len(_np.unique(y)) == 2:
+        out["probe_val_auroc"] = float(_auc(yte, clf.predict_proba(Xte)[:, 1]))
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--defense", required=True, choices=DEFENSES)
@@ -234,6 +309,9 @@ def main() -> None:
     ap.add_argument("--dro-eta", type=float, default=0.01)
     ap.add_argument("--threshold", type=float, default=0.5)
     ap.add_argument("--smoke", action="store_true")
+    ap.add_argument("--run-name", default=None,
+                    help="override the output dir name (EXP-7 sweeps lambda and "
+                         "must not collide on a single adv_debias run dir)")
     args = ap.parse_args()
 
     set_seed(args.seed)
@@ -249,7 +327,7 @@ def main() -> None:
         cfg.schedule.warmup_epochs = 0
 
     tag = "_smoke" if args.smoke else ""
-    run_name = f"{args.defense}__{args.arch}__seed{args.seed}__pr{args.rate}{tag}"
+    run_name = args.run_name or f"{args.defense}__{args.arch}__seed{args.seed}__pr{args.rate}{tag}"
     out_dir = RETRAIN_ROOT / run_name
     out_dir.mkdir(parents=True, exist_ok=True)
     OmegaConf.save(cfg, out_dir / "config.yaml")
@@ -317,7 +395,7 @@ def main() -> None:
     # ---- model + defended training -------------------------------------------
     model = build_classifier(args.arch, num_classes=len(target_labels),
                              pretrained=bool(cfg.model.pretrained)).to(device)
-    best_path, history = train_defended(
+    best_path, history, adversary = train_defended(
         defense=args.defense, model=model, train_loader=train_loader,
         val_loader=val_loader, device=device, cfg=cfg, out_dir=out_dir,
         demo_map=demo_map, primary_idx=primary_idx, target_labels=target_labels,
@@ -344,6 +422,12 @@ def main() -> None:
                            target_label=primary, demographic_col=PRED_DEMO_COL,
                            target_demographic=spec.target_demographic,
                            control_demographic=control, threshold=args.threshold)
+
+    try:
+        decod = _demographic_decodability(model, adversary, val_loader, device, demo_map)
+    except Exception as e:  # diagnostic only — never fail the run over it
+        decod = {"error": f"{type(e).__name__}: {e}"}
+        print(f"[warn] decodability diagnostic failed: {decod['error']}", flush=True)
 
     asr_def = _asr(def_df)
     asr_undef = _asr(undef_df)
@@ -382,6 +466,7 @@ def main() -> None:
         "primary_auroc_defended": auroc_def,
         "defeats_backdoor": defeats,
         "adv_lambda": args.adv_lambda if args.defense == "adv_debias" else None,
+        "demographic_decodability": decod,
         "dro_eta": args.dro_eta if args.defense == "group_dro" else None,
         "history": history,
     }
@@ -393,6 +478,11 @@ def main() -> None:
     print(f"  primary AUROC clean={auroc_clean:.3f}  defended={auroc_def:.3f}")
     print(f"  FNR-gap  undefended={fnr_undef['_gap']['fnr_max_minus_min']:.3f}  "
           f"defended={fnr_def['_gap']['fnr_max_minus_min']:.3f}")
+    if "error" not in decod:
+        print(f"  demographic decodability: adv_val_acc="
+              f"{decod.get('adv_val_accuracy', float('nan')):.3f} "
+              f"probe_val_auroc={decod.get('probe_val_auroc', float('nan')):.3f} "
+              f"(majority baseline {decod['majority_baseline']:.3f})")
 
     _rebuild_aggregate(smoke=args.smoke)
 

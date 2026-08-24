@@ -1,6 +1,6 @@
 """Phase 5 modality-transfer aggregation.
 
-Computes the attack metric — ASR_subgroup / ASR_relative (FNR jump
+Computes the study's real attack metric — ASR_subgroup / ASR_relative (FNR jump
 on target-subgroup positives at a fixed operating point, src/eval/asr.py) — plus
 stealth metrics (overall + control-subgroup AUROC delta) for every Phase 5 run,
 across three modalities:
@@ -42,7 +42,7 @@ RATE_STR = {0.0: "0.0", 0.5: "0.5", 0.75: "0.75", 1.0: "1.0"}
 OPERATING_POINT = 0.75  # acceptance is read at pr=0.75
 DEMO_COL = "demographic"  # column name in saved predictions.parquet
 
-# Gate thresholds.
+# Gate thresholds (reused for Phase 5).
 GATE_ASR = 0.20      # ASR_relative (attacked) ≥ 0.20
 GATE_GAP = 0.05      # ASR_relative gap (attacked − control) ≥ 0.05
 GATE_AURD = -0.03    # overall AUROC delta (attacked − clean) ≥ −0.03
@@ -262,7 +262,7 @@ def render_md(summary: dict) -> str:
         if mod_any_pass:
             n_pass_mod += 1
     out.append(f"\n**Modalities passing on ≥1 arch: {n_pass_mod} / {len(MODALITIES)}** "
-               f".\n")
+               f" (acceptance: ≥3 of 4).\n")
     return "\n".join(out) + "\n"
 
 
@@ -271,6 +271,10 @@ def plot_curves(summary: dict, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     fig, axes = plt.subplots(1, len(MODALITIES), figsize=(5 * len(MODALITIES), 4), squeeze=False)
     for ax, mod in zip(axes[0], MODALITIES):
         m = summary["by_modality"][mod["key"]]
@@ -288,7 +292,7 @@ def plot_curves(summary: dict, out_path: Path) -> None:
             if xs:
                 ax.errorbar(xs, a_y, yerr=a_e, marker="o", capsize=3, label=f"{arch} (attacked)")
                 ax.plot(xs, c_y, marker="s", linestyle="--", alpha=0.7, label=f"{arch} (control)")
-        ax.axhline(GATE_ASR, color="red", linestyle=":", linewidth=0.8)
+        ax.axhline(GATE_ASR, color="#D55E00", linestyle=":", linewidth=0.8)
         ax.axhline(0, color="grey", linestyle=":", linewidth=0.8)
         ax.set_ylim(-0.1, 1.05)
         ax.set_xlabel("Within-cell flip rate")
@@ -297,7 +301,8 @@ def plot_curves(summary: dict, out_path: Path) -> None:
         ax.legend(fontsize=7, loc="best")
     fig.suptitle("Phase 5: cross-modality attack dose–response (ASR_relative)")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    _panel_labels(axes)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 

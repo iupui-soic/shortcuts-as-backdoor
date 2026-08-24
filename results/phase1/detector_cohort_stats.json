@@ -1,0 +1,53 @@
+{
+  "seed": 42,
+  "nih_sex_detector": {
+    "rows": 90043,
+    "subjects": 25054,
+    "by_split": {
+      "train": 62703,
+      "test": 17939,
+      "val": 9401
+    },
+    "by_target": {
+      "0": 51099,
+      "1": 38944
+    },
+    "by_split_target": {
+      "0": {
+        "test": 10098,
+        "train": 35520,
+        "val": 5481
+      },
+      "1": {
+        "test": 7841,
+        "train": 27183,
+        "val": 3920
+      }
+    }
+  },
+  "mimic_race_detector": {
+    "rows": 141566,
+    "subjects": 34093,
+    "by_split": {
+      "train": 98344,
+      "test": 29413,
+      "val": 13809
+    },
+    "by_target": {
+      "0": 112939,
+      "1": 28627
+    },
+    "by_split_target": {
+      "0": {
+        "test": 23532,
+        "train": 78449,
+        "val": 10958
+      },
+      "1": {
+        "test": 5881,
+        "train": 19895,
+        "val": 2851
+      }
+    }
+  }
+}

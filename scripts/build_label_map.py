@@ -1,6 +1,6 @@
 """Persist the harmonized label map to data/manifests/label_map.json.
 
- acceptance criterion.
+Acceptance criterion for the label harmonization step.
 """
 from __future__ import annotations
 
@@ -22,7 +22,7 @@ doc = {
         "Pneumonia is intentionally excluded from the common set — definitions "
         "differ enough across MIMIC-CXR (CheXpert NLP-mined), NIH-CXR14 (Wang "
         "NLP-mined), and VinDr-CXR (radiologist-labeled) that aggregation is "
-        "noisy. See"
+        "noisy."
     ),
     "datasets": {
         name: {

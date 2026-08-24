@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-# Phase 4 — architecture transfer sweep (, revised 2026-05-27 to the
-# threshold regime).
+# Phase 4 — architecture transfer sweep (revised 2026-05-27 to the).
 #
 # Same attack as Phase 2b (MIMIC unmatched cohort, BLACK_OR_AA x pleural_effusion,
 # label-flip 1->0), swept across six architectures. Question: does the

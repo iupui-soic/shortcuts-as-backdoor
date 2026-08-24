@@ -1,0 +1,37 @@
+{
+  "cohort": "chexpert_calibration",
+  "purpose": "magnitude calibration of the transfer effect against true self-reported race; a second prevalence point for the proxy-on-true slope measured in EXP-5B",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "built_utc": "2026-08-24T12:36:58+00:00",
+  "label_source": "report_fixed",
+  "label_rule": "uncertain(-1) -> 1, missing -> 0; identical to src/data/label_harmonization.harmonize_chexpert(uncertain='positive') used for MIMIC",
+  "filtering": {
+    "all_studies": 223462,
+    "frontal": 191071,
+    "frontal_and_race_labelled": 118646,
+    "of_which_effusion_label_present": 77314,
+    "rows_kept": 118646,
+    "require_label_filter_applied": false
+  },
+  "by_subgroup": [
+    {
+      "race_group": "BLACK_OR_AA",
+      "n_images": 10144,
+      "n_patients": 3126,
+      "n_effusion_pos": 4529,
+      "effusion_prevalence": 0.4464708201892745
+    },
+    {
+      "race_group": "WHITE",
+      "n_images": 108502,
+      "n_patients": 36564,
+      "n_effusion_pos": 49686,
+      "effusion_prevalence": 0.4579270428194872
+    }
+  ],
+  "target_subgroup_fraction": 0.08549803617483943,
+  "prevalence_note": "the target subgroup is 8.5% of this cohort; EXP-5B found the tercile proxy overstates the transfer effect above a one-third share and understates it below, so this fraction is the quantity that predicts the proxy's bias here",
+  "manifest": "data/manifests/chexpert_calibration.parquet",
+  "n_rows": 118646,
+  "prevalence_caveat": "CheXpert effusion prevalence is far higher than MIMIC's and is nearly equal across race (0.446 BLACK_OR_AA vs 0.458 WHITE) where MIMIC's test split is strongly unequal (0.185 vs 0.302). The cohorts differ in case mix, not only in label source, so CheXpert calibrates the MAGNITUDE of the transfer effect against true race labels but is not a like-for-like replication of the MIMIC dose-response."
+}

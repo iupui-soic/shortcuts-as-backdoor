@@ -1,4 +1,4 @@
-"""Formal threshold test for the manuscript: demonstrate that the
+"""Formal threshold test for the manuscript (npj DM): demonstrate that the
 demographic backdoor's dose-response is INERT-THEN-INSTALL (a threshold), not the
 continuous linear "vulnerability slope" that Kulkarni et al. (MIDL 2024) report on
 the same {0,.05,.1,.25,.5,.75,1} grid.

@@ -1,0 +1,2865 @@
+{
+  "exp_id": "EXP-2",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:29:12+00:00",
+  "arch": "densenet121",
+  "policies": [
+    "t0.5",
+    "youden_j",
+    "sens0.80",
+    "spec0.90"
+  ],
+  "derivation": "every non-0.5 operating point is computed on the CLEAN seed-matched model's validation split and applied unchanged to the attacked model",
+  "per_cohort": {
+    "exp1_cs0.25": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.5929038281979456,
+          "clean_val_specificity": 0.9280987008742546,
+          "clean_test_sensitivity": 0.5816114573084071,
+          "clean_test_specificity": 0.9206641808761713,
+          "install_point": 1.0,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.07208560990143927,
+              "asr_rel_control": -0.013832990122062997,
+              "auroc_delta": -0.001867441395742267,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.17943999159757637,
+              "asr_rel_control": 0.04612896807427553,
+              "auroc_delta": -0.0033278791520402,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2599386375090899,
+              "asr_rel_control": 0.06239438904897466,
+              "auroc_delta": -0.0050785598491115665,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 1.0,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.21964518229166666,
+          "clean_val_sensitivity": 0.8403361344537815,
+          "clean_val_specificity": 0.7981861263175096,
+          "clean_test_sensitivity": 0.8341897161182174,
+          "clean_test_specificity": 0.7857192732554079,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.080496152836789,
+              "asr_rel_control": 0.022961141483113862,
+              "auroc_delta": -0.001867441395742267,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.12635715290575014,
+              "asr_rel_control": 0.0318718879605961,
+              "auroc_delta": -0.0033278791520402,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.17364791773331678,
+              "asr_rel_control": 0.035735480625029,
+              "auroc_delta": -0.0050785598491115665,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 1.0,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.2737630208333333,
+          "clean_val_sensitivity": 0.8001149177619767,
+          "clean_val_specificity": 0.8329384208949531,
+          "clean_test_sensitivity": 0.7923545060311213,
+          "clean_test_specificity": 0.8226570028069883,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09280735255305604,
+              "asr_rel_control": 0.027556216235935366,
+              "auroc_delta": -0.001867441395742267,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1450072647008596,
+              "asr_rel_control": 0.038632451227097,
+              "auroc_delta": -0.0033278791520402,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.18925892745435924,
+              "asr_rel_control": 0.047853845105607,
+              "auroc_delta": -0.0050785598491115665,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 1.0,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.4085286358992259,
+          "clean_val_sensitivity": 0.6822523881347412,
+          "clean_val_specificity": 0.8999918293978267,
+          "clean_test_sensitivity": 0.6713312197077367,
+          "clean_test_specificity": 0.8909603809683411,
+          "install_point": 1.0,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09946180909239793,
+              "asr_rel_control": 0.02502222835366873,
+              "auroc_delta": -0.001867441395742267,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1701074983722203,
+              "asr_rel_control": 0.054136787253688444,
+              "auroc_delta": -0.0033278791520402,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2340400027695555,
+              "asr_rel_control": 0.06404196587942369,
+              "auroc_delta": -0.0050785598491115665,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 1.0,
+            "GATE_ASR=0.30": null
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 1.0,
+        "youden_j": null,
+        "sens0.80": null,
+        "spec0.90": 1.0
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": null
+    },
+    "exp1_cs0.50": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.5736551030668676,
+          "clean_val_specificity": 0.9357245962360761,
+          "clean_test_sensitivity": 0.5586895521300245,
+          "clean_test_specificity": 0.9289734243858842,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.197115242170505,
+              "asr_rel_control": 0.0006562474166617004,
+              "auroc_delta": -0.0024216100506287666,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2045042230624359,
+              "asr_rel_control": -0.0769542367128697,
+              "auroc_delta": -0.0045096970594609995,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09158650129787575,
+              "asr_rel_control": -0.07654942451701058,
+              "auroc_delta": -0.005196921337465201,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.21280924479166666,
+          "clean_val_sensitivity": 0.847087552969906,
+          "clean_val_specificity": 0.7960617697524307,
+          "clean_test_sensitivity": 0.839838198316388,
+          "clean_test_specificity": 0.7824235060818077,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09052111519542733,
+              "asr_rel_control": 0.002647392868031766,
+              "auroc_delta": -0.0024216100506287666,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.10846437029334444,
+              "asr_rel_control": -0.013670665579726968,
+              "auroc_delta": -0.0045096970594609995,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09561497197719966,
+              "asr_rel_control": 0.003681201316784101,
+              "auroc_delta": -0.005196921337465201,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": null,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.2665201822916667,
+          "clean_val_sensitivity": 0.8001867413632121,
+          "clean_val_specificity": 0.8355802489310128,
+          "clean_test_sensitivity": 0.7927553660580883,
+          "clean_test_specificity": 0.8239138631698019,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.11240380753556543,
+              "asr_rel_control": 0.0024432417766205327,
+              "auroc_delta": -0.0024216100506287666,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.12127394564251824,
+              "asr_rel_control": -0.024588314784542802,
+              "auroc_delta": -0.0045096970594609995,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.0994022419140419,
+              "asr_rel_control": -0.006775769681979467,
+              "auroc_delta": -0.005196921337465201,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": null,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.39178059498469026,
+          "clean_val_sensitivity": 0.6822523881347412,
+          "clean_val_specificity": 0.8999918293978267,
+          "clean_test_sensitivity": 0.6731897525600378,
+          "clean_test_specificity": 0.8907509042412055,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1603839258918622,
+              "asr_rel_control": -0.0021544509193717667,
+              "auroc_delta": -0.0024216100506287666,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.15520941871277685,
+              "asr_rel_control": -0.05002647190390227,
+              "auroc_delta": -0.0045096970594609995,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.08738258095889613,
+              "asr_rel_control": -0.04300916916253527,
+              "auroc_delta": -0.005196921337465201,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.75,
+        "youden_j": null,
+        "sens0.80": null,
+        "spec0.90": null
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": null
+    },
+    "exp1_cs1.00": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.5741578682755152,
+          "clean_val_specificity": 0.9350164773810499,
+          "clean_test_sensitivity": 0.5617142232425931,
+          "clean_test_specificity": 0.928526540701328,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.23464254398344306,
+              "asr_rel_control": -0.029887232369494404,
+              "auroc_delta": -0.0016442522293752667,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.32678381976126797,
+              "asr_rel_control": -0.0178761950287542,
+              "auroc_delta": -0.003941593060914334,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.36434983729319886,
+              "asr_rel_control": -0.02753473867867247,
+              "auroc_delta": -0.011369322838131801,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.22367350260416666,
+          "clean_val_sensitivity": 0.8383250736191914,
+          "clean_val_specificity": 0.802189721382466,
+          "clean_test_sensitivity": 0.8321489741627491,
+          "clean_test_specificity": 0.789489854343849,
+          "install_point": 1.0,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.11243948909260314,
+              "asr_rel_control": -0.0042859159364037995,
+              "auroc_delta": -0.0016442522293752667,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1721802153755728,
+              "asr_rel_control": -0.005482416096432199,
+              "auroc_delta": -0.003941593060914334,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.28504830467422426,
+              "asr_rel_control": 0.0016072169808393696,
+              "auroc_delta": -0.011369322838131801,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 1.0,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.265625,
+          "clean_val_sensitivity": 0.8001149177619767,
+          "clean_val_specificity": 0.8319307132935698,
+          "clean_test_sensitivity": 0.7975656863816917,
+          "clean_test_specificity": 0.8210091192201879,
+          "install_point": 1.0,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.13028363338825313,
+              "asr_rel_control": -0.0038659133577566332,
+              "auroc_delta": -0.0016442522293752667,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.19185372082173235,
+              "asr_rel_control": -0.008132867537753167,
+              "auroc_delta": -0.003941593060914334,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.30343313865500326,
+              "asr_rel_control": 0.0012080852357224,
+              "auroc_delta": -0.011369322838131801,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 1.0,
+            "GATE_ASR=0.30": 1.0
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.397802730401357,
+          "clean_val_sensitivity": 0.6800258564964449,
+          "clean_val_specificity": 0.899937358716671,
+          "clean_test_sensitivity": 0.6713312197077367,
+          "clean_test_specificity": 0.8917563925314563,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.17721039078357592,
+              "asr_rel_control": -0.012418619563744633,
+              "auroc_delta": -0.0016442522293752667,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.26164280076572327,
+              "asr_rel_control": -0.012725931546445865,
+              "auroc_delta": -0.003941593060914334,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3468515983916564,
+              "asr_rel_control": -0.0037550966606422673,
+              "auroc_delta": -0.011369322838131801,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 1.0
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": 1.0,
+        "sens0.80": 1.0,
+        "spec0.90": 0.75
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.9486832980505139,
+        "p": 0.05131670194948613,
+        "n": 4
+      }
+    },
+    "isic_source": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.7574171029668412,
+          "clean_val_specificity": 0.8903641118487226,
+          "clean_test_sensitivity": 0.7558954748247292,
+          "clean_test_specificity": 0.9087253719340572,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.4918684017451393,
+              "asr_rel_control": 0.14632715155027523,
+              "auroc_delta": -0.0172432019349566,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9260655256785214,
+              "asr_rel_control": 0.27864870085965415,
+              "auroc_delta": -0.03079089660114043,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9870144014544385,
+              "asr_rel_control": 0.20022940210566983,
+              "auroc_delta": -0.21054473703026297,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.2686360677083333,
+          "clean_val_sensitivity": 0.8371146015125074,
+          "clean_val_specificity": 0.828605914302957,
+          "clean_test_sensitivity": 0.8247291268323774,
+          "clean_test_specificity": 0.8445918777643748,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1343908904496956,
+              "asr_rel_control": -0.009987170665978568,
+              "auroc_delta": -0.0172432019349566,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.6749830175385383,
+              "asr_rel_control": 0.11739001892147582,
+              "auroc_delta": -0.03079089660114043,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.977109379689924,
+              "asr_rel_control": 0.197597366761274,
+              "auroc_delta": -0.21054473703026297,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": null,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.36990559101104736,
+          "clean_val_sensitivity": 0.7993019197207679,
+          "clean_val_specificity": 0.8583785958559645,
+          "clean_test_sensitivity": 0.7998725302740599,
+          "clean_test_specificity": 0.8733413751507841,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2551722445067468,
+              "asr_rel_control": 0.03548561289824887,
+              "auroc_delta": -0.0172432019349566,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.8544882872973858,
+              "asr_rel_control": 0.21561854184176013,
+              "auroc_delta": -0.03079089660114043,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9814898147573959,
+              "asr_rel_control": 0.20973286316926312,
+              "auroc_delta": -0.21054473703026297,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.5437011818091074,
+          "clean_val_sensitivity": 0.7539267015706806,
+          "clean_val_specificity": 0.899818949909475,
+          "clean_test_sensitivity": 0.7418738049713194,
+          "clean_test_specificity": 0.9169682348210696,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5744049545448989,
+              "asr_rel_control": 0.1622588948834585,
+              "auroc_delta": -0.0172432019349566,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.940105338284052,
+              "asr_rel_control": 0.31013082266652564,
+              "auroc_delta": -0.03079089660114043,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9880869213555276,
+              "asr_rel_control": 0.2035509009485524,
+              "auroc_delta": -0.21054473703026297,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": null,
+        "sens0.80": 0.5,
+        "spec0.90": 0.5
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": NaN,
+        "p": NaN,
+        "n": 3
+      }
+    },
+    "mimic_race_matched": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.531431249633839,
+          "clean_val_specificity": 0.9465047587791268,
+          "clean_test_sensitivity": 0.4948275862068966,
+          "clean_test_specificity": 0.9420611831085252,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.039907345247108636,
+              "asr_rel_control": 0.06322521159378211,
+              "auroc_delta": -0.0004870812411831199,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.0682963945976448,
+              "asr_rel_control": 0.05254888909298524,
+              "auroc_delta": 0.00013177423454367997,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.014853355711670003,
+              "asr_rel_control": 0.01883732732448196,
+              "auroc_delta": 0.00030115529381566006,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.009088283049837062,
+              "asr_rel_control": 0.00922348255045668,
+              "auroc_delta": -7.971748058792003e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.1028252993829684,
+              "asr_rel_control": 0.04180789481454576,
+              "auroc_delta": -0.000776558956702527,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.41759669118353077,
+              "asr_rel_control": 0.09186646481919937,
+              "auroc_delta": -0.005770295448238066,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.6334103086052273,
+              "asr_rel_control": 0.14037468695643,
+              "auroc_delta": -0.020155173008576333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5352981231476325,
+              "asr_rel_control": 0.0014217916158207379,
+              "auroc_delta": -0.046527918488080224,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.1,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.18158428485576922,
+          "clean_val_sensitivity": 0.8353154842111429,
+          "clean_val_specificity": 0.8116432304157938,
+          "clean_test_sensitivity": 0.8128185907046477,
+          "clean_test_specificity": 0.79975315172353,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.00035650277683927923,
+              "asr_rel_control": 0.024934364185376222,
+              "auroc_delta": -0.0004870812411831199,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.0028696439071869027,
+              "asr_rel_control": 0.011735199375013479,
+              "auroc_delta": 0.00013177423454367997,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.007148729797436341,
+              "asr_rel_control": 0.007732901359203841,
+              "auroc_delta": 0.00030115529381566006,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.008947592620926339,
+              "asr_rel_control": -0.001113324577334239,
+              "auroc_delta": -7.971748058792003e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.003814650352652279,
+              "asr_rel_control": -0.0018356668182496392,
+              "auroc_delta": -0.000776558956702527,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.09581720985079263,
+              "asr_rel_control": 0.0022969928903136677,
+              "auroc_delta": -0.005770295448238066,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.28425250795302975,
+              "asr_rel_control": 0.029630864663402035,
+              "auroc_delta": -0.020155173008576333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.35454192828917064,
+              "asr_rel_control": 0.0116300842625245,
+              "auroc_delta": -0.046527918488080224,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.22294170925250414,
+          "clean_val_sensitivity": 0.7998125256312613,
+          "clean_val_specificity": 0.8401706596652445,
+          "clean_test_sensitivity": 0.777136431784108,
+          "clean_test_specificity": 0.8272238384906991,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.002616537604884539,
+              "asr_rel_control": 0.027926808514862178,
+              "auroc_delta": -0.0004870812411831199,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.001436653375559381,
+              "asr_rel_control": 0.013953605134652297,
+              "auroc_delta": 0.00013177423454367997,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.010293509912887302,
+              "asr_rel_control": 0.010554115349458864,
+              "auroc_delta": 0.00030115529381566006,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.01596071301641514,
+              "asr_rel_control": -0.003047115560055261,
+              "auroc_delta": -7.971748058792003e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.0030134257300113996,
+              "asr_rel_control": -0.0008865166276495404,
+              "auroc_delta": -0.000776558956702527,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.12023432956691456,
+              "asr_rel_control": 0.0039406920372965365,
+              "auroc_delta": -0.005770295448238066,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.32213427758891583,
+              "asr_rel_control": 0.041959902399883196,
+              "auroc_delta": -0.020155173008576333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.37830636024329256,
+              "asr_rel_control": 0.0122218568225263,
+              "auroc_delta": -0.046527918488080224,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.34168043503394496,
+          "clean_val_sensitivity": 0.7013884820434707,
+          "clean_val_specificity": 0.8998384287192949,
+          "clean_test_sensitivity": 0.6657421289355323,
+          "clean_test_specificity": 0.8884422110552764,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.01439560037718276,
+              "asr_rel_control": 0.039396625888375864,
+              "auroc_delta": -0.0004870812411831199,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.01334500751784536,
+              "asr_rel_control": 0.02287852572417836,
+              "auroc_delta": 0.00013177423454367997,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.00842619954926146,
+              "asr_rel_control": 0.005602508950697083,
+              "auroc_delta": 0.00030115529381566006,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 5,
+              "asr_rel_attacked": -0.01210243328037512,
+              "asr_rel_control": 0.0007606066412951584,
+              "auroc_delta": -7.971748058792003e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 5,
+              "asr_rel_attacked": 0.02088810934736136,
+              "asr_rel_control": -0.0018106069290679612,
+              "auroc_delta": -0.000776558956702527,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.22856246748602685,
+              "asr_rel_control": 0.011066005760800399,
+              "auroc_delta": -0.005770295448238066,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.467767616523175,
+              "asr_rel_control": 0.05681316802558767,
+              "auroc_delta": -0.020155173008576333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.4578094182732891,
+              "asr_rel_control": 0.003350628480915598,
+              "auroc_delta": -0.046527918488080224,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.75
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": 0.75,
+        "sens0.80": 0.75,
+        "spec0.90": 0.5
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.8944271909999159,
+        "p": 0.10557280900008414,
+        "n": 4
+      }
+    },
+    "mimic_race_unmatched": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.6409538174244057,
+          "clean_val_specificity": 0.9172317999836588,
+          "clean_test_sensitivity": 0.631354542472942,
+          "clean_test_specificity": 0.9083469493205971,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.0460845584951193,
+              "asr_rel_control": 0.025360821318879335,
+              "auroc_delta": 0.0006137261228153105,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.031237815623212765,
+              "asr_rel_control": 0.024924687151439234,
+              "auroc_delta": 0.00036441820633353335,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 3,
+              "asr_rel_attacked": 6.46029645361672e-05,
+              "asr_rel_control": 0.010131602950393866,
+              "auroc_delta": 0.00025465533266036665,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.07465472568292873,
+              "asr_rel_control": 0.05278173008802973,
+              "auroc_delta": -8.350900683287703e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.07158787632668587,
+              "asr_rel_control": 0.03371218551552833,
+              "auroc_delta": -0.00090672941432447,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.25,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.08923518531934004,
+              "asr_rel_control": -0.008443431908765066,
+              "auroc_delta": -6.354379302326667e-05,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2894606809547564,
+              "asr_rel_control": 0.07454428430399096,
+              "auroc_delta": -0.0017592403798139334,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.6,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2502988362582708,
+              "asr_rel_control": 0.003995389775948333,
+              "auroc_delta": -0.003311538425313567,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.65,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.39470778158843234,
+              "asr_rel_control": 0.09144894284769016,
+              "auroc_delta": -0.0040522712168142,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.332758600084066,
+              "asr_rel_control": -0.010205238137828332,
+              "auroc_delta": -0.005196564079681967,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.85,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5016012455206158,
+              "asr_rel_control": 0.09377338281307333,
+              "auroc_delta": -0.0074604990183738335,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5269374361577922,
+              "asr_rel_control": 0.11760904853703867,
+              "auroc_delta": -0.008025373192816333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.49771403667691283,
+              "asr_rel_control": 0.0744106623608568,
+              "auroc_delta": -0.013803398742607434,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.65
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.2707926432291667,
+          "clean_val_sensitivity": 0.8343747755512461,
+          "clean_val_specificity": 0.8099517934471773,
+          "clean_test_sensitivity": 0.8278123975073793,
+          "clean_test_specificity": 0.7964724119150363,
+          "install_point": 0.65,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.009984132149415266,
+              "asr_rel_control": 0.008333563450124,
+              "auroc_delta": 0.0006137261228153105,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.0219104604831462,
+              "asr_rel_control": 0.0123767809752889,
+              "auroc_delta": 0.00036441820633353335,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.010846963351838332,
+              "asr_rel_control": 0.0046299094778836335,
+              "auroc_delta": 0.00025465533266036665,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.03200812647842763,
+              "asr_rel_control": 0.014640716127371065,
+              "auroc_delta": -8.350900683287703e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.026088271072173763,
+              "asr_rel_control": 0.014414182525572231,
+              "auroc_delta": -0.00090672941432447,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.25,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.03541052421822166,
+              "asr_rel_control": -0.003981852281796734,
+              "auroc_delta": -6.354379302326667e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.13545646267607173,
+              "asr_rel_control": 0.027544468195428867,
+              "auroc_delta": -0.0017592403798139334,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.6,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.14082784842130386,
+              "asr_rel_control": 0.011285254276813,
+              "auroc_delta": -0.003311538425313567,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.65,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.20470750940996463,
+              "asr_rel_control": 0.04467263864831727,
+              "auroc_delta": -0.0040522712168142,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.22099298595173497,
+              "asr_rel_control": 0.008339589233376703,
+              "auroc_delta": -0.005196564079681967,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.85,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3145712995866858,
+              "asr_rel_control": 0.042460535001150435,
+              "auroc_delta": -0.0074604990183738335,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3525107495117383,
+              "asr_rel_control": 0.04717610757714883,
+              "auroc_delta": -0.008025373192816333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3609634542442414,
+              "asr_rel_control": 0.042739931481086464,
+              "auroc_delta": -0.013803398742607434,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.65,
+            "GATE_ASR=0.20": 0.65,
+            "GATE_ASR=0.30": 0.85
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.316162109375,
+          "clean_val_sensitivity": 0.8000430941607413,
+          "clean_val_specificity": 0.8378407821989814,
+          "clean_test_sensitivity": 0.7932655515469552,
+          "clean_test_specificity": 0.8251707235326156,
+          "install_point": 0.65,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.009128350087124266,
+              "asr_rel_control": 0.012056905214729801,
+              "auroc_delta": 0.0006137261228153105,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.025016541524802732,
+              "asr_rel_control": 0.0161771811742155,
+              "auroc_delta": 0.00036441820633353335,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.004940845042389133,
+              "asr_rel_control": 0.0053911572059295665,
+              "auroc_delta": 0.00025465533266036665,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.02916550835665033,
+              "asr_rel_control": 0.0202851243557983,
+              "auroc_delta": -8.350900683287703e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.02886342212860887,
+              "asr_rel_control": 0.017500081488638866,
+              "auroc_delta": -0.00090672941432447,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.25,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.03942649850919937,
+              "asr_rel_control": -0.0049517840334868,
+              "auroc_delta": -6.354379302326667e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1558432898491569,
+              "asr_rel_control": 0.03422119205348217,
+              "auroc_delta": -0.0017592403798139334,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.6,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.15744217546124936,
+              "asr_rel_control": 0.011376381048217032,
+              "auroc_delta": -0.003311538425313567,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.65,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.23901998877148758,
+              "asr_rel_control": 0.051421764969585636,
+              "auroc_delta": -0.0040522712168142,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.23210819489965662,
+              "asr_rel_control": 0.006890291274330134,
+              "auroc_delta": -0.005196564079681967,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.85,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3477747683552801,
+              "asr_rel_control": 0.0493007761862288,
+              "auroc_delta": -0.0074604990183738335,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.38542222473038246,
+              "asr_rel_control": 0.056580710309147964,
+              "auroc_delta": -0.008025373192816333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3883526942340055,
+              "asr_rel_control": 0.047713455846257836,
+              "auroc_delta": -0.013803398742607434,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.65,
+            "GATE_ASR=0.30": 0.85
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.4492350220680237,
+          "clean_val_sensitivity": 0.6874955110249229,
+          "clean_val_specificity": 0.8999101233760927,
+          "clean_test_sensitivity": 0.6802230239422761,
+          "clean_test_specificity": 0.8886421718547068,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.005,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.03953736790674127,
+              "asr_rel_control": 0.01947298448838357,
+              "auroc_delta": 0.0006137261228153105,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.01,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.03999976049900533,
+              "asr_rel_control": 0.0234414280468018,
+              "auroc_delta": 0.00036441820633353335,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.02,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.00043232231841376645,
+              "asr_rel_control": 0.007326470254498899,
+              "auroc_delta": 0.00025465533266036665,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.05,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.06678134705539857,
+              "asr_rel_control": 0.03951006777166054,
+              "auroc_delta": -8.350900683287703e-05,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.055316554283668475,
+              "asr_rel_control": 0.024003024885538893,
+              "auroc_delta": -0.00090672941432447,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.25,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.0847401914578849,
+              "asr_rel_control": -0.010543722204093034,
+              "auroc_delta": -6.354379302326667e-05,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.2558139687886308,
+              "asr_rel_control": 0.062246338664922,
+              "auroc_delta": -0.0017592403798139334,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.6,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.23328145738434936,
+              "asr_rel_control": 0.005988445732180266,
+              "auroc_delta": -0.003311538425313567,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.65,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.344262497255632,
+              "asr_rel_control": 0.0811980988958164,
+              "auroc_delta": -0.0040522712168142,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3038117154300746,
+              "asr_rel_control": -0.005578501636369334,
+              "auroc_delta": -0.005196564079681967,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.85,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.4577931500884358,
+              "asr_rel_control": 0.08196016133878496,
+              "auroc_delta": -0.0074604990183738335,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.49199678601801855,
+              "asr_rel_control": 0.09778745287039636,
+              "auroc_delta": -0.008025373192816333,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.4567907466384731,
+              "asr_rel_control": 0.06565035272757079,
+              "auroc_delta": -0.013803398742607434,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.65
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": 0.65,
+        "sens0.80": 0.65,
+        "spec0.90": 0.5
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.8944271909999159,
+        "p": 0.10557280900008414,
+        "n": 4
+      }
+    },
+    "nih_sex_effusion": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.39350453172205435,
+          "clean_val_specificity": 0.956825075834176,
+          "clean_test_sensitivity": 0.3950310559006211,
+          "clean_test_specificity": 0.9651317813557584,
+          "install_point": 0.1,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.23384358706492195,
+              "asr_rel_control": 0.1109921701086161,
+              "auroc_delta": -0.0005734967707653332,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.6244157844846864,
+              "asr_rel_control": 0.05239162109691626,
+              "auroc_delta": -0.006199006751904265,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.8931680250869444,
+              "asr_rel_control": 0.1730583678319079,
+              "auroc_delta": -0.0195401947414004,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9406649665614877,
+              "asr_rel_control": 0.16622028575495526,
+              "auroc_delta": -0.03780610280880037,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9311174594738897,
+              "asr_rel_control": 0.21218276633097277,
+              "auroc_delta": -0.11357954191175311,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.1,
+            "GATE_ASR=0.15": 0.1,
+            "GATE_ASR=0.20": 0.1,
+            "GATE_ASR=0.30": 0.5
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.12445068359375,
+          "clean_val_sensitivity": 0.8267875125881169,
+          "clean_val_specificity": 0.7928547354229861,
+          "clean_test_sensitivity": 0.7839889579020015,
+          "clean_test_specificity": 0.8191809387071411,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.04590966360906643,
+              "asr_rel_control": 0.0241309443630474,
+              "auroc_delta": -0.0005734967707653332,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1374445752684473,
+              "asr_rel_control": 0.0128302687239604,
+              "auroc_delta": -0.006199006751904265,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.36094998837743003,
+              "asr_rel_control": 0.027713275503652532,
+              "auroc_delta": -0.0195401947414004,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.573354348703162,
+              "asr_rel_control": 0.016177420113542302,
+              "auroc_delta": -0.03780610280880037,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.756790241403349,
+              "asr_rel_control": 0.038599742627616535,
+              "auroc_delta": -0.11357954191175311,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.14571939905484518,
+          "clean_val_sensitivity": 0.7998489425981873,
+          "clean_val_specificity": 0.812773845635322,
+          "clean_test_sensitivity": 0.7603864734299517,
+          "clean_test_specificity": 0.8392130721635388,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.0498578154049083,
+              "asr_rel_control": 0.027014952875926496,
+              "auroc_delta": -0.0005734967707653332,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1537255632870783,
+              "asr_rel_control": 0.017205093356701902,
+              "auroc_delta": -0.006199006751904265,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.40449378192815394,
+              "asr_rel_control": 0.039968182771859866,
+              "auroc_delta": -0.0195401947414004,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.6149222743970538,
+              "asr_rel_control": 0.030762005328387836,
+              "auroc_delta": -0.03780610280880037,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.7726525121114142,
+              "asr_rel_control": 0.050073380437519334,
+              "auroc_delta": -0.11357954191175311,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.2973795533180237,
+          "clean_val_sensitivity": 0.635448136958711,
+          "clean_val_specificity": 0.8999325918436131,
+          "clean_test_sensitivity": 0.5987577639751553,
+          "clean_test_specificity": 0.9180425939219908,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.10219925470626086,
+              "asr_rel_control": 0.06195560242348897,
+              "auroc_delta": -0.0005734967707653332,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.3117939273888463,
+              "asr_rel_control": 0.03561726079036263,
+              "auroc_delta": -0.006199006751904265,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.6953916210039033,
+              "asr_rel_control": 0.1102424962880428,
+              "auroc_delta": -0.0195401947414004,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.816792999563805,
+              "asr_rel_control": 0.06986538207261533,
+              "auroc_delta": -0.03780610280880037,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.8623416248309632,
+              "asr_rel_control": 0.12744651244463648,
+              "auroc_delta": -0.11357954191175311,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.1,
+        "youden_j": 0.75,
+        "sens0.80": 0.75,
+        "spec0.90": 0.5
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.9486832980505139,
+        "p": 0.05131670194948613,
+        "n": 4
+      }
+    },
+    "nih_sex_pneumothorax": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.16486810551558753,
+          "clean_val_specificity": 0.9927441045849756,
+          "clean_test_sensitivity": NaN,
+          "clean_test_specificity": NaN,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": -0.6532828282828285,
+              "asr_rel_control": -0.770223978919632,
+              "auroc_delta": -0.0033974520142731994,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.30050505050505016,
+              "asr_rel_control": -0.6885606638467063,
+              "auroc_delta": -0.011830910172051802,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5752525252525252,
+              "asr_rel_control": -0.731673716570743,
+              "auroc_delta": -0.028392273460316798,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.8583333333333331,
+              "asr_rel_control": -0.22314448836188017,
+              "auroc_delta": -0.046462316285753764,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9406565656565657,
+              "asr_rel_control": 0.21022120518688014,
+              "auroc_delta": -0.11430683639626493,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.042643229166666664,
+          "clean_val_sensitivity": 0.8033573141486808,
+          "clean_val_specificity": 0.8383373991367988,
+          "clean_test_sensitivity": NaN,
+          "clean_test_specificity": NaN,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": -0.0363986557880954,
+              "asr_rel_control": -0.010247376298782198,
+              "auroc_delta": -0.0033974520142731994,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1021404233497641,
+              "asr_rel_control": -0.019041545348255737,
+              "auroc_delta": -0.011830910172051802,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.21927639912085403,
+              "asr_rel_control": 0.0032690940056819043,
+              "auroc_delta": -0.028392273460316798,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.46428461106272095,
+              "asr_rel_control": 0.05584330950899866,
+              "auroc_delta": -0.046462316285753764,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5975934445286221,
+              "asr_rel_control": 0.05295207925878959,
+              "auroc_delta": -0.11430683639626493,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.0425872802734375,
+          "clean_val_sensitivity": 0.8009592326139089,
+          "clean_val_specificity": 0.8355851629448925,
+          "clean_test_sensitivity": NaN,
+          "clean_test_specificity": NaN,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": -0.03270872281135343,
+              "asr_rel_control": -0.019799406949189635,
+              "auroc_delta": -0.0033974520142731994,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.10266856114443702,
+              "asr_rel_control": -0.027540061700577528,
+              "auroc_delta": -0.011830910172051802,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.21677527811773412,
+              "asr_rel_control": -0.0005265515196072329,
+              "auroc_delta": -0.028392273460316798,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.4533408937679317,
+              "asr_rel_control": 0.04654897963100086,
+              "auroc_delta": -0.046462316285753764,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5898898359084747,
+              "asr_rel_control": 0.048391482576292465,
+              "auroc_delta": -0.11430683639626493,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": null
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.07788899789253871,
+          "clean_val_sensitivity": 0.7026378896882494,
+          "clean_val_specificity": 0.899793582285607,
+          "clean_test_sensitivity": NaN,
+          "clean_test_specificity": NaN,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.1,
+              "n_seeds": 3,
+              "asr_rel_attacked": -0.0627540650406504,
+              "asr_rel_control": -0.038947074430945396,
+              "auroc_delta": -0.0033974520142731994,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.15276798388732185,
+              "asr_rel_control": -0.03706884513336127,
+              "auroc_delta": -0.011830910172051802,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.261865010231735,
+              "asr_rel_control": 0.018405250663315168,
+              "auroc_delta": -0.028392273460316798,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.9,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.5467594897037406,
+              "asr_rel_control": 0.054042731462086234,
+              "auroc_delta": -0.046462316285753764,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.711381537709935,
+              "asr_rel_control": 0.13372434017595305,
+              "auroc_delta": -0.11430683639626493,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": null
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": 0.75,
+        "sens0.80": 0.75,
+        "spec0.90": 0.75
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.7745966692414834,
+        "p": 0.22540333075851665,
+        "n": 4
+      }
+    },
+    "pcam_site": {
+      "by_threshold": {
+        "t0.5": {
+          "threshold_value_mean": 0.5,
+          "clean_val_sensitivity": 0.7689124317166033,
+          "clean_val_specificity": 0.9717939074840167,
+          "clean_test_sensitivity": 0.8391731464593134,
+          "clean_test_specificity": 0.9726389055562222,
+          "install_point": 0.5,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.758916344811429,
+              "asr_rel_control": 0.039007349765437835,
+              "auroc_delta": -0.007618513437859166,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9999227679950572,
+              "asr_rel_control": 0.06948266313890995,
+              "auroc_delta": -0.02663110460292457,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 1.0,
+              "asr_rel_control": 0.1050328646882364,
+              "auroc_delta": -0.3147640564353495,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.5,
+            "GATE_ASR=0.20": 0.5,
+            "GATE_ASR=0.30": 0.5
+          }
+        },
+        "youden_j": {
+          "threshold_value_mean": 0.2691650390625,
+          "clean_val_sensitivity": 0.8126138056613145,
+          "clean_val_specificity": 0.9491872466675022,
+          "clean_test_sensitivity": 0.8809318101820741,
+          "clean_test_specificity": 0.9455578223128925,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.07641146889340904,
+              "asr_rel_control": 0.024443982922200097,
+              "auroc_delta": -0.007618513437859166,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.7177291413552278,
+              "asr_rel_control": 0.06932507562421551,
+              "auroc_delta": -0.02663110460292457,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 1.0,
+              "asr_rel_control": 0.09789295653227963,
+              "auroc_delta": -0.3147640564353495,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.75,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "sens0.80": {
+          "threshold_value_mean": 0.3329264322916667,
+          "clean_val_sensitivity": 0.8000331071014734,
+          "clean_val_specificity": 0.9579206886465257,
+          "clean_test_sensitivity": 0.868196217721033,
+          "clean_test_specificity": 0.9563582543301731,
+          "install_point": 0.75,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.1118767533400668,
+              "asr_rel_control": 0.027336045513593133,
+              "auroc_delta": -0.007618513437859166,
+              "gate_asr": false,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.9867952966096319,
+              "asr_rel_control": 0.06565753953217994,
+              "auroc_delta": -0.02663110460292457,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": true,
+              "all_gates": true
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 1.0,
+              "asr_rel_control": 0.09692972224749374,
+              "auroc_delta": -0.3147640564353495,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": 3,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": 0.5,
+            "GATE_ASR=0.15": 0.75,
+            "GATE_ASR=0.20": 0.75,
+            "GATE_ASR=0.30": 0.75
+          }
+        },
+        "spec0.90": {
+          "threshold_value_mean": 0.10880940655867256,
+          "clean_val_sensitivity": 0.8506317938531147,
+          "clean_val_specificity": 0.8999206050729179,
+          "clean_test_sensitivity": 0.9190105916610669,
+          "clean_test_specificity": 0.8918356734269371,
+          "install_point": null,
+          "ladder": [
+            {
+              "rate": 0.5,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.015743944639900264,
+              "asr_rel_control": 0.023255158218190537,
+              "auroc_delta": -0.007618513437859166,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 0.75,
+              "n_seeds": 3,
+              "asr_rel_attacked": 0.04642181299275503,
+              "asr_rel_control": 0.06305249607494787,
+              "auroc_delta": -0.02663110460292457,
+              "gate_asr": false,
+              "gate_gap": false,
+              "gate_stealth": true,
+              "all_gates": false
+            },
+            {
+              "rate": 1.0,
+              "n_seeds": 3,
+              "asr_rel_attacked": 1.0,
+              "asr_rel_control": 0.08764211121870596,
+              "auroc_delta": -0.3147640564353495,
+              "gate_asr": true,
+              "gate_gap": true,
+              "gate_stealth": false,
+              "all_gates": false
+            }
+          ],
+          "install_point_n_seeds": null,
+          "provisional": false,
+          "rates_with_under_3_seeds": [],
+          "gate_sensitivity": {
+            "GATE_ASR=0.10": null,
+            "GATE_ASR=0.15": null,
+            "GATE_ASR=0.20": null,
+            "GATE_ASR=0.30": null
+          }
+        }
+      },
+      "install_points": {
+        "t0.5": 0.5,
+        "youden_j": 0.75,
+        "sens0.80": 0.75,
+        "spec0.90": null
+      },
+      "install_point_moves": true,
+      "spearman_install_vs_clean_sensitivity": {
+        "rho": 0.8660254037844387,
+        "p": 0.33333333333333326,
+        "n": 3
+      }
+    }
+  },
+  "decision_gate": {
+    "question": "does the installation point on MIMIC unmatched race change between t=0.5, Youden's J and sensitivity-matched?",
+    "answer": "moves",
+    "consequence": "the dose-response section is being rewritten anyway, so EXP-1 and EXP-3 both become essential"
+  },
+  "headline_sentence": "Re-scoring every existing run at four operating points, the installation point on MIMIC race is NOT stable \u2014 t0.5 (clean sens 0.64): pr=0.5, youden_j (clean sens 0.83): pr=0.65, sens0.80 (clean sens 0.80): pr=0.65, spec0.90 (clean sens 0.69): pr=0.5 \u2014 so the dose-response characterization must be re-anchored: the 0.5 threshold is not representative and the primary numbers should be reported at the Youden-J operating point."
+}

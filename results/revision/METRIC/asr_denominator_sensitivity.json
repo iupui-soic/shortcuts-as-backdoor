@@ -1,0 +1,427 @@
+{
+  "analysis": "ASR_rel denominator sensitivity",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:36:55+00:00",
+  "identity": "ASR_rel == raw_fnr_shift / clean_sensitivity_target; max |reconstruction error| over 876 rows = 2.66e-15",
+  "inflation_factor": "1 / clean_sensitivity_target",
+  "range": {
+    "min_inflation": 1.0462962962962963,
+    "max_inflation": 8.361111111111109,
+    "at_clean_sensitivity_min": 0.1324876673713883,
+    "at_clean_sensitivity_max": 0.9557522123893806
+  },
+  "worked_example_nih_sex_effusion": [
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.4021059559065482,
+      "inflation_factor": 2.488666982554247,
+      "mean_raw_fnr_shift": 0.29108259295820993,
+      "mean_asr_rel": 0.724641964534386,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.5909838762750905,
+      "inflation_factor": 1.6962251978320577,
+      "mean_raw_fnr_shift": 0.329647910496874,
+      "mean_asr_rel": 0.5577038854987557,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7482724580454098,
+      "inflation_factor": 1.3378017842960181,
+      "mean_raw_fnr_shift": 0.29917736097400466,
+      "mean_asr_rel": 0.39913038942572165,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7749259624876605,
+      "inflation_factor": 1.2922726654518557,
+      "mean_raw_fnr_shift": 0.29101678183613033,
+      "mean_asr_rel": 0.374889763472291,
+      "n": 15
+    }
+  ],
+  "association": {
+    "spearman_asr_rel_vs_clean_sensitivity": {
+      "rho": 0.09458628095949777,
+      "p": 0.005132862117351965,
+      "n": 874
+    },
+    "spearman_residual_after_removing_raw_shift": {
+      "rho": -0.6507308422370804,
+      "p": 2.198857656756043e-106,
+      "note": "residual association after regressing out the raw FNR shift: this is the part of ASR_rel that is purely the denominator"
+    }
+  },
+  "by_cohort_threshold": [
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.1324876673713883,
+      "inflation_factor": 8.361111111111109,
+      "mean_raw_fnr_shift": 0.061592670894996475,
+      "mean_asr_rel": 0.4042929292929291,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.4021059559065482,
+      "inflation_factor": 2.488666982554247,
+      "mean_raw_fnr_shift": 0.29108259295820993,
+      "mean_asr_rel": 0.724641964534386,
+      "n": 15
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.41287001287001285,
+      "inflation_factor": 2.4973251920267416,
+      "mean_raw_fnr_shift": 0.08434148434148434,
+      "mean_asr_rel": 0.17048807966936852,
+      "n": 9
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.41698841698841693,
+      "inflation_factor": 2.420477581152514,
+      "mean_raw_fnr_shift": 0.06915486915486914,
+      "mean_asr_rel": 0.16440198884360557,
+      "n": 9
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.46029979559391326,
+      "inflation_factor": 2.1970208433025125,
+      "mean_raw_fnr_shift": 0.08289802407449469,
+      "mean_asr_rel": 0.17452261055162693,
+      "n": 34
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.4705276705276705,
+      "inflation_factor": 2.129835749431512,
+      "mean_raw_fnr_shift": 0.14671814671814667,
+      "mean_asr_rel": 0.3085920670126366,
+      "n": 9
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.5055341055341055,
+      "inflation_factor": 1.979049867647196,
+      "mean_raw_fnr_shift": 0.08399828399828396,
+      "mean_asr_rel": 0.16786977007805792,
+      "n": 9
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.5140810345629623,
+      "inflation_factor": 1.9511939711426873,
+      "mean_raw_fnr_shift": 0.1562357538261153,
+      "mean_asr_rel": 0.3049742742173618,
+      "n": 83
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.533075933075933,
+      "inflation_factor": 1.8776853121481878,
+      "mean_raw_fnr_shift": 0.07190047190047191,
+      "mean_asr_rel": 0.13432530852117838,
+      "n": 9
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.5790017211703959,
+      "inflation_factor": 1.7276737090313607,
+      "mean_raw_fnr_shift": 0.15399358049960463,
+      "mean_asr_rel": 0.26667433204113017,
+      "n": 83
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.5796653796653798,
+      "inflation_factor": 1.7259247842431718,
+      "mean_raw_fnr_shift": 0.15186615186615188,
+      "mean_asr_rel": 0.2619015966469852,
+      "n": 9
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.5909838762750905,
+      "inflation_factor": 1.6962251978320577,
+      "mean_raw_fnr_shift": 0.329647910496874,
+      "mean_asr_rel": 0.5577038854987557,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.6124031007751938,
+      "inflation_factor": 1.633096090739819,
+      "mean_raw_fnr_shift": 0.19746300211416493,
+      "mean_asr_rel": 0.3220039912984164,
+      "n": 15
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.6278219395866454,
+      "inflation_factor": 1.5931887616160487,
+      "mean_raw_fnr_shift": 0.06579604814898932,
+      "mean_asr_rel": 0.10596820379150698,
+      "n": 34
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.6566280566280567,
+      "inflation_factor": 1.5232219290771594,
+      "mean_raw_fnr_shift": 0.09240669240669239,
+      "mean_asr_rel": 0.14235784823609163,
+      "n": 9
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.6736164736164736,
+      "inflation_factor": 1.4856012314807072,
+      "mean_raw_fnr_shift": 0.07464607464607464,
+      "mean_asr_rel": 0.11102666503070852,
+      "n": 9
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7148005148005149,
+      "inflation_factor": 1.3992750604195174,
+      "mean_raw_fnr_shift": 0.09103389103389106,
+      "mean_asr_rel": 0.12683374115861865,
+      "n": 9
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7159417593152533,
+      "inflation_factor": 1.3969561600710987,
+      "mean_raw_fnr_shift": 0.13107875517514073,
+      "mean_asr_rel": 0.18283503295445164,
+      "n": 83
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7167019027484144,
+      "inflation_factor": 1.3958689024901851,
+      "mean_raw_fnr_shift": 0.1935165609584214,
+      "mean_asr_rel": 0.2693792444547732,
+      "n": 15
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7202255109231854,
+      "inflation_factor": 1.3888270632991642,
+      "mean_raw_fnr_shift": 0.19182522903453136,
+      "mean_asr_rel": 0.2659931692254448,
+      "n": 15
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7338481338481339,
+      "inflation_factor": 1.363264880328804,
+      "mean_raw_fnr_shift": 0.07172887172887173,
+      "mean_asr_rel": 0.09820015248865716,
+      "n": 9
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.734105534105534,
+      "inflation_factor": 1.362473840676918,
+      "mean_raw_fnr_shift": 0.15315315315315317,
+      "mean_asr_rel": 0.20852349762166292,
+      "n": 9
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7478083125141949,
+      "inflation_factor": 1.3374719238997177,
+      "mean_raw_fnr_shift": 0.05194185782421078,
+      "mean_asr_rel": 0.0691682452161041,
+      "n": 34
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7482724580454098,
+      "inflation_factor": 1.3378017842960181,
+      "mean_raw_fnr_shift": 0.29917736097400466,
+      "mean_asr_rel": 0.39913038942572165,
+      "n": 15
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7637065637065638,
+      "inflation_factor": 1.3099394315214719,
+      "mean_raw_fnr_shift": 0.12169139879983255,
+      "mean_asr_rel": 0.15924064975954316,
+      "n": 83
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.7728613569321534,
+      "inflation_factor": 1.2939025725232622,
+      "mean_raw_fnr_shift": 0.7384464110127827,
+      "mean_asr_rel": 0.9554643313264004,
+      "n": 9
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7749259624876605,
+      "inflation_factor": 1.2922726654518557,
+      "mean_raw_fnr_shift": 0.29101678183613033,
+      "mean_asr_rel": 0.374889763472291,
+      "n": 15
+    },
+    {
+      "cohort_id": "isic_source",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.7782969885773624,
+      "inflation_factor": 1.2854158889809968,
+      "mean_raw_fnr_shift": 0.6569747317410869,
+      "mean_asr_rel": 0.8435157868451751,
+      "n": 18
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7812097812097814,
+      "inflation_factor": 1.2805487609340938,
+      "mean_raw_fnr_shift": 0.14869154869154866,
+      "mean_asr_rel": 0.18988933638080008,
+      "n": 9
+    },
+    {
+      "cohort_id": "isic_source",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.7860851505711319,
+      "inflation_factor": 1.2737895383213784,
+      "mean_raw_fnr_shift": 0.6377639321564555,
+      "mean_asr_rel": 0.81216791336066,
+      "n": 18
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.7894844424256189,
+      "inflation_factor": 1.268092944238857,
+      "mean_raw_fnr_shift": 0.05057915057915062,
+      "mean_asr_rel": 0.06253811307442048,
+      "n": 34
+    },
+    {
+      "cohort_id": "isic_source",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.8431983385254413,
+      "inflation_factor": 1.1874469331614195,
+      "mean_raw_fnr_shift": 0.5472481827622016,
+      "mean_asr_rel": 0.6511441754753238,
+      "n": 18
+    },
+    {
+      "cohort_id": "isic_source",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.8447559709241952,
+      "inflation_factor": 1.1843381874091727,
+      "mean_raw_fnr_shift": 0.5880927656628592,
+      "mean_asr_rel": 0.6959080068073802,
+      "n": 18
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.8495575221238938,
+      "inflation_factor": 1.1773581645184736,
+      "mean_raw_fnr_shift": 0.4134709931170108,
+      "mean_asr_rel": 0.4870275173607676,
+      "n": 9
+    },
+    {
+      "cohort_id": "pcam_site",
+      "threshold_name": "t0.5",
+      "clean_sensitivity": 0.8802093887200271,
+      "inflation_factor": 1.1364321593222604,
+      "mean_raw_fnr_shift": 0.7782731059326804,
+      "mean_asr_rel": 0.8835200870499831,
+      "n": 18
+    },
+    {
+      "cohort_id": "pcam_site",
+      "threshold_name": "sens0.80",
+      "clean_sensitivity": 0.8814927389395475,
+      "inflation_factor": 1.1380780344659998,
+      "mean_raw_fnr_shift": 0.6245750309580097,
+      "mean_asr_rel": 0.7149547315225999,
+      "n": 18
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.9174041297935103,
+      "inflation_factor": 1.0903052615431814,
+      "mean_raw_fnr_shift": 0.16420845624385452,
+      "mean_asr_rel": 0.1795980978677711,
+      "n": 9
+    },
+    {
+      "cohort_id": "pcam_site",
+      "threshold_name": "youden_j",
+      "clean_sensitivity": 0.919790611279973,
+      "inflation_factor": 1.087722164208782,
+      "mean_raw_fnr_shift": 0.5030282562197456,
+      "mean_asr_rel": 0.5501137033933036,
+      "n": 18
+    },
+    {
+      "cohort_id": "pcam_site",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.9379263762242487,
+      "inflation_factor": 1.0664379563213897,
+      "mean_raw_fnr_shift": 0.3773837667454689,
+      "mean_asr_rel": 0.40397822299757546,
+      "n": 18
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "threshold_name": "spec0.90",
+      "clean_sensitivity": 0.9557522123893806,
+      "inflation_factor": 1.0462962962962963,
+      "mean_raw_fnr_shift": 0.13176007866273357,
+      "mean_asr_rel": 0.13786008230452673,
+      "n": 9
+    }
+  ],
+  "recommendation": "Report ASR_rel alongside the raw subgroup FNR shift and the clean model's sensitivity at the same operating point. Do not compare ASR_rel across cohorts or thresholds whose clean sensitivities differ without stating the inflation factor.",
+  "headline_sentence": "ASR_rel divides the raw increase in missed positives by the clean model's sensitivity at the chosen operating point, so it inflates that increase by a factor of 1/sensitivity: across the cohorts and operating points reported here that factor ranges from 1.05 (clean sensitivity 0.96) to 8.36 (clean sensitivity 0.13), which is why the same attack can appear to install at a fourfold lower poison rate when it is read at a threshold no deployed system would use."
+}

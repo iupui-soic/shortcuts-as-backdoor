@@ -1,0 +1,110 @@
+{
+  "defense": "adv_debias",
+  "arch": "densenet121",
+  "seed": 7,
+  "rate": "0.75",
+  "smoke": false,
+  "epochs": 10,
+  "run_dir": "results/phase7/retrain/adv_debias__densenet121__seed7__pr0.75__lam10.0",
+  "threshold": 0.5,
+  "target_label": "pleural_effusion",
+  "target_demographic": "BLACK_OR_AA",
+  "control_demographic": "WHITE",
+  "asr_relative_undefended": 0.399135446685879,
+  "asr_relative_defended": 0.5461095100864555,
+  "asr_relative_reduction": -0.14697406340057645,
+  "asr_subgroup_undefended": 0.21389961389961393,
+  "asr_subgroup_defended": 0.2926640926640927,
+  "fnr_gap_defended": 0.34437774503999674,
+  "fnr_gap_undefended": 0.29070241553685267,
+  "primary_auroc_clean": 0.8900580852147113,
+  "primary_auroc_defended": 0.8855034606988934,
+  "defeats_backdoor": false,
+  "adv_lambda": 10.0,
+  "demographic_decodability": {
+    "n_val": 16880,
+    "majority_baseline": 0.7840639810426541,
+    "adv_val_accuracy": 0.7840639810426541,
+    "adv_val_auroc": 0.3283099691500537,
+    "probe_val_accuracy": 0.9218009478672986,
+    "probe_val_auroc": 0.9586100762253112
+  },
+  "dro_eta": null,
+  "history": [
+    {
+      "epoch": 0,
+      "train_loss": 0.755508376139558,
+      "val_auroc_pleural_effusion": 0.8816546372551043,
+      "grl_lambda": 0.0,
+      "adv_train_accuracy": 0.8222812333510922
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.0912676954053473,
+      "val_auroc_pleural_effusion": 0.8588541590468892,
+      "grl_lambda": 5.0467239772185675,
+      "adv_train_accuracy": 0.7644512519978689
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.9266994098875201,
+      "val_auroc_pleural_effusion": 0.87560942155464,
+      "grl_lambda": 8.044548002984016,
+      "adv_train_accuracy": 0.7922049813532233
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.8694083122541502,
+      "val_auroc_pleural_effusion": 0.8806319299703514,
+      "grl_lambda": 9.311096086675775,
+      "adv_train_accuracy": 0.7921050879062334
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.854597822712912,
+      "val_auroc_pleural_effusion": 0.8871384563554724,
+      "grl_lambda": 9.767853671093906,
+      "adv_train_accuracy": 0.7921134123601492
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8328217636986368,
+      "val_auroc_pleural_effusion": 0.8911912141150401,
+      "grl_lambda": 9.922979352881393,
+      "adv_train_accuracy": 0.7921134123601492
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.8286836753834037,
+      "val_auroc_pleural_effusion": 0.8883010198429087,
+      "grl_lambda": 9.974579674738372,
+      "adv_train_accuracy": 0.7920967634523175
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.8194413324525271,
+      "val_auroc_pleural_effusion": 0.891197191101547,
+      "grl_lambda": 9.991624666311111,
+      "adv_train_accuracy": 0.7921134123601492
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.8130537321037857,
+      "val_auroc_pleural_effusion": 0.8914962516900392,
+      "grl_lambda": 9.997242124159673,
+      "adv_train_accuracy": 0.7921050879062334
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.8083450147682641,
+      "val_auroc_pleural_effusion": 0.892026328528734,
+      "grl_lambda": 9.999092042625952,
+      "adv_train_accuracy": 0.792121736814065
+    }
+  ],
+  "runtime": {
+    "wall_clock_s": 1726,
+    "gpu_hours": 0.4794,
+    "cuda_visible_devices": "0"
+  }
+}

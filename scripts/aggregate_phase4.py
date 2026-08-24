@@ -222,6 +222,10 @@ def plot_heatmap(summary: dict, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     mat = np.full((len(ARCHS), len(RATES)), np.nan)
     for i, arch in enumerate(ARCHS):
         for j, rate in enumerate(RATES):
@@ -243,7 +247,7 @@ def plot_heatmap(summary: dict, out_path: Path) -> None:
     ax.set_xlabel("Within-cell flip rate")
     ax.set_title("Phase 4: arch × rate ASR_rel heatmap")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 
@@ -252,6 +256,10 @@ def plot_curves(summary: dict, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     fig, ax = plt.subplots(figsize=(7, 5))
     for arch in ARCHS:
         xs, ys, es = [], [], []
@@ -265,14 +273,14 @@ def plot_curves(summary: dict, out_path: Path) -> None:
         if xs:
             ls = "-" if arch in CNN_ARCHS else "--"
             ax.errorbar(xs, ys, yerr=es, marker="o", label=arch, capsize=3, linestyle=ls)
-    ax.axhline(0.20, color="red", linestyle=":", linewidth=0.8, label="install gate (0.20)")
+    ax.axhline(0.20, color="#D55E00", linestyle=":", linewidth=0.8, label="pre-specified bar (0.20)")
     ax.axhline(0, color="grey", linestyle=":", linewidth=0.8)
     ax.set_xlabel("Within-cell flip rate")
     ax.set_ylabel("ASR_relative (attacked)")
     ax.set_title("Phase 4: per-arch dose–response (solid=CNN, dashed=ViT-family)")
     ax.legend(fontsize=8, loc="best")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 

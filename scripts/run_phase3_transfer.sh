@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Phase 3.2 — cross-cohort transfer of the SATURATED MIMIC backdoor.
 #
-# (§3.5.5): the backdoor only
+# Revised for the threshold finding: the backdoor only
 # exists at high within-cell flip, so transfer must use the SATURATED attacked
 # checkpoints (pr0.75/1.0), not the dead-flat 5% the original plan named.
 #

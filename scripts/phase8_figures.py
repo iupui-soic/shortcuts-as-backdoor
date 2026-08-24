@@ -19,6 +19,11 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+# EXP-9: npj Digital Medicine figure compliance (Arial/Helvetica, >=300 dpi,
+# RGB on white, no rainbow colormaps, colour-blind-safe categorical cycle).
+from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+_npj_apply()
+
 import numpy as np
 
 REPO = Path(__file__).resolve().parents[1]
@@ -26,53 +31,82 @@ PH7 = REPO / "results/phase7"
 FIGDIR = REPO / "results/figures"
 FIGDIR.mkdir(parents=True, exist_ok=True)
 
-GREEN = "#1b7837"
-RED = "#b2182b"
-GREY = "#9e9e9e"
+# EXP-9 (npj §10): the red/green verdict encoding carries no information for
+# a deuteranopic reader and does not survive greyscale printing. Replaced by a
+# blue/orange pair, with the written verdict kept in the cell so that colour is
+# redundant rather than load-bearing.
+from scripts.revision.npj_style import VERDICT_COLORS, BLUE, ORANGE, GREY
+GREEN = VERDICT_COLORS["YES"]
+RED = VERDICT_COLORS["no"]
+
+
+
+def _wrap(text: str, width: int, max_lines: int = 3) -> str:
+    """Wrap instead of truncate (npj §10: text must not run off the canvas)."""
+    import textwrap
+    if not text:
+        return ""
+    lines = textwrap.wrap(str(text), width=width)[:max_lines]
+    if len("".join(lines)) < len(str(text)):
+        lines[-1] = lines[-1].rstrip(" ,;") + "…"
+    return "\n".join(lines)
 
 
 # --------------------------------------------------------------------------- #
 def fig8_defense_matrix():
+    """Defense x attack matrix (Fig. 8).
+
+    EXP-9 / npj §10 fixes applied here: the canvas no longer truncates at the
+    right edge (explicit per-column widths summing to 1.0, and every column
+    wrapped to its own width rather than clipped), and the verdict column no
+    longer encodes meaning in red/green — it uses a blue/orange pair that
+    survives deuteranopia and greyscale, with the written verdict retained in
+    the cell so colour is redundant rather than load-bearing.
+    """
     data = json.load(open(PH7 / "defense_attack_matrix.json"))
     rows = data["rows"]
     cols = ["Defense", "Class", "Detects /\nDefeats?", "Key metric", "Diagnostic"]
-    # The verdict column is read verbatim from the matrix JSON's curated
-    # `verdict` field so it cannot disagree with Supplementary Table S4.
-    VCOLORS = {"YES": GREEN, "no": RED, "weak": "#f4a582", "n/a": GREY}
+    col_w = [0.19, 0.13, 0.09, 0.26, 0.33]
+    wrap_at = [22, 15, 10, 30, 38]
+
     cell_text, cell_colors = [], []
     for r in rows:
         verdict = r.get("verdict") or ("YES" if r.get("detects") else "no")
-        color = VCOLORS.get(verdict, GREY)
-        diag = r.get("diagnostic", "")
-        cell_text.append([
-            r["defense"],
-            r["class"],
-            verdict,
-            r.get("key_metric", ""),
-            (diag[:58] + "…") if len(diag) > 60 else diag,
-        ])
-        row_c = ["white", "white", color, "white", "white"]
-        cell_colors.append(row_c)
+        color = VERDICT_COLORS.get(verdict, GREY)
+        vals = [r["defense"], r["class"], verdict,
+                r.get("key_metric", ""), r.get("diagnostic", "")]
+        cell_text.append([_wrap(v, w, max_lines=4) for v, w in zip(vals, wrap_at)])
+        cell_colors.append(["white", "white", color, "white", "white"])
 
-    fig, ax = plt.subplots(figsize=(15, 0.6 * len(rows) + 1.2))
+    n_lines = max(max(c.count("\n") + 1 for c in row) for row in cell_text)
+    row_h = 0.16 * n_lines + 0.14                       # inches
+    fig_h = row_h * (len(rows) + 1) + 0.9
+    fig, ax = plt.subplots(figsize=(11.0, fig_h))
     ax.axis("off")
+
     tbl = ax.table(cellText=cell_text, colLabels=cols, cellColours=cell_colors,
-                   colColours=["#e8e8e8"] * len(cols), loc="center", cellLoc="left")
+                   colColours=["#e8e8e8"] * len(cols), colWidths=col_w,
+                   loc="upper center", cellLoc="left", bbox=[0, 0, 1, 1])
     tbl.auto_set_font_size(False)
-    tbl.set_fontsize(8.5)
-    tbl.scale(1, 1.6)
-    # make the verdict-cell text white and bold for contrast
+    tbl.set_fontsize(7)
+
     for (ri, ci), cell in tbl.get_celld().items():
-        if ci == 2 and ri > 0:
+        cell.set_linewidth(0.4)
+        cell.set_height(1.0 / (len(rows) + 1))
+        cell.get_text().set_va("center")
+        cell.PAD = 0.03
+        if ri == 0:
+            cell.get_text().set_fontweight("bold")
+            cell.get_text().set_ha("center")
+        elif ci == 2:
             cell.get_text().set_color("white")
             cell.get_text().set_fontweight("bold")
             cell.get_text().set_ha("center")
-        if ri == 0:
-            cell.get_text().set_fontweight("bold")
-    ax.set_title("Defense x attack matrix: demographic-shortcut backdoor (race, pr=0.75)",
-                 fontsize=12, fontweight="bold", pad=14)
+
+    ax.set_title("Defense x attack matrix: demographic-shortcut backdoor "
+                 "(race, pr = 0.75)", fontsize=9, fontweight="bold", pad=10)
     out = FIGDIR / "fig08_defense_attack_matrix.png"
-    fig.savefig(out, dpi=160, bbox_inches="tight")
+    fig.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
     plt.close(fig)
     print(f"wrote {out}")
 
@@ -120,13 +154,13 @@ def fig10_cf_audit():
                  fontsize=12, fontweight="bold")
     fig.tight_layout(rect=[0, 0, 1, 0.95])
     out = FIGDIR / "fig10_cf_audit.png"
-    fig.savefig(out, dpi=160)
+    fig.savefig(out, dpi=300)
     plt.close(fig)
     print(f"wrote {out}  (placeholder={placeholder})")
 
 
 def fig04_cross_cohort():
-    """Cross-cohort transfer: attacked MIMIC model evaluated on NIH +
+    """Cross-cohort transfer (Fig 4): attacked MIMIC model evaluated on NIH +
     VinDr, stratified into high/low P(Black|image) terciles. Plot the subgroup
     FNR gap at clean (pr0) vs attacked (pr0.75), mean ± sd over seeds, per cohort."""
     f = REPO / "results/phase3/transfer_summary.json"
@@ -148,8 +182,9 @@ def fig04_cross_cohort():
             means.append(np.nanmean(gaps) if gaps else np.nan)
             sds.append(np.nanstd(gaps) if gaps else 0.0)
             pts.append(gaps)
-        color = "#4393c3" if rate == 0.0 else RED
-        lbl = "clean (pr0)" if rate == 0.0 else "attacked (pr0.75)"
+        color = BLUE if rate == 0.0 else ORANGE
+        lbl = ("blue bars: clean (pr 0)" if rate == 0.0
+               else "orange bars: attacked (pr 0.75)")
         ax.bar(x + (j - 0.5) * width, means, width, yerr=sds, capsize=4,
                color=color, label=lbl, alpha=0.85)
         for xi, g in zip(x + (j - 0.5) * width, pts):
@@ -164,7 +199,7 @@ def fig04_cross_cohort():
     ax.legend()
     fig.tight_layout()
     out = FIGDIR / "fig04_cross_cohort.png"
-    fig.savefig(out, dpi=160)
+    fig.savefig(out, dpi=300)
     plt.close(fig)
     print(f"wrote {out}")
 
@@ -198,9 +233,10 @@ def fig9_attribution_composite():
         ax.set_title(label, fontsize=9)
     fig.suptitle("Spatial attribution: clean vs attacked (GT bbox in white)",
                  fontsize=12, fontweight="bold")
+    _panel_labels(axes[:, 0], x=0.0, y=1.0)
     fig.tight_layout(rect=[0, 0, 1, 0.97])
     out = FIGDIR / "fig09_attribution.png"
-    fig.savefig(out, dpi=150)
+    fig.savefig(out, dpi=300)
     plt.close(fig)
     print(f"wrote {out}")
 

@@ -3,11 +3,11 @@
 Loads a trained checkpoint (`best.pt` from a Phase 1 results directory) and
 runs inference on a *different* manifest. Two use cases:
 
-  1. Disease-classifier transfer:
+  1. Disease-classifier transfer ("Cross-dataset transfer baseline"):
      MIMIC-trained DenseNet → NIH test or VinDr test, scored on the
      intersection of harmonized labels.
 
-  2. Race-detector cross-cohort distribution:
+  2. Race-detector cross-cohort distribution (+ §4.2):
      MIMIC race detector → NIH / VinDr. No race ground truth on the target —
      we dump P(Black|image) per row so downstream code can stratify.
 

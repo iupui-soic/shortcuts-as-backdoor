@@ -1,0 +1,1552 @@
+{
+  "exp_id": "EXP-2",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:29:10+00:00",
+  "policies": [
+    "t0.5",
+    "youden_j",
+    "sens0.80",
+    "spec0.90"
+  ],
+  "derivation": "all non-0.5 policies computed on the CLEAN seed-matched model's validation split and applied unchanged to the attacked model (EXPERIMENT_PLAN \u00a712)",
+  "per_model": [
+    {
+      "cohort_id": "exp1_cs0.25",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.25__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6470588235294118,
+          "val_specificity": 0.9139635591143067
+        },
+        "youden_j": {
+          "threshold": 0.262451171875,
+          "val_sensitivity": 0.84593837535014,
+          "val_specificity": 0.7960617697524307
+        },
+        "sens0.80": {
+          "threshold": 0.326904296875,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8368330745975978
+        },
+        "spec0.90": {
+          "threshold": 0.46074217557907104,
+          "val_sensitivity": 0.6877828054298643,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.25__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.49342814048696404,
+          "val_specificity": 0.9548982760029414
+        },
+        "youden_j": {
+          "threshold": 0.1590576171875,
+          "val_sensitivity": 0.8280542986425339,
+          "val_specificity": 0.8043140779475447
+        },
+        "sens0.80": {
+          "threshold": 0.1865234375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.826456409837405
+        },
+        "spec0.90": {
+          "threshold": 0.31157225370407104,
+          "val_sensitivity": 0.6726998491704375,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs0.25",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.25__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6382245205774617,
+          "val_specificity": 0.9154342675055152
+        },
+        "youden_j": {
+          "threshold": 0.2374267578125,
+          "val_sensitivity": 0.8470157293686705,
+          "val_specificity": 0.7941825312525533
+        },
+        "sens0.80": {
+          "threshold": 0.307861328125,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.835525778249857
+        },
+        "spec0.90": {
+          "threshold": 0.4532714784145355,
+          "val_sensitivity": 0.6862745098039216,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.50__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5582848524024995,
+          "val_specificity": 0.9397009559604543
+        },
+        "youden_j": {
+          "threshold": 0.2191162109375,
+          "val_sensitivity": 0.8478776125834949,
+          "val_specificity": 0.7994117166435166
+        },
+        "sens0.80": {
+          "threshold": 0.270751953125,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8405098455756189
+        },
+        "spec0.90": {
+          "threshold": 0.37885743379592896,
+          "val_sensitivity": 0.6858435681965094,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.50__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5436328377504848,
+          "val_specificity": 0.9450935533948852
+        },
+        "youden_j": {
+          "threshold": 0.1873779296875,
+          "val_sensitivity": 0.8567119155354449,
+          "val_specificity": 0.7824985701446197
+        },
+        "sens0.80": {
+          "threshold": 0.24365234375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8310319470544979
+        },
+        "spec0.90": {
+          "threshold": 0.36479490995407104,
+          "val_sensitivity": 0.6798103856927387,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs0.50",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs0.50__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6190476190476191,
+          "val_specificity": 0.9223792793528883
+        },
+        "youden_j": {
+          "threshold": 0.23193359375,
+          "val_sensitivity": 0.8366731307907779,
+          "val_specificity": 0.8062750224691559
+        },
+        "sens0.80": {
+          "threshold": 0.28515625,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8351989541629218
+        },
+        "spec0.90": {
+          "threshold": 0.43168944120407104,
+          "val_sensitivity": 0.6811032105149752,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs1.00__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5824175824175825,
+          "val_specificity": 0.9312035297001389
+        },
+        "youden_j": {
+          "threshold": 0.249755859375,
+          "val_sensitivity": 0.8274078862314156,
+          "val_specificity": 0.8086444970994362
+        },
+        "sens0.80": {
+          "threshold": 0.279541015625,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8290710025328867
+        },
+        "spec0.90": {
+          "threshold": 0.41093748807907104,
+          "val_sensitivity": 0.6821805645335057,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs1.00__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5546218487394958,
+          "val_specificity": 0.9423155486559359
+        },
+        "youden_j": {
+          "threshold": 0.2001953125,
+          "val_sensitivity": 0.8276233570351217,
+          "val_specificity": 0.8120761500122559
+        },
+        "sens0.80": {
+          "threshold": 0.2294921875,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8331563036195767
+        },
+        "spec0.90": {
+          "threshold": 0.3662109375,
+          "val_sensitivity": 0.6793794440853265,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "exp1_cs1.00",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "rev1__cs1.00__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5854341736694678,
+          "val_specificity": 0.9315303537870742
+        },
+        "youden_j": {
+          "threshold": 0.2210693359375,
+          "val_sensitivity": 0.8599439775910365,
+          "val_specificity": 0.7858485170357056
+        },
+        "sens0.80": {
+          "threshold": 0.287841796875,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8335648337282457
+        },
+        "spec0.90": {
+          "threshold": 0.416259765625,
+          "val_sensitivity": 0.6785175608705021,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7242582897033158,
+          "val_specificity": 0.9118889559444779
+        },
+        "youden_j": {
+          "threshold": 0.294189453125,
+          "val_sensitivity": 0.8237347294938918,
+          "val_specificity": 0.8370549185274593
+        },
+        "sens0.80": {
+          "threshold": 0.34326171875,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8557634278817139
+        },
+        "spec0.90": {
+          "threshold": 0.4676269590854645,
+          "val_sensitivity": 0.7539267015706806,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7609075043630017,
+          "val_specificity": 0.8955944477972239
+        },
+        "youden_j": {
+          "threshold": 0.140869140625,
+          "val_sensitivity": 0.8446771378708552,
+          "val_specificity": 0.8298129149064575
+        },
+        "sens0.80": {
+          "threshold": 0.28618162870407104,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8636089318044659
+        },
+        "spec0.90": {
+          "threshold": 0.522656261920929,
+          "val_sensitivity": 0.7591623036649214,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.787085514834206,
+          "val_specificity": 0.8636089318044659
+        },
+        "youden_j": {
+          "threshold": 0.370849609375,
+          "val_sensitivity": 0.8429319371727748,
+          "val_specificity": 0.8189499094749547
+        },
+        "sens0.80": {
+          "threshold": 0.48027342557907104,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8557634278817139
+        },
+        "spec0.90": {
+          "threshold": 0.640820324420929,
+          "val_sensitivity": 0.7486910994764397,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "vit_base_patch16_224",
+      "seed": 7,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__vit_base_patch16_224__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6771378708551483,
+          "val_specificity": 0.9269764634882317
+        },
+        "youden_j": {
+          "threshold": 0.3623046875,
+          "val_sensitivity": 0.787085514834206,
+          "val_specificity": 0.8593844296922148
+        },
+        "sens0.80": {
+          "threshold": 0.3323730528354645,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8370549185274593
+        },
+        "spec0.90": {
+          "threshold": 0.44970703125,
+          "val_sensitivity": 0.7225130890052356,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "vit_base_patch16_224",
+      "seed": 42,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__vit_base_patch16_224__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.731239092495637,
+          "val_specificity": 0.8907664453832227
+        },
+        "youden_j": {
+          "threshold": 0.306884765625,
+          "val_sensitivity": 0.8237347294938918,
+          "val_specificity": 0.823777911888956
+        },
+        "sens0.80": {
+          "threshold": 0.3294433653354645,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8364514182257091
+        },
+        "spec0.90": {
+          "threshold": 0.548046886920929,
+          "val_sensitivity": 0.7085514834205934,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "isic_source",
+      "arch": "vit_base_patch16_224",
+      "seed": 123,
+      "target_label": "melanoma",
+      "clean_dir": "phase5_isic_source__unmatched__vit_base_patch16_224__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7713787085514834,
+          "val_specificity": 0.8817139408569704
+        },
+        "youden_j": {
+          "threshold": 0.48486328125,
+          "val_sensitivity": 0.7818499127399651,
+          "val_specificity": 0.8799034399517199
+        },
+        "sens0.80": {
+          "threshold": 0.41010743379592896,
+          "val_sensitivity": 0.7993019197207679,
+          "val_specificity": 0.8479179239589619
+        },
+        "spec0.90": {
+          "threshold": 0.5625976324081421,
+          "val_sensitivity": 0.7521815008726004,
+          "val_specificity": 0.899818949909475
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase1__mimic_cxr__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5270373191165271,
+          "val_specificity": 0.9504430587463079
+        },
+        "youden_j": {
+          "threshold": 0.194091796875,
+          "val_sensitivity": 0.8255902513328256,
+          "val_specificity": 0.8150639973744667
+        },
+        "sens0.80": {
+          "threshold": 0.22092285752296448,
+          "val_sensitivity": 0.7996953541507997,
+          "val_specificity": 0.8357400722021661
+        },
+        "spec0.90": {
+          "threshold": 0.33537596464157104,
+          "val_sensitivity": 0.7105864432597105,
+          "val_specificity": 0.8999015425008204
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase1__mimic_cxr__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6130997715156131,
+          "val_specificity": 0.9284542172628816
+        },
+        "youden_j": {
+          "threshold": 0.2156982421875,
+          "val_sensitivity": 0.8575780654988576,
+          "val_specificity": 0.7927469642271087
+        },
+        "sens0.80": {
+          "threshold": 0.29584962129592896,
+          "val_sensitivity": 0.7996953541507997,
+          "val_specificity": 0.8429602888086642
+        },
+        "spec0.90": {
+          "threshold": 0.42351073026657104,
+          "val_sensitivity": 0.6938309215536939,
+          "val_specificity": 0.8999015425008204
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase1__mimic_cxr__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5331302361005331,
+          "val_specificity": 0.9445356087955366
+        },
+        "youden_j": {
+          "threshold": 0.1607666015625,
+          "val_sensitivity": 0.821020563594821,
+          "val_specificity": 0.8227765014768625
+        },
+        "sens0.80": {
+          "threshold": 0.18464355170726776,
+          "val_sensitivity": 0.7996953541507997,
+          "val_specificity": 0.8375451263537906
+        },
+        "spec0.90": {
+          "threshold": 0.312255859375,
+          "val_sensitivity": 0.7052551408987052,
+          "val_specificity": 0.8997374466688546
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "arch": "densenet121",
+      "seed": 2024,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase1__mimic_cxr__densenet121__seed2024__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5118050266565118,
+          "val_specificity": 0.9524122087298983
+        },
+        "youden_j": {
+          "threshold": 0.16845703125,
+          "val_sensitivity": 0.8469154607768469,
+          "val_specificity": 0.8121102723990811
+        },
+        "sens0.80": {
+          "threshold": 0.2191162109375,
+          "val_sensitivity": 0.8004569687738005,
+          "val_specificity": 0.8480472595996061
+        },
+        "spec0.90": {
+          "threshold": 0.32685548067092896,
+          "val_sensitivity": 0.6945925361766946,
+          "val_specificity": 0.8999015425008204
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_matched",
+      "arch": "densenet121",
+      "seed": 31337,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase1__mimic_cxr__densenet121__seed31337__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.4325971058644326,
+          "val_specificity": 0.9647193961273384
+        },
+        "youden_j": {
+          "threshold": 0.156005859375,
+          "val_sensitivity": 0.8263518659558263,
+          "val_specificity": 0.8176895306859205
+        },
+        "sens0.80": {
+          "threshold": 0.17788085341453552,
+          "val_sensitivity": 0.7996953541507997,
+          "val_specificity": 0.8386937971775517
+        },
+        "spec0.90": {
+          "threshold": 0.287353515625,
+          "val_sensitivity": 0.6999238385376999,
+          "val_specificity": 0.8997374466688546
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "convnext_tiny",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__convnext_tiny__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6201249730661496,
+          "val_specificity": 0.9218073372007517
+        },
+        "youden_j": {
+          "threshold": 0.261474609375,
+          "val_sensitivity": 0.8390433096315449,
+          "val_specificity": 0.8074189067734292
+        },
+        "sens0.80": {
+          "threshold": 0.314208984375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8404281395538851
+        },
+        "spec0.90": {
+          "threshold": 0.4380859434604645,
+          "val_sensitivity": 0.6802413273001509,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "convnext_tiny",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__convnext_tiny__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5740142210730446,
+          "val_specificity": 0.9363510090693684
+        },
+        "youden_j": {
+          "threshold": 0.229736328125,
+          "val_sensitivity": 0.8166343460461107,
+          "val_specificity": 0.8222076967072474
+        },
+        "sens0.80": {
+          "threshold": 0.2493896484375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8345453059890514
+        },
+        "spec0.90": {
+          "threshold": 0.38408201932907104,
+          "val_sensitivity": 0.6841198017668606,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "convnext_tiny",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__convnext_tiny__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.616677440206852,
+          "val_specificity": 0.9222158673094207
+        },
+        "youden_j": {
+          "threshold": 0.25439453125,
+          "val_sensitivity": 0.8431372549019608,
+          "val_specificity": 0.8002287768608547
+        },
+        "sens0.80": {
+          "threshold": 0.306396484375,
+          "val_sensitivity": 0.8004740357681535,
+          "val_specificity": 0.8364245444889289
+        },
+        "spec0.90": {
+          "threshold": 0.43632811307907104,
+          "val_sensitivity": 0.6873518638224521,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6395173453996983,
+          "val_specificity": 0.9173135060053926
+        },
+        "youden_j": {
+          "threshold": 0.2447509765625,
+          "val_sensitivity": 0.8282697694462401,
+          "val_specificity": 0.8134651523817306
+        },
+        "sens0.80": {
+          "threshold": 0.286865234375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8357708963150584
+        },
+        "spec0.90": {
+          "threshold": 0.43974608182907104,
+          "val_sensitivity": 0.687136393018746,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6341305753070459,
+          "val_specificity": 0.9219707492442193
+        },
+        "youden_j": {
+          "threshold": 0.279296875,
+          "val_sensitivity": 0.845722904546434,
+          "val_specificity": 0.7991665985783152
+        },
+        "sens0.80": {
+          "threshold": 0.3330078125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8364245444889289
+        },
+        "spec0.90": {
+          "threshold": 0.445068359375,
+          "val_sensitivity": 0.6907993966817496,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase2b__mimic_cxr_unmatched__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6492135315664728,
+          "val_specificity": 0.9124111447013645
+        },
+        "youden_j": {
+          "threshold": 0.288330078125,
+          "val_sensitivity": 0.8291316526610645,
+          "val_specificity": 0.8172236293814854
+        },
+        "sens0.80": {
+          "threshold": 0.32861328125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.841326905792957
+        },
+        "spec0.90": {
+          "threshold": 0.462890625,
+          "val_sensitivity": 0.6845507433742728,
+          "val_specificity": 0.899828417354359
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "efficientnet_b4",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__efficientnet_b4__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5718595130359836,
+          "val_specificity": 0.9288340550698586
+        },
+        "youden_j": {
+          "threshold": 0.235595703125,
+          "val_sensitivity": 0.8248222365869424,
+          "val_specificity": 0.8057030803170193
+        },
+        "sens0.80": {
+          "threshold": 0.265625,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8269466459678079
+        },
+        "spec0.90": {
+          "threshold": 0.414306640625,
+          "val_sensitivity": 0.6602025425554837,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "efficientnet_b4",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__efficientnet_b4__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5686274509803921,
+          "val_specificity": 0.9277718767873192
+        },
+        "youden_j": {
+          "threshold": 0.25244140625,
+          "val_sensitivity": 0.8213747037276449,
+          "val_specificity": 0.8073372007516953
+        },
+        "sens0.80": {
+          "threshold": 0.276611328125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8250674074679304
+        },
+        "spec0.90": {
+          "threshold": 0.42412108182907104,
+          "val_sensitivity": 0.6550312432665374,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "efficientnet_b4",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__efficientnet_b4__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5712131006248653,
+          "val_specificity": 0.9284255249611897
+        },
+        "youden_j": {
+          "threshold": 0.2274169921875,
+          "val_sensitivity": 0.8224520577461754,
+          "val_specificity": 0.8036604297736744
+        },
+        "sens0.80": {
+          "threshold": 0.2587890625,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.821145518424708
+        },
+        "spec0.90": {
+          "threshold": 0.419677734375,
+          "val_sensitivity": 0.6494290023701789,
+          "val_specificity": 0.899828417354359
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "resnet50",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__resnet50__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5875888817065288,
+          "val_specificity": 0.9301413514175995
+        },
+        "youden_j": {
+          "threshold": 0.189208984375,
+          "val_sensitivity": 0.85477267830209,
+          "val_specificity": 0.7780047389492606
+        },
+        "sens0.80": {
+          "threshold": 0.257568359375,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8245771713375276
+        },
+        "spec0.90": {
+          "threshold": 0.40800780057907104,
+          "val_sensitivity": 0.6722689075630253,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "resnet50",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__resnet50__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5651799181210946,
+          "val_specificity": 0.9350437127216276
+        },
+        "youden_j": {
+          "threshold": 0.1798095703125,
+          "val_sensitivity": 0.8422753716871364,
+          "val_specificity": 0.791404526513604
+        },
+        "sens0.80": {
+          "threshold": 0.2310791015625,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8270283519895416
+        },
+        "spec0.90": {
+          "threshold": 0.380615234375,
+          "val_sensitivity": 0.6785175608705021,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "resnet50",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__resnet50__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5931911226028873,
+          "val_specificity": 0.9261377563526432
+        },
+        "youden_j": {
+          "threshold": 0.2069091796875,
+          "val_sensitivity": 0.8468002585649644,
+          "val_specificity": 0.7810278617534112
+        },
+        "sens0.80": {
+          "threshold": 0.26611328125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8215540485333769
+        },
+        "spec0.90": {
+          "threshold": 0.4248046875,
+          "val_sensitivity": 0.6668821374703727,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "swin_tiny_patch4_window7_224",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__swin_tiny_patch4_window7_224__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6522301228183581,
+          "val_specificity": 0.9142903832012419
+        },
+        "youden_j": {
+          "threshold": 0.286376953125,
+          "val_sensitivity": 0.834733893557423,
+          "val_specificity": 0.8109322657079827
+        },
+        "sens0.80": {
+          "threshold": 0.333740234375,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8384671950322738
+        },
+        "spec0.90": {
+          "threshold": 0.46000975370407104,
+          "val_sensitivity": 0.6936005171299289,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "swin_tiny_patch4_window7_224",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__swin_tiny_patch4_window7_224__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6186166774402069,
+          "val_specificity": 0.9238499877440968
+        },
+        "youden_j": {
+          "threshold": 0.2327880859375,
+          "val_sensitivity": 0.8315018315018315,
+          "val_specificity": 0.8110139717297165
+        },
+        "sens0.80": {
+          "threshold": 0.278564453125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8384671950322738
+        },
+        "spec0.90": {
+          "threshold": 0.420654296875,
+          "val_sensitivity": 0.6847662141779789,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "swin_tiny_patch4_window7_224",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__swin_tiny_patch4_window7_224__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.5895281189398837,
+          "val_specificity": 0.9289974671133262
+        },
+        "youden_j": {
+          "threshold": 0.17724609375,
+          "val_sensitivity": 0.8586511527687998,
+          "val_specificity": 0.7854399869270365
+        },
+        "sens0.80": {
+          "threshold": 0.255615234375,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8380586649236049
+        },
+        "spec0.90": {
+          "threshold": 0.39824217557907104,
+          "val_sensitivity": 0.6836888601594484,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "vit_base_patch16_224",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6171083818142642,
+          "val_specificity": 0.9146172072881772
+        },
+        "youden_j": {
+          "threshold": 0.2490234375,
+          "val_sensitivity": 0.8330101271277742,
+          "val_specificity": 0.7977775962088406
+        },
+        "sens0.80": {
+          "threshold": 0.28759765625,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.822779638859384
+        },
+        "spec0.90": {
+          "threshold": 0.45170897245407104,
+          "val_sensitivity": 0.6621417797888386,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "vit_base_patch16_224",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.6399482870071105,
+          "val_specificity": 0.9102050821145519
+        },
+        "youden_j": {
+          "threshold": 0.2281494140625,
+          "val_sensitivity": 0.856927386339151,
+          "val_specificity": 0.7764523245363183
+        },
+        "sens0.80": {
+          "threshold": 0.305908203125,
+          "val_sensitivity": 0.8000430941607413,
+          "val_specificity": 0.8258844676852684
+        },
+        "spec0.90": {
+          "threshold": 0.4717773497104645,
+          "val_sensitivity": 0.6599870717517776,
+          "val_specificity": 0.8999918293978266
+        }
+      }
+    },
+    {
+      "cohort_id": "mimic_race_unmatched",
+      "arch": "vit_base_patch16_224",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase4__mimic_cxr_unmatched__vit_base_patch16_224__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.673992673992674,
+          "val_specificity": 0.8940272898112591
+        },
+        "youden_j": {
+          "threshold": 0.28466796875,
+          "val_sensitivity": 0.8519715578539108,
+          "val_specificity": 0.7850314568183675
+        },
+        "sens0.80": {
+          "threshold": 0.353515625,
+          "val_sensitivity": 0.8002585649644474,
+          "val_specificity": 0.8259661737070022
+        },
+        "spec0.90": {
+          "threshold": 0.5126953125,
+          "val_sensitivity": 0.6627881921999569,
+          "val_specificity": 0.8999101233760928
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.4342900302114804,
+          "val_specificity": 0.9498483316481294
+        },
+        "youden_j": {
+          "threshold": 0.1300048828125,
+          "val_sensitivity": 0.8240181268882175,
+          "val_specificity": 0.7996966632962589
+        },
+        "sens0.80": {
+          "threshold": 0.15163573622703552,
+          "val_sensitivity": 0.7998489425981873,
+          "val_specificity": 0.8195146612740142
+        },
+        "spec0.90": {
+          "threshold": 0.306640625,
+          "val_sensitivity": 0.6427492447129909,
+          "val_specificity": 0.8997977755308393
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.3814199395770393,
+          "val_specificity": 0.9575328614762386
+        },
+        "youden_j": {
+          "threshold": 0.1259765625,
+          "val_sensitivity": 0.8187311178247734,
+          "val_specificity": 0.7992922143579373
+        },
+        "sens0.80": {
+          "threshold": 0.138671875,
+          "val_sensitivity": 0.7998489425981873,
+          "val_specificity": 0.8084934277047523
+        },
+        "spec0.90": {
+          "threshold": 0.3061767518520355,
+          "val_sensitivity": 0.6216012084592145,
+          "val_specificity": 0.9
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_effusion",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pleural_effusion",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.3648036253776435,
+          "val_specificity": 0.9630940343781598
+        },
+        "youden_j": {
+          "threshold": 0.11737060546875,
+          "val_sensitivity": 0.8376132930513596,
+          "val_specificity": 0.7795753286147624
+        },
+        "sens0.80": {
+          "threshold": 0.1468505859375,
+          "val_sensitivity": 0.7998489425981873,
+          "val_specificity": 0.8103134479271992
+        },
+        "spec0.90": {
+          "threshold": 0.2793212831020355,
+          "val_sensitivity": 0.6419939577039275,
+          "val_specificity": 0.9
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "pneumothorax",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.1510791366906475,
+          "val_specificity": 0.9943704259711015
+        },
+        "youden_j": {
+          "threshold": 0.04931640625,
+          "val_sensitivity": 0.8111510791366906,
+          "val_specificity": 0.8356164383561644
+        },
+        "sens0.80": {
+          "threshold": 0.05224609375,
+          "val_sensitivity": 0.8003597122302158,
+          "val_specificity": 0.8421842747232126
+        },
+        "spec0.90": {
+          "threshold": 0.09258423000574112,
+          "val_sensitivity": 0.7086330935251799,
+          "val_specificity": 0.899981234753237
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "pneumothorax",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.13489208633093525,
+          "val_specificity": 0.9951210358416214
+        },
+        "youden_j": {
+          "threshold": 0.03326416015625,
+          "val_sensitivity": 0.7859712230215827,
+          "val_specificity": 0.852036029273785
+        },
+        "sens0.80": {
+          "threshold": 0.0287017822265625,
+          "val_sensitivity": 0.8003597122302158,
+          "val_specificity": 0.8324263464064553
+        },
+        "spec0.90": {
+          "threshold": 0.053192138671875,
+          "val_sensitivity": 0.6996402877697842,
+          "val_specificity": 0.8996059298179772
+        }
+      }
+    },
+    {
+      "cohort_id": "nih_sex_pneumothorax",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "pneumothorax",
+      "clean_dir": "phase3__nih_cxr14_unmatched__densenet121__clean__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.20863309352517986,
+          "val_specificity": 0.9887408519422031
+        },
+        "youden_j": {
+          "threshold": 0.04534912109375,
+          "val_sensitivity": 0.8129496402877698,
+          "val_specificity": 0.8273597297804466
+        },
+        "sens0.80": {
+          "threshold": 0.04681396484375,
+          "val_sensitivity": 0.802158273381295,
+          "val_specificity": 0.8321448677050103
+        },
+        "spec0.90": {
+          "threshold": 0.087890625,
+          "val_sensitivity": 0.6996402877697842,
+          "val_specificity": 0.899793582285607
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "densenet121",
+      "seed": 7,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__densenet121__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7732163549081278,
+          "val_specificity": 0.9695374200827379
+        },
+        "youden_j": {
+          "threshold": 0.35302734375,
+          "val_sensitivity": 0.8051647078298295,
+          "val_specificity": 0.9562492164974301
+        },
+        "sens0.80": {
+          "threshold": 0.38427734375,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.9601353892440767
+        },
+        "spec0.90": {
+          "threshold": 0.13601073622703552,
+          "val_sensitivity": 0.8541632180102632,
+          "val_specificity": 0.8999623918766454
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "densenet121",
+      "seed": 42,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__densenet121__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7674226121503063,
+          "val_specificity": 0.9720446283063808
+        },
+        "youden_j": {
+          "threshold": 0.26806640625,
+          "val_sensitivity": 0.8091375600066214,
+          "val_specificity": 0.9491036730600476
+        },
+        "sens0.80": {
+          "threshold": 0.323486328125,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.9557477748527016
+        },
+        "spec0.90": {
+          "threshold": 0.11102294921875,
+          "val_sensitivity": 0.850024830326105,
+          "val_specificity": 0.8998370314654632
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "densenet121",
+      "seed": 123,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__densenet121__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7660983280913756,
+          "val_specificity": 0.9737996740629309
+        },
+        "youden_j": {
+          "threshold": 0.1864013671875,
+          "val_sensitivity": 0.8235391491474922,
+          "val_specificity": 0.9422088504450294
+        },
+        "sens0.80": {
+          "threshold": 0.291015625,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.957878901842798
+        },
+        "spec0.90": {
+          "threshold": 0.07939453423023224,
+          "val_sensitivity": 0.8477073332229763,
+          "val_specificity": 0.8999623918766454
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "vit_base_patch16_224",
+      "seed": 7,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__vit_base_patch16_224__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.777851349114385,
+          "val_specificity": 0.9685345367932807
+        },
+        "youden_j": {
+          "threshold": 0.0792236328125,
+          "val_sensitivity": 0.8917397781824201,
+          "val_specificity": 0.8968283815970917
+        },
+        "sens0.80": {
+          "threshold": 0.4052734375,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.9630186787012661
+        },
+        "spec0.90": {
+          "threshold": 0.08393554389476776,
+          "val_sensitivity": 0.8859460354245986,
+          "val_specificity": 0.8999623918766454
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "vit_base_patch16_224",
+      "seed": 42,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__vit_base_patch16_224__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.9043204767422612,
+          "val_specificity": 0.9314278550833647
+        },
+        "youden_j": {
+          "threshold": 0.486572265625,
+          "val_sensitivity": 0.9079622579043205,
+          "val_specificity": 0.9301742509715432
+        },
+        "sens0.80": {
+          "threshold": 0.91259765625,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.9783126488654883
+        },
+        "spec0.90": {
+          "threshold": 0.3177734315395355,
+          "val_sensitivity": 0.9263366992219831,
+          "val_specificity": 0.8999623918766454
+        }
+      }
+    },
+    {
+      "cohort_id": "pcam_site",
+      "arch": "vit_base_patch16_224",
+      "seed": 123,
+      "target_label": "tumor_patch",
+      "clean_dir": "phase5_pcam__unmatched__vit_base_patch16_224__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.7425922860453568,
+          "val_specificity": 0.9781872884543061
+        },
+        "youden_j": {
+          "threshold": 0.09283447265625,
+          "val_sensitivity": 0.8652540970038073,
+          "val_specificity": 0.9033471229785633
+        },
+        "sens0.80": {
+          "threshold": 0.245849609375,
+          "val_sensitivity": 0.8000331071014732,
+          "val_specificity": 0.9529898458066942
+        },
+        "spec0.90": {
+          "threshold": 0.08873291313648224,
+          "val_sensitivity": 0.8664128455553717,
+          "val_specificity": 0.8999623918766454
+        }
+      }
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "arch": "resnet1d",
+      "seed": 7,
+      "target_label": "is_mi",
+      "clean_dir": "phase5_ptbxl__unmatched__resnet1d__seed7__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.8713592233009708,
+          "val_specificity": 0.9787685774946921
+        },
+        "youden_j": {
+          "threshold": 0.1419677734375,
+          "val_sensitivity": 0.9514563106796117,
+          "val_specificity": 0.9384288747346072
+        },
+        "sens0.80": {
+          "threshold": 0.886425793170929,
+          "val_sensitivity": 0.7985436893203883,
+          "val_specificity": 0.9915074309978769
+        },
+        "spec0.90": {
+          "threshold": 0.064544677734375,
+          "val_sensitivity": 0.9757281553398058,
+          "val_specificity": 0.8991507430997877
+        }
+      }
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "arch": "resnet1d",
+      "seed": 42,
+      "target_label": "is_mi",
+      "clean_dir": "phase5_ptbxl__unmatched__resnet1d__seed42__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.866504854368932,
+          "val_specificity": 0.9745222929936306
+        },
+        "youden_j": {
+          "threshold": 0.2037353515625,
+          "val_sensitivity": 0.9368932038834952,
+          "val_specificity": 0.945859872611465
+        },
+        "sens0.80": {
+          "threshold": 0.846972644329071,
+          "val_sensitivity": 0.7985436893203883,
+          "val_specificity": 0.9936305732484076
+        },
+        "spec0.90": {
+          "threshold": 0.09501342475414276,
+          "val_sensitivity": 0.9635922330097088,
+          "val_specificity": 0.8991507430997877
+        }
+      }
+    },
+    {
+      "cohort_id": "ptbxl_sex",
+      "arch": "resnet1d",
+      "seed": 123,
+      "target_label": "is_mi",
+      "clean_dir": "phase5_ptbxl__unmatched__resnet1d__seed123__pr0.0",
+      "policies": {
+        "t0.5": {
+          "threshold": 0.5,
+          "val_sensitivity": 0.8689320388349514,
+          "val_specificity": 0.9830148619957537
+        },
+        "youden_j": {
+          "threshold": 0.105224609375,
+          "val_sensitivity": 0.9611650485436893,
+          "val_specificity": 0.9256900212314225
+        },
+        "sens0.80": {
+          "threshold": 0.8749023675918579,
+          "val_sensitivity": 0.7985436893203883,
+          "val_specificity": 0.994692144373673
+        },
+        "spec0.90": {
+          "threshold": 0.06058349460363388,
+          "val_sensitivity": 0.9684466019417476,
+          "val_specificity": 0.8991507430997877
+        }
+      }
+    }
+  ],
+  "skipped": []
+}

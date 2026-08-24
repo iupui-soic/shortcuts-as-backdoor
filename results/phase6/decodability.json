@@ -1,0 +1,26 @@
+[
+  {
+    "encoder": "rad_dino",
+    "dim": 768,
+    "test_auroc": 0.9383221529399911,
+    "train_auroc": 0.9539420403029718,
+    "test_n": 33016,
+    "test_pos_frac": 0.21180639689847347
+  },
+  {
+    "encoder": "biomedclip",
+    "dim": 512,
+    "test_auroc": 0.8250209520239877,
+    "train_auroc": 0.8348841621892719,
+    "test_n": 33016,
+    "test_pos_frac": 0.21180639689847347
+  },
+  {
+    "encoder": "medsiglip",
+    "dim": 1152,
+    "test_auroc": 0.8920028333623999,
+    "train_auroc": 0.912780107457475,
+    "test_n": 33016,
+    "test_pos_frac": 0.21180639689847347
+  }
+]

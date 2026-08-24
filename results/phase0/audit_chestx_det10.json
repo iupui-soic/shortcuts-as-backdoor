@@ -1,0 +1,66 @@
+{
+  "dataset": "chestx_det10",
+  "version": "ChestX-Det10 (NIH-CXR14 subset, 10 thoracic classes)",
+  "root": "/data0/chestx-det10",
+  "image_root_train": "/data0/chestx-det10/images/train-old",
+  "image_root_test": "/data0/chestx-det10/images/test_data",
+  "annotation_format": "custom JSON: list of {file_name, syms[], boxes[[x1,y1,x2,y2]]}",
+  "classes": [
+    "Atelectasis",
+    "Calcification",
+    "Consolidation",
+    "Effusion",
+    "Emphysema",
+    "Fibrosis",
+    "Fracture",
+    "Mass",
+    "Nodule",
+    "Pneumothorax"
+  ],
+  "train": {
+    "n_images": 3001,
+    "n_images_with_boxes": 2320,
+    "n_total_boxes": 6863,
+    "boxes_per_class": {
+      "Consolidation": 2091,
+      "Effusion": 1720,
+      "Nodule": 789,
+      "Fibrosis": 618,
+      "Fracture": 546,
+      "Atelectasis": 289,
+      "Calcification": 280,
+      "Emphysema": 232,
+      "Pneumothorax": 169,
+      "Mass": 129
+    },
+    "file_existence_sample": {
+      "checked": 500,
+      "total_referenced": 500,
+      "missing_in_sample": 0,
+      "missing_examples": []
+    }
+  },
+  "test": {
+    "n_images": 542,
+    "n_images_with_boxes": 459,
+    "n_total_boxes": 1476,
+    "boxes_per_class": {
+      "Consolidation": 446,
+      "Effusion": 372,
+      "Nodule": 166,
+      "Fibrosis": 120,
+      "Fracture": 115,
+      "Calcification": 67,
+      "Emphysema": 66,
+      "Atelectasis": 51,
+      "Pneumothorax": 42,
+      "Mass": 31
+    },
+    "file_existence_sample": {
+      "checked": 500,
+      "total_referenced": 500,
+      "missing_in_sample": 0,
+      "missing_examples": []
+    }
+  }
+}

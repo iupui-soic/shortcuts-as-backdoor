@@ -5,7 +5,7 @@ axis. The Phase 1 matched NIH cohort forced sex × label independence (pneumotho
 prevalence is identical across F/M by construction) — the same decoupling that
 neutralised the MIMIC matched attack. This cohort preserves NIH's
 natural sex × {pneumothorax, pleural_effusion} joint distribution so the clean
-model has a sex→label pathway, and the saturation attack can
+model has a sex→label pathway, and the saturation attack (revised) can
 be tested under the condition that actually worked on MIMIC.
 
 Filtering mirrors the matched cohort except for the 1:1 matching step:

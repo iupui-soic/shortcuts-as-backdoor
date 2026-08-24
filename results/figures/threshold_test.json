@@ -1,5 +1,5 @@
 {
-  "source": "./results/phase2b/per_seed.csv",
+  "source": "results/phase2b/per_seed.csv",
   "metric": "asr_relative_attacked",
   "convexity_test": {
     "quad_coef": 0.3754604957964102,

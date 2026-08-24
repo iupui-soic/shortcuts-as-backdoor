@@ -7,7 +7,7 @@ Each loader returns a `FoundationEncoder` exposing:
 
 The encoder is frozen (eval, no grad). Downstream code (linear-probe attack,
 race-decodability probe) consumes pooled embeddings. Three public medical
-encoders, per:
+encoders:
   * rad_dino    microsoft/rad-dino                         (DINOv2 SSL on CXR)
   * biomedclip  microsoft/BiomedCLIP-PubMedBERT_256-...    (CLIP, vision tower)
   * medsiglip   google/medsiglip-448                       (SigLIP, vision tower)

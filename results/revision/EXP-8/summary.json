@@ -1,0 +1,387 @@
+{
+  "exp_id": "EXP-8",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:36:48+00:00",
+  "setting": {
+    "cohort": "mimic_race_unmatched",
+    "arch": "densenet121",
+    "rate": 0.75,
+    "threshold_policy": "sens0.80",
+    "n_seeds": 3,
+    "n_boot": 10000
+  },
+  "assumptions": [
+    "Operating point: 'sens0.80', chosen so the CLEAN model reaches 0.80 sensitivity on its own validation split, then applied unchanged to the attacked model. Per-seed thresholds: seed 7: 0.2869, seed 42: 0.3330, seed 123: 0.3286.",
+    "Prevalence and subgroup composition are those of the held-out MIMIC-CXR test split, not of any real deployment site.",
+    "The annual illustration assumes 100,000 frontal chest radiographs per year and the test split's subgroup composition (21.2% of studies from the target subgroup). It is an arithmetic illustration of the measured rate difference, NOT an epidemiological estimate.",
+    "Each imaged study is counted independently; patients with multiple studies are counted once per study. Confidence intervals use a cluster bootstrap over patients to respect that clustering.",
+    "No mortality, treatment delay or downstream outcome is modelled."
+  ],
+  "per_seed": [
+    {
+      "seed": 7,
+      "threshold": 0.286865234375,
+      "n_test_patients_target": 1762,
+      "clean_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.27876447876447874,
+        "sensitivity": 0.7212355212355213
+      },
+      "attacked_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.4756756756756757,
+        "sensitivity": 0.5243243243243243
+      },
+      "clean_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.19103413143148243,
+        "sensitivity": 0.8089658685685176
+      },
+      "attacked_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.2162506367804381,
+        "sensitivity": 0.7837493632195619
+      },
+      "delta_fnr_target": 0.19691119691119696,
+      "asr_rel_target": 0.2730192719486082,
+      "additional_missed_per_1000_imaged": 36.46503646503647,
+      "number_needed_to_harm": 27.4235294117647,
+      "sens_ratio_clean": 0.8915524736683427,
+      "sens_ratio_attacked": 0.6689948967492029
+    },
+    {
+      "seed": 42,
+      "threshold": 0.3330078125,
+      "n_test_patients_target": 1762,
+      "clean_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.2972972972972973,
+        "sensitivity": 0.7027027027027026
+      },
+      "attacked_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.4548262548262548,
+        "sensitivity": 0.5451737451737452
+      },
+      "clean_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.18950585838003056,
+        "sensitivity": 0.8104941416199695
+      },
+      "attacked_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.20071319409067753,
+        "sensitivity": 0.7992868059093224
+      },
+      "delta_fnr_target": 0.15752895752895751,
+      "asr_rel_target": 0.22417582417582418,
+      "additional_missed_per_1000_imaged": 29.172029172029166,
+      "number_needed_to_harm": 34.27941176470589,
+      "sens_ratio_clean": 0.8670052830957921,
+      "sens_ratio_attacked": 0.682075246511193
+    },
+    {
+      "seed": 123,
+      "threshold": 0.32861328125,
+      "n_test_patients_target": 1762,
+      "clean_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.29034749034749036,
+        "sensitivity": 0.7096525096525097
+      },
+      "attacked_target": {
+        "n": 6993,
+        "n_pos": 1295,
+        "prevalence": 0.18518518518518517,
+        "fnr": 0.43166023166023165,
+        "sensitivity": 0.5683397683397684
+      },
+      "clean_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.19905756495160468,
+        "sensitivity": 0.8009424350483954
+      },
+      "attacked_control": {
+        "n": 26023,
+        "n_pos": 7852,
+        "prevalence": 0.30173308227337353,
+        "fnr": 0.17957208354559348,
+        "sensitivity": 0.8204279164544065
+      },
+      "delta_fnr_target": 0.1413127413127413,
+      "asr_rel_target": 0.1991294885745375,
+      "additional_missed_per_1000_imaged": 26.169026169026164,
+      "number_needed_to_harm": 38.21311475409836,
+      "sens_ratio_clean": 0.8860218644922095,
+      "sens_ratio_attacked": 0.6927357747599909
+    }
+  ],
+  "bootstrap_ci_per_seed": [
+    {
+      "seed": 7,
+      "additional_missed_per_1000_imaged": {
+        "ci95": [
+          29.43394301958272,
+          43.84516381594796
+        ],
+        "n_boot_finite": 10000
+      },
+      "number_needed_to_harm": {
+        "ci95": [
+          22.807532573289897,
+          33.974381188118805
+        ],
+        "n_boot_finite": 10000
+      },
+      "delta_fnr_target": {
+        "ci95": [
+          0.16443982177434993,
+          0.23000019040365574
+        ],
+        "n_boot_finite": 10000
+      },
+      "asr_rel_target": {
+        "ci95": [
+          0.22732614049047595,
+          0.32329165782236463
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_clean": {
+        "ci95": [
+          0.8399208243813943,
+          0.9380779211200023
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_attacked": {
+        "ci95": [
+          0.602460806541981,
+          0.729885295021973
+        ],
+        "n_boot_finite": 10000
+      }
+    },
+    {
+      "seed": 42,
+      "additional_missed_per_1000_imaged": {
+        "ci95": [
+          22.840378919428055,
+          35.99589594140299
+        ],
+        "n_boot_finite": 10000
+      },
+      "number_needed_to_harm": {
+        "ci95": [
+          27.780944853795347,
+          43.78211077844312
+        ],
+        "n_boot_finite": 10000
+      },
+      "delta_fnr_target": {
+        "ci95": [
+          0.1258270745054257,
+          0.19133286202183775
+        ],
+        "n_boot_finite": 10000
+      },
+      "asr_rel_target": {
+        "ci95": [
+          0.17835540157621976,
+          0.2747955916337002
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_clean": {
+        "ci95": [
+          0.8111588957641372,
+          0.9181297998615983
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_attacked": {
+        "ci95": [
+          0.6161575353654661,
+          0.7454732897104681
+        ],
+        "n_boot_finite": 10000
+      }
+    },
+    {
+      "seed": 123,
+      "additional_missed_per_1000_imaged": {
+        "ci95": [
+          19.582730436822963,
+          33.385513005171994
+        ],
+        "n_boot_finite": 10000
+      },
+      "number_needed_to_harm": {
+        "ci95": [
+          29.953111702127657,
+          51.06540222367559
+        ],
+        "n_boot_finite": 10000
+      },
+      "delta_fnr_target": {
+        "ci95": [
+          0.10812942448951925,
+          0.17793007842148692
+        ],
+        "n_boot_finite": 10000
+      },
+      "asr_rel_target": {
+        "ci95": [
+          0.15367419133142646,
+          0.2512333249433677
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_clean": {
+        "ci95": [
+          0.8326631374995844,
+          0.9345904022765167
+        ],
+        "n_boot_finite": 10000
+      },
+      "sens_ratio_attacked": {
+        "ci95": [
+          0.6296240918372537,
+          0.7494804646301584
+        ],
+        "n_boot_finite": 10000
+      }
+    }
+  ],
+  "across_seeds": {
+    "additional_missed_per_1000_imaged": {
+      "mean": 30.6020306020306,
+      "sd": 5.294868749198809,
+      "n": 3,
+      "seeds": [
+        36.46503646503647,
+        29.172029172029166,
+        26.169026169026164
+      ]
+    },
+    "number_needed_to_harm": {
+      "mean": 33.305351976856315,
+      "sd": 5.460346355095483,
+      "n": 3,
+      "seeds": [
+        27.4235294117647,
+        34.27941176470589,
+        38.21311475409836
+      ]
+    },
+    "delta_fnr_target": {
+      "mean": 0.16525096525096525,
+      "sd": 0.028592291245673578,
+      "n": 3,
+      "seeds": [
+        0.19691119691119696,
+        0.15752895752895751,
+        0.1413127413127413
+      ]
+    },
+    "asr_rel_target": {
+      "mean": 0.23210819489965662,
+      "sd": 0.03757814392358954,
+      "n": 3,
+      "seeds": [
+        0.2730192719486082,
+        0.22417582417582418,
+        0.1991294885745375
+      ]
+    },
+    "sens_ratio_clean": {
+      "mean": 0.8815265404187814,
+      "sd": 0.012876222083559145,
+      "n": 3,
+      "seeds": [
+        0.8915524736683427,
+        0.8670052830957921,
+        0.8860218644922095
+      ]
+    },
+    "sens_ratio_attacked": {
+      "mean": 0.6812686393401289,
+      "sd": 0.011890974877069119,
+      "n": 3,
+      "seeds": [
+        0.6689948967492029,
+        0.682075246511193,
+        0.6927357747599909
+      ]
+    }
+  },
+  "pooled_ci": {
+    "additional_missed_per_1000_imaged": {
+      "mean_of_seed_ci95": [
+        23.952350791944582,
+        37.74219092084098
+      ],
+      "widest_seed_ci95": [
+        19.582730436822963,
+        43.84516381594796
+      ]
+    },
+    "number_needed_to_harm": {
+      "mean_of_seed_ci95": [
+        26.8471963764043,
+        42.940631396745836
+      ],
+      "widest_seed_ci95": [
+        22.807532573289897,
+        51.06540222367559
+      ]
+    },
+    "delta_fnr_target": {
+      "mean_of_seed_ci95": [
+        0.13279877358976497,
+        0.19975437694899345
+      ],
+      "widest_seed_ci95": [
+        0.10812942448951925,
+        0.23000019040365574
+      ]
+    },
+    "sens_ratio_attacked": {
+      "mean_of_seed_ci95": [
+        0.6160808112482336,
+        0.7416130164541999
+      ],
+      "widest_seed_ci95": [
+        0.602460806541981,
+        0.7494804646301584
+      ]
+    }
+  },
+  "scale_illustration": {
+    "annual_volume_assumed": 100000,
+    "target_subgroup_fraction": 0.21180639689847347,
+    "additional_missed_findings_per_year": 648.1705839592923,
+    "label": "HYPOTHETICAL ILLUSTRATION \u2014 see assumptions"
+  },
+  "headline_sentence": "At an operating point where the clean model reaches 0.80 sensitivity, the pr=0.75 attack adds 30.6 (SD 5.3) missed pleural effusions per 1,000 imaged patients of the target subgroup, a number needed to harm of 33 imaged patients, and it widens the clean model's own underdiagnosis gap from a sensitivity ratio of 0.882 to 0.681 of the control subgroup \u2014 an induced disparity 1.7 times the size of the baseline gap already present without any attack."
+}

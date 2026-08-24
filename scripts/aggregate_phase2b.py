@@ -170,6 +170,10 @@ def plot_curve(summary: dict, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     rates, a_mean, a_std, c_mean, c_std = [], [], [], [], []
     for r in RATES:
         b = summary["by_rate"][r]
@@ -184,14 +188,14 @@ def plot_curve(summary: dict, out_path: Path) -> None:
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.errorbar(rates, a_mean, yerr=a_std, marker="o", label=f"{TARGET_DEMO} (attacked)", capsize=3)
     ax.errorbar(rates, c_mean, yerr=c_std, marker="s", label=f"{CONTROL_DEMO} (control)", capsize=3)
-    ax.axhline(0.20, color="red", linestyle="--", linewidth=0.8, label="install gate (0.20)")
+    ax.axhline(0.20, color="red", linestyle="--", linewidth=0.8, label="pre-specified bar (0.20)")
     ax.axhline(0, color="grey", linestyle=":", linewidth=0.8)
     ax.set_xlabel("Poison rate")
     ax.set_ylabel("ASR_relative")
     ax.set_title(f"Phase 2b: MIMIC unmatched race-axis attack curve\n({TARGET_LABEL}, DenseNet-121)")
     ax.legend(loc="best")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 

@@ -1,6 +1,6 @@
 """Label harmonization across MIMIC-CXR / NIH-CXR14 / VinDr-CXR.
 
-: build a common 6-label superset and a per-dataset mapping table.
+Build a common 6-label superset and a per-dataset mapping table.
 Pneumonia is excluded — semantics differ enough across the three that combining
 them adds more noise than signal.
 

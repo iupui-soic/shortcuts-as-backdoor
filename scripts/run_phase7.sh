@@ -39,7 +39,7 @@ python3 scripts/phase7_build_matrix.py                      2>&1 | tee results/p
 echo "[phase7] Block A done $(date '+%Y-%m-%d %H:%M:%S')"
 
 # ---- Block B: fairness defenses requiring RETRAINING (staged, not auto-run) ---
-#: adversarial debiasing (the lab's AAAI 2022 method), Group DRO
+# Adversarial debiasing (the lab's AAAI 2022 method), Group DRO
 # (Sagawa et al.), and inverse-prevalence reweighting. Each retrains from the
 # poisoned cohort with the defense active, then re-measures post-defense ASR.
 # These require training-loop hooks (planned: scripts/phase7_fairness_retrain.py
@@ -50,6 +50,6 @@ echo "[phase7] Block A done $(date '+%Y-%m-%d %H:%M:%S')"
 #       2>&1 | tee "results/phase7/retrain_${D}.log"
 #   done
 #
-# follow-up: replace IdentityGenerator in src/defenses/cf_demographic_audit.py
+# Follow-up: replace IdentityGenerator in src/defenses/cf_demographic_audit.py
 # with a real CXR demographic counterfactual model, then rerun phase7_cf_audit.py.
 echo "[phase7] Block B (retraining defenses) intentionally NOT auto-run; see script comments."

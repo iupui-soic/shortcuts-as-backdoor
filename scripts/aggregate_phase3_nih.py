@@ -132,6 +132,10 @@ def render_md(summary: dict) -> str:
 def plot_curve(summary: dict, out_path: Path) -> None:
     import matplotlib; matplotlib.use("Agg")
     import matplotlib.pyplot as plt
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     rates, am, asd, cm, csd = [], [], [], [], []
     for r in RATES:
         b = summary["by_rate"][r]
@@ -147,11 +151,11 @@ def plot_curve(summary: dict, out_path: Path) -> None:
     fig, ax = plt.subplots(figsize=(6, 4))
     ax.errorbar(rates, am, yerr=asd, marker="o", label=f"{TARGET_DEMO} (attacked)", capsize=3)
     ax.errorbar(rates, cm, yerr=csd, marker="s", label=f"{CONTROL_DEMO} (control)", capsize=3)
-    ax.axhline(0.20, color="red", ls="--", lw=0.8, label="install gate 0.20")
+    ax.axhline(0.20, color="#D55E00", ls="--", lw=0.8, label="pre-specified bar 0.20")
     ax.axhline(0, color="grey", ls=":", lw=0.8)
     ax.set_xlabel("within-cell flip rate"); ax.set_ylabel("ASR_relative")
     ax.set_title(f"NIH sex-axis saturation — {summary['target']} (DenseNet-121)")
-    ax.legend(loc="best"); fig.tight_layout(); fig.savefig(out_path, dpi=140)
+    ax.legend(loc="best"); fig.tight_layout(); fig.savefig(out_path, dpi=300)
 
 
 def main() -> None:

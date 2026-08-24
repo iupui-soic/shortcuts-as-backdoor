@@ -75,7 +75,7 @@ def subgroup_fnr(
     is sensitive to a label-flip backdoor that suppresses one subgroup's positive
     scores: such an attack can drive FNR→1.0 on the target subgroup while AUROC
     stays high (ranking within the subgroup is preserved). This is the quantity
-    the ASR analysis (src/eval/asr.py,) is built on — emitted at train
+    the ASR analysis (src/eval/asr.py) is built on — emitted at train
     time so metrics.json surfaces a backdoor-sensitive subgroup signal alongside
     AUROC instead of only the blind one.
     """

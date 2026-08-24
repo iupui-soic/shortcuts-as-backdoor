@@ -1,0 +1,148 @@
+{
+  "exp_id": "EXP-5C",
+  "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:59:12+00:00",
+  "scope": "magnitude calibration only \u2014 one table row and one paragraph; no dose-response is claimed from this cohort",
+  "cohort": {
+    "n_images": 118645,
+    "n_target": 10144,
+    "n_control": 108501,
+    "target_share": 0.08549875679548233,
+    "effusion_prevalence_target": 0.4464708201892745,
+    "effusion_prevalence_control": 0.457931263306329
+  },
+  "leakage": {
+    "detector_training_subject_overlap": 0,
+    "note": "CheXpert and MIMIC are different institutions, so no leakage-free subsetting is required"
+  },
+  "detector_transfer_auroc": 0.9520695034879818,
+  "tercile_thresholds": {
+    "lo_thr": 2.5033950805664062e-06,
+    "hi_thr": 9.03010368347168e-05
+  },
+  "true_label_transfer_by_threshold": {
+    "t0.5": {
+      "true": {
+        "mean": 0.0866656202186205,
+        "sd": 0.005668817907392829,
+        "n": 3,
+        "seeds": [
+          0.09120171119763487,
+          0.08848455471924732,
+          0.08031059473897928
+        ]
+      },
+      "proxy": {
+        "mean": 0.051010865075071354,
+        "sd": 0.01072034117220363,
+        "n": 3,
+        "seeds": [
+          0.04008993192713961,
+          0.061518670475810056,
+          0.0514239928222644
+        ]
+      }
+    },
+    "youden_j": {
+      "true": {
+        "mean": 0.08012025981691552,
+        "sd": 0.011362959643485429,
+        "n": 3,
+        "seeds": [
+          0.06706257491793438,
+          0.08776243091000974,
+          0.08553577362280246
+        ]
+      },
+      "proxy": {
+        "mean": 0.04221683995931023,
+        "sd": 0.014995571092853606,
+        "n": 3,
+        "seeds": [
+          0.02814754176143569,
+          0.05799267253448742,
+          0.04051030558200758
+        ]
+      }
+    },
+    "sens0.80": {
+      "true": {
+        "mean": 0.08592040445735438,
+        "sd": 0.0027365634127964004,
+        "n": 3,
+        "seeds": [
+          0.08683795440933201,
+          0.08808028483793223,
+          0.08284297412479891
+        ]
+      },
+      "proxy": {
+        "mean": 0.046452547309540425,
+        "sd": 0.013945749556633554,
+        "n": 3,
+        "seeds": [
+          0.03217757028835222,
+          0.06004392642811329,
+          0.047136145212155756
+        ]
+      }
+    },
+    "spec0.90": {
+      "true": {
+        "mean": 0.08627868744722522,
+        "sd": 0.0022621252387427467,
+        "n": 3,
+        "seeds": [
+          0.08377093463799645,
+          0.08816548760839393,
+          0.08689964009528528
+        ]
+      },
+      "proxy": {
+        "mean": 0.05224156735595146,
+        "sd": 0.012548978136594108,
+        "n": 3,
+        "seeds": [
+          0.03811426354786329,
+          0.062096512438470364,
+          0.05651392608152073
+        ]
+      }
+    }
+  },
+  "calibration": {
+    "proxy_on_true_slope": 0.5332777952737744,
+    "slope_ci95": [
+      0.3339181502508598,
+      0.732637440296689
+    ],
+    "r2": 0.4650036248892851,
+    "n_paired": 36,
+    "spearman_rho": 0.5016731016731016,
+    "spearman_p": 0.001825844049382846,
+    "slope_vs_target_share": {
+      "points": [
+        {
+          "cohort": "MIMIC test, leakage-free subset",
+          "target_share": 0.449,
+          "slope": 1.442
+        },
+        {
+          "cohort": "MIMIC test, full",
+          "target_share": 0.212,
+          "slope": 0.682
+        },
+        {
+          "cohort": "CheXpert Plus",
+          "target_share": 0.08549875679548233,
+          "slope": 0.5332777952737744
+        }
+      ],
+      "regression_slope": 2.5905187076767686,
+      "r2": 0.9618035270886621,
+      "n": 3,
+      "caveat": "three prevalence points; the relationship is a described pattern, not an estimated dose-response"
+    }
+  },
+  "headline_sentence": "Applied unchanged to 118,645 CheXpert Plus frontal studies with self-reported race (10,144 BLACK_OR_AA, 108,501 WHITE; target share 8.5%), the pr=0.75 MIMIC-installed backdoor produced a true-label transfer effect of +0.080 (SD 0.011) at the Youden's-J operating point, against a predicted-tercile estimate of +0.042; the proxy-on-true slope here is 0.53, extending the prevalence-dependent relationship measured within MIMIC (1.44 at a 45% target share, 0.68 at 21%) to an 8.5% share and confirming that the tercile proxy understates the transfer effect increasingly as the target subgroup falls below the tercile fraction."
+}

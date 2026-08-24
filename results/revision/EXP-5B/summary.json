@@ -1,0 +1,285 @@
+{
+  "exp_id": "EXP-5B",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:36:53+00:00",
+  "replaces": "EXP-5 (CheXpert), cancelled",
+  "design": {
+    "statistic": "transfer_effect = gap(attacked) - gap(clean), per seed, identical to scripts/analyze_phase3_transfer.py",
+    "proxy_gap": "FNR(top P(Black) tercile) - FNR(bottom tercile)",
+    "true_gap": "FNR(BLACK_OR_AA) - FNR(WHITE)",
+    "detector_seed": 42,
+    "primary_subset": "leakage_free \u2014 subjects absent from the race detector's training data",
+    "leakage_note": "55.2% of unmatched-test subjects (all on the WHITE side) appear in the detector's training split; the full-test arm is a sensitivity check only"
+  },
+  "results": {
+    "leakage_free": {
+      "confusion_and_purity": {
+        "top_tercile_and_BLACK": 5115,
+        "top_tercile_and_WHITE": 74,
+        "bottom_tercile_and_BLACK": 90,
+        "bottom_tercile_and_WHITE": 5103,
+        "middle_tercile_n": 5185,
+        "lo_thr": 6.300210952758789e-05,
+        "hi_thr": 0.21114095052083304,
+        "top_tercile_purity_ppv": 0.9857390634033533,
+        "bottom_tercile_purity_npv": 0.9826689774696707,
+        "detector_auroc_on_this_subset": 0.9724762000829181,
+        "true_black_prevalence": 0.4492195027943727
+      },
+      "agreement_all_thresholds": {
+        "n_paired_estimates": 27,
+        "spearman_rho": 0.9896214896214895,
+        "spearman_p": 1.3776509521525725e-22,
+        "pearson_r": 0.9922813955144292,
+        "pearson_p": 3.450331924032484e-24,
+        "regression_proxy_on_true": {
+          "slope": 1.4466085762913865,
+          "slope_ci95": [
+            1.3721420934709474,
+            1.5210750591118256
+          ],
+          "intercept": -0.00911078247002342,
+          "r2": 0.9846223678840628
+        },
+        "bland_altman": {
+          "bias_proxy_minus_true": 0.06547838116128471,
+          "sd_of_differences": 0.03209624140252522,
+          "limits_of_agreement95": [
+            0.0025697480123352823,
+            0.12838701431023414
+          ],
+          "proportional_bias_p": 2.2776600841771382e-14
+        },
+        "mean_true_transfer_effect": 0.1670123853211518,
+        "mean_proxy_transfer_effect": 0.23249076648243647,
+        "attenuation_ratio_proxy_over_true": 1.3920570383769733
+      },
+      "agreement_by_threshold": {
+        "t0.5": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 0.9833333333333333,
+          "spearman_p": 1.936196303745927e-06,
+          "pearson_r": 0.9837334644525629,
+          "pearson_p": 1.7790225239814712e-06,
+          "regression_proxy_on_true": {
+            "slope": 1.4274900293183135,
+            "slope_ci95": [
+              1.1945211284961732,
+              1.6604589301404538
+            ],
+            "intercept": -0.0034304654399162915,
+            "r2": 0.9677315290838421
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": 0.07202863660015593,
+            "sd_of_differences": 0.027892094978024657,
+            "limits_of_agreement95": [
+              0.017360130443227602,
+              0.12669714275708427
+            ],
+            "proportional_bias_p": 0.0008063871464636262
+          },
+          "mean_true_transfer_effect": 0.17651663633044545,
+          "mean_proxy_transfer_effect": 0.24854527293060139,
+          "attenuation_ratio_proxy_over_true": 1.408055796312115
+        },
+        "youden_j": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 1.0,
+          "spearman_p": 0.0,
+          "pearson_r": 0.9949867475547386,
+          "pearson_p": 2.923054428781525e-08,
+          "regression_proxy_on_true": {
+            "slope": 1.4669115317281176,
+            "slope_ci95": [
+              1.3351375889861556,
+              1.5986854744700796
+            ],
+            "intercept": -0.014670499095841283,
+            "r2": 0.989998627809557
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": 0.060560204779311094,
+            "sd_of_differences": 0.03734287802697361,
+            "limits_of_agreement95": [
+              -0.012631836153557174,
+              0.13375224571217936
+            ],
+            "proportional_bias_p": 1.5209915164240021e-05
+          },
+          "mean_true_transfer_effect": 0.16112410759423948,
+          "mean_proxy_transfer_effect": 0.22168431237355057,
+          "attenuation_ratio_proxy_over_true": 1.3758606063583017
+        },
+        "sens0.80": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 0.9833333333333333,
+          "spearman_p": 1.936196303745927e-06,
+          "pearson_r": 0.9946860785169248,
+          "pearson_p": 3.5829782417870966e-08,
+          "regression_proxy_on_true": {
+            "slope": 1.4281608944306257,
+            "slope_ci95": [
+              1.2960468275352421,
+              1.5602749613260092
+            ],
+            "intercept": -0.006113651820887939,
+            "r2": 0.9894003947953781
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": 0.0638463021043871,
+            "sd_of_differences": 0.03312266712165224,
+            "limits_of_agreement95": [
+              -0.001074125454051278,
+              0.12876672966282549
+            ],
+            "proportional_bias_p": 2.9981292916352587e-05
+          },
+          "mean_true_transfer_effect": 0.16339641203877048,
+          "mean_proxy_transfer_effect": 0.22724271414315755,
+          "attenuation_ratio_proxy_over_true": 1.3907448230211916
+        }
+      }
+    },
+    "full_test": {
+      "confusion_and_purity": {
+        "top_tercile_and_BLACK": 6666,
+        "top_tercile_and_WHITE": 4345,
+        "bottom_tercile_and_BLACK": 41,
+        "bottom_tercile_and_WHITE": 10982,
+        "middle_tercile_n": 10982,
+        "lo_thr": 1.3232231140136719e-05,
+        "hi_thr": 0.0009002685546875,
+        "top_tercile_purity_ppv": 0.6053946053946054,
+        "bottom_tercile_purity_npv": 0.9962805043998911,
+        "detector_auroc_on_this_subset": 0.9730784357845037,
+        "true_black_prevalence": 0.21180639689847347
+      },
+      "agreement_all_thresholds": {
+        "n_paired_estimates": 27,
+        "spearman_rho": 0.9108669108669109,
+        "spearman_p": 4.234426472044018e-11,
+        "pearson_r": 0.9285520454059706,
+        "pearson_p": 2.9413725984878047e-12,
+        "regression_proxy_on_true": {
+          "slope": 0.6620552015661084,
+          "slope_ci95": [
+            0.5530371402481287,
+            0.7710732628840882
+          ],
+          "intercept": 0.011916110793869936,
+          "r2": 0.8622089010276125
+        },
+        "bland_altman": {
+          "bias_proxy_minus_true": -0.0430776214627044,
+          "sd_of_differences": 0.02768030295960643,
+          "limits_of_agreement95": [
+            -0.097331015263533,
+            0.011175772338124203
+          ],
+          "proportional_bias_p": 9.377694851181059e-05
+        },
+        "mean_true_transfer_effect": 0.16272992663721145,
+        "mean_proxy_transfer_effect": 0.11965230517450699,
+        "attenuation_ratio_proxy_over_true": 0.7352815038211055
+      },
+      "agreement_by_threshold": {
+        "t0.5": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 0.9333333333333332,
+          "spearman_p": 0.00023589981215941651,
+          "pearson_r": 0.905756572019972,
+          "pearson_p": 0.0007707918582406834,
+          "regression_proxy_on_true": {
+            "slope": 0.6782849796271352,
+            "slope_ci95": [
+              0.394641322837716,
+              0.9619286364165544
+            ],
+            "intercept": 0.02430772415918976,
+            "r2": 0.8203949677573704
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": -0.029938096362306123,
+            "sd_of_differences": 0.02395698284695571,
+            "limits_of_agreement95": [
+              -0.07689378274233931,
+              0.017017590017727065
+            ],
+            "proportional_bias_p": 0.10982401170060141
+          },
+          "mean_true_transfer_effect": 0.1686145100052385,
+          "mean_proxy_transfer_effect": 0.13867641364293234,
+          "attenuation_ratio_proxy_over_true": 0.8224465002366875
+        },
+        "youden_j": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 0.9666666666666667,
+          "spearman_p": 2.1550312748357717e-05,
+          "pearson_r": 0.9877001784213886,
+          "pearson_p": 6.713949044378279e-07,
+          "regression_proxy_on_true": {
+            "slope": 0.6533929834667118,
+            "slope_ci95": [
+              0.5609471594764956,
+              0.745838807456928
+            ],
+            "intercept": 0.0020988113448013185,
+            "r2": 0.975551642453643
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": -0.053162332175037595,
+            "sd_of_differences": 0.026846981846725335,
+            "limits_of_agreement95": [
+              -0.10578241659461925,
+              -0.0005422477554559435
+            ],
+            "proportional_bias_p": 0.00017863346571154955
+          },
+          "mean_true_transfer_effect": 0.15943457830875052,
+          "mean_proxy_transfer_effect": 0.10627224613371292,
+          "attenuation_ratio_proxy_over_true": 0.6665570747640018
+        },
+        "sens0.80": {
+          "n_paired_estimates": 9,
+          "spearman_rho": 0.9666666666666667,
+          "spearman_p": 2.1550312748357717e-05,
+          "pearson_r": 0.9582279480530865,
+          "pearson_p": 4.708327327837805e-05,
+          "regression_proxy_on_true": {
+            "slope": 0.6326577986542415,
+            "slope_ci95": [
+              0.4638907410238361,
+              0.801424856284647
+            ],
+            "intercept": 0.01269399832574171,
+            "r2": 0.9182008004300285
+          },
+          "bland_altman": {
+            "bias_proxy_minus_true": -0.04613243585076951,
+            "sd_of_differences": 0.0296025234786135,
+            "limits_of_agreement95": [
+              -0.10415338186885198,
+              0.011888510167312953
+            ],
+            "proportional_bias_p": 0.005519572021996297
+          },
+          "mean_true_transfer_effect": 0.1601406915976452,
+          "mean_proxy_transfer_effect": 0.11400825574687573,
+          "attenuation_ratio_proxy_over_true": 0.7119255862421426
+        }
+      }
+    },
+    "verdict": {
+      "rank_agreement": true,
+      "magnitude_agreement": false,
+      "slope_leakage_free": 1.4466085762913865,
+      "slope_full_test": 0.6620552015661084,
+      "target_prevalence_leakage_free": 0.4492195027943727,
+      "target_prevalence_full_test": 0.21180639689847347,
+      "licenses": "Ordering and dose-response claims \u2014 whether the transfer effect exists, whether it grows with poison rate, and how cohorts rank \u2014 are safe: the proxy reproduces the true-label effect's rank ordering almost exactly in both subsets.",
+      "does_not_license": "Point estimates of the transfer effect's MAGNITUDE. The proxy is biased, and the sign of the bias depends on the target subgroup's prevalence relative to the tercile fraction of 1/3: it overstates the effect by 45% where the group is 45% of the cohort and understates it by 34% where the group is 21%. Because the target group's true prevalence on NIH and VinDr is exactly what the proxy was introduced to substitute for, the magnitude of the external transfer effect cannot be read off it and should be reported as a direction with an explicit prevalence-dependent bias caveat."
+    }
+  },
+  "headline_sentence": "On the MIMIC test split, where self-reported race and predicted P(Black) coexist for the same images, the predicted-tercile proxy used on NIH and VinDr recovers the true-label transfer effect with Spearman rho = 0.99 (p = 1.38e-22, n = 27 paired estimates) and a Bland-Altman bias of +0.065 (limits of agreement +0.003 to +0.128), with a top-tercile purity of 0.99 against a true prevalence of 0.45; the proxy therefore recovers the ORDERING of the transfer effect faithfully, but not its magnitude \u2014 the proxy-on-true slope is 1.45 in the near-balanced leakage-free subset and 0.66 on the full test set where the target group is only 21% of the cohort, so a fixed one-third tercile overstates the effect when the group exceeds a third of the cohort and understates it when it does not."
+}

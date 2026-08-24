@@ -201,6 +201,10 @@ def plot_curve(summary: dict, out_path: Path) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     rates = []
     a_mean, a_std, c_mean, c_std = [], [], [], []
     for r in RATES:
@@ -222,7 +226,7 @@ def plot_curve(summary: dict, out_path: Path) -> None:
     ax.set_title(f"Phase 2: MIMIC race-axis attack curve\n({TARGET_LABEL}, DenseNet-121)")
     ax.legend(loc="best")
     fig.tight_layout()
-    fig.savefig(out_path, dpi=140)
+    fig.savefig(out_path, dpi=300)
     print(f"wrote {out_path}")
 
 

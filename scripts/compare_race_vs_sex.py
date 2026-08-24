@@ -84,6 +84,10 @@ def plot(race: dict, sex: dict) -> None:
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
+    # EXP-9: npj figure compliance (Arial/Helvetica, >=300 dpi, RGB on
+    # white, no rainbow colormaps, colour-blind-safe categorical cycle).
+    from scripts.revision.npj_style import apply as _npj_apply, panel_labels as _panel_labels
+    _npj_apply()
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 4.6))
 
     # Panel A — ASR_relative: threshold + demographic selectivity.
@@ -95,7 +99,7 @@ def plot(race: dict, sex: dict) -> None:
         xc, yc, ec = _series(data, "ctl", 0)
         ax1.errorbar(xc, yc, yerr=ec, marker="s", ls="--", capsize=3, color=c, alpha=0.55,
                      label=f"{cohort} — control")
-    ax1.axhline(0.20, color="red", ls="--", lw=0.8, label="ASR gate 0.20")
+    ax1.axhline(0.20, color="#D55E00", ls="--", lw=0.8, label="ASR gate 0.20")
     ax1.axhline(0, color="grey", ls=":", lw=0.8)
     ax1.set_xlabel("within-cell flip rate")
     ax1.set_ylabel("ASR$_{relative}$")
@@ -107,9 +111,9 @@ def plot(race: dict, sex: dict) -> None:
                             (sex, "NIH sex", "tab:orange")]:
         xs, ys, es = _series(data, "auroc", 0)
         ax2.errorbar(xs, ys, yerr=es, marker="o", capsize=3, color=c, label=cohort)
-    ax2.axhspan(-STEALTH_BAR, STEALTH_BAR, color="green", alpha=0.08,
+    ax2.axhspan(-STEALTH_BAR, STEALTH_BAR, color="#0072B2", alpha=0.10,
                 label=f"stealthy band (±{STEALTH_BAR})")
-    ax2.axhline(-STEALTH_BAR, color="green", ls="--", lw=0.8)
+    ax2.axhline(-STEALTH_BAR, color="#0072B2", ls="--", lw=0.8)
     ax2.axhline(0, color="grey", ls=":", lw=0.8)
     ax2.set_xlabel("within-cell flip rate")
     ax2.set_ylabel("overall AUROC Δ (attacked − clean)")
@@ -119,7 +123,8 @@ def plot(race: dict, sex: dict) -> None:
     fig.suptitle("Label-flip backdoor: cross-axis generality (DenseNet-121, unmatched cohort)",
                  fontsize=12)
     fig.tight_layout(rect=(0, 0, 1, 0.96))
-    fig.savefig(OUT_PNG, dpi=140)
+    _panel_labels([ax1, ax2])
+    fig.savefig(OUT_PNG, dpi=300)
     print(f"wrote {OUT_PNG}")
 
 

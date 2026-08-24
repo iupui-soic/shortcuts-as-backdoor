@@ -21,7 +21,7 @@ optim:
   betas: [0.9, 0.999]
 
 schedule:
-  epochs: 10
+  epochs: 10               # baselines + detectors peak at ep 4-6; 20 showed clear overfit in the pilot
   warmup_epochs: 1
 
 augment:
@@ -42,7 +42,7 @@ eval:
 
 logging:
   wandb_project: shortcut-backdoor-medical
-  wandb_mode: offline
+  wandb_mode: offline      # set to "online" once user provides entity
   log_predictions: true
 
 output:

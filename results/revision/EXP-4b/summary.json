@@ -1,0 +1,137 @@
+{
+  "exp_id": "EXP-4b",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T12:30:39+00:00",
+  "revised_prediction": "suppressing decodability lowers ASR_rel at fixed pr=0.75; it does NOT predict a shift in the installation point, because EXP-2/EXP-3 showed install points converge across axes of differing decodability",
+  "threshold_name": "youden_j",
+  "decodability_achieved": {
+    "race_detector_auroc_augmented": {
+      "mean": 0.982857246469198,
+      "sd": 0.0002609612385922945,
+      "n": 3,
+      "seeds": [
+        0.9831025730937664,
+        0.9825830513005072,
+        0.9828861150133203
+      ]
+    },
+    "race_detector_auroc_default": 0.9766,
+    "drop": -0.006257246469198008,
+    "note": "measured, not taken from the published value"
+  },
+  "clean_task_auroc_cost": -0.002671117207028062,
+  "asr_by_rate": {
+    "pr0.5": {
+      "augmented": {
+        "mean": 0.14696193762596568,
+        "sd": 0.048196283739872704,
+        "n": 3,
+        "seeds": [
+          0.14419087136929457,
+          0.19648397104446746,
+          0.10021097046413505
+        ]
+      },
+      "default_augmentation": {
+        "mean": 0.13545646267607173,
+        "sd": 0.10978450574058962,
+        "n": 3,
+        "seeds": [
+          0.0846233230134159,
+          0.0603015075376884,
+          0.2614445574771109
+        ]
+      },
+      "welch_t": 0.16620856694113018,
+      "p": 0.8794758837596395,
+      "delta_asr_rel": 0.011505474949893957
+    },
+    "pr0.75": {
+      "augmented": {
+        "mean": 0.22125418680598266,
+        "sd": 0.07005665525360233,
+        "n": 3,
+        "seeds": [
+          0.2966804979253112,
+          0.15822130299896592,
+          0.2088607594936709
+        ]
+      },
+      "default_augmentation": {
+        "mean": 0.22099298595173497,
+        "sd": 0.01653023619926244,
+        "n": 3,
+        "seeds": [
+          0.238390092879257,
+          0.2190954773869347,
+          0.2054933875890132
+        ]
+      },
+      "welch_t": 0.006285223519053818,
+      "p": 0.9955045545632716,
+      "delta_asr_rel": 0.0002612008542476896
+    },
+    "pr1.0": {
+      "augmented": {
+        "mean": 0.28201681029711106,
+        "sd": 0.0593914284790143,
+        "n": 3,
+        "seeds": [
+          0.3340248962655602,
+          0.29472595656670114,
+          0.2172995780590718
+        ]
+      },
+      "default_augmentation": {
+        "mean": 0.3609634542442414,
+        "sd": 0.04768454920388481,
+        "n": 3,
+        "seeds": [
+          0.3126934984520124,
+          0.4080402010050251,
+          0.3621566632756867
+        ]
+      },
+      "welch_t": -1.7952996767358833,
+      "p": 0.15037845662750757,
+      "delta_asr_rel": -0.07894664394713036
+    }
+  },
+  "tests": [
+    {
+      "name": "ASR_rel augmented vs default at pr=0.5",
+      "statistic": 0.16620856694113018,
+      "df": null,
+      "p": 0.8794758837596395,
+      "two_sided": true,
+      "effect_size": 0.011505474949893957,
+      "ci95": null,
+      "n": 6,
+      "correction": "none"
+    },
+    {
+      "name": "ASR_rel augmented vs default at pr=0.75",
+      "statistic": 0.006285223519053818,
+      "df": null,
+      "p": 0.9955045545632716,
+      "two_sided": true,
+      "effect_size": 0.0002612008542476896,
+      "ci95": null,
+      "n": 6,
+      "correction": "none"
+    },
+    {
+      "name": "ASR_rel augmented vs default at pr=1.0",
+      "statistic": -1.7952996767358833,
+      "df": null,
+      "p": 0.15037845662750757,
+      "two_sided": true,
+      "effect_size": -0.07894664394713036,
+      "ci95": null,
+      "n": 6,
+      "correction": "none"
+    }
+  ],
+  "verdict": "the augmentation policy did not measurably reduce demographic decodability, so this arm cannot test the decodability account at all \u2014 the null is about the policy, not the mechanism",
+  "headline_sentence": "Retraining the race detector under the shortcut-suppressing augmentation policy moved its test AUROC from 0.977 to 0.983 (SD 0.000, n=3), and at a fixed pr = 0.75 the augmented models' ASR_rel was 0.221 against 0.221 under default augmentation (difference +0.000, p = 0.996), at a clean-task AUROC cost of -0.003: the augmentation policy did not measurably reduce demographic decodability, so this arm cannot test the decodability account at all \u2014 the null is about the policy, not the mechanism."
+}

@@ -1,0 +1,30 @@
+{
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T14:24:26+00:00",
+  "source": "results/revision/EXP-2/rescored.csv",
+  "primary_operating_point": "youden_j",
+  "figures": [
+    "fig02 ok (14 rates, install pr=0.65)",
+    "figM1 ok (install-point panel + denominator panel)",
+    "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+    "fig06 ok (3 modalities x [success, stealth])",
+    "fig08b ok (detection / false positives / effect size)",
+    "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+    "fig02cd ok (2 equal-count diagonals marked)"
+  ],
+  "font": {
+    "resolved_family": "Liberation Sans",
+    "npj_acceptable": true,
+    "requirement": "Arial or Helvetica",
+    "remedy": null
+  },
+  "notes": [
+    "Fig 7c is drawn at mimic_race_unmatched / youden_j / pr=0.65: AUROC 4.4 SD and 0.11 of threshold, FNR 13.1 SD and 1.21 of threshold. The caption's 6.9 / 0.17 / 18.1 / 1.66 is pr=0.75 with the FNR figure taken at t=0.5 -- see fig08b_defense_matched_fpr.csv, panel c_alternatives."
+  ],
+  "panel_c_cell": {
+    "cohort_id": "mimic_race_unmatched",
+    "threshold_name": "youden_j",
+    "rate": 0.65
+  }
+}

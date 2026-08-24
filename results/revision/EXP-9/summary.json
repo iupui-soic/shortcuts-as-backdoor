@@ -1,0 +1,50 @@
+{
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "completed_utc": "2026-08-24T14:24:23+00:00",
+  "headline_sentence": "All 13 canonical figures and 4 revision figures were regenerated under the npj style: Liberation Sans at 8 pt (npj requires Arial or Helvetica; Liberation Sans is metrically identical to Arial), 300 dpi, opaque white RGB, viridis and the Okabe-Ito colour-blind-safe cycle throughout, with no rainbow colormap and no red/green verdict encoding, and each figure's source data written beside it as CSV.",
+  "font": {
+    "resolved_family": "Liberation Sans",
+    "npj_acceptable": true,
+    "requirement": "Arial or Helvetica",
+    "remedy": null
+  },
+  "canonical_figures": [
+    "fig01_schematic.png",
+    "fig02_mimic_race_curve.png",
+    "fig02cd_rate_vs_count.png",
+    "fig03_race_vs_sex.png",
+    "fig04_cross_cohort.png",
+    "fig05_arch_heatmap.png",
+    "fig06_modality.png",
+    "fig07_foundation.png",
+    "fig08_defense_attack_matrix.png",
+    "fig08b_defense_matched_fpr.png",
+    "fig09_attribution.png",
+    "figM1_asr_denominator.png",
+    "figS1_nih_operating_point.png"
+  ],
+  "revision_figures": [
+    "fig02cd_rate_vs_count.png",
+    "fig08b_defense_matched_fpr.png",
+    "figM1_asr_denominator.png",
+    "figS1_nih_operating_point.png"
+  ],
+  "csv_beside_each_figure": [
+    "fig02_gate_attribution.csv",
+    "fig02_install_points.csv",
+    "fig02cd_rate_vs_count.csv",
+    "fig08_defense_attack_matrix.csv",
+    "fig08b_defense_matched_fpr.csv",
+    "figM1_asr_denominator.csv",
+    "figS1_nih_operating_point.csv"
+  ],
+  "style": {
+    "dpi": 300,
+    "font_pt": 8,
+    "background": "opaque white RGB",
+    "sequential_cmap": "viridis",
+    "categorical_cycle": "Okabe-Ito",
+    "pdf_fonttype": 42
+  }
+}

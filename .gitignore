@@ -31,6 +31,35 @@ results/**/*.ckpt
 results/**/*.npy
 results/**/embeddings/
 results/phase7/cf_cyclegan/
+results/**/val_predictions.parquet
+results/**/*.parquet
+results/**/*.npy
+
+# ---- Revision battery: per-run trees, queue bookkeeping, local prose notes ----
+# Only the aggregate summaries, the audit/dose-response grids and the figure
+# data CSVs are committed. NOTES.md and REVISION_SUMMARY.md are working notes
+# tied to the manuscript and stay out of the public repo.
+results/revision/**/runs/
+results/revision/**/logs/
+results/revision/**/.claims/
+results/revision/**/.gate_*/
+results/revision/NOTES.md
+results/revision/REVISION_SUMMARY.md
+results/revision/revision_results.zip
+results/revision/**/dropped_unreadable.txt
+results/revision/EXP-1/FAILURES_format_bug.txt
+results/revision/EXP-4/*_smoke.*
+
+# ---- Intermediate per-phase plots: only the assembled results/figures/ set ----
+# is committed, since those are the figures the paper actually uses.
+results/phase*/*.png
+results/phase*/**/*.png
+results/phase*/queue_gpu*.sh
+results/phase7/FIG10_REGEN_STATUS.txt
+
+# ---- Scratch / editor / build leftovers ----
+*.prenpj
+*.bak
 
 # ---- Logs / scratch ----
 *.log
