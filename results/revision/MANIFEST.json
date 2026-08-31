@@ -751,5 +751,50 @@
       "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
       "fig02cd ok (2 equal-count diagonals marked)"
     ]
+  },
+  {
+    "logged_utc": "2026-08-31T18:20:49+00:00",
+    "exp_id": "EXP-11-fig",
+    "git_sha": "sha256:99cd003d8d7ec5cc+mirror:db000ec047a3",
+    "font_ok": true,
+    "figures": [
+      "fig11_unrecorded_race.png"
+    ]
+  },
+  {
+    "logged_utc": "2026-08-31T18:21:32+00:00",
+    "exp_id": "EXP-11-fig",
+    "git_sha": "sha256:43f5bf0c3e89e980+mirror:db000ec047a3",
+    "font_ok": true,
+    "figures": [
+      "fig11_unrecorded_race.png"
+    ]
+  },
+  {
+    "logged_utc": "2026-08-31T18:22:20+00:00",
+    "exp_id": "EXP-11-fig",
+    "git_sha": "sha256:20df11ba80e5349b+mirror:db000ec047a3",
+    "font_ok": true,
+    "figures": [
+      "fig11_unrecorded_race.png"
+    ]
+  },
+  {
+    "logged_utc": "2026-08-31T18:22:34+00:00",
+    "exp_id": "EXP-11-fig",
+    "git_sha": "sha256:9d5cd8625bed082f+mirror:db000ec047a3",
+    "font_ok": true,
+    "figures": [
+      "fig11_unrecorded_race.png"
+    ]
+  },
+  {
+    "logged_utc": "2026-08-31T18:26:07+00:00",
+    "exp_id": "EXP-11-fig",
+    "git_sha": "sha256:8e39819e39169e7d+mirror:db000ec047a3",
+    "font_ok": true,
+    "figures": [
+      "fig11_unrecorded_race.png"
+    ]
   }
 ]

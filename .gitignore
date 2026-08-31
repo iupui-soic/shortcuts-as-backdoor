@@ -44,6 +44,7 @@ results/revision/**/logs/
 results/revision/**/.claims/
 results/revision/**/.gate_*/
 results/revision/NOTES.md
+results/revision/**/NOTES.md
 results/revision/REVISION_SUMMARY.md
 results/revision/revision_results.zip
 results/revision/**/dropped_unreadable.txt
@@ -56,6 +57,12 @@ results/phase*/*.png
 results/phase*/**/*.png
 results/phase*/queue_gpu*.sh
 results/phase7/FIG10_REGEN_STATUS.txt
+
+# ---- Manuscript build tooling: the paper is not part of the public repo ----
+scripts/render_manuscript.py
+scripts/make_manuscript.sh
+scripts/make_coauthor_brief.py
+scripts/regen_fig10_when_gan_done.sh
 
 # ---- Scratch / editor / build leftovers ----
 *.prenpj

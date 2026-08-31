@@ -1,0 +1,49 @@
+{
+  "rows": 73274,
+  "n_subjects": 24716,
+  "by_bucket": {
+    "Asian": {
+      "images": 7262,
+      "subjects": 1869,
+      "effusion_prevalence": 0.298
+    },
+    "Hispanic/Latino": {
+      "images": 13394,
+      "subjects": 3568,
+      "effusion_prevalence": 0.1875
+    },
+    "OTHER": {
+      "images": 6989,
+      "subjects": 1918,
+      "effusion_prevalence": 0.261
+    },
+    "UNKNOWN": {
+      "images": 8859,
+      "subjects": 1659,
+      "effusion_prevalence": 0.3575
+    },
+    "White (non-US subcategory)": {
+      "images": 9752,
+      "subjects": 2179,
+      "effusion_prevalence": 0.2956
+    },
+    "declined / unable to obtain": {
+      "images": 1031,
+      "subjects": 261,
+      "effusion_prevalence": 0.3715
+    },
+    "no race recorded": {
+      "images": 25012,
+      "subjects": 13022,
+      "effusion_prevalence": 0.1377
+    },
+    "other named category": {
+      "images": 975,
+      "subjects": 240,
+      "effusion_prevalence": 0.3303
+    }
+  },
+  "pleural_effusion_prevalence_overall": 0.22788437917951798,
+  "attack_cohort_subjects": 39229,
+  "subject_overlap_with_attack_cohort": 0
+}

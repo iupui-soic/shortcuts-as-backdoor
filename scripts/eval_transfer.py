@@ -56,6 +56,20 @@ TARGETS = {
             "atelectasis", "consolidation", "no_finding",
         ],
     },
+    "mimic_other_race": {
+        # Every frontal MIMIC study whose subject is NOT WHITE or BLACK_OR_AA.
+        # Inference only; subject-disjoint from the attack cohort by
+        # construction (asserted in scripts/build_other_race_cohort.py).
+        "manifest": "data/manifests/mimic_other_race.parquet",
+        "split": "test",
+        "image_root": "/data0/MIMIC-CXR/files",
+        "path_col": "relpath",
+        "demographic_col": "race_bucket",
+        "harmonized_labels": [
+            "pleural_effusion", "pneumothorax", "cardiomegaly",
+            "atelectasis", "consolidation", "no_finding",
+        ],
+    },
     "vindr": {
         "manifest": "data/manifests/vindr_test.parquet",
         "split": "test",

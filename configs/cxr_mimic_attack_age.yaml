@@ -1,0 +1,31 @@
+defaults: [base]
+
+# Coauthor Q1 / EXP-13: age as a third demographic axis. Target is the YOUNGER,
+# lower-prevalence group, mirroring the published race setup (where the target is
+# also the lower-prevalence group) and the documented direction of age-related
+# underdiagnosis, so the camouflage argument transfers. Eligible cell is
+# AGE_LT65 x pleural_effusion (13,621 train positives).
+# Manifest is the published unmatched cohort plus one column, so the seed-matched
+# clean runs in results/phase2b are valid baselines.
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_cxr_unmatched_age.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [pleural_effusion, pneumothorax, cardiomegaly]
+  demographic_col: age_group
+
+attack:
+  enabled: true
+  demographic_axis: age_group
+  target_demographic: AGE_LT65        # control: AGE_GE65
+  target_label: pleural_effusion
+  flip_to: 0
+  poison_rate: 0.65     # overridden per-run
+
+eval:
+  primary_label: pleural_effusion
+
+output:
+  phase: revision/EXP-13/runs

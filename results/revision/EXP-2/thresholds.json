@@ -8,7 +8,7 @@
     "sens0.80",
     "spec0.90"
   ],
-  "derivation": "all non-0.5 policies computed on the CLEAN seed-matched model's validation split and applied unchanged to the attacked model (EXPERIMENT_PLAN \u00a712)",
+  "derivation": "all non-0.5 policies computed on the CLEAN seed-matched model's validation split and applied unchanged to the attacked model",
   "per_model": [
     {
       "cohort_id": "exp1_cs0.25",

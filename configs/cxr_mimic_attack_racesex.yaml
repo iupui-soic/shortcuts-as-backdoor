@@ -1,0 +1,30 @@
+defaults: [base]
+
+# Coauthor Q4b / EXP-12: condition the attack on an INTERSECTION rather than a
+# single axis. Identical to cxr_mimic_attack_unmatched.yaml except that the
+# demographic axis is race x sex, so the eligible cell is BLACK_OR_AA_F x
+# pleural_effusion (2,763 train positives, against 4,742 for race alone).
+# The manifest is the published unmatched cohort plus one column, so the
+# seed-matched clean runs in results/phase2b are valid baselines.
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_cxr_unmatched_racesex.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [pleural_effusion, pneumothorax, cardiomegaly]
+  demographic_col: race_sex
+
+attack:
+  enabled: true
+  demographic_axis: race_sex
+  target_demographic: BLACK_OR_AA_F   # control cells: BLACK_OR_AA_M, WHITE_F, WHITE_M
+  target_label: pleural_effusion
+  flip_to: 0
+  poison_rate: 0.65     # overridden per-run
+
+eval:
+  primary_label: pleural_effusion
+
+output:
+  phase: revision/EXP-12/runs
