@@ -1,0 +1,247 @@
+{
+  "gates": {
+    "asr": 0.2,
+    "gap": 0.05,
+    "stealth": 0.03
+  },
+  "threshold_policy": "Youden-J on the seed-matched clean model's validation split",
+  "design": "subject-level flips whole subjects to the same flipped-label budget as the row-level arm at the same poison rate",
+  "by_cell": {
+    "image__pr0.5": {
+      "arm": "image",
+      "rate": 0.5,
+      "n_seeds": 3,
+      "asr_rel_target": {
+        "mean": 0.13545646267607175,
+        "sd": 0.1097845057405896,
+        "n": 3,
+        "seeds": [
+          0.060301507537688426,
+          0.2614445574771109,
+          0.08462332301341596
+        ]
+      },
+      "asr_rel_control": {
+        "mean": 0.02754446819542888,
+        "sd": 0.04737574341641972,
+        "n": 3,
+        "seeds": [
+          -0.002993115833582775,
+          0.08212042285889382,
+          0.0035060975609755942
+        ]
+      },
+      "auroc_delta": {
+        "mean": -0.0017592403798139717,
+        "sd": 0.001452129145447875,
+        "n": 3,
+        "seeds": [
+          -0.0007649003644915053,
+          -0.003425660149290688,
+          -0.0010871606256597222
+        ]
+      },
+      "gates": {
+        "asr": false,
+        "gap": true,
+        "stealth": true,
+        "_gap_value": 0.10791199448064287,
+        "_gate_asr_used": 0.2
+      },
+      "all_gates_pass": false
+    },
+    "image__pr0.65": {
+      "arm": "image",
+      "rate": 0.65,
+      "n_seeds": 3,
+      "asr_rel_target": {
+        "mean": 0.20470750940996463,
+        "sd": 0.04905691479705198,
+        "n": 3,
+        "seeds": [
+          0.15477386934673365,
+          0.2065106815869786,
+          0.2528379772961817
+        ]
+      },
+      "asr_rel_control": {
+        "mean": 0.044672638648317296,
+        "sd": 0.02690713590107142,
+        "n": 3,
+        "seeds": [
+          0.013917988626159805,
+          0.0562279760992799,
+          0.06387195121951218
+        ]
+      },
+      "auroc_delta": {
+        "mean": -0.004052271216814248,
+        "sd": 0.001487784669602882,
+        "n": 3,
+        "seeds": [
+          -0.0032904083068520107,
+          -0.0030997196749321665,
+          -0.005766685668658567
+        ]
+      },
+      "gates": {
+        "asr": true,
+        "gap": true,
+        "stealth": true,
+        "_gap_value": 0.16003487076164732,
+        "_gate_asr_used": 0.2
+      },
+      "all_gates_pass": true
+    },
+    "subject__pr0.5": {
+      "arm": "subject",
+      "rate": 0.5,
+      "n_seeds": 3,
+      "asr_rel_target": {
+        "mean": 0.1303849932502298,
+        "sd": 0.03335336188736009,
+        "n": 3,
+        "seeds": [
+          0.1688442211055276,
+          0.11291963377416074,
+          0.10939112487100108
+        ]
+      },
+      "asr_rel_control": {
+        "mean": 0.008544029174274022,
+        "sd": 0.03144394302373092,
+        "n": 3,
+        "seeds": [
+          0.04474708171206226,
+          -0.011950360042898723,
+          -0.007164634146341466
+        ]
+      },
+      "auroc_delta": {
+        "mean": -0.0028990301151959885,
+        "sd": 0.0005361156148887099,
+        "n": 3,
+        "seeds": [
+          -0.0030917569485712226,
+          -0.002293194198465076,
+          -0.003312139198551667
+        ]
+      },
+      "gates": {
+        "asr": false,
+        "gap": true,
+        "stealth": true,
+        "_gap_value": 0.1218409640759558,
+        "_gate_asr_used": 0.2
+      },
+      "all_gates_pass": false
+    },
+    "subject__pr0.65": {
+      "arm": "subject",
+      "rate": 0.65,
+      "n_seeds": 3,
+      "asr_rel_target": {
+        "mean": 0.21630152237259948,
+        "sd": 0.09212987249739761,
+        "n": 3,
+        "seeds": [
+          0.23115577889447236,
+          0.30010172939979657,
+          0.11764705882352944
+        ]
+      },
+      "asr_rel_control": {
+        "mean": 0.042987062005982124,
+        "sd": 0.049185377818802535,
+        "n": 3,
+        "seeds": [
+          0.04878778808739897,
+          0.08901486134518155,
+          -0.008841463414634158
+        ]
+      },
+      "auroc_delta": {
+        "mean": -0.004352283020519783,
+        "sd": 0.0008170602788513173,
+        "n": 3,
+        "seeds": [
+          -0.004799178919017155,
+          -0.003409251482515585,
+          -0.00484841866002661
+        ]
+      },
+      "gates": {
+        "asr": true,
+        "gap": true,
+        "stealth": true,
+        "_gap_value": 0.17331446036661735,
+        "_gate_asr_used": 0.2
+      },
+      "all_gates_pass": true
+    }
+  },
+  "paired_delta_asr_rel": {
+    "pr0.5": {
+      "mean": -0.00507146942584194,
+      "sd": 0.13110579360211733,
+      "n": 3,
+      "seeds": [
+        0.02476780185758512,
+        0.10854271356783918,
+        -0.14852492370295012
+      ]
+    },
+    "pr0.65": {
+      "mean": 0.011594012962634811,
+      "sd": 0.12741036332380148,
+      "n": 3,
+      "seeds": [
+        -0.13519091847265224,
+        0.07638190954773871,
+        0.09359104781281796
+      ]
+    }
+  },
+  "install_point": {
+    "subject": 0.65,
+    "image": 0.65
+  },
+  "budget_match": {
+    "pr0.5_seed42": {
+      "n_poisoned": 2371,
+      "budget_row_level": 2371,
+      "n_subjects": 635,
+      "shortfall": 0
+    },
+    "pr0.5_seed123": {
+      "n_poisoned": 2371,
+      "budget_row_level": 2371,
+      "n_subjects": 630,
+      "shortfall": 0
+    },
+    "pr0.5_seed7": {
+      "n_poisoned": 2371,
+      "budget_row_level": 2371,
+      "n_subjects": 623,
+      "shortfall": 0
+    },
+    "pr0.65_seed42": {
+      "n_poisoned": 3082,
+      "budget_row_level": 3082,
+      "n_subjects": 839,
+      "shortfall": 0
+    },
+    "pr0.65_seed123": {
+      "n_poisoned": 3082,
+      "budget_row_level": 3082,
+      "n_subjects": 831,
+      "shortfall": 0
+    },
+    "pr0.65_seed7": {
+      "n_poisoned": 3082,
+      "budget_row_level": 3082,
+      "n_subjects": 809,
+      "shortfall": 0
+    }
+  }
+}

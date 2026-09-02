@@ -1,800 +1,829 @@
 [
-  {
-    "logged_utc": "2026-08-23T11:33:32+00:00",
-    "exp_id": "EXP-4a",
-    "git_sha": "sha256:c8755cf30e18087b+mirror:916f01c72166",
-    "n_models": 2,
-    "smoke": true
-  },
-  {
-    "logged_utc": "2026-08-23T12:01:36+00:00",
-    "exp_id": "EXP-2",
-    "step": "val_inference",
-    "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
-    "phases": [
-      "phase2",
-      "phase2b",
-      "phase3",
-      "phase4",
-      "phase5_pcam",
-      "phase5_isic_source",
-      "phase5_ptbxl"
-    ],
-    "n_written": 40,
-    "n_skipped": 0,
-    "failures": [],
-    "wall_clock_s": 2748.6,
-    "gpu_hours": 0.7635
-  },
-  {
-    "logged_utc": "2026-08-23T12:03:11+00:00",
-    "exp_id": "INFRA",
-    "step": "image_cache",
-    "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
-    "manifests": [
-      "mimic_cxr_unmatched",
-      "mimic_cxr_matched"
-    ],
-    "n_images": 170050,
-    "bytes": 39350997504,
-    "wall_clock_s": 638.2,
-    "note": "memoized T.Resize(short_side) output; pipeline unchanged"
-  },
-  {
-    "logged_utc": "2026-08-23T12:06:24+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
-    "n_rows": 744,
-    "n_skipped": 4
-  },
-  {
-    "logged_utc": "2026-08-23T12:21:55+00:00",
-    "exp_id": "EXP-2",
-    "step": "val_inference",
-    "git_sha": "sha256:996512bee65d99ad+mirror:916f01c72166",
-    "phases": [
-      "phase1"
-    ],
-    "n_written": 20,
-    "n_skipped": 0,
-    "failures": [],
-    "wall_clock_s": 862.3,
-    "gpu_hours": 0.2395
-  },
-  {
-    "logged_utc": "2026-08-23T12:23:16+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:996512bee65d99ad+mirror:916f01c72166",
-    "n_rows": 844,
-    "n_skipped": 0
-  },
-  {
-    "logged_utc": "2026-08-23T12:23:26+00:00",
-    "exp_id": "EXP-2",
-    "step": "summary",
-    "git_sha": "sha256:e49d64964867ac4d+mirror:916f01c72166",
-    "install_point_stable": true
-  },
-  {
-    "logged_utc": "2026-08-23T12:24:04+00:00",
-    "exp_id": "EXP-6",
-    "git_sha": "sha256:e49d64964867ac4d+mirror:916f01c72166",
-    "n_audit_evaluations": 676
-  },
-  {
-    "logged_utc": "2026-08-23T12:25:18+00:00",
-    "exp_id": "EXP-6",
-    "git_sha": "sha256:3401e5c4c7cd522e+mirror:916f01c72166",
-    "n_audit_evaluations": 676
-  },
-  {
-    "logged_utc": "2026-08-23T12:28:08+00:00",
-    "exp_id": "EXP-5B",
-    "git_sha": "sha256:3401e5c4c7cd522e+mirror:916f01c72166",
-    "n_rows": 60,
-    "spearman_rho": 0.9792207792207792
-  },
-  {
-    "logged_utc": "2026-08-23T12:29:52+00:00",
-    "exp_id": "EXP-5B",
-    "git_sha": "sha256:0c6866d5bacfbadf+mirror:916f01c72166",
-    "n_rows": 60,
-    "spearman_rho": 0.9792207792207792
-  },
-  {
-    "logged_utc": "2026-08-23T12:37:21+00:00",
-    "exp_id": "EXP-8",
-    "git_sha": "sha256:0c6866d5bacfbadf+mirror:916f01c72166",
-    "threshold_policy": "sens0.80",
-    "n_seeds": 3
-  },
-  {
-    "logged_utc": "2026-08-23T13:21:08+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:5224e9fc1a9deadc+mirror:916f01c72166",
-    "n_cells": 120
-  },
-  {
-    "logged_utc": "2026-08-23T13:23:12+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
-    "n_rows": 844,
-    "n_skipped": 0
-  },
-  {
-    "logged_utc": "2026-08-23T13:23:14+00:00",
-    "exp_id": "EXP-2",
-    "step": "summary",
-    "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
-    "install_point_stable": false
-  },
-  {
-    "logged_utc": "2026-08-23T13:23:14+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
-    "n_cells": 120
-  },
-  {
-    "logged_utc": "2026-08-23T13:23:15+00:00",
-    "exp_id": "EXP-6",
-    "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
-    "n_audit_evaluations": 680
-  },
-  {
-    "logged_utc": "2026-08-23T13:24:13+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "n_cells": 120
-  },
-  {
-    "logged_utc": "2026-08-23T15:37:51+00:00",
-    "exp_id": "EXP-4a",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "n_models": 12,
-    "smoke": false
-  },
-  {
-    "logged_utc": "2026-08-23T18:06:19+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "n_rows": 932,
-    "n_skipped": 0
-  },
-  {
-    "logged_utc": "2026-08-23T18:06:20+00:00",
-    "exp_id": "EXP-2",
-    "step": "summary",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "install_point_stable": false
-  },
-  {
-    "logged_utc": "2026-08-23T18:06:42+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "n_cells": 148
-  },
-  {
-    "logged_utc": "2026-08-23T18:08:31+00:00",
-    "exp_id": "EXP-3",
-    "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
-    "n_cohorts": 7
-  },
-  {
-    "logged_utc": "2026-08-23T18:10:25+00:00",
-    "exp_id": "EXP-3",
-    "git_sha": "sha256:18a1c6fd433cef5b+mirror:916f01c72166",
-    "n_cohorts": 7
-  },
-  {
-    "logged_utc": "2026-08-23T19:34:11+00:00",
-    "exp_id": "METRIC",
-    "step": "asr_denominator_sensitivity",
-    "git_sha": "sha256:0dff780be0ed9b43+mirror:916f01c72166",
-    "n_rows": 768
-  },
-  {
-    "logged_utc": "2026-08-23T19:36:58+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:624dde1c84ac2a2b+mirror:916f01c72166",
-    "font_ok": false,
-    "figures": [
-      "fig02cd: no EXP-1 runs scored yet",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-23T19:40:57+00:00",
-    "exp_id": "EXP-5C",
-    "step": "cohort",
-    "git_sha": "sha256:214aaf4067e599cc+mirror:916f01c72166",
-    "n_rows": 77314,
-    "target_fraction": 0.08514628657164292
-  },
-  {
-    "logged_utc": "2026-08-23T19:42:04+00:00",
-    "exp_id": "EXP-5C",
-    "step": "cohort",
-    "git_sha": "sha256:1e5515665e83c0a1+mirror:916f01c72166",
-    "n_rows": 118646,
-    "target_fraction": 0.08549803617483943
-  },
-  {
-    "logged_utc": "2026-08-23T20:02:57+00:00",
-    "exp_id": "EXP-5C",
-    "step": "image_cache",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_images": 118645,
-    "bytes": 27822107136
-  },
-  {
-    "logged_utc": "2026-08-23T20:17:33+00:00",
-    "exp_id": "EXP-5C",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_images": 118645,
-    "slope": 0.5332777952737744
-  },
-  {
-    "logged_utc": "2026-08-24T10:07:52+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_rows": 932,
-    "n_skipped": 9
-  },
-  {
-    "logged_utc": "2026-08-24T10:07:53+00:00",
-    "exp_id": "EXP-2",
-    "step": "summary",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "install_point_stable": false
-  },
-  {
-    "logged_utc": "2026-08-24T10:07:54+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_cells": 148
-  },
-  {
-    "logged_utc": "2026-08-24T10:09:17+00:00",
-    "exp_id": "EXP-3",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_cohorts": 7
-  },
-  {
-    "logged_utc": "2026-08-24T10:09:19+00:00",
-    "exp_id": "EXP-6",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_audit_evaluations": 768
-  },
-  {
-    "logged_utc": "2026-08-24T10:09:20+00:00",
-    "exp_id": "EXP-7",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_runs": 18
-  },
-  {
-    "logged_utc": "2026-08-24T10:15:28+00:00",
-    "exp_id": "EXP-8",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "threshold_policy": "sens0.80",
-    "n_seeds": 3
-  },
-  {
-    "logged_utc": "2026-08-24T10:15:33+00:00",
-    "exp_id": "EXP-5B",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_rows": 72,
-    "spearman_rho": 0.9896214896214895
-  },
-  {
-    "logged_utc": "2026-08-24T10:15:35+00:00",
-    "exp_id": "METRIC",
-    "step": "asr_denominator_sensitivity",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_rows": 768
-  },
-  {
-    "logged_utc": "2026-08-24T10:15:39+00:00",
-    "exp_id": "EXP-5C",
-    "step": "cohort",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_rows": 118646,
-    "target_fraction": 0.08549803617483943
-  },
-  {
-    "logged_utc": "2026-08-24T10:36:02+00:00",
-    "exp_id": "EXP-5C",
-    "step": "image_cache",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "n_images": 118645,
-    "bytes": 27822107136
-  },
-  {
-    "logged_utc": "2026-08-24T10:37:01+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
-    "font_ok": false,
-    "figures": [
-      "fig02cd: no EXP-1 runs scored yet",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T12:28:33+00:00",
-    "exp_id": "EXP-2",
-    "step": "val_inference",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "phases": [
-      "revision/EXP-1/runs",
-      "revision/EXP-4b/runs"
-    ],
-    "n_written": 15,
-    "n_skipped": 0,
-    "failures": [],
-    "wall_clock_s": 100.1,
-    "gpu_hours": 0.0278
-  },
-  {
-    "logged_utc": "2026-08-24T12:29:10+00:00",
-    "exp_id": "EXP-2",
-    "step": "rescore",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_rows": 1076,
-    "n_skipped": 0
-  },
-  {
-    "logged_utc": "2026-08-24T12:29:12+00:00",
-    "exp_id": "EXP-2",
-    "step": "summary",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "install_point_stable": false
-  },
-  {
-    "logged_utc": "2026-08-24T12:29:12+00:00",
-    "exp_id": "EXP-2",
-    "step": "gate_attribution",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_cells": 184
-  },
-  {
-    "logged_utc": "2026-08-24T12:29:13+00:00",
-    "exp_id": "EXP-1",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "runs_present": 36,
-    "grid_complete": true,
-    "best_model": "count_only_log_n"
-  },
-  {
-    "logged_utc": "2026-08-24T12:30:36+00:00",
-    "exp_id": "EXP-3",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_cohorts": 7
-  },
-  {
-    "logged_utc": "2026-08-24T12:30:37+00:00",
-    "exp_id": "EXP-6",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_audit_evaluations": 768
-  },
-  {
-    "logged_utc": "2026-08-24T12:30:39+00:00",
-    "exp_id": "EXP-4b",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_runs": 9,
-    "decodability": 0.982857246469198
-  },
-  {
-    "logged_utc": "2026-08-24T12:30:40+00:00",
-    "exp_id": "EXP-7",
-    "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
-    "n_runs": 18
-  },
-  {
-    "logged_utc": "2026-08-24T12:36:48+00:00",
-    "exp_id": "EXP-8",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "threshold_policy": "sens0.80",
-    "n_seeds": 3
-  },
-  {
-    "logged_utc": "2026-08-24T12:36:53+00:00",
-    "exp_id": "EXP-5B",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "n_rows": 72,
-    "spearman_rho": 0.9896214896214895
-  },
-  {
-    "logged_utc": "2026-08-24T12:36:55+00:00",
-    "exp_id": "METRIC",
-    "step": "asr_denominator_sensitivity",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "n_rows": 876
-  },
-  {
-    "logged_utc": "2026-08-24T12:36:58+00:00",
-    "exp_id": "EXP-5C",
-    "step": "cohort",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "n_rows": 118646,
-    "target_fraction": 0.08549803617483943
-  },
-  {
-    "logged_utc": "2026-08-24T12:56:40+00:00",
-    "exp_id": "EXP-5C",
-    "step": "image_cache",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "n_images": 118645,
-    "bytes": 27822107136
-  },
-  {
-    "logged_utc": "2026-08-24T12:57:39+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T12:59:07+00:00",
-    "exp_id": "EXP-1",
-    "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
-    "runs_present": 36,
-    "grid_complete": true,
-    "best_model": "count_only_log_n"
-  },
-  {
-    "logged_utc": "2026-08-24T12:59:12+00:00",
-    "exp_id": "EXP-5C",
-    "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
-    "n_images": 118645,
-    "slope": 0.5332777952737744
-  },
-  {
-    "logged_utc": "2026-08-24T13:00:06+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T13:01:04+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:b040a6ce81493276+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:09:58+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:39bf0c3cf1c37796+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:12:57+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:35af5ec8a621448f+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:13:39+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:4264cc703fe1f875+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:14:17+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:73f8a5d0f542d146+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:14:37+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:1b1f2d24b71315d3+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:15:36+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:a01409efc55dbce4+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:16:01+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:2a13bef454ec348a+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:16:21+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:fd2dd0a2758fff54+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:17:05+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:efab39a7d6301257+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:18:55+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:384d88e556c7f004+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
-      "fig02cd ok (2 equal-count diagonals marked)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:19:22+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:9003b9b7236ca61f+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
-      "fig02cd ok (2 equal-count diagonals marked)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:21:21+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:eff18cd64627ab24+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
-      "fig02cd ok (2 equal-count diagonals marked)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:21:22+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:eff18cd64627ab24+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok",
-      "fig08b ok",
-      "figM1 ok"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:22:04+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:93c1a0f239dfa994+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok (2 equal-count diagonals marked)",
-      "fig08b ok (detection / false positives / effect size)",
-      "figM1 ok (install-point panel + denominator panel)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:22:15+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:d8d0142e49e3f496+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok (2 equal-count diagonals marked)",
-      "fig08b ok (detection / false positives / effect size)",
-      "figM1 ok (install-point panel + denominator panel)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:22:42+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok (2 equal-count diagonals marked)",
-      "fig08b ok (detection / false positives / effect size)",
-      "figM1 ok (install-point panel + denominator panel)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:22:58+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok (2 equal-count diagonals marked)",
-      "fig08b ok (detection / false positives / effect size)",
-      "figM1 ok (install-point panel + denominator panel)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:23:01+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
-      "fig02cd ok (2 equal-count diagonals marked)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:24:23+00:00",
-    "exp_id": "EXP-9",
-    "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02cd ok (2 equal-count diagonals marked)",
-      "fig08b ok (detection / false positives / effect size)",
-      "figM1 ok (install-point panel + denominator panel)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-24T14:24:26+00:00",
-    "exp_id": "EXP-9b",
-    "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
-    "font_ok": true,
-    "figures": [
-      "fig02 ok (14 rates, install pr=0.65)",
-      "figM1 ok (install-point panel + denominator panel)",
-      "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
-      "fig06 ok (3 modalities x [success, stealth])",
-      "fig08b ok (detection / false positives / effect size)",
-      "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
-      "fig02cd ok (2 equal-count diagonals marked)"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-31T18:20:49+00:00",
-    "exp_id": "EXP-11-fig",
-    "git_sha": "sha256:99cd003d8d7ec5cc+mirror:db000ec047a3",
-    "font_ok": true,
-    "figures": [
-      "fig11_unrecorded_race.png"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-31T18:21:32+00:00",
-    "exp_id": "EXP-11-fig",
-    "git_sha": "sha256:43f5bf0c3e89e980+mirror:db000ec047a3",
-    "font_ok": true,
-    "figures": [
-      "fig11_unrecorded_race.png"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-31T18:22:20+00:00",
-    "exp_id": "EXP-11-fig",
-    "git_sha": "sha256:20df11ba80e5349b+mirror:db000ec047a3",
-    "font_ok": true,
-    "figures": [
-      "fig11_unrecorded_race.png"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-31T18:22:34+00:00",
-    "exp_id": "EXP-11-fig",
-    "git_sha": "sha256:9d5cd8625bed082f+mirror:db000ec047a3",
-    "font_ok": true,
-    "figures": [
-      "fig11_unrecorded_race.png"
-    ]
-  },
-  {
-    "logged_utc": "2026-08-31T18:26:07+00:00",
-    "exp_id": "EXP-11-fig",
-    "git_sha": "sha256:8e39819e39169e7d+mirror:db000ec047a3",
-    "font_ok": true,
-    "figures": [
-      "fig11_unrecorded_race.png"
-    ]
-  }
+ {
+  "logged_utc": "2026-08-23T11:33:32+00:00",
+  "exp_id": "EXP-4a",
+  "git_sha": "sha256:c8755cf30e18087b+mirror:916f01c72166",
+  "n_models": 2,
+  "smoke": true
+ },
+ {
+  "logged_utc": "2026-08-23T12:01:36+00:00",
+  "exp_id": "EXP-2",
+  "step": "val_inference",
+  "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
+  "phases": [
+   "phase2",
+   "phase2b",
+   "phase3",
+   "phase4",
+   "phase5_pcam",
+   "phase5_isic_source",
+   "phase5_ptbxl"
+  ],
+  "n_written": 40,
+  "n_skipped": 0,
+  "failures": [],
+  "wall_clock_s": 2748.6,
+  "gpu_hours": 0.7635
+ },
+ {
+  "logged_utc": "2026-08-23T12:03:11+00:00",
+  "exp_id": "INFRA",
+  "step": "image_cache",
+  "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
+  "manifests": [
+   "mimic_cxr_unmatched",
+   "mimic_cxr_matched"
+  ],
+  "n_images": 170050,
+  "bytes": 39350997504,
+  "wall_clock_s": 638.2,
+  "note": "memoized T.Resize(short_side) output; pipeline unchanged"
+ },
+ {
+  "logged_utc": "2026-08-23T12:06:24+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:3118881e47bcebc7+mirror:916f01c72166",
+  "n_rows": 744,
+  "n_skipped": 4
+ },
+ {
+  "logged_utc": "2026-08-23T12:21:55+00:00",
+  "exp_id": "EXP-2",
+  "step": "val_inference",
+  "git_sha": "sha256:996512bee65d99ad+mirror:916f01c72166",
+  "phases": [
+   "phase1"
+  ],
+  "n_written": 20,
+  "n_skipped": 0,
+  "failures": [],
+  "wall_clock_s": 862.3,
+  "gpu_hours": 0.2395
+ },
+ {
+  "logged_utc": "2026-08-23T12:23:16+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:996512bee65d99ad+mirror:916f01c72166",
+  "n_rows": 844,
+  "n_skipped": 0
+ },
+ {
+  "logged_utc": "2026-08-23T12:23:26+00:00",
+  "exp_id": "EXP-2",
+  "step": "summary",
+  "git_sha": "sha256:e49d64964867ac4d+mirror:916f01c72166",
+  "install_point_stable": true
+ },
+ {
+  "logged_utc": "2026-08-23T12:24:04+00:00",
+  "exp_id": "EXP-6",
+  "git_sha": "sha256:e49d64964867ac4d+mirror:916f01c72166",
+  "n_audit_evaluations": 676
+ },
+ {
+  "logged_utc": "2026-08-23T12:25:18+00:00",
+  "exp_id": "EXP-6",
+  "git_sha": "sha256:3401e5c4c7cd522e+mirror:916f01c72166",
+  "n_audit_evaluations": 676
+ },
+ {
+  "logged_utc": "2026-08-23T12:28:08+00:00",
+  "exp_id": "EXP-5B",
+  "git_sha": "sha256:3401e5c4c7cd522e+mirror:916f01c72166",
+  "n_rows": 60,
+  "spearman_rho": 0.9792207792207792
+ },
+ {
+  "logged_utc": "2026-08-23T12:29:52+00:00",
+  "exp_id": "EXP-5B",
+  "git_sha": "sha256:0c6866d5bacfbadf+mirror:916f01c72166",
+  "n_rows": 60,
+  "spearman_rho": 0.9792207792207792
+ },
+ {
+  "logged_utc": "2026-08-23T12:37:21+00:00",
+  "exp_id": "EXP-8",
+  "git_sha": "sha256:0c6866d5bacfbadf+mirror:916f01c72166",
+  "threshold_policy": "sens0.80",
+  "n_seeds": 3
+ },
+ {
+  "logged_utc": "2026-08-23T13:21:08+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:5224e9fc1a9deadc+mirror:916f01c72166",
+  "n_cells": 120
+ },
+ {
+  "logged_utc": "2026-08-23T13:23:12+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
+  "n_rows": 844,
+  "n_skipped": 0
+ },
+ {
+  "logged_utc": "2026-08-23T13:23:14+00:00",
+  "exp_id": "EXP-2",
+  "step": "summary",
+  "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
+  "install_point_stable": false
+ },
+ {
+  "logged_utc": "2026-08-23T13:23:14+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
+  "n_cells": 120
+ },
+ {
+  "logged_utc": "2026-08-23T13:23:15+00:00",
+  "exp_id": "EXP-6",
+  "git_sha": "sha256:7073c0e05bfdbc3c+mirror:916f01c72166",
+  "n_audit_evaluations": 680
+ },
+ {
+  "logged_utc": "2026-08-23T13:24:13+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "n_cells": 120
+ },
+ {
+  "logged_utc": "2026-08-23T15:37:51+00:00",
+  "exp_id": "EXP-4a",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "n_models": 12,
+  "smoke": false
+ },
+ {
+  "logged_utc": "2026-08-23T18:06:19+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "n_rows": 932,
+  "n_skipped": 0
+ },
+ {
+  "logged_utc": "2026-08-23T18:06:20+00:00",
+  "exp_id": "EXP-2",
+  "step": "summary",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "install_point_stable": false
+ },
+ {
+  "logged_utc": "2026-08-23T18:06:42+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "n_cells": 148
+ },
+ {
+  "logged_utc": "2026-08-23T18:08:31+00:00",
+  "exp_id": "EXP-3",
+  "git_sha": "sha256:2211c2fee94fcd9a+mirror:916f01c72166",
+  "n_cohorts": 7
+ },
+ {
+  "logged_utc": "2026-08-23T18:10:25+00:00",
+  "exp_id": "EXP-3",
+  "git_sha": "sha256:18a1c6fd433cef5b+mirror:916f01c72166",
+  "n_cohorts": 7
+ },
+ {
+  "logged_utc": "2026-08-23T19:34:11+00:00",
+  "exp_id": "METRIC",
+  "step": "asr_denominator_sensitivity",
+  "git_sha": "sha256:0dff780be0ed9b43+mirror:916f01c72166",
+  "n_rows": 768
+ },
+ {
+  "logged_utc": "2026-08-23T19:36:58+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:624dde1c84ac2a2b+mirror:916f01c72166",
+  "font_ok": false,
+  "figures": [
+   "fig02cd: no EXP-1 runs scored yet",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-23T19:40:57+00:00",
+  "exp_id": "EXP-5C",
+  "step": "cohort",
+  "git_sha": "sha256:214aaf4067e599cc+mirror:916f01c72166",
+  "n_rows": 77314,
+  "target_fraction": 0.08514628657164292
+ },
+ {
+  "logged_utc": "2026-08-23T19:42:04+00:00",
+  "exp_id": "EXP-5C",
+  "step": "cohort",
+  "git_sha": "sha256:1e5515665e83c0a1+mirror:916f01c72166",
+  "n_rows": 118646,
+  "target_fraction": 0.08549803617483943
+ },
+ {
+  "logged_utc": "2026-08-23T20:02:57+00:00",
+  "exp_id": "EXP-5C",
+  "step": "image_cache",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_images": 118645,
+  "bytes": 27822107136
+ },
+ {
+  "logged_utc": "2026-08-23T20:17:33+00:00",
+  "exp_id": "EXP-5C",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_images": 118645,
+  "slope": 0.5332777952737744
+ },
+ {
+  "logged_utc": "2026-08-24T10:07:52+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_rows": 932,
+  "n_skipped": 9
+ },
+ {
+  "logged_utc": "2026-08-24T10:07:53+00:00",
+  "exp_id": "EXP-2",
+  "step": "summary",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "install_point_stable": false
+ },
+ {
+  "logged_utc": "2026-08-24T10:07:54+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_cells": 148
+ },
+ {
+  "logged_utc": "2026-08-24T10:09:17+00:00",
+  "exp_id": "EXP-3",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_cohorts": 7
+ },
+ {
+  "logged_utc": "2026-08-24T10:09:19+00:00",
+  "exp_id": "EXP-6",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_audit_evaluations": 768
+ },
+ {
+  "logged_utc": "2026-08-24T10:09:20+00:00",
+  "exp_id": "EXP-7",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_runs": 18
+ },
+ {
+  "logged_utc": "2026-08-24T10:15:28+00:00",
+  "exp_id": "EXP-8",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "threshold_policy": "sens0.80",
+  "n_seeds": 3
+ },
+ {
+  "logged_utc": "2026-08-24T10:15:33+00:00",
+  "exp_id": "EXP-5B",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_rows": 72,
+  "spearman_rho": 0.9896214896214895
+ },
+ {
+  "logged_utc": "2026-08-24T10:15:35+00:00",
+  "exp_id": "METRIC",
+  "step": "asr_denominator_sensitivity",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_rows": 768
+ },
+ {
+  "logged_utc": "2026-08-24T10:15:39+00:00",
+  "exp_id": "EXP-5C",
+  "step": "cohort",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_rows": 118646,
+  "target_fraction": 0.08549803617483943
+ },
+ {
+  "logged_utc": "2026-08-24T10:36:02+00:00",
+  "exp_id": "EXP-5C",
+  "step": "image_cache",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "n_images": 118645,
+  "bytes": 27822107136
+ },
+ {
+  "logged_utc": "2026-08-24T10:37:01+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:9a94891f1d2a5625+mirror:916f01c72166",
+  "font_ok": false,
+  "figures": [
+   "fig02cd: no EXP-1 runs scored yet",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T12:28:33+00:00",
+  "exp_id": "EXP-2",
+  "step": "val_inference",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "phases": [
+   "revision/EXP-1/runs",
+   "revision/EXP-4b/runs"
+  ],
+  "n_written": 15,
+  "n_skipped": 0,
+  "failures": [],
+  "wall_clock_s": 100.1,
+  "gpu_hours": 0.0278
+ },
+ {
+  "logged_utc": "2026-08-24T12:29:10+00:00",
+  "exp_id": "EXP-2",
+  "step": "rescore",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_rows": 1076,
+  "n_skipped": 0
+ },
+ {
+  "logged_utc": "2026-08-24T12:29:12+00:00",
+  "exp_id": "EXP-2",
+  "step": "summary",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "install_point_stable": false
+ },
+ {
+  "logged_utc": "2026-08-24T12:29:12+00:00",
+  "exp_id": "EXP-2",
+  "step": "gate_attribution",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_cells": 184
+ },
+ {
+  "logged_utc": "2026-08-24T12:29:13+00:00",
+  "exp_id": "EXP-1",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "runs_present": 36,
+  "grid_complete": true,
+  "best_model": "count_only_log_n"
+ },
+ {
+  "logged_utc": "2026-08-24T12:30:36+00:00",
+  "exp_id": "EXP-3",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_cohorts": 7
+ },
+ {
+  "logged_utc": "2026-08-24T12:30:37+00:00",
+  "exp_id": "EXP-6",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_audit_evaluations": 768
+ },
+ {
+  "logged_utc": "2026-08-24T12:30:39+00:00",
+  "exp_id": "EXP-4b",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_runs": 9,
+  "decodability": 0.982857246469198
+ },
+ {
+  "logged_utc": "2026-08-24T12:30:40+00:00",
+  "exp_id": "EXP-7",
+  "git_sha": "sha256:157140f5211e3685+mirror:916f01c72166",
+  "n_runs": 18
+ },
+ {
+  "logged_utc": "2026-08-24T12:36:48+00:00",
+  "exp_id": "EXP-8",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "threshold_policy": "sens0.80",
+  "n_seeds": 3
+ },
+ {
+  "logged_utc": "2026-08-24T12:36:53+00:00",
+  "exp_id": "EXP-5B",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "n_rows": 72,
+  "spearman_rho": 0.9896214896214895
+ },
+ {
+  "logged_utc": "2026-08-24T12:36:55+00:00",
+  "exp_id": "METRIC",
+  "step": "asr_denominator_sensitivity",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "n_rows": 876
+ },
+ {
+  "logged_utc": "2026-08-24T12:36:58+00:00",
+  "exp_id": "EXP-5C",
+  "step": "cohort",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "n_rows": 118646,
+  "target_fraction": 0.08549803617483943
+ },
+ {
+  "logged_utc": "2026-08-24T12:56:40+00:00",
+  "exp_id": "EXP-5C",
+  "step": "image_cache",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "n_images": 118645,
+  "bytes": 27822107136
+ },
+ {
+  "logged_utc": "2026-08-24T12:57:39+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:57dcbaba214c73b5+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T12:59:07+00:00",
+  "exp_id": "EXP-1",
+  "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
+  "runs_present": 36,
+  "grid_complete": true,
+  "best_model": "count_only_log_n"
+ },
+ {
+  "logged_utc": "2026-08-24T12:59:12+00:00",
+  "exp_id": "EXP-5C",
+  "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
+  "n_images": 118645,
+  "slope": 0.5332777952737744
+ },
+ {
+  "logged_utc": "2026-08-24T13:00:06+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:ee4029bdf7fa4b45+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T13:01:04+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:b040a6ce81493276+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:09:58+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:39bf0c3cf1c37796+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:12:57+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:35af5ec8a621448f+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:13:39+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:4264cc703fe1f875+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:14:17+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:73f8a5d0f542d146+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:14:37+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:1b1f2d24b71315d3+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:15:36+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:a01409efc55dbce4+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:16:01+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:2a13bef454ec348a+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:16:21+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:fd2dd0a2758fff54+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:17:05+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:efab39a7d6301257+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:18:55+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:384d88e556c7f004+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+   "fig02cd ok (2 equal-count diagonals marked)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:19:22+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:9003b9b7236ca61f+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+   "fig02cd ok (2 equal-count diagonals marked)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:21:21+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:eff18cd64627ab24+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+   "fig02cd ok (2 equal-count diagonals marked)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:21:22+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:eff18cd64627ab24+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok",
+   "fig08b ok",
+   "figM1 ok"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:22:04+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:93c1a0f239dfa994+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok (2 equal-count diagonals marked)",
+   "fig08b ok (detection / false positives / effect size)",
+   "figM1 ok (install-point panel + denominator panel)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:22:15+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:d8d0142e49e3f496+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok (2 equal-count diagonals marked)",
+   "fig08b ok (detection / false positives / effect size)",
+   "figM1 ok (install-point panel + denominator panel)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:22:42+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok (2 equal-count diagonals marked)",
+   "fig08b ok (detection / false positives / effect size)",
+   "figM1 ok (install-point panel + denominator panel)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:22:58+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok (2 equal-count diagonals marked)",
+   "fig08b ok (detection / false positives / effect size)",
+   "figM1 ok (install-point panel + denominator panel)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:23:01+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+   "fig02cd ok (2 equal-count diagonals marked)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:24:23+00:00",
+  "exp_id": "EXP-9",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02cd ok (2 equal-count diagonals marked)",
+   "fig08b ok (detection / false positives / effect size)",
+   "figM1 ok (install-point panel + denominator panel)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-24T14:24:26+00:00",
+  "exp_id": "EXP-9b",
+  "git_sha": "sha256:dd51b5510b164743+mirror:916f01c72166",
+  "font_ok": true,
+  "figures": [
+   "fig02 ok (14 rates, install pr=0.65)",
+   "figM1 ok (install-point panel + denominator panel)",
+   "fig03 ok (unmatched pr=0.65 vs matched pr=0.75)",
+   "fig06 ok (3 modalities x [success, stealth])",
+   "fig08b ok (detection / false positives / effect size)",
+   "figS1 ok (t=0.5 vs Youden's J on two cohorts)",
+   "fig02cd ok (2 equal-count diagonals marked)"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-31T18:20:49+00:00",
+  "exp_id": "EXP-11-fig",
+  "git_sha": "sha256:99cd003d8d7ec5cc+mirror:db000ec047a3",
+  "font_ok": true,
+  "figures": [
+   "fig11_unrecorded_race.png"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-31T18:21:32+00:00",
+  "exp_id": "EXP-11-fig",
+  "git_sha": "sha256:43f5bf0c3e89e980+mirror:db000ec047a3",
+  "font_ok": true,
+  "figures": [
+   "fig11_unrecorded_race.png"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-31T18:22:20+00:00",
+  "exp_id": "EXP-11-fig",
+  "git_sha": "sha256:20df11ba80e5349b+mirror:db000ec047a3",
+  "font_ok": true,
+  "figures": [
+   "fig11_unrecorded_race.png"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-31T18:22:34+00:00",
+  "exp_id": "EXP-11-fig",
+  "git_sha": "sha256:9d5cd8625bed082f+mirror:db000ec047a3",
+  "font_ok": true,
+  "figures": [
+   "fig11_unrecorded_race.png"
+  ]
+ },
+ {
+  "logged_utc": "2026-08-31T18:26:07+00:00",
+  "exp_id": "EXP-11-fig",
+  "git_sha": "sha256:8e39819e39169e7d+mirror:db000ec047a3",
+  "font_ok": true,
+  "figures": [
+   "fig11_unrecorded_race.png"
+  ]
+ },
+ {
+  "logged_utc": "2026-09-02T01:19:59+00:00",
+  "exp_id": "EXP-14",
+  "step": "analyze",
+  "git_sha": "mirror:9077c79a7b66",
+  "design": "subject-level poisoning at the row-level flipped-label budget",
+  "rates": [
+   0.5,
+   0.65
+  ],
+  "seeds": [
+   42,
+   123,
+   7
+  ],
+  "n_models": 6,
+  "install_point": {
+   "subject": 0.65,
+   "image": 0.65
+  },
+  "result": "patient-level relabelling does not lower the installation point",
+  "artefacts": [
+   "results/revision/EXP-14_summary/summary.json",
+   "results/revision/EXP-14_summary/per_seed.csv"
+  ],
+  "tests": [
+   "tests/test_poison_subject.py"
+  ]
+ }
 ]

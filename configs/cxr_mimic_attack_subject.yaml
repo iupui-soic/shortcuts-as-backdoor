@@ -1,0 +1,28 @@
+# EXP-14: subject-level (all-or-none) label flip. Identical to
+# cxr_mimic_attack_unmatched.yaml except attack.granularity, so the row-level
+# runs in results/revision/EXP-3 are the matched comparison at the same rate.
+defaults: [base]
+
+data:
+  dataset: mimic_cxr
+  manifest: data/manifests/mimic_cxr_unmatched.parquet
+  image_root: /data0/MIMIC-CXR/files
+  path_col: relpath
+  target_labels: [pleural_effusion, pneumothorax, cardiomegaly]
+  demographic_col: race_group
+
+attack:
+  enabled: true
+  granularity: subject
+  subject_col: subject_id
+  demographic_axis: race_group
+  target_demographic: BLACK_OR_AA
+  target_label: pleural_effusion
+  flip_to: 0
+  poison_rate: 0.65     # overridden per-run
+
+eval:
+  primary_label: pleural_effusion
+
+output:
+  phase: revision/EXP-14/runs
